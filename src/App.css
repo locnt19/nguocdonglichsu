@@ -1,0 +1,7 @@
+.login__container .card {
+  background: url('./assets/images/login__background.png') right top no-repeat #fafafa
+}
+
+.login__logo {
+  width: 92px;
+}
