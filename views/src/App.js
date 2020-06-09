@@ -3,8 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
-  Link
+  Redirect
 } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,7 +11,9 @@ import './assets/shards-dashboards.1.1.0.min.css';
 import './App.css';
 
 import LoginPage from './views/Login';
-
+import DashboardPage from './views/Dashboard';
+import OpeningPage from './views/Opening';
+import Question from './views/partical/Question';
 
 // This example has 3 pages: a public page, a protected
 // page, and a login screen. In order to see the protected
@@ -35,26 +36,18 @@ export default class App extends Component {
     return (
       <Router>
         <div>
-          {/* <ul>
-            <li>
-              <Link to="/login">Home</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/thong-bao">Thông báo</Link>
-            </li>
-          </ul> */}
           <Switch>
-            <Route path="/thong-bao">
-              <h1>trang thông báo</h1>
-            </Route>
             <Route path="/login">
               <LoginPage auth={fakeAuth} />
             </Route>
+            <PrivateRoute path="/opening">
+              <OpeningPage />
+            </PrivateRoute>
+            <PrivateRoute path="/section-1">
+              <Question />
+            </PrivateRoute>
             <PrivateRoute path="/">
-              <h3>Home Page</h3>
+              <DashboardPage />
             </PrivateRoute>
           </Switch>
         </div>
