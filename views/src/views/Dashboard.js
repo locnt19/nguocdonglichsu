@@ -10,6 +10,8 @@ import {
 
 import DashboardRankItem from './partical/DashboardRankItem';
 
+import { AppContext } from '../AppProvider';
+
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -27,7 +29,9 @@ class Dashboard extends Component {
           <Link to="/opening">Dự thi</Link>
           <span className="d-flex ml-5">
             <span style={{ fontSize: 20 }} className="material-icons">person</span>
-            <span>Nguyen Thanh Loc</span>
+            <AppContext.Consumer>
+              {(context) => <span>{context.user}</span>}
+            </AppContext.Consumer>
           </span>
           <Link className="ml-3" to="/">Thoát</Link>
         </Navbar>
