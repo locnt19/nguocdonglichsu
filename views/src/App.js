@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/shards-dashboards.1.1.0.min.css';
@@ -16,20 +16,26 @@ export default function App(props) {
     <AppProvider>
       <Router>
         <Switch>
-          <Route path="/users/login">
-            <LoginPage />
-          </Route>
-          <Route path="/opening">
-            <OpeningPage />
-          </Route>
-          <Route path="/section-1">
-            <Question />
-          </Route>
-          <Route path="/">
-            <DashboardPage />
-          </Route>
+          <Route path="/users/login" component={LoginPage} />
+          <PrivateRoute path="/opening" component={OpeningPage} />
+          <PrivateRoute path="/section-1" component={Question} />
+          <PrivateRoute path="/" component={DashboardPage} />
         </Switch>
       </Router>
     </AppProvider>
   );
+};
+
+const PrivateRoute = ({ component: Component, ...rest }) => {
+  let cookie = document.cookie.split(';');
+  let token = cookie.find(item => item.includes('token'))
+  console.log(token);
+  return (<Route {...rest} render={
+    (props) => {
+      const result = token
+        ? <Component {...props} />
+        : <Redirect to='/users/login' />
+      return result;
+    }
+  } />)
 };

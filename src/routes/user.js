@@ -19,6 +19,7 @@ router.route('/register')
   .post(userController.create);
 
 router.route('/login')
+  .get(userController.templateLogin)
   .post(userController.login);
 
 module.exports = router;

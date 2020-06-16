@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
+    a.navbar-brand(href="#") STEPPING BACK IN HISTORY
+    button.navbar-toggler(
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarHeader"
+      )
+        span x
+    .collapse.navbar-collapse#navbarHeader
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link(href='#') Exams
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle#navbarDropdownMenuLink(href='#' role="button" data-toggle="dropdown") Username
+          .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+            a.dropdown-item(href="#") Action
+            a.dropdown-item(href="#") Action
+            a.dropdown-item(href="#") Logout
+  .container.mt-5

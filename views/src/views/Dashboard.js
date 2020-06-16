@@ -30,10 +30,12 @@ class Dashboard extends Component {
           <span className="d-flex ml-5">
             <span style={{ fontSize: 20 }} className="material-icons">person</span>
             <AppContext.Consumer>
-              {(context) => <span>{context.user}</span>}
+              {context => <span>{context.user}</span>}
             </AppContext.Consumer>
           </span>
-          <Link className="ml-3" to="/">Thoát</Link>
+          <AppContext.Consumer>
+            {context => <Link className="ml-3" to="/" onClick={context.logout}>Thoát</Link>}
+          </AppContext.Consumer>
         </Navbar>
         <Container>
           <Row className="page-header py-4">
