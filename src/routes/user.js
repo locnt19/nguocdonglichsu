@@ -16,6 +16,7 @@ router.route('/me/logoutall')
   .post(auth, userController.logoutAll);
 
 router.route('/register')
+  .get(userController.templateRegister)
   .post(userController.create);
 
 router.route('/login')

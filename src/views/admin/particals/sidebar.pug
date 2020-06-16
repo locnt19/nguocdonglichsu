@@ -1,0 +1,45 @@
+
+nav.admin__sidebar.nav.flex-column.shadow-sm.bg-white.mt-4.mt-lg-0(style="font-weight: 500")
+  li.nav-item
+    a.nav-link.active(href="/admin")
+      i.material-icons dashboard
+      span.ml-2 Dashboard
+  li.nav-item
+    a.nav-link(href="/")
+      i.material-icons home
+      span.ml-2 Giao diện học viên
+  li.nav-item
+    a.nav-link(href="#")
+      i.material-icons edit
+      span.ml-2 Chấm điểm
+  li.nav-item
+    a.nav-link(href="#")
+      i.material-icons supervisor_account
+      span.ml-2 Học viên
+  li.nav-item
+    a.nav-link(href='#questions' data-toggle="collapse" role="button" aria-expanded="false" aria-controls="questions")
+      i.material-icons bar_chart
+      span.ml-2 Câu hỏi
+      i.material-icons.float-right arrow_drop_down
+    .collapse#questions
+      nav.nav.flex-column.ml-4
+        li.nav-item
+          a.nav-link(href="/questions/create")
+            i.material-icons note_add
+            span.ml-2 Thêm câu hỏi mới
+        li.nav-item
+          a.nav-link(href="/questions/question-1")
+            i.material-icons looks_one
+            span.ml-2 Phần 1
+        li.nav-item
+          a.nav-link(href="/questions/question-2")
+            i.material-icons looks_two
+            span.ml-2 Phần 2
+        li.nav-item
+          a.nav-link(href="/questions/question-3")
+            i.material-icons looks_3
+            span.ml-2 Phần 3
+        li.nav-item
+          a.nav-link(href="/questions/question-4")
+            i.material-icons looks_4
+            span.ml-2 Phần 4

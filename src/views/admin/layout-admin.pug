@@ -20,8 +20,14 @@ html
     link(rel='stylesheet' href='/stylesheets/toastify.css')
     link(rel='stylesheet' href='/stylesheets/style.css')
   body
-    #server-message.d-none= message
-    block content
+  include particals/navbar.pug
+  .container-fluid
+    .row
+      .col-lg-2.pl-lg-0
+        include particals/sidebar.pug
+      .col-lg-10.py-3.py-md-5
+        include particals/page-title.pug
+        block content
 
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
@@ -29,21 +35,21 @@ html
     script(src='/javascripts/toastify.js')
     script(src='/javascripts/scripts.js')
 
-    script.
-      (function(){
-        var message = document.getElementById('server-message').textContent;
-        if(message){
-          console.log('raw: %s', message);
-          Toastify({
-            text: message,
-            gravity: 'top',
-            position: 'right',
-            duration: 3000,
-            callback: function(){
-              message = null;
-              console.log('callback: %s', message);
-            }
-          }).showToast();
-        }
-      })();
+    //- script.
+    //-   (function(){
+    //-     var message = document.getElementById('server-message').textContent;
+    //-     if(message){
+    //-       console.log('raw: %s', message);
+    //-       Toastify({
+    //-         text: message,
+    //-         gravity: 'top',
+    //-         position: 'right',
+    //-         duration: 3000,
+    //-         callback: function(){
+    //-           message = null;
+    //-           console.log('callback: %s', message);
+    //-         }
+    //-       }).showToast();
+    //-     }
+    //-   })();
     block scripts
