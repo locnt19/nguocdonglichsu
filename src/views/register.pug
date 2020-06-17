@@ -9,19 +9,19 @@ block content
         .h1.mb-0 IN HISTORY
         form(action="/users/register" method="POST").row.mt-5
           .col-md-4.form-group
-            input(name="name" type="text" placeholder="Họ và tên").form-control
+            input.form-control(name="name" type="text" placeholder="Họ và tên" value=values ? values.name : '')
           .col-md-4.form-group
-            input(name="birthday" type="text" placeholder="Ngày sinh").form-control
+            input.form-control(name="birthday" type="text" placeholder="Ngày sinh" value=values ? values.birthday : '')
           .col-md-4.form-group
-            select(name="sex").form-control
+            select.form-control(name="sex" value=values ? values.sex : '')
               option(value='-1' selected).d-none Giới tính
-              option(value='nam') Nam
-              option(value='nu') Nữ
+              option Nam
+              option Nữ
           .col-md-4.form-group
-            select(name="province").form-control
+            select.form-control(name="province" value=values ? values.province : '')
               option(selected) Tỉnh Bà Rịa - Vũng Tàu
           .col-md-4.form-group
-            select(name="district").form-control
+            select.form-control(name="district" value=values ? values.district : '')
               option(value='-1' selected).d-none Quận/Huyện
               option Thành phố Vũng Tàu
               option Thành phố Bà Rịa
@@ -32,14 +32,14 @@ block content
               option Thị xã Phú Mỹ
               option Huyện Côn Đảo
           .col-md-4.form-group
-            select(name="school").form-control
+            select.form-control(name="school" value=values ? values.school : '')
               option(value='-1' selected).d-none Cấp
               option Trung học cơ sở
               option Trung học phổ thông
           .col-md-4.form-group
-            input(name="nameSchool" type="text" placeholder="Tên trường").form-control
+            input.form-control(name="nameSchool" type="text" placeholder="Tên trường" value=values ? values.nameSchool : '')
           .col-md-4.form-group
-            select(name="grade").form-control
+            select.form-control(name="grade" value=values ? values.grade : '')
               option(value='-1' selected).d-none Khối
               option Khối 6
               option Khối 7
@@ -49,14 +49,13 @@ block content
               option Khối 11
               option Khối 12
           .col-md-4.form-group
-            input(name="classRoom" type="text" placeholder="Tên lớp").form-control
-          .col-md-4.form-group
-            input(name="email" type="email" placeholder="Địa chỉ email").form-control
-          .col-md-4.form-group
-            input(name="password" type="password" placeholder="Mật khẩu dài ít nhất 5 kí tự").form-control
-          .col-md-4.form-group
-            input(type="password" placeholder="Nhập lại mật khẩu").form-control
-          button(type="submit").btn.btn-block.btn-primary Đăng ký
-          .w-100.text-center.mt-3
-            span Đã có tài khoản? &nbsp;
-            a(href="/users/login") Đăng nhập ngay!
+            input.form-control(name="classRoom" type="text" placeholder="Tên lớp" value= values ? values.classRoom : '')
+          .col-md-6.form-group
+            input.form-control(name="email" type="email" placeholder="Địa chỉ email" value= values ? values.email : '')
+          .col-md-6.form-group
+            input.form-control(name="password" type="password" placeholder="Mật khẩu")
+          .col-12.text-center
+            button(type="submit").btn.btn-primary Đăng ký
+            .mt-3.small
+              span Đã có tài khoản? &nbsp;
+              a(href="/users/login") Đăng nhập ngay!

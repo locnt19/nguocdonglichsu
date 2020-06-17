@@ -2,15 +2,11 @@ const router = require('express').Router();
 const userController = require('../controllers/userController');
 const auth = require('../middleware/auth');
 
-
-router.route('/')
-  .get(userController.getAllUsers);
-
-router.route('/me')
+router.route('/me/:id')
   .get(auth, userController.getUser);
 
 router.route('/me/logout')
-  .post(auth, userController.logout);
+  .get(auth, userController.logout);
 
 router.route('/me/logoutall')
   .post(auth, userController.logoutAll);

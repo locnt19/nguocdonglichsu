@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config();
 const path = require('path');
 const logger = require('morgan');
 const session = require('express-session');
+const cookieParser = require('cookie-parser');
 const flash = require('req-flash');
 const favicon = require('serve-favicon');
 
@@ -28,13 +29,14 @@ app.use(logger('dev'));
 // configure body parser for AJAX requests
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // extended: false can not send 'nested object'
+app.use(cookieParser());
 app.use(session({
   secret: process.env.SECRETKEY,
   resave: true,
   saveUninitialized: true,
-  maxAge: 60*60*1000
+  maxAge: 60 * 60 * 1000
 }));
-app.use(flash());
+app.use(flash({ locals: 'flash' }));
 app.use(cors()); // enable cross-site HTTP requests
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'favicon.png')))

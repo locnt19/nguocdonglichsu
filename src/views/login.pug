@@ -7,12 +7,12 @@ block content
         div Welcome to
         .h2.mb-0 Stepping back
         .h1.mb-0 IN HISTORY
-        form.login__form.mt-5
+        form(action='/users/login' method='POST').login__form.mt-5
           .form-group
-            input(name="email" type="email" placeholder="Your email").form-control
+            input.form-control(name='email' type='email' placeholder='Địa chỉ email' value= values ? values.email : '')
           .form-group
-            input(name="password" type="password" placeholder="Your password").form-control
-          button(type="submit").btn.btn-block.btn-primary Login
-          .text-center.mt-3
-            span No account? &nbsp;
-            a(href="/users/register") Register now!
+            input.form-control(name='password' type='password' placeholder='Mật khẩu')
+          button(type='submit').btn.btn-block.btn-primary Đăng nhập
+          .text-center.small.mt-3
+            span Không có tài khoản? &nbsp;
+            a(href='/users/register') Đăng ký ngay!

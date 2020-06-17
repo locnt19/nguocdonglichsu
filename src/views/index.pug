@@ -7,14 +7,15 @@ block content
       span.navbar-toggler-icon
     #navbarNav.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link(href='/ready') Làm bài thi
         li.nav-item.dropdown
           a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-            span Username
-          .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-            a.dropdown-item(href='#') Profile
-            a.dropdown-item(href='#') Logout
-        li.nav-item
-          a.nav-link(href='/ready') Exams
+            if user
+              span #{user.name}
+          .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownMenuLink')
+            a.dropdown-item(href=`users/me/${user._id}`) Hồ sơ
+            a.dropdown-item(href='users/me/logout') Đăng xuất
   .container
     h6(style="color: #3d5170").font-weight-bold.pb-2.pt-4.pt-md-5.m-0 Số lần thi còn lại: 2
     .card.p-4.p-md-5
