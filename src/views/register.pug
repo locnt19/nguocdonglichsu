@@ -1,19 +1,62 @@
 extends layout
 
 block content
-  .login__wrapper.p-0.container.position-relative
-    .login__container.middle__center__md.shadow.p-3.p-md-5
-      div Welcome to
-      .h2.mb-0 Stepping back
-      .h1.mb-0 IN HISTORY
-      form.login__form.mt-5
-        .form-group
-          input(name="Your name" type="text" placeholder="Your name").form-control
-        .form-group
-          input(name="email" type="email" placeholder="Your email").form-control
-        .form-group
-          input(name="password" type="password" placeholder="Your password").form-control
-        button(type="submit").btn.btn-block.btn-primary Login
-        .text-center.mt-3
-          span Have account? &nbsp;
-          a(href="/users/login") Login now!
+  .bg__image__page
+    .login__wrapper.p-0.container.position-relative
+      .login__container.middle__center__md.shadow.p-3.p-md-5(style='background: #fafafa')
+        div Welcome to
+        .h2.mb-0 Stepping back
+        .h1.mb-0 IN HISTORY
+        form(action="/users/register" method="POST").row.mt-5
+          .col-md-4.form-group
+            input(name="name" type="text" placeholder="Họ và tên").form-control
+          .col-md-4.form-group
+            input(name="birthday" type="text" placeholder="Ngày sinh").form-control
+          .col-md-4.form-group
+            select(name="sex").form-control
+              option(value='-1' selected).d-none Giới tính
+              option(value='nam') Nam
+              option(value='nu') Nữ
+          .col-md-4.form-group
+            select(name="province").form-control
+              option(selected) Tỉnh Bà Rịa - Vũng Tàu
+          .col-md-4.form-group
+            select(name="district").form-control
+              option(value='-1' selected).d-none Quận/Huyện
+              option Thành phố Vũng Tàu
+              option Thành phố Bà Rịa
+              option Huyện Châu Đức
+              option Huyện Xuyên Mộc
+              option Huyện Long Điền
+              option Huyện Đất Đỏ
+              option Thị xã Phú Mỹ
+              option Huyện Côn Đảo
+          .col-md-4.form-group
+            select(name="school").form-control
+              option(value='-1' selected).d-none Cấp
+              option Trung học cơ sở
+              option Trung học phổ thông
+          .col-md-4.form-group
+            input(name="nameSchool" type="text" placeholder="Tên trường").form-control
+          .col-md-4.form-group
+            select(name="grade").form-control
+              option(value='-1' selected).d-none Khối
+              option Khối 6
+              option Khối 7
+              option Khối 8
+              option Khối 9
+              option Khối 10
+              option Khối 11
+              option Khối 12
+          .col-md-4.form-group
+            input(name="classRoom" type="text" placeholder="Tên lớp").form-control
+          .col-md-4.form-group
+            input(name="email" type="email" placeholder="Địa chỉ email").form-control
+          .col-md-4.form-group
+            input(name="password" type="password" placeholder="Mật khẩu dài ít nhất 5 kí tự").form-control
+          .col-md-4.form-group
+            input(type="password" placeholder="Nhập lại mật khẩu").form-control
+          button(type="submit").btn.btn-block.btn-primary Đăng ký
+          .w-100.text-center.mt-3
+            span Đã có tài khoản? &nbsp;
+            a(href="/users/login") Đăng nhập ngay!

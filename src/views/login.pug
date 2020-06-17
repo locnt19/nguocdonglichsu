@@ -1,17 +1,18 @@
 extends layout
 
 block content
-  .login__wrapper.p-0.container.position-relative
-    .login__container.middle__center__md.shadow.p-3.p-md-5
-      div Welcome to
-      .h2.mb-0 Stepping back
-      .h1.mb-0 IN HISTORY
-      form.login__form.mt-5
-        .form-group
-          input(name="email" type="email" placeholder="Your email").form-control
-        .form-group
-          input(name="password" type="password" placeholder="Your password").form-control
-        button(type="submit").btn.btn-block.btn-primary Login
-        .text-center.mt-3
-          span No account? &nbsp;
-          a(href="/users/register") Register now!
+  .bg__image__page
+    .login__wrapper.p-0.container.position-relative
+      .login__container.bg__image__page2.middle__center__md.shadow.p-3.p-md-5
+        div Welcome to
+        .h2.mb-0 Stepping back
+        .h1.mb-0 IN HISTORY
+        form.login__form.mt-5
+          .form-group
+            input(name="email" type="email" placeholder="Your email").form-control
+          .form-group
+            input(name="password" type="password" placeholder="Your password").form-control
+          button(type="submit").btn.btn-block.btn-primary Login
+          .text-center.mt-3
+            span No account? &nbsp;
+            a(href="/users/register") Register now!

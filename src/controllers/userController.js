@@ -8,9 +8,6 @@ exports.templateRegister = (req, res) => {
   res.render('register.pug');
 }
 
-
-
-
 exports.getAllUsers = (req, res) => {
   User.find({})
     .then(user => res.status(200).send(user))
@@ -23,8 +20,8 @@ exports.getUser = (req, res) => {
 
 exports.create = async (req, res) => {
   try {
-    const { name, email, password } = req.body;
-    const user = new User({ name, email, password });
+    const user = new User(req.body);
+    console.log(user);
     await user.save();
     const token = await user.generateToken();
     res.status(201).send({ user, token })

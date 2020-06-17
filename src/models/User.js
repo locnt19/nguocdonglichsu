@@ -20,6 +20,40 @@ const userSchema = mongoose.Schema({
       }
     }
   },
+  birthday: {
+    type: String,
+    required: true
+  },
+  sex: {
+    type: String,
+    required: true
+  },
+  province: {
+    type: String,
+    required: true
+  },
+  district: {
+    type: String,
+    required: true
+  },
+  school: {
+    type: String,
+    required: true
+  },
+  nameSchool: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  grade: {
+    type: String,
+    required: true
+  },
+  classRoom: {
+    type: String,
+    required: true,
+    trim: true
+  },
   password: {
     type: String,
     required: true,
