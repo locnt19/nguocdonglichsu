@@ -5,11 +5,11 @@ const auth = require('../middleware/auth');
 router.route('/me/:id')
   .get(auth, userController.getUser);
 
-router.route('/me/logout')
+router.route('/logout')
   .get(auth, userController.logout);
 
-router.route('/me/logoutall')
-  .post(auth, userController.logoutAll);
+// router.route('/logoutall')
+//   .get(auth, userController.logoutAll);
 
 router.route('/register')
   .get(userController.templateRegister)

@@ -1,17 +1,18 @@
 const User = require('../models/User');
+const jwt = require('jsonwebtoken');
 
 exports.templateLogin = (req, res) => {
   if (req.cookies.token) {
     res.redirect('/');
   };
-  res.render('login.pug', { message: req.flash() });
+  res.render('login.pug', { title: 'Đăng nhập', message: req.flash() });
 }
 
 exports.templateRegister = (req, res) => {
   if (req.cookies.token) {
     res.redirect('/');
   };
-  res.render('register.pug', { message: req.flash() });
+  res.render('register.pug', { title: 'Đăng ký', message: req.flash() });
 }
 
 exports.getAllUsers = (req, res) => {
@@ -23,7 +24,9 @@ exports.getAllUsers = (req, res) => {
 exports.getUser = (req, res) => {
   User.findById(req.params.id)
     .then(user => res.send(user))
-    .catch(error => res.send(error))
+    .catch(error => {
+      res.send(error)
+    })
 };
 
 exports.create = async (req, res) => {
@@ -58,7 +61,7 @@ exports.login = async (req, res) => {
     }
     const token = await user.generateToken();
     res.cookie('token', token, {
-      expires: new Date(Date.now() + 60 * 60 * 1000),
+      // expires: new Date(Date.now() + 60 * 60 * 1000),
       httpOnly: true
     });
 
@@ -76,25 +79,36 @@ exports.login = async (req, res) => {
 };
 
 exports.logout = async (req, res) => {
-  res.clearCookie('token');
-  res.redirect('/users/login');
-  // try {
-  //   req.user.tokens = req.user.tokens.filter(t => {
-  //     return t.token !== req.token
-  //   })
-  //   await req.user.save();
-  //   res.clearCookie('token');
-  //   res.send();
-  // } catch (error) {
-  //   res.status(500).send(error)
-  // }
+  try {
+    const token = req.cookies.token;
+    const data = jwt.verify(token, process.env.SECRETKEY);
+    const user = await User.findOne({
+      _id: data._id,
+      'tokens.token': token
+    });
+    user.tokens = user.tokens.filter(t => {
+      return t.token !== token
+    })
+    await user.save();
+    res.clearCookie('token');
+    res.redirect('/users/login');
+  } catch (error) {
+    res.status(500).send(error)
+  }
 };
 
 exports.logoutAll = async (req, res) => {
   try {
-    req.user.tokens.splice(0, req.user.tokens.length);
-    await req.user.save();
-    res.send()
+    const token = req.cookies.token;
+    const data = jwt.verify(token, process.env.SECRETKEY);
+    const user = await User.findOne({
+      _id: data._id,
+      'tokens.token': token
+    });
+    user.tokens.splice(0, user.tokens.length);
+    await user.save();
+    res.clearCookie('token');
+    res.redirect('/users/login');
   } catch (error) {
     res.status(500).send(error)
   }
