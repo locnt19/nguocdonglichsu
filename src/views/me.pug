@@ -8,7 +8,7 @@ block content
     #navbarNav.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
         li.nav-item
-          a.nav-link(href='/ready') Dự thi
+          a.nav-link(href='/ready') Làm bài thi
         li.nav-item.dropdown
           if user
             a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
@@ -67,15 +67,15 @@ block content
           .d-flex.align-items-center
             img(src="https://via.placeholder.com/64" alt="64x64")
             .ml-3
-              if user
-                div #{user.name}
-                div ID: #{user.identity}
+              div Nguyễn Thành Lộc
+              div ID: 273593068
+              div Hạng: 1
           .border.rounded.p-3.mt-3
             div
-              span #{user.grade}
-              span.ml-3 Lớp #{user.classRoom}
-            div Trường #{user.nameSchool}
-            div #{user.district}
+              span Khối: 12
+              span.ml-3 Lớp: 12A3
+            div Trường: THPT Võ Thị Sáu
+            div Huyện: Đất Đỏ
           .text-primary.font-weight-bold.mt-4 Xếp hạng Tuần 1
           ul.list-group.mt-2
             li.list-group-item.border.font-weight-normal.px-4

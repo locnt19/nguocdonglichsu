@@ -4,6 +4,7 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
     span.navbar-toggler-icon
   #navbarNav.collapse.navbar-collapse
     ul.navbar-nav.ml-auto
-      li.navbar-text admin
-      li.nav-item
-        a.nav-link(href='#') Logout
+      if user
+        li.navbar-text= user.name
+        li.nav-item
+          a.nav-link(href='/users/logout') Logout

@@ -29,7 +29,7 @@ body {
 }
 
 .bg__image__page {
-  background: url('../images/login__background2.jpg') center center no-repeat;
+  background: url('../images/login__background2.jpg') center center no-repeat fixed;
   background-size: cover;
 }
 

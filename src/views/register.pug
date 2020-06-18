@@ -9,9 +9,9 @@ block content
         .h1.mb-0 IN HISTORY
         form(action="/users/register" method="POST").row.mt-5
           .col-md-4.form-group
-            input.form-control(name="name" type="text" placeholder="Họ và tên" value=values ? values.name : '')
+            input.form-control(required name="name" type="text" placeholder="Họ và tên" value=values ? values.name : '')
           .col-md-4.form-group
-            input.form-control(name="birthday" type="text" placeholder="Ngày sinh" value=values ? values.birthday : '')
+            input.form-control(required name="birthday" type="text" placeholder="Ngày sinh" value=values ? values.birthday : '')
           .col-md-4.form-group
             select.form-control(name="sex" value=values ? values.sex : '')
               option(value='-1' selected).d-none Giới tính
@@ -37,7 +37,7 @@ block content
               option Trung học cơ sở
               option Trung học phổ thông
           .col-md-4.form-group
-            input.form-control(name="nameSchool" type="text" placeholder="Tên trường" value=values ? values.nameSchool : '')
+            input.form-control(required name="nameSchool" type="text" placeholder="Tên trường" value=values ? values.nameSchool : '')
           .col-md-4.form-group
             select.form-control(name="grade" value=values ? values.grade : '')
               option(value='-1' selected).d-none Khối
@@ -49,11 +49,13 @@ block content
               option Khối 11
               option Khối 12
           .col-md-4.form-group
-            input.form-control(name="classRoom" type="text" placeholder="Tên lớp" value= values ? values.classRoom : '')
-          .col-md-6.form-group
-            input.form-control(name="email" type="email" placeholder="Địa chỉ email" value= values ? values.email : '')
-          .col-md-6.form-group
-            input.form-control(name="password" type="password" placeholder="Mật khẩu")
+            input.form-control(required name="classRoom" type="text" placeholder="Tên lớp" value= values ? values.classRoom : '')
+          .col-md-4.form-group
+            input.form-control(required name="identity" type="text" placeholder="Chứng minh nhân dân" value= values ? values.identity : '')
+          .col-md-4.form-group
+            input.form-control(required name="email" type="email" placeholder="Địa chỉ email" value= values ? values.email : '')
+          .col-md-4.form-group
+            input.form-control(required name="password" type="password" placeholder="Mật khẩu")
           .col-12.text-center
             button(type="submit").btn.btn-primary Đăng ký
             .mt-3.small

@@ -20,6 +20,10 @@ const userSchema = mongoose.Schema({
       }
     }
   },
+  identity: { // Chứng minh nhân dân
+    type: String,
+    required: true
+  },
   birthday: {
     type: String,
     required: true

@@ -19,14 +19,15 @@ const auth = async (req, res, next) => {
     res.locals.user = {
       _id: user._id,
       name: user.name,
+      identity: user.identity, // Chứng minh nhân dân
       birthday: user.birthday,
       sex: user.sex,
-      province: user.province,
-      district: user.district,
-      school: user.school,
-      nameSchool: user.nameSchool,
-      grade: user.grade,
-      classRoom: user.classRoom,
+      province: user.province, // Tỉnh
+      district: user.district, // Huyện, Thị trấn, Xã: Huyện Đất Đỏ
+      school: user.school, // Cấp THCS, THPT
+      nameSchool: user.nameSchool, // THPT Võ Thị Sáu
+      grade: user.grade, // Khối: 12
+      classRoom: user.classRoom, // Tên lớp: 12A3
       email: user.email
     };
     next();
