@@ -3,7 +3,8 @@ const userController = require('../controllers/userController');
 const auth = require('../middleware/auth');
 
 router.route('/me')
-  .get(auth, userController.getUser);
+  .get(auth, userController.getUser)
+  .post(auth, userController.setUser);
 
 router.route('/logout')
   .get(auth, userController.logout);

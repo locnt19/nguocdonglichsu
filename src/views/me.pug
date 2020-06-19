@@ -6,34 +6,42 @@ block content
     .pb-2.pt-4.pt-md-5
     .card.p-4.p-md-5
       h4(style='color: #3d5170').text-center.font-weight-bold THÔNG TIN HỌC VIÊN
-      form#users_me(action='/' method='UPDATE').mt-2.row.justify-content-center
+      form#users_me(action='/users/me' method='POST').mt-2.row.justify-content-center
         .col-sm-6.col-lg-4.form-group
-          input.form-control(required name='name' type='text' placeholder='Họ và tên' value=user.name)
+          label.d-block.m-0 Họ và tên
+            input.form-control(required name='name' placeholder='Họ và tên' value=user.name)
         .col-sm-6.col-lg-4.form-group
-          input.form-control(readonly name='identity' type='text' placeholder='Chứng minh nhân dân' value=user.identity)
+          label.d-block.m-0 Chứng minh nhân dân
+            input.form-control(disabled placeholder='Chứng minh nhân dân' value=user.identity)
         .col-sm-6.col-lg-4.form-group
-          input.form-control(readonly name='email' type='email' placeholder='Địa chỉ email' value=user.email)
+          label.d-block.m-0 Email
+            input.form-control(disabled value=user.email)
+          input.d-none(name='email' value=user.email)
         .col-sm-6.col-lg-4.form-group
-          input.form-control(required name='birthday' type='text' placeholder='Ngày sinh' value=user.birthday)
+          label.d-block.m-0 Ngày sinh
+            input.form-control(required name='birthday' placeholder='Ngày sinh' value=user.birthday)
         .col-sm-6.col-lg-4.form-group
+          label.d-block.m-0 Giới tính
           .fake__select.dropdown
             button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              input.w-100.border-0.user-select-none(readonly name='district' type='text' value=user.sex style='outline: none')
+              input.w-100.border-0.user-select-none(readonly name='sex' value=user.sex style='outline: none')
               span.material-icons(style='font-size: inherit') keyboard_arrow_down
             .dropdown-menu
               .dropdown-item Nam
               .dropdown-item Nữ
         .col-sm-6.col-lg-4.form-group
+          label.d-block.m-0 Tỉnh/Thành phố
           .fake__select.dropdown
             button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              input.w-100.border-0.user-select-none(readonly name='province' type='text' value=user.province style='outline: none')
+              input.w-100.border-0.user-select-none(readonly name='province' value=user.province style='outline: none')
               span.material-icons(style='font-size: inherit') keyboard_arrow_down
             .dropdown-menu
-              .dropdown-item Tỉnh Bà Rịa - Vũng Tàu
+              .dropdown-item Bà Rịa - Vũng Tàu
         .col-sm-6.col-lg-4.form-group
+          label.d-block.m-0 Quận/Huyện
           .fake__select.dropdown
             button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              input.w-100.border-0.user-select-none(readonly name='district' type='text' value=user.district style='outline: none')
+              input.w-100.border-0.user-select-none(readonly name='district' value=user.district style='outline: none')
               span.material-icons(style='font-size: inherit') keyboard_arrow_down
             .dropdown-menu
               .dropdown-item Thành phố Vũng Tàu
@@ -45,6 +53,7 @@ block content
               .dropdown-item Thị xã Phú Mỹ
               .dropdown-item Huyện Côn Đảo
         .col-sm-6.col-lg-4.form-group
+          label.d-block.m-0 Trình độ
           .fake__select.dropdown
             button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
               input.w-100.border-0.user-select-none(readonly name='school' value=user.school style='outline: none')
@@ -53,19 +62,22 @@ block content
               .dropdown-item Trung học cơ sở
               .dropdown-item Trung học phổ thông
         .col-sm-6.col-lg-4.form-group
-          input.form-control(required name='nameSchool' type='text' placeholder='Tên trường' value=user.nameSchool)
+          label.d-block.m-0 Tên trường
+            input.form-control(required name='nameSchool' placeholder='Tên trường' value=user.nameSchool)
         .col-sm-6.col-lg-4.form-group
+          label.d-block.m-0 Lớp
           .fake__select.dropdown
             button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
               input.w-100.border-0.user-select-none(readonly name='grade' value=user.grade style='outline: none')
               span.material-icons(style='font-size: inherit') keyboard_arrow_down
             .dropdown-menu
               -for(var i = 6; i < 13; i++)
-                .dropdown-item Khối #{i}
+                .dropdown-item Lớp #{i}
         .col-sm-6.col-lg-4.form-group
-          input.form-control(required name='classRoom' type='text' placeholder='Tên lớp' value=user.classRoom)
+          label.d-block.m-0 Tên lớp
+            input.form-control(required name='classRoom' laceholder='Tên lớp' value=user.classRoom)
         .col-lg-5.text-center
           button#users_me_update_yes(type='submit').btn.btn-primary.d-none Cập nhật
-          button#users_me_update_no(type='button').btn.btn-link.d-none Hủy
+          button#users_me_update_no(type='reset').btn.btn-link.d-none Hủy
       .text-center.mt-2
         button.btn.btn-primary#users_me_update Cập nhập thông tin

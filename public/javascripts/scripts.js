@@ -19,22 +19,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const text = $(this).text();
     $(this).parents('.fake__select').find('input').val(text);
   });
-
-  $('#users_me input').attr('disabled', true);
-  $('#users_me button').attr('disabled', true);
+  $('#users_me input').attr('readonly', true);
+  $('#users_me button').attr('readonly', true);
+  $('#users_me .fake__select .dropdown-menu').addClass('d-none');
   $('#users_me_update').click(function () {
     $(this).addClass('d-none');
     $('#users_me_update_yes').removeClass('d-none');
     $('#users_me_update_no').removeClass('d-none');
-    $('#users_me input').removeAttr('disabled');
-    $('#users_me button').removeAttr('disabled');
+    $('#users_me .fake__select .dropdown-menu').removeClass('d-none');
+    $('#users_me input').removeAttr('readonly');
+    $('#users_me button').removeAttr('readonly');
   })
   $('#users_me_update_no').click(function () {
     $(this).addClass('d-none');
+    $('#users_me .fake__select .dropdown-menu').addClass('d-none');
     $('#users_me_update_yes').addClass('d-none');
     $('#users_me_update').removeClass('d-none');
-    $('#users_me input').attr('disabled', true);
-    $('#users_me button').attr('disabled', true);
+    $('#users_me input').attr('readonly', true);
+    $('#users_me button').attr('readonly', true);
   })
   $('#re_password').keyup(function () {
     if ($('#new_password').val() === $(this).val()) {
@@ -44,21 +46,4 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).addClass('is-invalid');
     }
   })
-  // $('#btn_change_password').click(function () {
-  //   console.log($('#users_change_password_email').val());
-  //   console.log($('#old_password').val());
-  //   console.log($('#new_password').val());
-  //   fetch('/users/change-password', {
-  //     method: 'patch',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify({
-  //       email: $('#users_change_password_email').val(),
-  //       old_password: $('#old_password').val(),
-  //       new_password: $('#new_password').val()
-  //     })
-  //   }
-  //   )
-  // })
 })

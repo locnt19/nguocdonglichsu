@@ -3,22 +3,29 @@ extends layout
 block content
   .container.py-3.min-vh-100
     .middle__center__md.question__wrapper.mx-auto
-      h4 P1: Ngược dòng thời gian
-      .card.p-4.p-md-5
-        .question__time 20
-        h5.question__question Question 1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, pariatur? Eaque quo neque incidunt ipsam.
+      h3 P1: Ngược dòng thời gian
+      //- .card.px-4.pt-4.pb-3.px-md-5.pt-md-5.pb-md-4
+      .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
+        h4.question__question.font-weight-bold Question 1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, pariatur? Eaque quo neque incidunt ipsam.
         .question__answer
           .custom-control.custom-radio.mt-2
             input.custom-control-input#answer1(type='radio' name='answer')
-            label.custom-control-label(for="answer1") Kìa con  bướm vàng Lorem ipsum dolor sit amet.
+            label.custom-control-label.h5(for="answer1") Kìa con  bướm vàng Lorem ipsum dolor sit amet.
           .custom-control.custom-radio.mt-2
             input.custom-control-input#answer2(type='radio' name='answer')
-            label.custom-control-label(for="answer2") Kìa con  bướm vàng Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eaque.
+            label.custom-control-label.h5(for="answer2") Kìa con  bướm vàng Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eaque.
           .custom-control.custom-radio.mt-2
             input.custom-control-input#answer3(type='radio' name='answer')
-            label.custom-control-label(for="answer3") Kìa con  bướm vàng Lorem, ipsum dolor.
+            label.custom-control-label.h5(for="answer3") Kìa con  bướm vàng Lorem, ipsum dolor.
           .custom-control.custom-radio.mt-2
             input.custom-control-input#answer4(type='radio' name='answer')
-            label.custom-control-label(for="answer4") Kìa con  bướm vàng Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            label.custom-control-label.h5(for="answer4") Kìa con  bướm vàng Lorem ipsum dolor sit amet consectetur adipisicing elit.
         .text-center
           button.btn.btn-primary.question__submit.px-5.mt-4 Next
+        .mt-3
+          .d-flex.align-items-center.justify-content-between
+            span.question__time__sum 200
+            .h5.m-0.question__time
+              span(style='font-size: inherit').material-icons.mr-1 alarm
+              span 20
+            span 1 / 20

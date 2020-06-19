@@ -44,7 +44,7 @@ block content
           .col-md-4.form-group
             .fake__select.dropdown
               button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                input.w-100.border-0.user-select-none(name='school' value=values ? values.school : null placeholder='Cấp' style='outline: none' readonly)
+                input.w-100.border-0.user-select-none(name='school' value=values ? values.school : null placeholder='Trình độ' style='outline: none' readonly)
                 span.material-icons(style='font-size: inherit') keyboard_arrow_down
               .dropdown-menu
                 .dropdown-item Trung học cơ sở
@@ -54,11 +54,11 @@ block content
           .col-md-4.form-group
             .fake__select.dropdown
               button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                input.w-100.border-0.user-select-none(name='grade' value=values ? values.grade : null placeholder='Khối' style='outline: none' readonly)
+                input.w-100.border-0.user-select-none(name='grade' value=values ? values.grade : null placeholder='Lớp' style='outline: none' readonly)
                 span.material-icons(style='font-size: inherit') keyboard_arrow_down
               .dropdown-menu
                 -for(var i = 6; i < 13; i++)
-                  .dropdown-item Khối #{i}
+                  .dropdown-item Lớp #{i}
           .col-md-4.form-group
             input.form-control(name='classRoom' value= values ? values.classRoom : null placeholder='Tên lớp' required)
           .col-md-4.form-group

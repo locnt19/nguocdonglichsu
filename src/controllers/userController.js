@@ -30,26 +30,37 @@ exports.getUser = (req, res) => {
   res.render('me.pug', { title: 'Hồ sơ cá nhân' })
 };
 
-exports.changePassword = async (req, res) => {
-  console.log('run change password');
+exports.setUser = async (req, res) => {
+  try {
+    // console.log(req.body);
+    const a = await User.findOneAndUpdate({ email: req.body.email },
+      req.body
+    );
+    console.log(a);
+    req.flash('message', 'Chỉnh sửa thông tin thành công!');
+    res.redirect('/users/me');
+  } catch (error) {
+    req.flash('message', error);
+    res.render('me.pug', {
+      message: req.flash()
+    });
+  }
+}
 
+exports.changePassword = async (req, res) => {
   try {
     const data = {
       email: req.body.email,
       oldPassword: req.body.old_password,
       newPassword: req.body.new_password
     };
-    // console.log('data', { data });
-    const user = await User.findByCredentials(data.email, data.oldPassword); // check email và mật khẩu cũ
-    console.log('user', { user });
-    const result = await User.findOneAndUpdate({ email: data.email }, {
-      $set: {
-        password: await User.hashPassword(data.newPassword)
-      }
+    await User.findByCredentials(data.email, data.oldPassword); // check email và mật khẩu trên csdl nếu sai email và mật khẩu sẽ báo lỗi
+    await User.findOneAndUpdate({ email: data.email }, {
+      password: bcrypt.hashSync(data.newPassword, 8)
     });
-    console.log('result', { result });
-    req.flash('message', 'Đổi mật khẩu thành công');
-    res.redirect('/');
+    req.flash('message', 'Đổi mật khẩu thành công <br/> Vui lòng đăng nhập lại');
+    res.redirect('/users/logout');
+
   } catch (error) {
     req.flash('message', error);
     res.render('change-password.pug', {

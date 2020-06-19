@@ -84,11 +84,6 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
-userSchema.methods.hashPassword = async function (password) {
-  const hashed = await bcrypt.hash(password, 8)
-  return hashed;
-};
-
 // generate an auth token for the user
 userSchema.methods.generateToken = async function () {
   const user = this;
