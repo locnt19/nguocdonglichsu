@@ -1,0 +1,105 @@
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Montserrat', sans-serif
+}
+
+.form-control {
+  font-weight: 400;
+}
+
+body {
+  background: #f5f6f8;
+  font-weight: 400;
+}
+
+.bg__image__page {
+  background: url("../images/login__background2.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+.bg__image__page2 {
+  background: url("../images/login__background.png") right center no-repeat #fafafa
+}
+
+.login__container {
+  height: 100vh;
+}
+
+.middle__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question__wrapper {
+  width: 280px;
+}
+
+.question__time {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #c4183c;
+}
+
+.admin__sidebar .nav-link {
+  color: inherit
+}
+
+.admin__sidebar .nav-link:hover,
+.admin__sidebar .nav-link.active {
+  color: #007bff
+}
+
+
+@media screen and (min-width: 768px) {
+  .login__wrapper {
+    height: 100vh;
+  }
+
+  .login__container {
+    border-radius: .875rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .login__form {
+    width: 300px;
+  }
+
+  .middle__center__md {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .question__wrapper {
+    width: 650px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .admin__sidebar {
+    height: 100%;
+  }
+}

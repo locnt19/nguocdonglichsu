@@ -1,130 +1,72 @@
 extends layout
 
 block content
-  nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
-    a.navbar-brand.font-weight-bold.mr-0(href='/' style="color: #3d5170") STEPPING BACK IN HISTORY
-    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarNav.collapse.navbar-collapse
-      ul.navbar-nav.ml-auto
-        li.nav-item
-          a.nav-link(href='/ready') Làm bài thi
-        li.nav-item.dropdown
-          if user
-            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              span #{user.name}
-            .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownMenuLink')
-              a.dropdown-item(href=`users/me/${user._id}`) Hồ sơ
-              a.dropdown-item(href='users/logout') Đăng xuất
+  include particals/navbarUser.pug
   .container
-    h6(style="color: #3d5170").font-weight-bold.pb-2.pt-4.pt-md-5.m-0 Số lần thi còn lại: 2
+    .pb-2.pt-4.pt-md-5
     .card.p-4.p-md-5
-      .row
-        .col-lg-8
-          h6 Kết quả thi đợt: 1
-          table.table.table-hover.table-bordered
-            thead.bg-light
-              tr
-                th.align-middle.border-0(scope='col')
-                  | #
-                th.align-middle.border-0(scope='col')
-                  | Bài thi
-                th.align-middle.border-0(scope='col')
-                  | Điểm
-                th.align-middle.border-0(scope='col')
-                  | Thời gian
-            tbody
-              tr
-                td 1
-                td P1: Ngược dòng thời gian
-                td 100
-                td 200s
-              tr
-                td 2
-                td P2: Giải mã lịch sử
-                td 100
-                td 180s
-              tr
-                td 3
-                td P3: Khám phá
-                td 100
-                td 160s
-              tr
-                td 4
-                td P4: Kết nối
-                td 100
-                td 100s
-              tr
-                td.font-weight-bold(colspan='2') Tổng:
-                td 400
-                td 640s
-          a(
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://drive.google.com/file/d/1bAqd3j3KpwoGsbdzbQ4QJrfbO6WpWokt/view?usp=sharing')
-            | Xem thể lệ cuộc thi tại đây
-        .col-lg-4.mt-5.mt-lg-0
-          .d-flex.align-items-center
-            img(src="https://via.placeholder.com/64" alt="64x64")
-            .ml-3
-              div Nguyễn Thành Lộc
-              div ID: 273593068
-              div Hạng: 1
-          .border.rounded.p-3.mt-3
-            div
-              span Khối: 12
-              span.ml-3 Lớp: 12A3
-            div Trường: THPT Võ Thị Sáu
-            div Huyện: Đất Đỏ
-          .text-primary.font-weight-bold.mt-4 Xếp hạng Tuần 1
-          ul.list-group.mt-2
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top1tuan" role="button" aria-expanded="false")
-                .font-weight-bold 1. Nguyễn Thành Lộc
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 400
-                  .col-7 Thời gian: 640s
-                #top1tuan.collapse
-                  .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top2tuan" role="button" aria-expanded="false")
-                .font-weight-bold 2. Nguyễn Lộc Thành
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 399
-                  .col-7 Thời gian: 639s
-                #top2tuan.collapse
-                  .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
-          .text-primary.font-weight-bold.mt-4 Xếp hạng Đợt 1
-          ul.list-group.mt-2
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top1dot" role="button" aria-expanded="false")
-                .font-weight-bold 1. Nguyễn Thành Lộc
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 400
-                  .col-7 Thời gian: 640s
-                #top1dot.collapse
-                  .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top2dot" role="button" aria-expanded="false")
-                .font-weight-bold 2. Nguyễn Lộc Thành
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 399
-                  .col-7 Thời gian: 639s
-                #top2dot.collapse
-                  .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
+      h4(style="color: #3d5170").font-weight-bold THÔNG TIN HỌC VIÊN
+      form(action="/users/register" method="POST").row
+        .col-md-4.form-group
+          input.form-control(required name="name" type="text" placeholder="Họ và tên" value=user.name)
+        .col-md-4.form-group
+          input.form-control(required name="birthday" type="text" placeholder="Ngày sinh" value=user.birthday)
+        .col-md-4.form-group
+          .fake__select.dropdown
+            button#abc.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+              input.border-0.user-select-none(readonly name="district" type="text" value=user.sex style='outline: none')
+              span.material-icons(style='font-size: inherit') keyboard_arrow_down
+            .dropdown-menu
+              .dropdown-item Nam
+              .dropdown-item Nữ
+        .col-md-4.form-group
+          select.form-control(name="province" value=user.province)
+            option.d-none Tỉnh Bà Rịa - Vũng Tàu
+        .col-md-4.form-group
+          .fake__select.dropdown
+            button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+              input.border-0.user-select-none(readonly name="district" type="text" value=user.district style='outline: none')
+              span.material-icons(style='font-size: inherit') keyboard_arrow_down
+            .dropdown-menu
+              .dropdown-item Thành phố Vũng Tàu
+              .dropdown-item Thành phố Bà Rịa
+              .dropdown-item Huyện Châu Đức
+              .dropdown-item Huyện Xuyên Mộc
+              .dropdown-item Huyện Long Điền
+              .dropdown-item Huyện Đất Đỏ
+              .dropdown-item Thị xã Phú Mỹ
+              .dropdown-item Huyện Côn Đảo
+          //- input.form-control(readonly name="district" type="text" placeholder="Quận/Huyện" value=user.district)
+          //- select.form-control(name="district")
+          //-   option(value='-1').d-none Quận/Huyện
+          //-   option Thành phố Vũng Tàu
+          //-   option Thành phố Bà Rịa
+          //-   option Huyện Châu Đức
+          //-   option Huyện Xuyên Mộc
+          //-   option Huyện Long Điền
+          //-   option Huyện Đất Đỏ
+          //-   option Thị xã Phú Mỹ
+          //-   option Huyện Côn Đảo
+        .col-md-4.form-group
+          select.form-control(name="school" value=user.school)
+            option(value='-1').d-none Cấp
+            option Trung học cơ sở
+            option Trung học phổ thông
+        .col-md-4.form-group
+          input.form-control(required name="nameSchool" type="text" placeholder="Tên trường" value=user.nameSchool)
+        .col-md-4.form-group
+          select.form-control(name="grade" value=user.grade)
+            option(value='-1').d-none Khối
+            option Khối 6
+            option Khối 7
+            option Khối 8
+            option Khối 9
+            option Khối 10
+            option Khối 11
+            option Khối 12
+        .col-md-4.form-group
+          input.form-control(required name="classRoom" type="text" placeholder="Tên lớp" value=user.classRoom)
+        .col-md-4.form-group
+          input.form-control(readonly name="identity" type="text" placeholder="Chứng minh nhân dân" value=user.identity)
+        .col-md-4.form-group
+          input.form-control(readonly name="email" type="email" placeholder="Địa chỉ email" value=user.email)

@@ -2,7 +2,7 @@ const router = require('express').Router();
 const userController = require('../controllers/userController');
 const auth = require('../middleware/auth');
 
-router.route('/me/:id')
+router.route('/me')
   .get(auth, userController.getUser);
 
 router.route('/logout')

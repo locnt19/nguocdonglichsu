@@ -22,11 +22,12 @@ exports.getAllUsers = (req, res) => {
 };
 
 exports.getUser = (req, res) => {
-  User.findById(req.params.id)
-    .then(user => res.send(user))
-    .catch(error => {
-      res.send(error)
-    })
+  res.render('me.pug', { title: 'Hồ sơ cá nhân' })
+  // User.findById(req.params.id)
+  //   .then(user => res.send(user))
+  //   .catch(error => {
+  //     res.send(error)
+  //   })
 };
 
 exports.create = async (req, res) => {

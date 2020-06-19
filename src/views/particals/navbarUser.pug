@@ -1,0 +1,16 @@
+nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
+  a.navbar-brand.font-weight-bold.mr-0(href='/' style="color: #3d5170") STEPPING BACK IN HISTORY
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto
+      li.nav-item
+        a.nav-link(href='/ready') Dự thi
+      li.nav-item.dropdown
+        if user
+          a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            span #{user.name}
+          .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownMenuLink')
+            a.dropdown-item(href='../users/me') Hồ sơ
+            a.dropdown-item(href='../users/me') Đổi mật khẩu
+            a.dropdown-item(href='../users/logout') Đăng xuất

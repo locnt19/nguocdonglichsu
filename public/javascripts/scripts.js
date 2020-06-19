@@ -12,5 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('callback: %s', message);
       }
     }).showToast();
+  };
+
+  const $fakeSelect = document.querySelectorAll('.fake__select');
+  if ($fakeSelect.length) {
+    console.log('has');
   }
+
 })
