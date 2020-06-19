@@ -1,10 +1,4 @@
 *,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 .h1,
 .h2,
 .h3,
@@ -12,11 +6,21 @@ h6,
 .h5,
 .h6,
 button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 input,
 optgroup,
 select,
 textarea {
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a {
+  font-weight: 500;
 }
 
 .form-control {
@@ -34,7 +38,7 @@ body {
 }
 
 .bg__image__page2 {
-  background: url('../images/login__background.png') right center no-repeat #fafafa
+  background: url('../images/login__background.png') right center no-repeat #fafafa;
 }
 
 .login__container {
@@ -61,13 +65,17 @@ body {
   background-color: #c4183c;
 }
 
-.admin__sidebar .nav-link {
-  color: inherit
+.fake__select input:disabled {
+  background-color: transparent;
 }
 
-.admin__sidebar .nav-link:hover,
-.admin__sidebar .nav-link.active {
-  color: #007bff
+.admin__sidebar .nav-link {
+  color: inherit;
+}
+
+.admin__sidebar .nav-link.active,
+.admin__sidebar .nav-link:hover {
+  color: #007bff;
 }
 
 @media screen and (min-width: 768px) {

@@ -5,6 +5,8 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
   #navbarNav.collapse.navbar-collapse
     ul.navbar-nav.ml-auto
       li.nav-item
+        a.nav-link(href='/') Trang chủ
+      li.nav-item
         a.nav-link(href='/ready') Dự thi
       li.nav-item.dropdown
         if user
@@ -12,5 +14,5 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
             span #{user.name}
           .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownMenuLink')
             a.dropdown-item(href='../users/me') Hồ sơ
-            a.dropdown-item(href='../users/me') Đổi mật khẩu
+            a.dropdown-item(href='../users/change-password') Đổi mật khẩu
             a.dropdown-item(href='../users/logout') Đăng xuất

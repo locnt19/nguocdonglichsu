@@ -1,5 +1,6 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
 
 exports.templateLogin = (req, res) => {
   if (req.cookies.token) {
@@ -15,6 +16,10 @@ exports.templateRegister = (req, res) => {
   res.render('register.pug', { title: 'Đăng ký', message: req.flash() });
 }
 
+exports.templateChangePassword = (req, res) => {
+  res.render('change-password.pug', { title: 'Đổi mật khẩu', message: req.flash() });
+}
+
 exports.getAllUsers = (req, res) => {
   User.find({})
     .then(user => res.status(200).send(user))
@@ -23,24 +28,49 @@ exports.getAllUsers = (req, res) => {
 
 exports.getUser = (req, res) => {
   res.render('me.pug', { title: 'Hồ sơ cá nhân' })
-  // User.findById(req.params.id)
-  //   .then(user => res.send(user))
-  //   .catch(error => {
-  //     res.send(error)
-  //   })
 };
+
+exports.changePassword = async (req, res) => {
+  console.log('run change password');
+
+  try {
+    const data = {
+      email: req.body.email,
+      oldPassword: req.body.old_password,
+      newPassword: req.body.new_password
+    };
+    // console.log('data', { data });
+    const user = await User.findByCredentials(data.email, data.oldPassword); // check email và mật khẩu cũ
+    console.log('user', { user });
+    const result = await User.findOneAndUpdate({ email: data.email }, {
+      $set: {
+        password: await User.hashPassword(data.newPassword)
+      }
+    });
+    console.log('result', { result });
+    req.flash('message', 'Đổi mật khẩu thành công');
+    res.redirect('/');
+  } catch (error) {
+    req.flash('message', error);
+    res.render('change-password.pug', {
+      message: req.flash()
+    })
+  }
+}
+
 
 exports.create = async (req, res) => {
   try {
     const user = new User(req.body);
     console.log(user);
     const userExists = await User.findOne({ email: req.body.email });
-    console.log(userExists);
-
     if (userExists) throw new Error('Email đã tồn tại.');
+    for (key in req.body) {
+      if (req.body[key].length === 0) {
+        throw new Error('Vui lòng nhập đầy đủ thông tin.');
+      }
+    }
     await user.save();
-    // const token = await user.generateToken(); // api
-    // res.status(201).send({ user, token }) // api
     req.flash('message', 'Đăng ký thành công!');
     res.redirect('/users/login');
   } catch (error) {
@@ -55,22 +85,15 @@ exports.create = async (req, res) => {
 exports.login = async (req, res) => {
   try {
     const { email, password } = req.body;
-    let user = await User.findByCredentials(email, password);
-    if (!user) {
-      // res.status(401).send({ error: 'Login failed! Check authentication credentials' }) // api
-      throw new Error('Người dùng không tồn tại.')
-    }
+    const user = await User.findByCredentials(email, password);
     const token = await user.generateToken();
     res.cookie('token', token, {
       // expires: new Date(Date.now() + 60 * 60 * 1000),
       httpOnly: true
     });
-
-    // res.status(200).send({ user, token }) // api
     req.flash('message', `Chào mừng ${user.name} đã trở lại!`);
     res.redirect('/');
   } catch (error) {
-    // res.status(400).send(error) // api
     req.flash('message', error);
     res.render('login.pug', {
       message: req.flash(),

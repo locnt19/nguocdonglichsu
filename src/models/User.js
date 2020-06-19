@@ -84,6 +84,11 @@ userSchema.pre('save', async function (next) {
   next();
 });
 
+userSchema.methods.hashPassword = async function (password) {
+  const hashed = await bcrypt.hash(password, 8)
+  return hashed;
+};
+
 // generate an auth token for the user
 userSchema.methods.generateToken = async function () {
   const user = this;
@@ -97,11 +102,11 @@ userSchema.methods.generateToken = async function () {
 userSchema.statics.findByCredentials = async function (email, password) {
   const user = await this.findOne({ email });
   if (!user) {
-    throw new Error({ error: 'Invalid login credentials.' })
+    throw new Error('Tài khoản không tồn tại.')
   };
   const isPasswordMatch = await bcrypt.compare(password, user.password);
   if (!isPasswordMatch) {
-    throw new Error({ error: 'Invalid login credentials.' })
+    throw new Error('Sai mật khẩu.')
   };
   return user;
 };

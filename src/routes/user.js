@@ -8,8 +8,9 @@ router.route('/me')
 router.route('/logout')
   .get(auth, userController.logout);
 
-// router.route('/logoutall')
-//   .get(auth, userController.logoutAll);
+router.route('/change-password')
+  .get(auth, userController.templateChangePassword)
+  .post(auth, userController.changePassword);
 
 router.route('/register')
   .get(userController.templateRegister)
