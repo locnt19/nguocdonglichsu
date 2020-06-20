@@ -46,4 +46,44 @@ document.addEventListener('DOMContentLoaded', function () {
       $(this).addClass('is-invalid');
     }
   })
-})
+
+  // coming soon
+  var comingSoon = {
+    // end: 1592636400, // Timestamp,
+    end: new Date("06 20 2020 14:25:00 GMT+0700"),
+    day: $('#comingsoon_day'),
+    hr: $('#comingsoon_hr'),
+    min: $('#comingsoon_min'),
+    sec: $('#comingsoon_sec'),
+  }
+
+  $(window).on('load', function () {
+    comingSoon.end = Math.floor(comingSoon.end / 1000); // Convert UNIX timestamp + calculate remaining time
+    comingSoon.remain = comingSoon.end - Math.floor(Date.now() / 1000);
+    if (comingSoon.remain > 0) {
+      comingSoon.ticker = setInterval(function () {
+        console.log('RUN');
+        comingSoon.remain--;
+        if (comingSoon.remain <= 0) {
+          clearInterval(comingSoon.ticker);
+          comingSoon.remain = 0;
+          $('#comingsoon').addClass('d-none')
+          $('#comingsoon_ok').removeClass('d-none')
+        }
+        // Calculate remaining time
+        var secs = comingSoon.remain;
+        var days = Math.floor(secs / 86400); // 1 day = 60 secs * 60 mins * 24 hrs
+        secs -= days * 86400;
+        var hours = Math.floor(secs / 3600); // 1 hr = 60 secs * 60 mins
+        secs -= hours * 3600;
+        var mins = Math.floor(secs / 60); // 1 min = 60 secs
+        secs -= mins * 60;
+        // Update HTML
+        comingSoon.day.text(days);
+        comingSoon.hr.text(hours);
+        comingSoon.min.text(mins);
+        comingSoon.sec.text(secs);
+      }, 1000);
+    }
+  })
+});

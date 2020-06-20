@@ -2,7 +2,24 @@ extends layout
 
 block content
   .container.py-3.min-vh-100
-    .card.question__wrapper.middle__center.text-center.p-4.p-md-5
-      h3 P1: Ngược dòng thời gian
-      .text-center
-        a.btn.btn-primary(href="/section-1") Bắt đầu
+    .middle__center__md.question__wrapper.mt-5.mx-auto
+      .card.text-center.p-4.p-sm-5
+        #comingsoon_ok.d-none
+          h3 P1: Ngược dòng thời gian
+          .text-center
+            a.btn.btn-primary(href="/section-1") Bắt đầu
+        #comingsoon
+          h5.font-weight-bold COMING SOON
+          .d-flex.mt-2.justify-content-around.justify-content-lg-center
+            .mx-lg-4
+              .font-weight-bold#comingsoon_day
+              div days
+            .mx-lg-4
+              .font-weight-bold#comingsoon_hr
+              div hours
+            .mx-lg-4
+              .font-weight-bold#comingsoon_min
+              div minutes
+            .mx-lg-4
+              .font-weight-bold#comingsoon_sec
+              div seconds

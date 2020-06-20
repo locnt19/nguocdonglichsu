@@ -1,0 +1,66 @@
+extends layout-admin.pug
+
+block scripts
+  script.
+    function onOffForm(formName) {
+      $(`${formName} .thoigianthi_edit`).click(function () {
+        $(this).addClass('d-none')
+        $(`${formName} input`).removeAttr('readonly')
+        $(`${formName} .actions`).removeClass('d-none')
+      })
+      $(`${formName} .thoigianthi_cancel`).click(function () {
+        $(`${formName} input`).attr('readonly', true)
+        $(`${formName} .actions`).addClass('d-none')
+        $(`${formName} .thoigianthi_edit`).removeClass('d-none')
+      })
+    }
+    onOffForm('#thoigianthi_dot1');
+    onOffForm('#thoigianthi_dot2');
+
+block content
+  h4.font-weight-bold(style='color: #3d5170; padding-left: 15px') Thời gian thi
+  .row.m-0
+    .col-md-6.col-lg-5.p-0.px-md-3
+      .card.p-4
+        h5.font-weight-bold Đợt 1
+        form#thoigianthi_dot1(method='POST')
+          .row
+            .col-12 Ngày bắt đầu
+            .col-6
+              //- input.d-none(name='_id' value='abc1')
+              input.d-none(name='name' value='Đợt 1')
+              input.form-control(name='startDate' type='date' readonly)
+            .col-6
+              input.form-control(name='startTime' type='time' readonly)
+            .col-12.mt-4 Ngày kết thúc
+            .col-6
+              input.form-control(name='finishDate' type='date' readonly)
+            .col-6
+              input.form-control(name='finishTime' type='time' readonly)
+            .col-12.mt-4.actions.d-none.text-right
+              button.btn.btn-primary.thoigianthi_submit(type='submit') OK
+              button.btn.btn-link.thoigianthi_cancel(type='reset') Hủy
+            .col-12.mt-4.text-center
+              button.btn.btn-primary(type='button').thoigianthi_edit Chỉnh sửa
+    .col-md-6.col-lg-5.p-0.px-md-3.mt-4.mt-md-0
+      .card.p-4
+        h5.font-weight-bold Đợt 2
+        form#thoigianthi_dot2(method='POST')
+          .row
+            .col-12 Ngày bắt đầu
+            .col-6
+              //- input.d-none(name='_id' value='abc2')
+              input.d-none(name='name' value='Đợt 2')
+              input.form-control(name='startDate' type='date' readonly)
+            .col-6
+              input.form-control(name='startTime' type='time' readonly)
+            .col-12.mt-4 Ngày kết thúc
+            .col-6
+              input.form-control(name='finishDate' type='date' readonly)
+            .col-6
+              input.form-control(name='finishTime' type='time' readonly)
+            .col-12.mt-4.actions.d-none.text-right
+              button.btn.btn-primary.thoigianthi_submit(type='submit') OK
+              button.btn.btn-link.thoigianthi_cancel(type='reset') Hủy
+            .col-12.mt-4.text-center
+              button.btn.btn-primary(type='button').thoigianthi_edit Chỉnh sửa

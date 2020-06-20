@@ -1,11 +1,14 @@
 const router = require('express').Router();
+const adminController = require('../controllers/adminController');
 
-router.get('/', (req, res) => {
-	res.render('admin/dashboard.pug')
-});
+router.route('/')
+  .get(adminController.templateDashboard);
 
-router.get('/users', (req, res) => {
-	res.render('admin/users.pug')
-});
+router.route('/users')
+  .get(adminController.templateUsers)
+
+router.route('/thoi-gian-thi')
+  .get(adminController.templateThoiGianThi)
+  .post(adminController.setThoiGianThi)
 
 module.exports = router;
