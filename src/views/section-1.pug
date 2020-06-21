@@ -2,33 +2,38 @@ extends layout
 
 block content
   .container.py-3.min-vh-100
-    .middle__center__md.question__wrapper.mx-auto
+    //- .middle__center__md.question__wrapper.mx-auto
+    .question__wrapper.mx-auto
       h3 P1: Ngược dòng thời gian
       .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
-        h4.question__question.font-weight-bold Question 1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, pariatur? Eaque quo neque incidunt ipsam.
-        .question__answer
-          .custom-control.custom-radio.mt-2
-            input.custom-control-input#answer1(type='radio' name='answer')
-            label.custom-control-label.h5(for="answer1") Kìa con  bướm vàng Lorem ipsum dolor sit amet.
-          .custom-control.custom-radio.mt-2
-            input.custom-control-input#answer2(type='radio' name='answer')
-            label.custom-control-label.h5(for="answer2") Kìa con  bướm vàng Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eaque.
-          .custom-control.custom-radio.mt-2
-            input.custom-control-input#answer3(type='radio' name='answer')
-            label.custom-control-label.h5(for="answer3") Kìa con  bướm vàng Lorem, ipsum dolor.
-          .custom-control.custom-radio.mt-2
-            input.custom-control-input#answer4(type='radio' name='answer')
-            label.custom-control-label.h5(for="answer4") Kìa con  bướm vàng Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        .text-center
-          button.btn.btn-primary.question__submit.px-5.mt-4#time_action_next Next
-        .mt-3
-          .d-flex.align-items-center.justify-content-between
-            .question__time__sum
-              span(style='font-size: inherit').material-icons.mr-1 alarm
-              span#time_summary 0
-            .h5.m-0.question__time
-              span#time_countdown 20
-            span 1 / 20
+        if exams
+          input.form-control(value=exams._id)
+          input.form-control(value=exams.name)
+          -for(var i of exams.questions)
+            h4.question__question.font-weight-bold #{i.question}
+            .question__answer
+              .custom-control.custom-radio.mt-2
+                input.custom-control-input(id=`${i.stt}-a` type='radio' name=i.stt)
+                label.custom-control-label.h5(for=`${i.stt}-a`) #{i.a}
+              .custom-control.custom-radio.mt-2
+                input.custom-control-input(id=`${i.stt}-b` type='radio' name=i.stt)
+                label.custom-control-label.h5(for=`${i.stt}-b`) #{i.b}
+              .custom-control.custom-radio.mt-2
+                input.custom-control-input(id=`${i.stt}-c` type='radio' name=i.stt)
+                label.custom-control-label.h5(for=`${i.stt}-c`) #{i.c}
+              .custom-control.custom-radio.mt-2
+                input.custom-control-input(id=`${i.stt}-d` type='radio' name=i.stt)
+                label.custom-control-label.h5(for=`${i.stt}-d`) #{i.d}
+          .text-center
+            button.btn.btn-primary.question__submit.px-5.mt-4#time_action_next Next
+          .mt-3
+            .d-flex.align-items-center.justify-content-between
+              .question__time__sum
+                span(style='font-size: inherit').material-icons.mr-1 alarm
+                span#time_summary 0
+              .h5.m-0.question__time
+                span#time_countdown 20
+              span 1 / #{exams.questions.length}
 
 block scripts
   script.
