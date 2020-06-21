@@ -6,18 +6,26 @@ exports.templateLogin = (req, res) => {
   if (req.cookies.token) {
     res.redirect('/');
   };
-  res.render('login.pug', { title: 'Đăng nhập', message: req.flash() });
+  res.render('login.pug', { title: 'Đăng nhập' });
 }
 
 exports.templateRegister = (req, res) => {
   if (req.cookies.token) {
     res.redirect('/');
   };
-  res.render('register.pug', { title: 'Đăng ký', message: req.flash() });
+  res.render('register.pug', { title: 'Đăng ký' });
 }
 
+exports.templateProfile = (req, res) => {
+  res.render('me.pug', { title: 'Thông tin cá nhân' })
+};
+
 exports.templateChangePassword = (req, res) => {
-  res.render('change-password.pug', { title: 'Đổi mật khẩu', message: req.flash() });
+  res.render('change-password.pug', { title: 'Đổi mật khẩu' });
+}
+
+exports.templateRanking = (req, res) => {
+  res.render('ranking.pug', { title: 'Xếp hạng của tôi' });
 }
 
 exports.getAllUsers = (req, res) => {
@@ -26,9 +34,6 @@ exports.getAllUsers = (req, res) => {
     .catch(error => res.status(400).send(error))
 };
 
-exports.getUser = (req, res) => {
-  res.render('me.pug', { title: 'Hồ sơ cá nhân' })
-};
 
 exports.setUser = async (req, res) => {
   try {

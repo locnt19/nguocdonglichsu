@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   var message = document.getElementById('server-message') ? document.getElementById('server-message').textContent : null;
   if (message) {
-    console.log('raw: %s', message);
+    console.log('message: ', message);
     Toastify({
       text: message,
       gravity: 'top',
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       duration: 3000,
       callback: function () {
         message = null;
-        console.log('callback: %s', message);
+        // console.log('callback: %s', message);
       }
     }).showToast();
   };
@@ -49,8 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // coming soon
   var comingSoon = {
-    // end: 1592636400, // Timestamp,
-    end: new Date("06 20 2020 14:25:00 GMT+0700"),
+    end: new Date($('#comingsoon_ok').val()),
     day: $('#comingsoon_day'),
     hr: $('#comingsoon_hr'),
     min: $('#comingsoon_min'),
@@ -62,13 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
     comingSoon.remain = comingSoon.end - Math.floor(Date.now() / 1000);
     if (comingSoon.remain > 0) {
       comingSoon.ticker = setInterval(function () {
-        console.log('RUN');
+        // console.log('RUN');
         comingSoon.remain--;
         if (comingSoon.remain <= 0) {
           clearInterval(comingSoon.ticker);
           comingSoon.remain = 0;
-          $('#comingsoon').addClass('d-none')
-          $('#comingsoon_ok').removeClass('d-none')
+          window.location.href = '/exams'
         }
         // Calculate remaining time
         var secs = comingSoon.remain;

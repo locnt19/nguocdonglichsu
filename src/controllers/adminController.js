@@ -24,7 +24,7 @@ exports.getThoiGianThi = (req, res) => {
 
 exports.setThoiGianThi = async (req, res) => {
   try {
-    console.log(req.body);
+    // console.log(req.body);
     const thoiGianThiMoi = new ThoiGianThi(req.body);
     await thoiGianThiMoi.save();
     req.flash('message', 'Tạo thành công')

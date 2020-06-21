@@ -15,7 +15,11 @@ const thoiGianThiSchema = mongoose.Schema({
   },
   finishTime: {
     type: String
+  },
+  timeZone: {
+    type: String,
+    default: 'UTC+7'
   }
 }, { timestamps: true });
 
-module.exports = mongoose.model('ThoiGianThi', thoiGianThiSchema);
+module.exports = mongoose.model('ThoiGianThi', thoiGianThiSchema, 'ThoiGianThi');

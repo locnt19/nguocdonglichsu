@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .container.py-3.min-vh-100
+    .middle__center__md.question__wrapper.mt-5.mx-auto
+      .card.text-center.p-4.p-sm-5
+        input.d-none#comingsoon_ok(value=`${time.startDate} ${time.startTime} ${time.timeZone}`)
+        #comingsoon
+          h5.font-weight-bold COMING SOON
+          .d-flex.mt-2.justify-content-around.justify-content-lg-center
+            .mx-lg-4
+              .font-weight-bold#comingsoon_day
+              div days
+            .mx-lg-4
+              .font-weight-bold#comingsoon_hr
+              div hours
+            .mx-lg-4
+              .font-weight-bold#comingsoon_min
+              div minutes
+            .mx-lg-4
+              .font-weight-bold#comingsoon_sec
+              div seconds
