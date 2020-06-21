@@ -23,6 +23,8 @@ html
     block styles
   body
   include particals/navbar.pug
+  if flash.message
+    #server-message.d-none= flash.message
   .container-fluid
     .row
       .col-lg-2.pl-lg-0
@@ -37,22 +39,4 @@ html
     script(src='//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js')
     script(src='/javascripts/toastify.js')
     script(src='/javascripts/scripts.js')
-
-    //- script.
-    //-   (function(){
-    //-     var message = document.getElementById('server-message').textContent;
-    //-     if(message){
-    //-       console.log('raw: %s', message);
-    //-       Toastify({
-    //-         text: message,
-    //-         gravity: 'top',
-    //-         position: 'right',
-    //-         duration: 3000,
-    //-         callback: function(){
-    //-           message = null;
-    //-           console.log('callback: %s', message);
-    //-         }
-    //-       }).showToast();
-    //-     }
-    //-   })();
     block scripts

@@ -2,28 +2,19 @@ const mongoose = require('mongoose');
 
 const thoiGianThiSchema = mongoose.Schema({
   name: {
-    type: String,
-    required: true
+    type: String
   },
   startDate: {
-    type: Date,
-    default: Date.now(),
-    required: true
+    type: String
   },
   startTime: {
-    type: Date,
-    default: Date.now(),
-    required: true
+    type: String
   },
   finishDate: {
-    type: Date,
-    default: Date.now(),
-    required: true
+    type: String
   },
   finishTime: {
-    type: Date,
-    default: Date.now(),
-    required: true
+    type: String
   }
 }, { timestamps: true });
 

@@ -32,11 +32,9 @@ exports.getUser = (req, res) => {
 
 exports.setUser = async (req, res) => {
   try {
-    // console.log(req.body);
-    const a = await User.findOneAndUpdate({ email: req.body.email },
+    await User.findOneAndUpdate({ email: req.body.email },
       req.body
     );
-    console.log(a);
     req.flash('message', 'Chỉnh sửa thông tin thành công!');
     res.redirect('/users/me');
   } catch (error) {
