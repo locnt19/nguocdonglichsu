@@ -7,8 +7,8 @@ block content
       h3 P1: Ngược dòng thời gian
       .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
         if exams
-          input.form-control(value=exams._id)
-          input.form-control(value=exams.name)
+          input.form-control.d-none(value=exams._id)
+          input.form-control.d-none(value=exams.name)
           -for(var i of exams.questions)
             h4.question__question.font-weight-bold #{i.question}
             .question__answer
