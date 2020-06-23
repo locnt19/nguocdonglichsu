@@ -52,15 +52,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* .question__wrapper {
-  width: 90%;
-} */
-
 .question__time {
-  /* font-size: 32px; */
   font-weight: 700;
   color: #c4183c;
-  /* background-color: #c4183c; */
+}
+
+.question__summary {
+  width: 250px;
 }
 
 .fake__select input {
