@@ -2,30 +2,32 @@ extends layout
 
 block content
   .container.py-3.min-vh-100
-    //- .middle__center__md.question__wrapper.mx-auto
-    .question__wrapper.mx-auto
+    .middle__center__md.question__wrapper.mx-auto
       h3 P1: Ngược dòng thời gian
-      .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
+      form.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
         if exams
-          input.form-control.d-none(value=exams._id)
-          input.form-control.d-none(value=exams.name)
+          input(name='exam' value=exams._id)
+          input(name='user' value=user._id)
+          input#submit_time_summary(name='time' value='0')
           -for(var i of exams.questions)
-            h4.question__question.font-weight-bold #{i.question}
-            .question__answer
-              .custom-control.custom-radio.mt-2
-                input.custom-control-input(id=`${i.stt}-a` type='radio' name=i.stt)
-                label.custom-control-label.h5(for=`${i.stt}-a`) #{i.a}
-              .custom-control.custom-radio.mt-2
-                input.custom-control-input(id=`${i.stt}-b` type='radio' name=i.stt)
-                label.custom-control-label.h5(for=`${i.stt}-b`) #{i.b}
-              .custom-control.custom-radio.mt-2
-                input.custom-control-input(id=`${i.stt}-c` type='radio' name=i.stt)
-                label.custom-control-label.h5(for=`${i.stt}-c`) #{i.c}
-              .custom-control.custom-radio.mt-2
-                input.custom-control-input(id=`${i.stt}-d` type='radio' name=i.stt)
-                label.custom-control-label.h5(for=`${i.stt}-d`) #{i.d}
+            .tabs(id=`${i.stt}` style='display: none')
+              h4.question__question.font-weight-bold #{i.question}
+              .question__answer
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${i.stt}-a` type='radio' name=i.stt value='a')
+                  label.custom-control-label.h5(for=`${i.stt}-a`) #{i.a}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${i.stt}-b` type='radio' name=i.stt value='b')
+                  label.custom-control-label.h5(for=`${i.stt}-b`) #{i.b}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${i.stt}-c` type='radio' name=i.stt value='c')
+                  label.custom-control-label.h5(for=`${i.stt}-c`) #{i.c}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${i.stt}-d` type='radio' name=i.stt value='d')
+                  label.custom-control-label.h5(for=`${i.stt}-d`) #{i.d}
           .text-center
-            button.btn.btn-primary.question__submit.px-5.mt-4#time_action_next Next
+            button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
+            button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài
           .mt-3
             .d-flex.align-items-center.justify-content-between
               .question__time__sum
@@ -33,35 +35,9 @@ block content
                 span#time_summary 0
               .h5.m-0.question__time
                 span#time_countdown 20
-              span 1 / #{exams.questions.length}
+              div
+                span#current_question 1
+                span &nbsp; / #{exams.questions.length}
 
 block scripts
-  script.
-    // countdown bài dự thi
-    var counter = {
-      summary: 0, // Tổng thời gian  trả lời câu hỏi của thí sinh
-      end: 20, // Thời gian trả lời mỗi câu hỏi
-      action_next: $('#time_action_next'),
-      innerHTML_end: $('#time_countdown'),
-      innerHTML_summary: $('#time_summary'),
-    };
-    $(window).on('load', function () {
-      counter.end = 20; // 
-      if (counter.end > 0) {
-        counter.ticker = setInterval(function () {
-          //- console.log('run-section-1');
-          counter.end--;
-          counter.summary++;
-          if (counter.end == 0) {
-            counter.end = 20; // reset thời gian sau 1 câu hỏi
-          }
-          // if (counter.summary == 200) {
-          if (counter.summary == 60) {
-            clearInterval(counter.ticker);
-            counter.end = 0;
-          }
-          counter.innerHTML_summary.text(counter.summary);
-          counter.innerHTML_end.text(counter.end);
-        }, 1000)
-      }
-    })
+  script(src='/javascripts/section-1.js')
