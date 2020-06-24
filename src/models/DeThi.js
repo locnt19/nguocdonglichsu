@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const examSchema = mongoose.Schema({
+const deThiSchema = mongoose.Schema({
   name: {
     type: String
   },
@@ -28,6 +28,6 @@ const examSchema = mongoose.Schema({
     },
   }
   ],
-});
+}, { timestamps: true });
 
-module.exports = mongoose.model('exam', examSchema);
+module.exports = mongoose.model('DeThi', deThiSchema, 'DeThi');
