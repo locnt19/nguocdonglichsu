@@ -4,27 +4,29 @@ block content
   .container.py-3.min-vh-100
     .middle__center__md.question__wrapper.mx-auto
       h3 P1: Ngược dòng thời gian
-      form.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
+      form(action='/exams/summary' method='POST').card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
         if exams
-          input(name='exam' value=exams._id)
+          input(name='exam' value=exams.code)
           input(name='user' value=user._id)
           input#submit_time_summary(name='time' value='0')
-          -for(var i of exams.questions)
-            .tabs(id=`${i.stt}` style='display: none')
-              h4.question__question.font-weight-bold #{i.question}
+          -for(var i = 0; i < exams.questions.length; i++)
+            -var item = exams.questions[i]
+            .tabs(id=`${item.code}` style='display: none')
+              input(name=`answers[${i}][code]` value=`${item.code}`)
+              h4.question__question.font-weight-bold #{item.question}
               .question__answer
                 .custom-control.custom-radio.mt-2
-                  input.custom-control-input(id=`${i.stt}-a` type='radio' name=i.stt value='a')
-                  label.custom-control-label.h5(for=`${i.stt}-a`) #{i.a}
+                  input.custom-control-input(id=`${item.code}-a` type='radio' name=`answers[${i}][answer]` value='a')
+                  label.custom-control-label.h5(for=`${item.code}-a`) #{item.a}
                 .custom-control.custom-radio.mt-2
-                  input.custom-control-input(id=`${i.stt}-b` type='radio' name=i.stt value='b')
-                  label.custom-control-label.h5(for=`${i.stt}-b`) #{i.b}
+                  input.custom-control-input(id=`${item.code}-b` type='radio' name=`answers[${i}][answer]` value='b')
+                  label.custom-control-label.h5(for=`${item.code}-b`) #{item.b}
                 .custom-control.custom-radio.mt-2
-                  input.custom-control-input(id=`${i.stt}-c` type='radio' name=i.stt value='c')
-                  label.custom-control-label.h5(for=`${i.stt}-c`) #{i.c}
+                  input.custom-control-input(id=`${item.code}-c` type='radio' name=`answers[${i}][answer]` value='c')
+                  label.custom-control-label.h5(for=`${item.code}-c`) #{item.c}
                 .custom-control.custom-radio.mt-2
-                  input.custom-control-input(id=`${i.stt}-d` type='radio' name=i.stt value='d')
-                  label.custom-control-label.h5(for=`${i.stt}-d`) #{i.d}
+                  input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
+                  label.custom-control-label.h5(for=`${item.code}-d`) #{item.d}
           .text-center
             button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
             button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài

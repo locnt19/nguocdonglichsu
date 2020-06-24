@@ -17,4 +17,9 @@ router.use('/users', userRoutes);
 
 router.use('/exams', auth, examRoutes);
 
+router.post('/api/test', (req, res) => {
+  console.log(JSON.stringify(req.body))
+  res.json(req.body)
+});
+
 module.exports = router;

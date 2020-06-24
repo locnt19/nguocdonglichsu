@@ -15,6 +15,6 @@ router.route('/section-1')
 
 router.route('/summary')
   .get(checkTime, examController.templateSummary)
-  .post(checkTime, examController.templateSummary)
+  .post(checkTime, examController.nopBaiThi)
 
 module.exports = router

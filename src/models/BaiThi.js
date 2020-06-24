@@ -1,27 +1,14 @@
 const mongoose = require('mongoose');
 
 const baiThiSchema = mongoose.Schema({
-  user: {
-    type: mongoose.Types.ObjectId
-  },
-  exam: {
-    type: mongoose.Types.ObjectId
-  },
-  time: {
-    type: String
-  },
-  scope: {
-    type: String
-  },
+  user: { type: mongoose.Schema.Types.ObjectId },
+  exam: { type: String },
+  time: { type: Number, default: 0 },
+  scope: { type: Number, default: 0 },
   answers: [{
-    stt: {
-      type: String
-    },
-    answer: {
-      type: String
-    }
-  }
-  ]
+    code: { type: String, default: null },
+    answer: { type: String, default: null }
+  }]
 }, { timestamp: true });
 
 module.exports = mongoose.model('BaiThi', baiThiSchema, 'BaiThi');

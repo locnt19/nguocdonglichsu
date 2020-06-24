@@ -12,17 +12,24 @@ exports.templateComingSoon = async (req, res) => {
 }
 
 exports.templateSection1 = async (req, res) => {
-  const data = await DeThi.findOne({ name: 'Phần 1' })
+  const data = await DeThi.findOne({ code: 'P01' })
   res.render('section-1.pug', { title: 'Phần 1: Ngược dòng lịch sử', exams: data })
 }
 
 exports.templateSummary = async (req, res) => {
-  const data = await DeThi.findOne({ name: 'Phần 1' })
-  console.log(data)
-  res.render('summary.pug', { title: 'Kết quả thi Phần 1', exams: data })
+  res.render('summary.pug', { title: 'Kết quả thi Phần 1' })
 }
 
 exports.nopBaiThi = async (req, res) => {
-  console.log(req.body)
-  res.render('summary.pug', { title: 'Kết quả thi Phần 1', exams: data })
+  try {
+    console.log('req.body', req.body)
+    const baiThi = new BaiThi(req.body)
+    // console.log('baiThi')
+    // console.log(baiThi)
+    await baiThi.save()
+    // console.log('ok')
+    res.render('summary.pug', { title: 'Đã chấm điểm' })
+  } catch (error) {
+    console.log(error)
+  }
 }
