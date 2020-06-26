@@ -10,7 +10,7 @@ const deThiSchema = mongoose.Schema({
     b: { type: String },
     c: { type: String },
     d: { type: String },
-    true: { type: Number },
+    true: { type: String },
   }],
 }, { timestamps: true });
 

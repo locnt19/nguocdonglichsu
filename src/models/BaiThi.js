@@ -7,8 +7,9 @@ const baiThiSchema = mongoose.Schema({
   scope: { type: Number, default: 0 },
   answers: [{
     code: { type: String, default: null },
-    answer: { type: String, default: null }
+    answer: { type: String, default: null },
+    isTrue: {type: Boolean, default: false }
   }]
-}, { timestamp: true });
+}, { timestamps: true });
 
 module.exports = mongoose.model('BaiThi', baiThiSchema, 'BaiThi');
