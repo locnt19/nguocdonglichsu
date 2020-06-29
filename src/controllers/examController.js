@@ -23,35 +23,40 @@ exports.templateSummary = async (req, res) => {
 
 exports.nopBaiThi = async (req, res) => {
   try {
-    // console.log('req.body', req.body)
     const baiThi = new BaiThi(req.body)
-    // console.log('baiThi')
-    // console.log(baiThi)
-    await baiThi.save()
-    // console.log('ok')
     const deThi = await DeThi.findOne({ code: req.body.exam })
-    // console.log('deThi')
-    // console.log(deThi)
     const questions = deThi.questions // array objects
     const userAnswers = baiThi.answers
-    console.log(userAnswers)
-    let dapAn = []
-    let userTraLoi = []
-    for (const iterator of questions) {
-      dapAn.push({code: iterator.code, answer: iterator.true})
+    const questionsFilltered = []
+    const anwsersFiltered = []
+    for (const i of questions) {
+      questionsFilltered.push({ code: i.code, answer: i.true })
     }
-    for (const iterator of userAnswers) {
-      if(iterator.answer !== null){
-        userTraLoi.push({code: iterator.code, answer: iterator.answer})
+    for (const i of userAnswers) {
+      if (i.answer !== null) {
+        anwsersFiltered.push({ code: i.code, answer: i.answer })
       }
     }
-    console.log('dapAn')
-    console.log(dapAn)
-    console.log('userTraLoi')
-    console.log(userTraLoi)
-    res.render('summary.pug', { title: 'Đã chấm điểm' })
+    const result = compareArray(anwsersFiltered, questionsFilltered)
+    baiThi.scope = result.length * 20
+    baiThi.answersTrue = result
+    await baiThi.save()
+    res.render('summary.pug', { title: 'Đã chấm điểm', examName: deThi.name, time: baiThi.time, scope: baiThi.scope })
   } catch (error) {
     console.log(error)
     res.render('summary.pug', { title: 'Lỗi' })
   }
+}
+
+
+function compareArray(array1, array2) {
+  let result = []
+  array1.forEach(e1 => array2.forEach(e2 => {
+    if (e1.code === e2.code) {
+      if (e1.answer === e2.answer) {
+        result.push(e1)
+      }
+    }
+  }))
+  return result
 }
