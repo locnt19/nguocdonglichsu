@@ -19,6 +19,10 @@ textarea {
   font-family: 'Montserrat', sans-serif;
 }
 
+.btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .navbar a {
   font-weight: 500;
 }
@@ -29,7 +33,18 @@ textarea {
 
 body {
   background: #f5f6f8;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
+
+.bg__body {
+  background: url('../images/bg__body.jpg') center center no-repeat fixed;
+  background-size: cover;
+}
+
+.bg__exams {
+  background: url('../images/bg__exams.jpg') center center no-repeat fixed;
+  background-size: cover;
 }
 
 .bg__image__page {
@@ -38,7 +53,31 @@ body {
 }
 
 .bg__image__page2 {
-  background: url('../images/login__background.png') right center no-repeat #fafafa;
+  background: url('../images/bg__login.png') center right no-repeat #fafafa;
+  background-size: contain;
+}
+
+.image__handle__error {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  .image__handle__error {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image__handle__error {
+    width: 700px;
+    height: 700px;
+  }
 }
 
 .login__container {

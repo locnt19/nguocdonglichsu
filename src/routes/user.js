@@ -3,18 +3,18 @@ const userController = require('../controllers/userController');
 const auth = require('../middleware/auth');
 
 router.route('/me')
-  .get(auth, userController.templateProfile)
-  .post(auth, userController.setUser);
+  .get(auth.isLogged, userController.templateProfile)
+  .post(auth.isLogged, userController.setUser);
 
 router.route('/logout')
-  .get(auth, userController.logout);
+  .get(auth.isLogged, userController.logout);
 
 router.route('/change-password')
-  .get(auth, userController.templateChangePassword)
-  .post(auth, userController.changePassword);
+  .get(auth.isLogged, userController.templateChangePassword)
+  .post(auth.isLogged, userController.changePassword);
 
 router.route('/ranking')
-  .get(auth, userController.templateRanking);
+  .get(auth.isLogged, userController.templateRanking);
 
 router.route('/register')
   .get(userController.templateRegister)

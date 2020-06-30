@@ -1,21 +1,22 @@
 extends layout
 
 block content
-  .container.py-3.min-vh-100
-    .middle__center__md.question__wrapper.mx-auto
-      .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
-        .mx-auto.question__summary
-          .h4.mb-4.font-weight-bold.text-center Kết quả #{examName}
-          .d-flex
-            .font-weight-bold Tổng thời gian: 
-            .ml-auto #{time} giây
-          .d-flex
-            .font-weight-bold Tổng điểm: 
-            .ml-auto #{scope} điểm
-          .text-center.mt-4
-            a(href='/exams/section-1').btn.btn-primary Thi phần tiếp theo sau &nbsp;
-              span#summary_time 10
-              | &nbsp; giây
+  section.bg__exams.min-vh-100
+    .container.py-3
+      .middle__center__md.question__wrapper.mx-auto
+        .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
+          .mx-auto.question__summary
+            .h4.mb-4.font-weight-bold.text-center Kết quả #{examName}
+            .d-flex
+              .font-weight-bold Tổng thời gian: 
+              .ml-auto #{time} giây
+            .d-flex
+              .font-weight-bold Tổng điểm: 
+              .ml-auto #{scope} điểm
+            .text-center.mt-4
+              a(href='/exams/section-1').btn.btn-primary Thi phần tiếp theo sau &nbsp;
+                span#summary_time 10
+                | &nbsp; giây
 
 block scripts
   script(src='/javascripts/summary.js')

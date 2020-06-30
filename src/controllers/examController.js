@@ -1,7 +1,6 @@
 const ThoiGianThi = require('../models/ThoiGianThi')
 const DeThi = require('../models/DeThi')
 const BaiThi = require('../models/BaiThi')
-const { find } = require('../models/ThoiGianThi')
 
 exports.templateReady = async (req, res) => {
   res.render('ready.pug', { title: 'Are you ready?' })

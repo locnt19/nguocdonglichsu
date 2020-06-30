@@ -4,7 +4,7 @@ nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
     span.navbar-toggler-icon
   #navbarNav.collapse.navbar-collapse
     ul.navbar-nav.ml-auto
-      if user
-        li(style='font-weight: 500').navbar-text= user.name
+      if quanTriVien
+        li(style='font-weight: 500').navbar-text [#{quanTriVien.role}] #{quanTriVien.name}
         li.nav-item
-          a.nav-link(href='/users/logout') Logout
+          a.nav-link(href='/admin/logout') Logout

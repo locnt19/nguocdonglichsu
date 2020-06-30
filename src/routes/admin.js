@@ -1,17 +1,35 @@
-const router = require('express').Router();
-const adminController = require('../controllers/adminController');
+const router = require('express').Router()
+const auth = require('../middleware/auth')
+const adminController = require('../controllers/adminController')
 
 router.route('/')
-  .get(adminController.templateDashboard);
+  .get(auth.isAdmin, adminController.templateDashboard)
+
+router.route('/login')
+  .get(adminController.templateLogin)
+  .post(adminController.loginQuanTri)
+
+router.route('/logout')
+  .get(auth.isAdmin, adminController.logoutQuanTri)
+
+router.route('/quan-tri')
+  .get(auth.isAdmin, adminController.templateQuanTri)
+  .post(auth.isAdmin, adminController.createQuanTri)
 
 router.route('/xep-hang')
-  .get(adminController.templateXepHang)
+  .get(auth.isAdmin, adminController.templateXepHang)
 
 router.route('/thoi-gian-thi')
-  .get(adminController.getThoiGianThi)
-  .post(adminController.setThoiGianThi)
+  .get(auth.isAdmin, adminController.getThoiGianThi)
+  .post(auth.isAdmin, adminController.setThoiGianThi)
 
 router.route('/update-thoi-gian-thi/:id')
-  .post(adminController.updateThoiGianThi)
+  .post(auth.isAdmin, adminController.updateThoiGianThi)
 
-module.exports = router;
+
+// router.route('/backdoor/create-account')
+//   .get(adminController.templateQuanTri)
+//   .post(adminController.createQuanTri)
+
+
+module.exports = router

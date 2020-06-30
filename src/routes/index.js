@@ -1,25 +1,35 @@
-const router = require('express').Router();
-const auth = require('../middleware/auth');
-const userRoutes = require('./user');
-const questionRoutes = require('./question');
-const adminRoutes = require('./admin');
-const examRoutes = require('./exam');
+const router = require('express').Router()
+const auth = require('../middleware/auth')
+const userRoutes = require('./user')
+const questionRoutes = require('./question')
+const adminRoutes = require('./admin')
+const examRoutes = require('./exam')
 
-router.get('/', auth, (req, res) => {
+router.get('/', auth.isLogged, (req, res) => {
   res.render('index.pug', { title: 'Trang chủ' })
-});
+})
 
-router.use('/admin', auth, adminRoutes);
+router.use('/admin', adminRoutes)
 
-router.use('/questions', auth, questionRoutes);
+router.use('/questions', auth.isLogged, questionRoutes)
 
-router.use('/users', userRoutes);
+router.use('/users', userRoutes)
 
-router.use('/exams', auth, examRoutes);
+router.use('/exams', auth.isLogged, examRoutes)
 
-router.post('/api/test', (req, res) => {
+router.post('/api', (req, res) => {
   console.log(JSON.stringify(req.body))
   res.json(req.body)
-});
+})
 
-module.exports = router;
+router.get('/403', (req, res) => {
+  res.render('403.pug', { title: 'Forbidden' })
+})
+router.get('/404', (req, res) => {
+  res.render('404.pug', { title: 'Page not found' })
+})
+router.get('/500', (req, res) => {
+  res.render('500.pug', { title: 'Internal server error' })
+})
+
+module.exports = router

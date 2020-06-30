@@ -1,116 +1,117 @@
 extends layout
 
 block content
-  include particals/navbarUser.pug
-  .container
-    h6(style="color: #3d5170").font-weight-bold.pb-2.pt-4.pt-md-5.m-0 Số lần thi còn lại: 2
-    .card.p-4.p-md-5
-      .row
-        .col-lg-8
-          h4.text-center.text-sm-left
-            strong Kết quả thi tuần 1 đợt 1 &nbsp;
-            small (19/7/2020 - 02/8/2020)
-          table.table.table-hover.table-bordered
-            thead.bg-light
-              tr
-                th.align-middle.border-0(scope='col')
-                  | #
-                th.align-middle.border-0(scope='col')
-                  | Bài thi
-                th.align-middle.border-0(scope='col')
-                  | Điểm
-                th.align-middle.border-0(scope='col')
-                  | Thời gian
-            tbody
-              tr
-                td 1
-                td P1: Ngược dòng thời gian
-                td 100
-                td 200s
-              tr
-                td 2
-                td P2: Giải mã lịch sử
-                td 100
-                td 180s
-              tr
-                td 3
-                td P3: Khám phá
-                td 100
-                td 160s
-              tr
-                td 4
-                td P4: Kết nối
-                td 100
-                td 100s
-              tr
-                td.font-weight-bold(colspan='2') Tổng:
-                td 400
-                td 640s
-          a(href='/users/ranking')
-            | Xem chi tiết kết quả
-        .col-lg-4.mt-5.mt-lg-0
-          .d-flex.align-items-center
-            img(src="https://via.placeholder.com/64" alt="64x64")
-            .ml-3
-              if user
-                a.text-reset(href="/users/me") #{user.name}
-                div ID: #{user.identity}
-                a(href="/users/change-password") Đổi mật khẩu
-          .border.rounded.p-3.mt-3
-            div
-              span #{user.grade}
-              span.ml-3 Lớp #{user.classRoom}
-            div Trường #{user.nameSchool}
-            div #{user.district}
-          .text-primary.font-weight-bold.mt-4 Xếp hạng Tuần 1
-          ul.list-group.mt-2
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top1tuan" role="button" aria-expanded="false")
-                .font-weight-bold 1. Nguyễn Thành Lộc
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 400
-                  .col-7 Thời gian: 640s
-                #top1tuan.collapse
+  section.bg__body.min-vh-100
+    include particals/navbarUser.pug
+    .container
+      h6(style="color: #3d5170").font-weight-bold.pb-2.pt-4.pt-md-5.m-0 Số lần thi còn lại: 2
+      .card.p-4.p-md-5
+        .row
+          .col-lg-8
+            h4.text-center.text-sm-left
+              strong Kết quả thi tuần 1 đợt 1 &nbsp;
+              small (19/7/2020 - 02/8/2020)
+            table.table.table-hover.table-bordered
+              thead.bg-light
+                tr
+                  th.align-middle.border-0(scope='col')
+                    | #
+                  th.align-middle.border-0(scope='col')
+                    | Bài thi
+                  th.align-middle.border-0(scope='col')
+                    | Điểm
+                  th.align-middle.border-0(scope='col')
+                    | Thời gian
+              tbody
+                tr
+                  td 1
+                  td P1: Ngược dòng thời gian
+                  td 100
+                  td 200s
+                tr
+                  td 2
+                  td P2: Giải mã lịch sử
+                  td 100
+                  td 180s
+                tr
+                  td 3
+                  td P3: Khám phá
+                  td 100
+                  td 160s
+                tr
+                  td 4
+                  td P4: Kết nối
+                  td 100
+                  td 100s
+                tr
+                  td.font-weight-bold(colspan='2') Tổng:
+                  td 400
+                  td 640s
+            a(href='/users/ranking')
+              | Xem chi tiết kết quả
+          .col-lg-4.mt-5.mt-lg-0
+            .d-flex.align-items-center
+              img(src="https://via.placeholder.com/64" alt="64x64")
+              .ml-3
+                if user
+                  a.text-reset(href="/users/me") #{user.name}
+                  div ID: #{user.identity}
+                  a(href="/users/change-password") Đổi mật khẩu
+            .border.rounded.p-3.mt-3
+              div
+                span #{user.grade}
+                span.ml-3 Lớp #{user.classRoom}
+              div Trường #{user.nameSchool}
+              div #{user.district}
+            .text-primary.font-weight-bold.mt-4 Xếp hạng Tuần 1
+            ul.list-group.mt-2
+              li.list-group-item.border.font-weight-normal.px-4
+                a.text-reset(data-toggle="collapse" href="#top1tuan" role="button" aria-expanded="false")
+                  .font-weight-bold 1. Nguyễn Thành Lộc
                   .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top2tuan" role="button" aria-expanded="false")
-                .font-weight-bold 2. Nguyễn Lộc Thành
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 399
-                  .col-7 Thời gian: 639s
-                #top2tuan.collapse
+                    .col-5 Điểm: 400
+                    .col-7 Thời gian: 640s
+                  #top1tuan.collapse
+                    .row.m-0.no-gutters
+                      .col-5 Khối: 12
+                      .col-7 Lớp: 12A3
+                    div Trường: THPT Võ THị Sáu
+                    div Huyện: Đất Đỏ
+              li.list-group-item.border.font-weight-normal.px-4
+                a.text-reset(data-toggle="collapse" href="#top2tuan" role="button" aria-expanded="false")
+                  .font-weight-bold 2. Nguyễn Lộc Thành
                   .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
-          .text-primary.font-weight-bold.mt-4 Xếp hạng Đợt 1
-          ul.list-group.mt-2
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top1dot" role="button" aria-expanded="false")
-                .font-weight-bold 1. Nguyễn Thành Lộc
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 400
-                  .col-7 Thời gian: 640s
-                #top1dot.collapse
+                    .col-5 Điểm: 399
+                    .col-7 Thời gian: 639s
+                  #top2tuan.collapse
+                    .row.m-0.no-gutters
+                      .col-5 Khối: 12
+                      .col-7 Lớp: 12A3
+                    div Trường: THPT Võ THị Sáu
+                    div Huyện: Đất Đỏ
+            .text-primary.font-weight-bold.mt-4 Xếp hạng Đợt 1
+            ul.list-group.mt-2
+              li.list-group-item.border.font-weight-normal.px-4
+                a.text-reset(data-toggle="collapse" href="#top1dot" role="button" aria-expanded="false")
+                  .font-weight-bold 1. Nguyễn Thành Lộc
                   .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
-            li.list-group-item.border.font-weight-normal.px-4
-              a.text-reset(data-toggle="collapse" href="#top2dot" role="button" aria-expanded="false")
-                .font-weight-bold 2. Nguyễn Lộc Thành
-                .row.m-0.no-gutters
-                  .col-5 Điểm: 399
-                  .col-7 Thời gian: 639s
-                #top2dot.collapse
+                    .col-5 Điểm: 400
+                    .col-7 Thời gian: 640s
+                  #top1dot.collapse
+                    .row.m-0.no-gutters
+                      .col-5 Khối: 12
+                      .col-7 Lớp: 12A3
+                    div Trường: THPT Võ THị Sáu
+                    div Huyện: Đất Đỏ
+              li.list-group-item.border.font-weight-normal.px-4
+                a.text-reset(data-toggle="collapse" href="#top2dot" role="button" aria-expanded="false")
+                  .font-weight-bold 2. Nguyễn Lộc Thành
                   .row.m-0.no-gutters
-                    .col-5 Khối: 12
-                    .col-7 Lớp: 12A3
-                  div Trường: THPT Võ THị Sáu
-                  div Huyện: Đất Đỏ
+                    .col-5 Điểm: 399
+                    .col-7 Thời gian: 639s
+                  #top2dot.collapse
+                    .row.m-0.no-gutters
+                      .col-5 Khối: 12
+                      .col-7 Lớp: 12A3
+                    div Trường: THPT Võ THị Sáu
+                    div Huyện: Đất Đỏ
