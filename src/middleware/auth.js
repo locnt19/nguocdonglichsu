@@ -20,6 +20,7 @@ exports.isLogged = async (req, res, next) => {
     res.locals.user = {
       _id: user._id,
       name: user.name,
+      luotThiConLai: user.luotThiConLai,
       identity: user.identity, // Chứng minh nhân dân
       birthday: user.birthday,
       sex: user.sex,
@@ -68,5 +69,28 @@ exports.isAdmin = async (req, res, next) => {
   } catch (error) {
     console.log(error)
     res.render('403.pug', { title: 'Forbidden' })
+  }
+}
+
+exports.checkLuotThiConLai = async (req, res, next) => {
+  try {
+    const token = req.cookies.token
+    const data = jwt.verify(token, process.env.SECRETKEY)
+    const user = await User.findOne({
+      _id: data._id,
+      'tokens.token': token
+    })
+    if (!user) {
+      console.log('run error')
+      throw new Error()
+    }
+    // console.log(user)
+    if (user.luotThiConLai <= 0) {
+      res.render('het-luot.pug', { title: 'Hết lượt thi' })
+    }
+    next()
+  } catch (error) {
+    console.log(error)
+    res.render('500.pug', { title: 'Server Error' })
   }
 }

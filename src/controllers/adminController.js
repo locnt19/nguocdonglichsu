@@ -1,8 +1,8 @@
 const ThoiGianThi = require('../models/ThoiGianThi')
 const QuanTri = require('../models/QuanTri')
 const jwt = require('jsonwebtoken')
-
-
+const moment = require('moment')
+const TuanHienTai = require('../models/TuanHienTai')
 
 exports.templateDashboard = (req, res) => {
   res.render('admin/dashboard.pug')
@@ -27,18 +27,21 @@ exports.templateQuanTri = async (req, res) => {
   }
 }
 
-exports.getThoiGianThi = (req, res) => {
-  ThoiGianThi.find({})
-    .then(t => {
-      res.render('admin/thoi-gian-thi.pug', {
-        title: 'Thời gian thi',
-        ThoiGianThi: t,
-      })
+exports.getThoiGianThi = async (req, res) => {
+  try {
+    const tuanHienTai = await TuanHienTai.find({})
+    const thoiGianThi = await ThoiGianThi.find({})
+    res.render('admin/thoi-gian-thi.pug', {
+      title: 'Thời gian thi',
+      ThoiGianThi: thoiGianThi,
+      tuanHienTai: tuanHienTai,
     })
-    .catch(error => {
-      console.log(error)
-      req.flash('message', error)
+  } catch{
+    res.render('admin/thoi-gian-thi.pug', {
+      title: 'Thời gian thi',
     })
+    req.flash('message', error)
+  }
 }
 
 exports.setThoiGianThi = async (req, res) => {
@@ -123,3 +126,32 @@ exports.logoutQuanTri = async (req, res) => {
     res.render('500.pug', { title: 'Logout Error' })
   }
 };
+
+
+exports.createTuanHienTai = async (req, res) => {
+  try {
+    const tuanHienTai = new TuanHienTai(req.body)
+    await tuanHienTai.save()
+    req.flash('message', 'Tạo Tuần hiện tại thành công')
+    res.redirect('/admin/thoi-gian-thi')
+  } catch (error) {
+    console.log(error)
+    req.flash('message', error)
+    res.render('admin/thoi-gian-thi.pug', {
+      message: req.flash()
+    })
+  }
+}
+exports.updateTuanHienTai = async (req, res) => {
+  try {
+    await ThoiGianThi.findOneAndUpdate({ _id: req.body._id }, req.body)
+    req.flash('message', 'Update Tuần hiện tại thành công')
+    res.redirect('/admin/thoi-gian-thi')
+  } catch (error) {
+    console.log(error)
+    req.flash('message', error)
+    res.render('admin/thoi-gian-thi.pug', {
+      message: req.flash()
+    })
+  }
+}

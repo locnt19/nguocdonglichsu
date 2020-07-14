@@ -2,6 +2,9 @@ const mongoose = require('mongoose');
 
 const baiThiSchema = mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId },
+  lanThi: { type: Number },
+  tuan: { type: String },
+  dot: { type: String },
   exam: { type: String },
   time: { type: Number, default: 0 },
   scope: { type: Number, default: 0 },

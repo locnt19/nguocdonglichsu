@@ -104,3 +104,39 @@ block content
                 button.btn.btn-link.thoigianthi_cancel(type='reset') Hủy
               .col-12.mt-4.text-center
                 button.btn.btn-primary(type='button').thoigianthi_edit Chỉnh sửa
+    .col-md-6.col-lg-5.p-0.px-md-3.mt-4
+      .card.p-4
+        h5.font-weight-bold  Đợt - Tuần hiện tại
+        if tuanHienTai
+          form(method='POST' action='/admin/update-tuan-hien-tai').row
+            input.d-none(name='_id' value=tuanHienTai._id)
+            .col-6
+              label Đợt
+              select.form-control(name='tenDot')
+                option Đợt 1
+                option Đợt 2
+            .col-6
+              label Tuần
+              select.form-control(name='tenTuan')
+                option Tuần 1
+                option Tuần 2
+                option Tuần 3
+                option Tuần 4
+            .col-12.mt-4.text-center
+              button.btn.btn-primary(type='submit') Cập nhật
+        else
+          form(method='POST' action='/admin/create-tuan-hien-tai').row
+            .col-6
+              label Đợt
+              select.form-control(name='tenDot')
+                option Đợt 1
+                option Đợt 2
+            .col-6
+              label Tuần
+              select.form-control(name='tenTuan')
+                option Tuần 1
+                option Tuần 2
+                option Tuần 3
+                option Tuần 4
+            .col-12.mt-4.text-center
+              button.btn.btn-primary(type='submit') Tạo mới

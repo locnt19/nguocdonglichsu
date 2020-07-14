@@ -1,0 +1,34 @@
+extends layout-admin.pug
+
+block content
+  .row.m-0
+    .col-12.p-0.px-lg-3
+      .card.p-3.p-md-5
+        .h6 Tạo câu hỏi Phần 1
+        form(method='POST' action='/questions/section-1/create').row
+          input.d-none(name='name' value='Phần 1')
+          input.d-none(name='code' value='P011')
+          .form-group.col-12
+            textarea(name='questions[0][question]' placeholder="Câu hỏi").form-control
+          .d-flex.form-group.col-12
+            .custom-control.custom-radio
+              input.custom-control-input#answer1(type='radio' name='questions[0][true]' value='a')
+              label.custom-control-label(for="answer1")
+            textarea(name='questions[0][a]' placeholder="Câu trả lời A").form-control
+          .d-flex.form-group.col-12
+            .custom-control.custom-radio
+              input.custom-control-input#answer2(type='radio' name='questions[0][true]' value='b')
+              label.custom-control-label(for="answer2")
+            textarea(name='questions[0][b]' placeholder="Câu trả lời B").form-control
+          .d-flex.form-group.col-12
+            .custom-control.custom-radio
+              input.custom-control-input#answer3(type='radio' name='questions[0][true]' value='c')
+              label.custom-control-label(for="answer3")
+            textarea(name='questions[0][c]' placeholder="Câu trả lời C").form-control
+          .d-flex.form-group.col-12
+            .custom-control.custom-radio
+              input.custom-control-input#answer4(type='radio' name='questions[0][true]' value='d')
+              label.custom-control-label(for="answer4")
+            textarea(name='questions[0][d]' placeholder="Câu trả lời D").form-control
+          .col-12
+            button(type="submit").btn.btn-block.btn-primary Tạo

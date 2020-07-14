@@ -1,13 +1,18 @@
 const ThoiGianThi = require('../models/ThoiGianThi')
 const DeThi = require('../models/DeThi')
 const BaiThi = require('../models/BaiThi')
+const User = require('../models/User')
 
 exports.templateReady = async (req, res) => {
-  res.render('ready.pug', { title: 'Are you ready?' })
+  res.render('ready.pug', { title: 'Phần 1: Ngược dòng thời gian' })
+}
+
+exports.templateReady2 = async (req, res) => {
+  res.render('ready-2.pug', { title: 'Phần 2: Giải mã lịch sử' })
 }
 
 exports.templateComingSoon = async (req, res) => {
-  const data = await ThoiGianThi.findOne({ name: 'Đợt 2' })
+  const data = await ThoiGianThi.findOne({ name: 'Đợt 1' })
   res.render('coming-soon.pug', { title: 'Coming soon...', time: data })
 }
 
@@ -16,13 +21,31 @@ exports.templateSection1 = async (req, res) => {
   res.render('section-1.pug', { title: 'Phần 1: Ngược dòng lịch sử', exams: data })
 }
 
+exports.templateSection2 = async (req, res) => {
+  const data = await DeThi.findOne({ code: 'P01' })
+  res.render('section-2.pug', { title: 'Phần 2: Giải mã lịch sử', exams: data })
+}
+
 exports.templateSummary = async (req, res) => {
   res.render('summary.pug', { title: 'Kết quả thi' })
 }
 
 exports.nopBaiThi = async (req, res) => {
   try {
-    const baiThi = new BaiThi(req.body)
+    // trừ lượt thi
+    const user = await User.findOne({ _id: req.body.user })
+    const data = req.body
+    if (user.luotThiConLai === 2) {
+      data.lanThi = 1
+    }
+    if (user.luotThiConLai === 1) {
+      data.lanThi = 2
+    }
+    console.log(data)
+    user.luotThiConLai -= 1
+    await user.save()
+    // lưu bài thi
+    const baiThi = new BaiThi(data)
     const deThi = await DeThi.findOne({ code: req.body.exam })
     const questions = deThi.questions // array objects
     const userAnswers = baiThi.answers

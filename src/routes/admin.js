@@ -27,6 +27,12 @@ router.route('/update-thoi-gian-thi/:id')
   .post(auth.isAdmin, adminController.updateThoiGianThi)
 
 
+router.route('/create-tuan-hien-tai')
+  .post(auth.isAdmin, adminController.createTuanHienTai)
+router.route('/update-tuan-hien-tai')
+  .post(auth.isAdmin, adminController.updateTuanHienTai)
+
+
 // router.route('/backdoor/create-account')
 //   .get(adminController.templateQuanTri)
 //   .post(adminController.createQuanTri)

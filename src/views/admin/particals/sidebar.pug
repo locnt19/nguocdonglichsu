@@ -1,15 +1,15 @@
 
-nav.admin__sidebar.nav.flex-column.shadow-sm.bg-white.mt-4.mt-lg-0(style="font-weight: 500")
+nav.admin__sidebar.nav.flex-column.shadow-sm.bg-white.mt-4.mt-lg-0(style='font-weight: 500')
   li.nav-item
-    a.nav-link.active(href="/admin")
+    a.nav-link.active(href='/admin')
       i.material-icons dashboard
       span.ml-2 Dashboard
   li.nav-item
-    a.nav-link(href="/")
+    a.nav-link(href='/')
       i.material-icons home
       span.ml-2 Giao diện học viên
   li.nav-item
-    a.nav-link(href="#")
+    a.nav-link(href='#')
       i.material-icons description
       span.ml-2 Luật lệ
   li.nav-item
@@ -21,32 +21,72 @@ nav.admin__sidebar.nav.flex-column.shadow-sm.bg-white.mt-4.mt-lg-0(style="font-w
       i.material-icons military_tech
       span.ml-2 Xếp hạng
   li.nav-item
-    a.nav-link(href='#questions' data-toggle="collapse" role="button" aria-expanded="false" aria-controls="questions")
+    a.nav-link(href='#questions' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions')
       i.material-icons bar_chart
       span.ml-2 Câu hỏi
       i.material-icons.float-right arrow_drop_down
     .collapse#questions
       nav.nav.flex-column.ml-4
         li.nav-item
-          a.nav-link(href="/questions/create")
-            i.material-icons note_add
-            span.ml-2 Thêm câu hỏi mới
-        li.nav-item
-          a.nav-link(href="/questions/question-1")
+          a.nav-link(href='#questions1' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions1')
             i.material-icons looks_one
             span.ml-2 Phần 1
+            i.material-icons.float-right arrow_drop_down
+          .collapse#questions1
+            nav.nav.flex-column
+              li.nav-item
+                a.nav-link(href='/questions/section-1/create')
+                  i.material-icons note_add
+                  span.ml-2 Thêm câu hỏi mới
+              li.nav-item
+                a.nav-link(href='/questions/section-1')
+                  i.material-icons list_alt
+                  span.ml-2 Danh sách câu hỏi
         li.nav-item
-          a.nav-link(href="/questions/question-2")
+          a.nav-link(href='#questions2' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions2')
             i.material-icons looks_two
             span.ml-2 Phần 2
+            i.material-icons.float-right arrow_drop_down
+          .collapse#questions2
+            nav.nav.flex-column
+              li.nav-item
+                a.nav-link(href='/questions/section-2/create')
+                  i.material-icons note_add
+                  span.ml-2 Thêm câu hỏi mới
+              li.nav-item
+                a.nav-link(href='/questions/section-2')
+                  i.material-icons list_alt
+                  span.ml-2 Danh sách câu hỏi
         li.nav-item
-          a.nav-link(href="/questions/question-3")
+          a.nav-link(href='#questions3' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions3')
             i.material-icons looks_3
             span.ml-2 Phần 3
+            i.material-icons.float-right arrow_drop_down
+          .collapse#questions3
+            nav.nav.flex-column
+              li.nav-item
+                a.nav-link(href='/questions/section-3/create')
+                  i.material-icons note_add
+                  span.ml-2 Thêm câu hỏi mới
+              li.nav-item
+                a.nav-link(href='/questions/section-3')
+                  i.material-icons list_alt
+                  span.ml-2 Danh sách câu hỏi
         li.nav-item
-          a.nav-link(href="/questions/question-4")
+          a.nav-link(href='#questions4' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions4')
             i.material-icons looks_4
             span.ml-2 Phần 4
+            i.material-icons.float-right arrow_drop_down
+          .collapse#questions4
+            nav.nav.flex-column
+              li.nav-item
+                a.nav-link(href='/questions/section-4/create')
+                  i.material-icons note_add
+                  span.ml-2 Thêm câu hỏi mới
+              li.nav-item
+                a.nav-link(href='/questions/section-4')
+                  i.material-icons list_alt
+                  span.ml-2 Danh sách câu hỏi
   li.nav-item
     a.nav-link(href='/admin/thoi-gian-thi')
       i.material-icons alarm_on

@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const deThiSchema = mongoose.Schema({
   name: { type: String },
   code: { type: String, unique: true },
+  location: {
+    type: Object()
+  },
   questions: [{
     code: { type: String },
     question: { type: String },

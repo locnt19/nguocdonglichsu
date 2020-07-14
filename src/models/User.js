@@ -9,6 +9,10 @@ const userSchema = mongoose.Schema({
     required: true,
     trim: true
   },
+  luotThiConLai: {
+    type: Number,
+    default: 2
+  },
   email: {
     type: String,
     required: true,

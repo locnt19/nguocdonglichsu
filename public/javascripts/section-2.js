@@ -66,4 +66,22 @@ $(document).ready(function () {
       counter.innerHTML_end.text(counter.end)
     }, 1000)
   }
+
+
+
+
+
+
+
+  $('.sidebar_chucnang__item').click(function () {
+    $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass('show')
+    $('body').addClass('overflow-hidden')
+  })
+  // close modal
+  $('.modal_chucnang__close').click(function () {
+    $(this).parent().removeClass('show')
+    $('body').removeClass('overflow-hidden')
+  })
+
+  
 })

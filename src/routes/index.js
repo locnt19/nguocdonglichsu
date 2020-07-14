@@ -5,9 +5,9 @@ const questionRoutes = require('./question')
 const adminRoutes = require('./admin')
 const examRoutes = require('./exam')
 
-router.get('/', auth.isLogged, (req, res) => {
-  res.render('index.pug', { title: 'Trang chủ' })
-})
+const indexController = require('../controllers/indexController');
+
+router.get('/', auth.isLogged, indexController.templateTrangChu)
 
 router.use('/admin', adminRoutes)
 
@@ -15,7 +15,7 @@ router.use('/questions', auth.isLogged, questionRoutes)
 
 router.use('/users', userRoutes)
 
-router.use('/exams', auth.isLogged, examRoutes)
+router.use('/exams', auth.isLogged, auth.checkLuotThiConLai, examRoutes)
 
 router.post('/api', (req, res) => {
   console.log(JSON.stringify(req.body))
