@@ -11,6 +11,14 @@ exports.templateReady2 = async (req, res) => {
   res.render('ready-2.pug', { title: 'Phần 2: Giải mã lịch sử' })
 }
 
+exports.templateReady3 = async (req, res) => {
+  res.render('ready-3.pug', { title: 'Phần 3: Khám phá' })
+}
+
+exports.templateReady4 = async (req, res) => {
+  res.render('ready-4.pug', { title: 'Phần 4: Kết nối' })
+}
+
 exports.templateComingSoon = async (req, res) => {
   const data = await ThoiGianThi.findOne({ name: 'Đợt 1' })
   res.render('coming-soon.pug', { title: 'Coming soon...', time: data })
@@ -24,6 +32,16 @@ exports.templateSection1 = async (req, res) => {
 exports.templateSection2 = async (req, res) => {
   const data = await DeThi.findOne({ code: 'P01' })
   res.render('section-2.pug', { title: 'Phần 2: Giải mã lịch sử', exams: data })
+}
+
+exports.templateSection3 = async (req, res) => {
+  const data = await DeThi.findOne({ code: 'P01' })
+  res.render('section-3.pug', { title: 'Phần 3: Khám phá', exams: data })
+}
+
+exports.templateSection4 = async (req, res) => {
+  const data = await DeThi.findOne({ code: 'P01' })
+  res.render('section-4.pug', { title: 'Phần 4: Kết nối', exams: data })
 }
 
 exports.templateSummary = async (req, res) => {
