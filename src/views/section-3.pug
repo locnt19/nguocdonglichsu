@@ -14,7 +14,7 @@ block content
               input.d-none(name='user' value=user._id)
               input.d-none#submit_time_summary(name='time' value='0')
               img.d-block.mw-100.mx-auto.mb-4(width='300' src='../../images/bandohanhchinh_transparent.png', alt='ban do hanh chinh')
-              -for(var i = 0; i < exams.questions.length; i++)
+              //- -for(var i = 0; i < exams.questions.length; i++)
                 -var item = exams.questions[i]
                   input.d-none(name=`answers[${i}][code]` value=`${item.code}`)
                   .tabs(id=`${item.code}` style='display: none')
@@ -33,8 +33,17 @@ block content
                           input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
                           label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
               .text-center
-                button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
-                button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài
+                //- button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
+                //- button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài
+                div Lượt quay còn lại: &nbsp;
+                  span#random_conlai 4
+                //- input#value_random(placeholder='value random')
+                #result_random
+                button(type='button')#random random
+                br
+                button(type='button')#start start
+                button(type='button')#pause pause
+                button(type='button')#restart restart
               .mt-3
                 .d-flex.align-items-center.justify-content-between
                   .question__time__sum
@@ -46,4 +55,4 @@ block content
                     span#current_question 1
                     span &nbsp; / #{exams.questions.length}
 block scripts
-  script(src='/javascripts/section-2.js')
+  script(src='/javascripts/section-3.js')

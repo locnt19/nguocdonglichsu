@@ -22,21 +22,17 @@ randomArray = (length, max) => [...new Array(length)]
 	.map(() => Math.round(Math.random() * max));
 
 
-// If you need it with random unique values from 0...length range:
+// If you need it with random unique values from 0...length range: (thay đổi length ở for)
 const randomRange = length => {
 	const results = []
 	const possibleValues = Array.from({ length }, (value, i) => i)
-
 	for (let i = 0; i < length; i += 1) {
 		const possibleValuesRange = length - (length - possibleValues.length)
 		const randomNumber = Math.floor(Math.random() * possibleValuesRange)
 		const normalizedRandomNumber = randomNumber !== possibleValuesRange ? randomNumber : possibleValuesRange
-
 		const [nextNumber] = possibleValues.splice(normalizedRandomNumber, 1)
-
 		results.push(nextNumber)
 	}
-
 	return results
 }
 
