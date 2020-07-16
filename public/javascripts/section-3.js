@@ -12,17 +12,17 @@ $(document).ready(function () {
     input_summary: $('#submit_time_summary')
   }
 
-  $('#pause').on('click', function () {
+  $('.s3_pause').on('click', function () {
     counter.isPaused = true
   })
 
-  $('#restart').on('click', function () {
+  $('.s3_restart').on('click', function () {
     counter.end = 20
     counter.innerHTML_end.text(counter.end)
     counter.isPaused = false
   })
 
-  $('#start').click(function () {
+  $('.s3_start').click(function () {
     counter.ticker = setInterval(function () {
       if (!counter.isPaused) {
         counter.end--
@@ -43,7 +43,6 @@ $(document).ready(function () {
   //#endregion
 
   //#region random number
-
   var couterRandom = 4
   var locations = [
     'Đất Đỏ',
@@ -55,23 +54,59 @@ $(document).ready(function () {
     'Châu Đức',
     'Xuyên Mộc'
   ]
-  $('#random').click(function () {
+  var modal = [
+    'datdo',
+    'longdien',
+    'baria',
+    'vungtau',
+    'condao',
+    'tanthanh',
+    'chauduc',
+    'xuyenmoc'
+  ]
+  $('.s3_random').click(function () {
     if (couterRandom > 0) {
       var random = randomRange(8)
       var result = []
       for (var i = 0; i < random.length; i++) {
-        result.push(locations[random[i]])
+        result.push({
+          modal: modal[random[i]],
+          name: locations[random[i]]
+        })
       }
-      // $('#value_random').val(random)
-      $('#result_random').text(result)
+      $('#result_random').text('')
+      $('area').click(function (e) {
+        e.preventDefault()
+      })
+      $('area').removeClass('active')
+      result.map(i => {
+        $(`area[data-modal=${i.modal}]`).addClass('active')
+        $(`area[data-modal=${i.modal}].active`).click(function (e) {
+          e.preventDefault()
+          console.log(this);
+          $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass('show')
+          $('body').addClass('overflow-hidden')
+        })
+        $('#result_random').append(`<strong class='text-danger mx-2'>${i.name}</strong>`)
+      })
       couterRandom--
       $('#random_conlai').text(couterRandom)
       if (couterRandom === 0) {
-        $('#random').attr('disabled', true)
+        $('#star_conlai').parent().show()
+        $('#random_conlai').parent().hide()
+        $('.s3_random').hide()
+        $('.s3_ok').hide()
+        $('#start_text').show()
       }
     }
   })
-
+  $('.s3_ok').click(function () {
+    $(this).hide()
+    $('#random_conlai').parent().hide()
+    $('.s3_random').hide()
+    $('#start_text').show()
+    $('#star_conlai').parent().show()
+  })
   const randomRange = length => {
     const results = []
     const possibleValues = Array.from({ length }, (value, i) => i)
@@ -84,5 +119,19 @@ $(document).ready(function () {
     }
     return results
   }
+  $('.sidebar_chucnang__item').click(function () {
+    $('.s3_random').attr('disabled', true)
+  })
+  $('area').click(function (e) {
+    e.preventDefault()
+  })
+  //#endregion
+
+
+  //#region modal
+  $('.modal_chucnang__close').click(function () {
+    $(this).parent().removeClass('show')
+    $('body').removeClass('overflow-hidden')
+  })
   //#endregion
 })

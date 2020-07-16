@@ -6,53 +6,75 @@ block content
       .container.py-3.min-vh-100
         .middle__center__md.question__wrapper.mx-auto
           h3.text-white.font-weight-bold Phần 3: Khám phá
-          .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
+          .question__scroll.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-3.pb-md-4
             if exams
               input.d-none(name='tuan' value=tuanHienTai)
               input.d-none(name='dot' value=dotHienTai)
               input.d-none(name='exam' value=exams.code)
               input.d-none(name='user' value=user._id)
               input.d-none#submit_time_summary(name='time' value='0')
-              img.d-block.mw-100.mx-auto.mb-4(width='300' src='../../images/bandohanhchinh_transparent.png', alt='ban do hanh chinh')
-              //- -for(var i = 0; i < exams.questions.length; i++)
-                -var item = exams.questions[i]
-                  input.d-none(name=`answers[${i}][code]` value=`${item.code}`)
-                  .tabs(id=`${item.code}` style='display: none')
-                      h5.question__question.font-weight-bold Question #{i + 1}: #{item.question}
-                      .question__answer
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-a` type='radio' name=`answers[${i}][answer]` value='a')
-                          label.custom-control-label.h6(for=`${item.code}-a`) #{item.a}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-b` type='radio' name=`answers[${i}][answer]` value='b')
-                          label.custom-control-label.h6(for=`${item.code}-b`) #{item.b}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-c` type='radio' name=`answers[${i}][answer]` value='c')
-                          label.custom-control-label.h6(for=`${item.code}-c`) #{item.c}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
-                          label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
+              .text-center
+                img.mb-4(width='500' height='424' src='../../images/bandohanhchinh_transparent_500.png' alt='ban do hanh chinh' usemap='#image_map')
+                map.map-hanhchinh(name='image_map')
+                  area(data-modal='xuyenmoc' alt='Xuyên Mộc' title='Xuyên Mộc' href='' coords='302,111 299,103 299,92 298,85 305,80 309,66 317,62 344,31 384,2 405,8 405,20 419,34 431,30 433,50 461,77 466,100 462,114 474,138 497,182 494,206 471,238 442,262 402,266 380,286 345,293 315,291 318,273 324,268 316,231 310,224 301,220 293,213 295,207 310,194 311,181 302,171 307,164 306,150 314,145 314,129 305,119 303,111 302,109 ' shape='polygon')
+                  area(data-modal='chauduc' alt='Châu Đức' title='Châu Đức' href='' coords='296,112 306,115 314,129 314,142 307,146 307,160 304,166 303,171 309,178 313,192 299,205 286,208 282,206 277,210 278,213 259,214 249,207 229,203 215,222 212,232 203,224 197,220 196,213 187,213 176,216 171,224 170,230 163,228 158,224 151,216 151,208 151,203 147,199 146,182 140,169 143,155 140,145 143,141 143,124 139,109 141,95 139,87 123,86 119,80 118,53 131,52 158,31 179,24 180,34 196,38 203,36 216,42 252,44 262,52 262,93 264,108 273,117 285,110 296,112 ' shape='polygon')
+                  area(data-modal='datdo' alt='Đất Đỏ' title='Đất Đỏ' href='' coords='295,209,300,217,309,219,315,225,320,239,324,261,324,269,318,275,318,283,315,291,303,298,296,305,287,305,278,311,267,317,256,327,243,341,233,351,224,363,218,351,213,336,212,329,217,323,218,313,218,305,224,301,223,294,218,286,219,277,218,263,218,256,208,253,213,229,214,220,228,202,251,205,260,214,280,213,283,205,288,205' shape='poly')
+                  area(data-modal='longdien' alt='Long Điền' title='Long Điền' href='' coords='203,255,212,255,215,262,220,274,215,285,217,293,220,297,217,306,218,322,213,332,217,353,221,365,207,370,199,365,192,352,186,349,171,347,155,351,159,345,162,332,176,332,183,330,181,319,169,311,155,302,159,291,173,281,175,270,193,266' shape='poly')
+                  area(data-modal='baria' target='' alt='Bà Rịa' title='Bà Rịa' href='' coords='154,294,163,289,171,281,171,270,181,267,191,264,204,258,209,252,211,232,195,221,196,214,189,215,176,217,168,228,156,225,151,216,148,225,145,237,135,236,124,241,111,256,111,270,107,281,97,288,106,296,118,300,128,293,142,288,147,295,134,295,124,300,136,294,151,291,134,295' shape='poly')
+                  area(data-modal='vungtau' target='' alt='Vũng Tàu' title='Vũng Tàu' href='' coords='156,298,182,313,183,333,160,330,148,338,144,355,130,364,107,375,89,396,75,414,67,407,64,398,54,389,55,377,49,370,54,359,63,364,73,358,86,359,97,344,120,339,103,333,103,322,107,305,98,311,90,320,77,322,60,323,43,312,37,295,51,283,67,281,89,285,97,290,111,297,145,292' shape='poly')
+                  area(data-modal='tanthanh' target='' alt='Tân Thành' title='Tân Thành' href='' coords='23,295,39,288,63,279,86,284,104,280,108,267,128,236,142,237,151,204,144,180,138,160,139,145,141,124,138,112,141,88,124,84,110,97,99,118,87,124,74,132,59,128,38,128,20,134,14,149,2,152,17,170,24,194,12,212,24,226,11,250,0,267' shape='poly')
+                  area(data-modal='condao' target='' alt='Côn Đảo' title='Côn Đảo' href='' coords='324,357,307,364,295,367,287,378,283,401,295,413,311,408,328,415,340,415,353,414,364,404,379,400,397,396,399,381,377,383,356,387,344,378,352,366,360,354,362,335,341,330,320,332,299,333,297,342,301,352' shape='poly')
               .text-center
                 //- button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
                 //- button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài
+                #start_text(style='display: none') Vui lòng chọn vị trí tương ứng trên bản đồ để bắt đầu
+                .text-center.mb-2
+                  button(type='button').mr-2.btn.btn-outline-primary.btn-sm.s3_random random
+                  button(type='button').mr-2.btn.btn-primary.btn-sm.s3_ok OK
+                #result_random
                 div Lượt quay còn lại: &nbsp;
                   span#random_conlai 4
-                //- input#value_random(placeholder='value random')
-                #result_random
-                button(type='button')#random random
-                br
-                button(type='button')#start start
-                button(type='button')#pause pause
-                button(type='button')#restart restart
-              .mt-3
-                .d-flex.align-items-center.justify-content-between
-                  .question__time__sum
-                    span(style='font-size: inherit').material-icons.mr-1 alarm
-                    span#time_summary 0
-                  .h5.m-0.question__time
-                    span#time_countdown 20
-                  div
-                    span#current_question 1
-                    span &nbsp; / #{exams.questions.length}
+                div(style='display: none') Ngôi sao hi vọng: &nbsp;
+                  span#star_conlai 2
+                //- .text-center
+                  button(type='button').s3_start start
+                  button(type='button').s3_pause pause
+                  button(type='button').s3_restart restart
+  section
+    if exams
+      section.modal_chucnang__wrapper.bg-white.show(data-modal='xuyenmoc')
+        .modal_chucnang__close.mdi.mdi-chevron-left.text-white
+        h4.text-center Xuyên Mộc
+        .custom-control.custom-checkbox
+          input.custom-control-input#answer3(type='checkbox' name='questions[0][true]' value='c')
+          label.custom-control-label(for="answer3") Đặt sao
+        -for(var i = 0; i < exams.questions.length; i++)
+          -var item = exams.questions[i]
+            input.d-none(name=`answers[${i}][code]` value=`${item.code}`)
+            .tabs(id=`${item.code}` style='display: none')
+              h5.question__question.font-weight-bold Question #{i + 1}: #{item.question}
+              .question__answer
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-a` type='radio' name=`answers[${i}][answer]` value='a')
+                  label.custom-control-label.h6(for=`${item.code}-a`) #{item.a}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-b` type='radio' name=`answers[${i}][answer]` value='b')
+                  label.custom-control-label.h6(for=`${item.code}-b`) #{item.b}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-c` type='radio' name=`answers[${i}][answer]` value='c')
+                  label.custom-control-label.h6(for=`${item.code}-c`) #{item.c}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
+                  label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
+        .mt-3
+          .d-flex.align-items-center.justify-content-between
+            .question__time__sum
+              span(style='font-size: inherit').material-icons.mr-1 alarm
+              span#time_summary 0
+            .h5.m-0.question__time
+              span#time_countdown 20
+            div
+              span#current_question 1
+              span &nbsp; / #{exams.questions.length}
 block scripts
   script(src='/javascripts/section-3.js')
