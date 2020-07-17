@@ -30,13 +30,45 @@ exports.templateSection1 = async (req, res) => {
 }
 
 exports.templateSection2 = async (req, res) => {
-  const data = await DeThi.findOne({ code: 'P01' })
+  const data = await DeThi.findOne({ code: 'P02' })
   res.render('section-2.pug', { title: 'Phần 2: Giải mã lịch sử', exams: data })
 }
 
 exports.templateSection3 = async (req, res) => {
-  const data = await DeThi.findOne({ code: 'P01' })
-  res.render('section-3.pug', { title: 'Phần 3: Khám phá', exams: data })
+  const data = await DeThi.findOne({ code: 'P03' })
+  const datdo = { name: 'Đất Đỏ' }
+  const longdien = { name: 'Long Điền' }
+  const baria = { name: 'Bà Rịa' }
+  const vungtau = { name: 'Vũng Tàu' }
+  const condao = { name: 'Côn Đảo' }
+  const tanthanh = { name: 'Tân Thành' }
+  const chauduc = { name: 'Châu Đức' }
+  const xuyenmoc = { name: 'Xuyên Mộc' }
+
+  datdo.questions = data.questions.filter(i => i.location === 'datdo')
+  longdien.questions = data.questions.filter(i => i.location === 'longdien')
+  baria.questions = data.questions.filter(i => i.location === 'baria')
+  vungtau.questions = data.questions.filter(i => i.location === 'vungtau')
+  condao.questions = data.questions.filter(i => i.location === 'condao')
+  tanthanh.questions = data.questions.filter(i => i.location === 'tanthanh')
+  chauduc.questions = data.questions.filter(i => i.location === 'chauduc')
+  xuyenmoc.questions = data.questions.filter(i => i.location === 'xuyenmoc')
+
+  // console.log(xuyenmoc.questions);
+
+  res.render('section-3.pug', {
+    title: 'Phần 3: Khám phá',
+    examName: data.name,
+    examCode: data.code,
+    datdo: datdo,
+    longdien: longdien,
+    baria: baria,
+    vungtau: vungtau,
+    condao: condao,
+    tanthanh: tanthanh,
+    chauduc: chauduc,
+    xuyenmoc: xuyenmoc
+  })
 }
 
 exports.templateSection4 = async (req, res) => {

@@ -5,15 +5,15 @@ block content
     .col-12.p-0.px-lg-3
       .card.p-3.p-md-5
         .d-flex
-          .h6 Tạo câu hỏi Phần 1
+          .h6 Tạo câu hỏi Phần 3
           small.ml-auto
             if deThi !== null
-              a(href='/questions/section-1') Đã có #{deThi.questions.length} câu hỏi
+              a(href='/questions/section-3') Đã có #{deThi.questions.length} câu hỏi
             else
               | Đề thi chưa có câu hỏi
-        form(method='POST' action='/questions/section-1/create').row
-          input.d-none(name='name' value='Phần 1')
-          input.d-none(name='code' value='P01')
+        form(method='POST' action='/questions/section-3/create').row
+          input.d-none(name='name' value='Phần 3')
+          input.d-none(name='code' value='P03')
           if deThi !== null
             -var deThiCuoi = deThi.questions.length - 1
             input.d-none(id='cauHoiCuoiCuaDeThi' name='questions[0][code]' value=`${deThi.questions[deThiCuoi].code}`)
@@ -21,6 +21,17 @@ block content
             input.d-none(name='questions[0][code]' value='Q01')
           .form-group.col-12
             textarea(name='questions[0][question]' placeholder="Câu hỏi").form-control
+          .form-group.col-12
+            label Địa phương:
+            select(name="questions[0][location]").form-control
+              option(value="datdo") Đất Đỏ
+              option(value="longdien") Long Điền
+              option(value="baria") Bà Rịa
+              option(value="vungtau") Vũng Tàu
+              option(value="condao") Côn Đảo
+              option(value="tanthanh") Tân Thành
+              option(value="chauduc") Châu Đức
+              option(value="xuyenmoc") Xuyên Mộc
           .d-flex.form-group.col-12
             .custom-control.custom-radio
               input.custom-control-input#answer1(type='radio' name='questions[0][true]' value='a')

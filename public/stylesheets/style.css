@@ -211,14 +211,6 @@ body {
   transform: scale(1);
 }
 
-.modal_chucnang__close {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  font-size: 32px;
-  cursor: pointer;
-}
-
 .map-hanhchinh map:focus {
   outline: none;
 }

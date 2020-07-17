@@ -1,75 +1,68 @@
+var counter = {
+  end: 20, // Thời gian trả lời mỗi câu hỏi
+  sumaryCounter: 0,
+  maximumCounter: 180,
+  selector_cowndown: $('.time_countdown'),
+  selector_summary: $('.time_summary'),
+  selector_submit_summary: $('#submit_time_summary')
+}
+
+var couterRandom = 400
+
+var listLocations = []
+
+const locations = [
+  'Đất Đỏ',
+  'Long Điền',
+  'Bà Rịa',
+  'Vũng Tàu',
+  'Côn Đảo',
+  'Tân Thành',
+  'Châu Đức',
+  'Xuyên Mộc'
+]
+
+const modal = [
+  'datdo',
+  'longdien',
+  'baria',
+  'vungtau',
+  'condao',
+  'tanthanh',
+  'chauduc',
+  'xuyenmoc'
+]
+
+
 $(document).ready(function () {
+
+  tabCauHoi('xuyenmoc', star_conlai)
+  tabCauHoi('datdo', star_conlai)
+
   //#region Count timer
-  var counter = {
-    // maximun: listTabs.length * 20,
-    maximun: 3000,
-    isPaused: false,
-    summary: 0, // Tổng thời gian  trả lời câu hỏi
-    end: 20, // Thời gian trả lời mỗi câu hỏi
-    action_next: $('#time_action_next'),
-    innerHTML_end: $('#time_countdown'),
-    innerHTML_summary: $('#time_summary'),
-    input_summary: $('#submit_time_summary')
-  }
-
-  $('.s3_pause').on('click', function () {
-    counter.isPaused = true
-  })
-
-  $('.s3_restart').on('click', function () {
-    counter.end = 20
-    counter.innerHTML_end.text(counter.end)
-    counter.isPaused = false
-  })
-
   $('.s3_start').click(function () {
-    counter.ticker = setInterval(function () {
-      if (!counter.isPaused) {
-        counter.end--
-        counter.summary++
-        if (counter.end === 0) {
-          counter.end = 20
-        }
-        if (counter.summary === counter.maximun) {
-          clearInterval(counter.ticker)
-          counter.end = 0
-        }
-        counter.innerHTML_summary.text(counter.summary)
-        counter.input_summary.val(counter.summary)
-        counter.innerHTML_end.text(counter.end)
-      }
-    }, 1000)
+    counter.end = 20
+    counter.selector_cowndown.text(counter.end)
+    clearInterval(counter.ticker)
+    startCounter(counter)
+  })
+  $('.s3_stop').click(function () {
+    console.log(counter.sumaryCounter)
+    clearInterval(counter.ticker)
+    $(this).parents('.modal_chucnang__wrapper').removeClass('show')
+    $('body').removeClass('overflow-hidden')
+    console.log($(this).parents('.modal_chucnang__wrapper').data('modal'));
+    removeClassInMap($(this).parents('.modal_chucnang__wrapper').data('modal'))
   })
   //#endregion
 
-  //#region random number
-  var couterRandom = 4
-  var locations = [
-    'Đất Đỏ',
-    'Long Điền',
-    'Bà Rịa',
-    'Vũng Tàu',
-    'Côn Đảo',
-    'Tân Thành',
-    'Châu Đức',
-    'Xuyên Mộc'
-  ]
-  var modal = [
-    'datdo',
-    'longdien',
-    'baria',
-    'vungtau',
-    'condao',
-    'tanthanh',
-    'chauduc',
-    'xuyenmoc'
-  ]
+  //#region random location
   $('.s3_random').click(function () {
     if (couterRandom > 0) {
       var random = randomRange(8)
-      var result = []
+      listLocations = []
       for (var i = 0; i < random.length; i++) {
-        result.push({
+        listLocations.push({
           modal: modal[random[i]],
           name: locations[random[i]]
         })
@@ -79,15 +72,20 @@ $(document).ready(function () {
         e.preventDefault()
       })
       $('area').removeClass('active')
-      result.map(i => {
+      listLocations.map(i => {
+        $('#result_random').append(`<strong class='text-danger mx-2'>${i.name}</strong>`)
         $(`area[data-modal=${i.modal}]`).addClass('active')
         $(`area[data-modal=${i.modal}].active`).click(function (e) {
           e.preventDefault()
-          console.log(this);
           $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass('show')
           $('body').addClass('overflow-hidden')
+          // start couter
+          counter.end = 20
+          counter.selector_cowndown.text(counter.end)
+          clearInterval(counter.ticker)
+          startCounter(counter)
+          // end couter
         })
-        $('#result_random').append(`<strong class='text-danger mx-2'>${i.name}</strong>`)
       })
       couterRandom--
       $('#random_conlai').text(couterRandom)
@@ -100,6 +98,7 @@ $(document).ready(function () {
       }
     }
   })
+
   $('.s3_ok').click(function () {
     $(this).hide()
     $('#random_conlai').parent().hide()
@@ -107,6 +106,7 @@ $(document).ready(function () {
     $('#start_text').show()
     $('#star_conlai').parent().show()
   })
+
   const randomRange = length => {
     const results = []
     const possibleValues = Array.from({ length }, (value, i) => i)
@@ -119,19 +119,82 @@ $(document).ready(function () {
     }
     return results
   }
+
   $('.sidebar_chucnang__item').click(function () {
     $('.s3_random').attr('disabled', true)
   })
+
   $('area').click(function (e) {
     e.preventDefault()
   })
   //#endregion
 
+  var star_conlai = 2;
+  $('#star_conlai').text(star_conlai);
 
-  //#region modal
-  $('.modal_chucnang__close').click(function () {
-    $(this).parent().removeClass('show')
-    $('body').removeClass('overflow-hidden')
+  console.log($('.star_checkbox'))
+  $('.star_checkbox').change(function () {
+    if ($(this).is(':checked')) {
+      star_conlai -= 1
+      $('#star_conlai').text(star_conlai);
+    } else {
+      star_conlai += 1
+      $('#star_conlai').text(star_conlai);
+    }
+    // if (star_conlai < 0) {
+    //   $('.star_checkbox').parents('.custom-checkbox').hide()
+    // }
+    console.log($(this).is(':checked'))
+    console.log(star_conlai)
   })
-  //#endregion
 })
+
+
+//#region function
+function tabCauHoi(name, star_conlai) {
+  var listTab = []
+  var curentTab = 0
+  $(`.tabs.${name}`).each(function () {
+    listTab.push(this.id)
+  })
+  $(`#${listTab[curentTab]}`).show() // Hiển thị câu hỏi đầu tiên
+  $(`.next_question.${name}`).click(function () {
+    if (star_conlai <= 0) {
+      $('.star_checkbox').parents('.custom-checkbox').hide()
+    }
+    ++curentTab
+    if (curentTab < listTab.length) {
+      $(`#${listTab[curentTab - 1]}`).hide()
+      $(`#${listTab[curentTab]}`).show()
+      $(`.current_question.${name}`).text(curentTab + 1)
+    }
+    if ((curentTab + 1) == listTab.length) {
+      $(`.next_question.${name}`).hide()
+      $(`.s3_stop.${name}`).show()
+    }
+  })
+}
+
+function startCounter(counter) {
+  counter.ticker = setInterval(function () {
+    counter.end--
+    counter.sumaryCounter++
+    if (counter.end === 0) {
+      counter.end = 20
+    }
+    if (counter.sumaryCounter === counter.maximumCounter) {
+      clearInterval(counter.ticker)
+      counter.end = 0
+    }
+    counter.selector_summary.text(counter.sumaryCounter)
+    counter.selector_submit_summary.val(counter.sumaryCounter)
+    counter.selector_cowndown.text(counter.end)
+  }, 1000)
+}
+
+function removeClassInMap(name) {
+  $(`area[data-modal=${name}]`).unbind('click').click(function (e) {
+    e.preventDefault()
+  })
+}
+//#endregion

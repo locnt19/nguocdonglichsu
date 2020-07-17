@@ -7,10 +7,10 @@ block content
         .middle__center__md.question__wrapper.mx-auto
           h3.text-white.font-weight-bold Phần 3: Khám phá
           .question__scroll.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-3.pb-md-4
-            if exams
+            if examCode
               input.d-none(name='tuan' value=tuanHienTai)
               input.d-none(name='dot' value=dotHienTai)
-              input.d-none(name='exam' value=exams.code)
+              input.d-none(name='exam' value=examCode)
               input.d-none(name='user' value=user._id)
               input.d-none#submit_time_summary(name='time' value='0')
               .text-center
@@ -24,9 +24,6 @@ block content
                   area(data-modal='vungtau' target='' alt='Vũng Tàu' title='Vũng Tàu' href='' coords='156,298,182,313,183,333,160,330,148,338,144,355,130,364,107,375,89,396,75,414,67,407,64,398,54,389,55,377,49,370,54,359,63,364,73,358,86,359,97,344,120,339,103,333,103,322,107,305,98,311,90,320,77,322,60,323,43,312,37,295,51,283,67,281,89,285,97,290,111,297,145,292' shape='poly')
                   area(data-modal='tanthanh' target='' alt='Tân Thành' title='Tân Thành' href='' coords='23,295,39,288,63,279,86,284,104,280,108,267,128,236,142,237,151,204,144,180,138,160,139,145,141,124,138,112,141,88,124,84,110,97,99,118,87,124,74,132,59,128,38,128,20,134,14,149,2,152,17,170,24,194,12,212,24,226,11,250,0,267' shape='poly')
                   area(data-modal='condao' target='' alt='Côn Đảo' title='Côn Đảo' href='' coords='324,357,307,364,295,367,287,378,283,401,295,413,311,408,328,415,340,415,353,414,364,404,379,400,397,396,399,381,377,383,356,387,344,378,352,366,360,354,362,335,341,330,320,332,299,333,297,342,301,352' shape='poly')
-              .text-center
-                //- button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
-                //- button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài
                 #start_text(style='display: none') Vui lòng chọn vị trí tương ứng trên bản đồ để bắt đầu
                 .text-center.mb-2
                   button(type='button').mr-2.btn.btn-outline-primary.btn-sm.s3_random random
@@ -34,24 +31,16 @@ block content
                 #result_random
                 div Lượt quay còn lại: &nbsp;
                   span#random_conlai 4
-                div(style='display: none') Ngôi sao hi vọng: &nbsp;
+                div(style='display: none') Ngôi sao hy vọng: &nbsp;
                   span#star_conlai 2
-                //- .text-center
-                  button(type='button').s3_start start
-                  button(type='button').s3_pause pause
-                  button(type='button').s3_restart restart
   section
-    if exams
-      section.modal_chucnang__wrapper.bg-white.show(data-modal='xuyenmoc')
-        .modal_chucnang__close.mdi.mdi-chevron-left.text-white
-        h4.text-center Xuyên Mộc
-        .custom-control.custom-checkbox
-          input.custom-control-input#answer3(type='checkbox' name='questions[0][true]' value='c')
-          label.custom-control-label(for="answer3") Đặt sao
-        -for(var i = 0; i < exams.questions.length; i++)
-          -var item = exams.questions[i]
+    if xuyenmoc
+      section.modal_chucnang__wrapper.p-5.bg-white(data-modal='xuyenmoc')
+        h4.font-weight-bold.text-center Xuyên Mộc
+        -for(var i = 0; i < xuyenmoc.questions.length; i++)
+          -var item = xuyenmoc.questions[i]
             input.d-none(name=`answers[${i}][code]` value=`${item.code}`)
-            .tabs(id=`${item.code}` style='display: none')
+            .tabs.xuyenmoc(id=`${item.code}` style='display: none')
               h5.question__question.font-weight-bold Question #{i + 1}: #{item.question}
               .question__answer
                 .custom-control.custom-radio.mt-2
@@ -66,15 +55,58 @@ block content
                 .custom-control.custom-radio.mt-2
                   input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
                   label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
+              .custom-control.custom-checkbox
+                input.star_checkbox.custom-control-input(id=`xuyenmoc_star${i}` name=`answers[${i}][star]` type='checkbox')
+                label.custom-control-label.text-dark(for=`xuyenmoc_star${i}`) Đặt ngôi sao hy vọng
+        .text-center
+          button(type='button').btn.btn-primary.question__submit.px-5.mt-4.next_question.xuyenmoc Tiếp theo
+          button(type='button' style='display: none').btn.btn-primary.question__submit.px-5.mt-4.s3_stop.xuyenmoc Lưu bài
         .mt-3
           .d-flex.align-items-center.justify-content-between
             .question__time__sum
               span(style='font-size: inherit').material-icons.mr-1 alarm
-              span#time_summary 0
+              span.time_summary 0
             .h5.m-0.question__time
-              span#time_countdown 20
+              span.time_countdown 20
             div
-              span#current_question 1
-              span &nbsp; / #{exams.questions.length}
+              span.current_question.xuyenmoc 1
+              span &nbsp; / #{xuyenmoc.questions.length}
+    if datdo
+      section.modal_chucnang__wrapper.p-5.bg-white(data-modal='datdo')
+        h4.font-weight-bold.text-center Đất Đỏ
+        -for(var i = 0; i < datdo.questions.length; i++)
+          -var item = datdo.questions[i]
+            input.d-none(name=`answers[${i}][code]` value=`${item.code}`)
+            .tabs.datdo(id=`${item.code}` style='display: none')
+              h5.question__question.font-weight-bold Question #{i + 1}: #{item.question}
+              .question__answer
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-a` type='radio' name=`answers[${i}][answer]` value='a')
+                  label.custom-control-label.h6(for=`${item.code}-a`) #{item.a}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-b` type='radio' name=`answers[${i}][answer]` value='b')
+                  label.custom-control-label.h6(for=`${item.code}-b`) #{item.b}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-c` type='radio' name=`answers[${i}][answer]` value='c')
+                  label.custom-control-label.h6(for=`${item.code}-c`) #{item.c}
+                .custom-control.custom-radio.mt-2
+                  input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
+                  label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
+              .custom-control.custom-checkbox
+                input.star_checkbox.custom-control-input(id=`datdo_star${i}` name=`answers[${i}][star]` type='checkbox')
+                label.custom-control-label.text-dark(for=`datdo_star${i}`) Đặt ngôi sao hy vọng
+        .text-center
+          button(type='button').btn.btn-primary.question__submit.px-5.mt-4.next_question.datdo Tiếp theo
+          button(type='button' style='display: none').btn.btn-primary.question__submit.px-5.mt-4.s3_stop.datdo Lưu bài
+        .mt-3
+          .d-flex.align-items-center.justify-content-between
+            .question__time__sum
+              span(style='font-size: inherit').material-icons.mr-1 alarm
+              span.time_summary 0
+            .h5.m-0.question__time
+              span.time_countdown 20
+            div
+              span.current_question.datdo 1
+              span &nbsp; / #{datdo.questions.length}
 block scripts
   script(src='/javascripts/section-3.js')
