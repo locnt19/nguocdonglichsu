@@ -5,12 +5,12 @@ block content
     .container.py-3.min-vh-100
       .middle__center__md.question__wrapper.mx-auto
         h3.text-white.font-weight-bold Phần 1: Ngược dòng thời gian
-        form(action='/exams/summary' method='POST').card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
+        form(method='POST').card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
           if exams
-            if user.luotThiConLai === 1
-              input(name='lanThi' value='2')
-            if user.luotThiConLai === 2
-              input(name='lanThi' value='1')
+            if user.luotThiConLai.section1 === 1
+              input.d-none(name='lanThi' value='2')
+            if user.luotThiConLai.section1 === 2
+              input.d-none(name='lanThi' value='1')
             input.d-none(name='tuan' value=tuanHienTai)
             input.d-none(name='dot' value=dotHienTai)
             input.d-none(name='exam' value=exams.code)

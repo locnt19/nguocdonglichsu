@@ -17,10 +17,17 @@ exports.isLogged = async (req, res, next) => {
       console.log('run error')
       throw new Error()
     }
+    const luotThi = {
+      code: user.luotThiConLai,
+      section1: 2,
+      section2: 2,
+      section3: 2,
+      section4: 2,
+    }
     res.locals.user = {
       _id: user._id,
       name: user.name,
-      luotThiConLai: user.luotThiConLai,
+      luotThiConLai: luotThi,
       identity: user.identity, // Chứng minh nhân dân
       birthday: user.birthday,
       sex: user.sex,
@@ -85,7 +92,7 @@ exports.checkLuotThiConLai = async (req, res, next) => {
       throw new Error()
     }
     // console.log(user)
-    if (user.luotThiConLai <= 0) {
+    if (user.luotThiConLai.code <= 0) {
       res.render('het-luot.pug', { title: 'Hết lượt thi' })
     }
     next()

@@ -7,7 +7,7 @@ var counter = {
   selector_submit_summary: $('#submit_time_summary')
 }
 
-var couterRandom = 400
+var couterRandom = 4
 
 var listLocations = []
 
@@ -36,8 +36,17 @@ const modal = [
 
 $(document).ready(function () {
 
-  tabCauHoi('xuyenmoc', star_conlai)
-  tabCauHoi('datdo', star_conlai)
+  tabCauHoi('datdo')
+  tabCauHoi('longdien')
+  tabCauHoi('baria')
+  tabCauHoi('vungtau')
+  tabCauHoi('condao')
+  tabCauHoi('tanthanh')
+  tabCauHoi('chauduc')
+  tabCauHoi('xuyenmoc')
+
+  var done = 0
+
 
   //#region Count timer
   $('.s3_start').click(function () {
@@ -46,13 +55,25 @@ $(document).ready(function () {
     clearInterval(counter.ticker)
     startCounter(counter)
   })
+
   $('.s3_stop').click(function () {
-    console.log(counter.sumaryCounter)
+    done++
+    var listCheck = $('.star_checkbox:checked')
+    if (listCheck.length >= 2) {
+      $('.star_checkbox').parents('.custom-checkbox').hide()
+      $('#star_conlai').parent().hide()
+      // console.log($('.star_checkbox'))
+    }
+    // console.log(counter.sumaryCounter)
     clearInterval(counter.ticker)
     $(this).parents('.modal_chucnang__wrapper').removeClass('show')
     $('body').removeClass('overflow-hidden')
-    console.log($(this).parents('.modal_chucnang__wrapper').data('modal'));
+    // console.log($(this).parents('.modal_chucnang__wrapper').data('modal'));
     removeClassInMap($(this).parents('.modal_chucnang__wrapper').data('modal'))
+    // console.log('done: ', done);
+    if (done >= 4) {
+      $('#luubai').show()
+    }
   })
   //#endregion
 
@@ -75,17 +96,6 @@ $(document).ready(function () {
       listLocations.map(i => {
         $('#result_random').append(`<strong class='text-danger mx-2'>${i.name}</strong>`)
         $(`area[data-modal=${i.modal}]`).addClass('active')
-        $(`area[data-modal=${i.modal}].active`).click(function (e) {
-          e.preventDefault()
-          $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass('show')
-          $('body').addClass('overflow-hidden')
-          // start couter
-          counter.end = 20
-          counter.selector_cowndown.text(counter.end)
-          clearInterval(counter.ticker)
-          startCounter(counter)
-          // end couter
-        })
       })
       couterRandom--
       $('#random_conlai').text(couterRandom)
@@ -105,6 +115,21 @@ $(document).ready(function () {
     $('.s3_random').hide()
     $('#start_text').show()
     $('#star_conlai').parent().show()
+    $('area:not(.active)').each(function () {
+      $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).remove()
+    })
+    $('area:not(.active)').remove()
+    $('area.active').click(function (e) {
+      e.preventDefault()
+      $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass('show')
+      $('body').addClass('overflow-hidden')
+      // start couter
+      counter.end = 20
+      counter.selector_cowndown.text(counter.end)
+      clearInterval(counter.ticker)
+      startCounter(counter)
+      // end couter
+    })
   })
 
   const randomRange = length => {
@@ -120,19 +145,17 @@ $(document).ready(function () {
     return results
   }
 
-  $('.sidebar_chucnang__item').click(function () {
-    $('.s3_random').attr('disabled', true)
-  })
-
   $('area').click(function (e) {
     e.preventDefault()
   })
   //#endregion
 
+
+  //#region Checkbox
   var star_conlai = 2;
   $('#star_conlai').text(star_conlai);
 
-  console.log($('.star_checkbox'))
+  // console.log($('.star_checkbox'))
   $('.star_checkbox').change(function () {
     if ($(this).is(':checked')) {
       star_conlai -= 1
@@ -141,17 +164,15 @@ $(document).ready(function () {
       star_conlai += 1
       $('#star_conlai').text(star_conlai);
     }
-    // if (star_conlai < 0) {
-    //   $('.star_checkbox').parents('.custom-checkbox').hide()
-    // }
-    console.log($(this).is(':checked'))
-    console.log(star_conlai)
+    // console.log(star_conlai)
   })
+  //#endregion
+
 })
 
 
 //#region function
-function tabCauHoi(name, star_conlai) {
+function tabCauHoi(name) {
   var listTab = []
   var curentTab = 0
   $(`.tabs.${name}`).each(function () {
@@ -159,8 +180,10 @@ function tabCauHoi(name, star_conlai) {
   })
   $(`#${listTab[curentTab]}`).show() // Hiển thị câu hỏi đầu tiên
   $(`.next_question.${name}`).click(function () {
-    if (star_conlai <= 0) {
+    var listCheck = $('.star_checkbox:checked')
+    if (listCheck.length >= 2) {
       $('.star_checkbox').parents('.custom-checkbox').hide()
+      // console.log($('.star_checkbox'))
     }
     ++curentTab
     if (curentTab < listTab.length) {

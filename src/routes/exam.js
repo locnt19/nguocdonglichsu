@@ -18,23 +18,23 @@ router.route('/coming-soon')
 
 router.route('/section-1')
   .get(checkTime, examController.templateSection1)
-// .post(checkTime, examController.nopBaiThi)
+  .post(checkTime, examController.nopBaiThi1)
 
 router.route('/section-2')
   .get(checkTime, examController.templateSection2)
-// .post(checkTime, examController.nopBaiThi)
+// .post(checkTime, examController.nopBaiThi1)
 
 router.route('/section-3')
   .get(checkTime, examController.templateSection3)
-// .post(checkTime, examController.nopBaiThi)
+  .post(checkTime, examController.nopBaiThi3)
 
 router.route('/section-4')
   .get(checkTime, examController.templateSection4)
-// .post(checkTime, examController.nopBaiThi)
+// .post(checkTime, examController.nopBaiThi1)
 
 router.route('/summary')
   .get(checkTime, examController.templateSummary)
-// .post(checkTime, examController.nopBaiThi)
+// .post(checkTime, examController.nopBaiThi1)
 
 router.route('/het-luot')
   .get((req, res) => {

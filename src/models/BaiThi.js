@@ -10,11 +10,13 @@ const baiThiSchema = mongoose.Schema({
   scope: { type: Number, default: 0 },
   answers: [{
     code: { type: String, default: null },
-    answer: { type: String, default: null }
+    answer: { type: String, default: null },
+    star: { type: String, default: null }
   }],
   answersTrue: [{
     code: { type: String },
-    answer: { type: String }
+    answer: { type: String },
+    star: { type: String }
   }
   ]
 }, { timestamps: true });
