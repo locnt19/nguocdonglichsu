@@ -66,8 +66,18 @@ exports.templateSection3 = async (req, res) => {
 }
 
 exports.templateSection4 = async (req, res) => {
-  const data = await DeThi.findOne({ code: 'P01' })
-  res.render('section-4.pug', { title: 'Phần 4: Kết nối', exams: data })
+  const data = await DeThi.findOne({ code: 'P04' })
+
+  const randomIndexAnwser = randomRange(data.questions.length)
+  let randomAnwser = []
+
+  for (var i = 0; i < randomIndexAnwser.length; i++) {
+    randomAnwser.push(data.questions[randomIndexAnwser[i]])
+  }
+
+  // res.json(randomAnwser)
+
+  res.render('section-4.pug', { title: 'Phần 4: Kết nối', exams: data, randomAnwser: randomAnwser })
 }
 
 exports.templateSummary = async (req, res) => {
@@ -226,4 +236,18 @@ function removeNestedArray(array) {
   }
   return merged
 }
+
+function randomRange(length) {
+  const results = []
+  const possibleValues = Array.from({ length }, (value, i) => i)
+  for (let i = 0; i < length; i += 1) {
+    const possibleValuesRange = length - (length - possibleValues.length)
+    const randomNumber = Math.floor(Math.random() * possibleValuesRange)
+    const normalizedRandomNumber = randomNumber !== possibleValuesRange ? randomNumber : possibleValuesRange
+    const [nextNumber] = possibleValues.splice(normalizedRandomNumber, 1)
+    results.push(nextNumber)
+  }
+  return results
+}
+
 //#endregion

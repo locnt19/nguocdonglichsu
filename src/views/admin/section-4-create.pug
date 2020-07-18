@@ -1,0 +1,47 @@
+extends layout-admin.pug
+
+block content
+  .row.m-0
+    .col-12.p-0.px-lg-3
+      .card.p-3.p-md-5
+        .d-flex
+          .h6 Tạo câu hỏi Phần 4
+          small.ml-auto
+            if deThi !== null
+              a(href='/questions/section-4') Đã có #{deThi.questions.length} câu hỏi
+            else
+              | Đề thi chưa có câu hỏi
+        form(method='POST').row
+          input.d-none(name='name' value='Phần 4')
+          input.d-none(name='code' value='P04')
+          if deThi !== null
+            -var deThiCuoi = deThi.questions.length - 1
+            input.d-none#cauHoiCuoiCuaDeThi(name='questions[0][code]' value=`${deThi.questions[deThiCuoi].code}`)
+          else
+            input.d-none(name='questions[0][code]' value='Q01')
+          .form-group.col-12
+            textarea(name='questions[0][question]' placeholder="Câu hỏi").form-control
+          .d-flex.form-group.col-12
+            .custom-control.custom-radio
+              if deThi !== null
+                -var deThiCuoi = deThi.questions.length - 1
+                input.custom-control-input.cauHoiCuoiCuaDeThiAnwser#answer1(type='radio' checked name='questions[0][true]' value=`${deThi.questions[deThiCuoi].code}`)
+              else
+                input.custom-control-input#answer1(type='radio' checked name='questions[0][true]' value='Q01-true')
+              label.custom-control-label(for="answer1")
+            textarea(name='questions[0][a]' placeholder="Câu trả lời đúng").form-control
+          .col-12
+            button(type="submit").btn.btn-block.btn-primary Tạo
+  script.
+    if (document.querySelector('#cauHoiCuoiCuaDeThi') !== null) {
+      var cauHoiCuoiCuaDeThi = document.querySelector('#cauHoiCuoiCuaDeThi').value
+      cauHoiCuoiCuaDeThi = cauHoiCuoiCuaDeThi.slice(1)
+      cauHoiCuoiCuaDeThi = parseInt(cauHoiCuoiCuaDeThi) + 1
+      if (parseInt(cauHoiCuoiCuaDeThi) < 9) {
+        cauHoiCuoiCuaDeThi = 'Q0' + cauHoiCuoiCuaDeThi
+      } else {
+        cauHoiCuoiCuaDeThi = 'Q' + cauHoiCuoiCuaDeThi
+      }
+      document.querySelector('#cauHoiCuoiCuaDeThi').value = cauHoiCuoiCuaDeThi
+      document.querySelector('.cauHoiCuoiCuaDeThiAnwser').value = cauHoiCuoiCuaDeThi + '-true'
+    }

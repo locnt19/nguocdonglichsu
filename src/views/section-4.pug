@@ -1,49 +1,37 @@
 extends layout
 
 block content
-  form(action='/exams/summary' method='POST')
+  form(method='POST')
     section.bg__exams
       .container.py-3.min-vh-100
-        .middle__center__md.question__wrapper.mx-auto
-          h3.text-white.font-weight-bold Phần 4: kết nối
-          .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
-            if exams
+        if exams
+          .middle__center__md.question__wrapper.mx-auto
+            h3.text-white.font-weight-bold #{title}
+              if user.luotThiConLai.section1 === 1
+                input.d-none(name='lanThi' value='2')
+              if user.luotThiConLai.section1 === 2
+                input.d-none(name='lanThi' value='1')
               input.d-none(name='tuan' value=tuanHienTai)
               input.d-none(name='dot' value=dotHienTai)
               input.d-none(name='exam' value=exams.code)
               input.d-none(name='user' value=user._id)
               input.d-none#submit_time_summary(name='time' value='0')
-              img.d-block.mw-100.mx-auto.mb-4(width='300' src='../../images/bandohanhchinh_transparent.png', alt='ban do hanh chinh')
-              -for(var i = 0; i < exams.questions.length; i++)
-                -var item = exams.questions[i]
-                  input.d-none(name=`answers[${i}][code]` value=`${item.code}`)
-                  .tabs(id=`${item.code}` style='display: none')
-                      h5.question__question.font-weight-bold Question #{i + 1}: #{item.question}
-                      .question__answer
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-a` type='radio' name=`answers[${i}][answer]` value='a')
-                          label.custom-control-label.h6(for=`${item.code}-a`) #{item.a}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-b` type='radio' name=`answers[${i}][answer]` value='b')
-                          label.custom-control-label.h6(for=`${item.code}-b`) #{item.b}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-c` type='radio' name=`answers[${i}][answer]` value='c')
-                          label.custom-control-label.h6(for=`${item.code}-c`) #{item.c}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
-                          label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
+            .question__scroll.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-3.pb-md-4
+              .row
+                .col-6
+                  -for(var item of exams.questions)
+                    -var index = exams.questions.indexOf(item)
+                    .dragula-container.px-3.py-2.my-3.border.rounded
+                      input.anwser(name=`answers[${index}][answer]`)
+                      .user-select-none.no-dragdrop
+                        span #{item.question}
+                        input(name=`answers[${index}][code]` value=item.code)
+                      .user-select-none
+                .col-6
+                  .dragula-container.px-3.py-2.my-3.border.rounded
+                    -for(var item of randomAnwser)
+                      .user-select-none(data-anwser=item.true) #{item.a}
               .text-center
-                button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
-                button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài
-              .mt-3
-                .d-flex.align-items-center.justify-content-between
-                  .question__time__sum
-                    span(style='font-size: inherit').material-icons.mr-1 alarm
-                    span#time_summary 0
-                  .h5.m-0.question__time
-                    span#time_countdown 20
-                  div
-                    span#current_question 1
-                    span &nbsp; / #{exams.questions.length}
+                button.btn.btn-primary Chấm điểm
 block scripts
-  script(src='/javascripts/section-2.js')
+  script(src='/javascripts/section-4.js')

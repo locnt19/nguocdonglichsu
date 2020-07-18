@@ -16,4 +16,11 @@ router.route('/section-3/create')
   .get(questionController.templateSection3Create)
   .post(questionController.createSection3)
 
+router.route('/section-4')
+  .get(questionController.templateSection4)
+
+router.route('/section-4/create')
+  .get(questionController.templateSection4Create)
+  .post(questionController.createSection4)
+
 module.exports = router

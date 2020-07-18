@@ -132,19 +132,6 @@ $(document).ready(function () {
     })
   })
 
-  const randomRange = length => {
-    const results = []
-    const possibleValues = Array.from({ length }, (value, i) => i)
-    for (let i = 0; i < 4; i += 1) {
-      const possibleValuesRange = length - (length - possibleValues.length)
-      const randomNumber = Math.floor(Math.random() * possibleValuesRange)
-      const normalizedRandomNumber = randomNumber !== possibleValuesRange ? randomNumber : possibleValuesRange
-      const [nextNumber] = possibleValues.splice(normalizedRandomNumber, 1)
-      results.push(nextNumber)
-    }
-    return results
-  }
-
   $('area').click(function (e) {
     e.preventDefault()
   })
@@ -172,6 +159,19 @@ $(document).ready(function () {
 
 
 //#region function
+const randomRange = length => {
+  const results = []
+  const possibleValues = Array.from({ length }, (value, i) => i)
+  for (let i = 0; i < 4; i += 1) {
+    const possibleValuesRange = length - (length - possibleValues.length)
+    const randomNumber = Math.floor(Math.random() * possibleValuesRange)
+    const normalizedRandomNumber = randomNumber !== possibleValuesRange ? randomNumber : possibleValuesRange
+    const [nextNumber] = possibleValues.splice(normalizedRandomNumber, 1)
+    results.push(nextNumber)
+  }
+  return results
+}
+
 function tabCauHoi(name) {
   var listTab = []
   var curentTab = 0
