@@ -1,5 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { vi_VN } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import vi from '@angular/common/locales/vi';
+registerLocaleData(vi);
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,7 +48,6 @@ import { AdminQuestion3ListComponent } from './pages/admin/admin-questions/admin
 import { AdminQuestion4Component } from './pages/admin/admin-questions/admin-question4/admin-question4.component';
 import { AdminQuestion4CreateComponent } from './pages/admin/admin-questions/admin-question4/admin-question4-create/admin-question4-create.component';
 import { AdminQuestion4ListComponent } from './pages/admin/admin-questions/admin-question4/admin-question4-list/admin-question4-list.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,8 +89,14 @@ import { AdminQuestion4ListComponent } from './pages/admin/admin-questions/admin
     AdminQuestion4CreateComponent,
     AdminQuestion4ListComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+  ],
+  providers: [{ provide: NZ_I18N, useValue: vi_VN }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

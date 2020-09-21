@@ -1,1 +1,136 @@
+<div style="text-align: center">
+  <h2 *ngIf="production">We are running in production mode</h2>
+  <h2 *ngIf="!production">We are running in development mode</h2>
+</div>
+
 <p>site-map works!</p>
+
+<ul>
+  <li>
+    <a routerLink="/">Root</a>
+  </li>
+  <li>
+    <a routerLink="/home">Home (role: user)</a>
+  </li>
+  <li>
+    <a routerLink="/login">Login</a>
+  </li>
+  <li>
+    <a routerLink="/logout">Logout (role: user)</a>
+  </li>
+  <li>
+    <a routerLink="/rank">Rank (role: user)</a>
+  </li>
+  <li>
+    <a routerLink="/register">Register</a>
+  </li>
+  <li>
+    <a routerLink="/site-map">Site map</a>
+  </li>
+  <li>
+    <a routerLink="/not-found">Not found</a>
+  </li>
+  <li>
+    <a routerLink="/user">User (role: user)</a>
+    <ul>
+      <li>
+        <a routerLink="/user/me">Me</a>
+      </li>
+      <li>
+        <a routerLink="/user/change-password">Change password</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a routerLink="/exams">Exams (role: user)</a>
+    <ul>
+      <li>
+        <a routerLink="/exams/coming-soon">Comming soon</a>
+      </li>
+      <li>
+        <a routerLink="/exams/exam-1">Exam 1</a>
+      </li>
+      <li>
+        <a routerLink="/exams/exam-2">Exam 2</a>
+      </li>
+      <li>
+        <a routerLink="/exams/exam-3">Exam 3</a>
+      </li>
+      <li>
+        <a routerLink="/exams/exam-4">Exam 4</a>
+      </li>
+      <li>
+        <a routerLink="/exams/summary">Summary</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a routerLink="/admin">Admin (role: admin)</a>
+    <ul>
+      <li>
+        <a routerLink="/admin/dashboard">Dashboard</a>
+      </li>
+      <li>
+        <a routerLink="/admin/rank">Rank</a>
+      </li>
+      <li>
+        <a routerLink="/admin/users">Users</a>
+      </li>
+      <li>
+        <a routerLink="/admin/time">Time</a>
+      </li>
+      <li>
+        <a routerLink="/admin/accounts">Account</a>
+      </li>
+      <li>
+        <a routerLink="/admin/questions">Questions</a>
+        <ul>
+          <li>
+            <a routerLink="/admin/questions/question-1">Question 1</a>
+            <ul>
+              <li>
+                <a routerLink="/admin/questions/question-1/create">Create</a>
+              </li>
+              <li>
+                <a routerLink="/admin/questions/question-1/list">List</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a routerLink="/admin/questions/question-2">Question 2</a>
+            <ul>
+              <li>
+                <a routerLink="/admin/questions/question-2/create">Create</a>
+              </li>
+              <li>
+                <a routerLink="/admin/questions/question-2/list">List</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a routerLink="/admin/questions/question-3">Question 3</a>
+            <ul>
+              <li>
+                <a routerLink="/admin/questions/question-3/create">Create</a>
+              </li>
+              <li>
+                <a routerLink="/admin/questions/question-3/list">List</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a routerLink="/admin/questions/question-4">Question 4</a>
+            <ul>
+              <li>
+                <a routerLink="/admin/questions/question-4/create">Create</a>
+              </li>
+              <li>
+                <a routerLink="/admin/questions/question-4/list">List</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
