@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
   // #region SUMMARY PAGE
-  var summaryTime = 10
-  var href = $('#link').attr('href')
+  var summaryTime = 10;
+  var href = $('#link').attr('href');
   ticker = setInterval(function () {
-    summaryTime--
+    summaryTime--;
     if (summaryTime === 0) {
-      clearInterval(ticker)
-      summaryTime = 0
-      window.location.assign(`${href}`)
+      clearInterval(ticker);
+      summaryTime = 0;
+      window.location.assign(`${href}`);
     }
-    $('#summary_time').text(summaryTime)
-  }, 1000)
+    $('#summary_time').text(summaryTime);
+  }, 1000);
   // #endregion
-})
+});

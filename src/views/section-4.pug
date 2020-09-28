@@ -19,19 +19,20 @@ block content
             .question__scroll.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-3.pb-md-4
               .row
                 .col-6
+                  h4 Questions
                   -for(var item of exams.questions)
                     -var index = exams.questions.indexOf(item)
-                    .dragula-container.px-3.py-2.my-3.border.rounded
-                      input.anwser(name=`answers[${index}][answer]`)
-                      .user-select-none.no-dragdrop
-                        span #{item.question}
-                        input(name=`answers[${index}][code]` value=item.code)
-                      .user-select-none
+                    .my-3
+                      p.mb-2 Question #{index}: #{item.question}
+                      input.d-none(name=`answers[${index}][code]` value=item.code)
+                      .px-3.py-2.border.rounded
+                        p.mb-0 Anwser:
+                        .dragula-container(style='min-height: 42px')
+                          input.d-none.anwser(name=`answers[${index}][answer]`)
                 .col-6
-                  .dragula-container.px-3.py-2.my-3.border.rounded
+                  h4 Anwsers
+                  .dragula-container.px-3.py-2.border.rounded
                     -for(var item of randomAnwser)
-                      .user-select-none(data-anwser=item.true) #{item.a}
+                      .user-select-none(data-anwser=item.true).px-3.py-2.my-2.border.rounded #{item.a}
               .text-center
                 button.btn.btn-primary Chấm điểm
-block scripts
-  script(src='/javascripts/section-4.js')
