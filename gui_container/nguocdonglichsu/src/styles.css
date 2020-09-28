@@ -1,1 +1,227 @@
-/* You can add global styles to this file, and also import other style files */
+/* *,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+optgroup,
+select,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+} */
+
+.navbar a {
+  font-weight: 500;
+}
+
+.form-control {
+  font-weight: 400;
+}
+
+body {
+  background: #f5f6f8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.bg__body {
+  background: url("assets/img/bg__body.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+.bg__exams {
+  background: url("assets/img/bg__exams.jpg") center center no-repeat fixed;
+  background-size: cover;
+}
+
+.bg__image__page {
+  background: url("assets/img/login__background2.jpg") center center no-repeat
+    fixed;
+  background-size: cover;
+}
+
+.bg__image__page2 {
+  background: url("assets/img/bg__login.png") center right no-repeat #fafafa;
+  background-size: contain;
+}
+
+.image__handle__error {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  .image__handle__error {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image__handle__error {
+    width: 700px;
+    height: 700px;
+  }
+}
+
+.login__container {
+  height: 100vh;
+}
+
+.middle__center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question__time {
+  font-weight: 700;
+  color: #c4183c;
+}
+
+.question__summary {
+  width: 250px;
+}
+
+.fake__select input {
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.admin__sidebar .nav-link {
+  color: inherit;
+}
+
+.admin__sidebar .nav-link.active,
+.admin__sidebar .nav-link:hover {
+  color: #007bff;
+}
+
+.question__scroll {
+  max-height: 600px;
+  overflow: auto;
+}
+
+.question__scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.question__scroll::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  border-radius: 999px;
+}
+
+.question__scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 72, 146, 0.3);
+  border-radius: 999px;
+}
+
+.question__scroll::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(
+    to right top,
+    #00a650,
+    #009580,
+    #0080a2,
+    #0066a9,
+    #004892
+  );
+}
+
+@media screen and (min-width: 768px) {
+  .login__wrapper {
+    height: 100vh;
+  }
+
+  .login__container {
+    border-radius: 0.875rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .login__form {
+    width: 300px;
+  }
+
+  .middle__center__md {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .question__wrapper {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .admin__sidebar {
+    height: 100%;
+  }
+
+  .question__wrapper {
+    width: 960px;
+  }
+}
+
+.modal_chucnang__wrapper {
+  z-index: 2000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  transform: scale(0);
+  background: #fff;
+  transition: transform 0.45s ease-in-out;
+}
+
+.modal_chucnang__wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modal_chucnang__wrapper::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+.modal_chucnang__wrapper::-webkit-scrollbar-thumb {
+  background: rgba(0, 72, 146, 0.3);
+}
+
+.modal_chucnang__wrapper::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(
+    to right top,
+    #00a650,
+    #009580,
+    #0080a2,
+    #0066a9,
+    #004892
+  );
+}
+
+.modal_chucnang__wrapper.show {
+  transform: scale(1);
+}
+
+.map-hanhchinh map:focus {
+  outline: none;
+}
