@@ -405,21 +405,17 @@ function section3() {
 }
 
 function section4() {
-  new dragula({
+  //#region Dragula plugin
+  const dragulaContainer = new dragula({
     isContainer: function (el) {
       return el.classList.contains('dragula-container');
     },
   })
     .on('drag', function (el) {
-      $(el).parents('.dragula-container').find('.anwser').val(null);
       el.className = el.className.replace('ex-moved', '');
     })
     .on('drop', function (el) {
       el.className += ' ex-moved';
-      $(el)
-        .parents('.dragula-container')
-        .find('.anwser')
-        .val(el.dataset.anwser);
     })
     .on('over', function (el, container) {
       container.className += ' ex-over';
@@ -429,5 +425,49 @@ function section4() {
     });
   $('.no-dragdrop').on('mousedown', function (e) {
     e.preventDefault();
+  });
+  //#endregion
+
+  // Change value every 1 seconds
+  $('.dragula-container.left').each((index, item) => {
+    setInterval(() => {
+      if ($(item).children().length > 1) {
+        const secondChildren = $(item).children()[1];
+        $(item).find('input').val($(secondChildren).data('anwser'));
+        $(item).parents('.border.rounded').addClass('border-primary shadow-sm');
+      } else {
+        $(item).find('input').val(null);
+        $(item)
+          .parents('.border.rounded')
+          .removeClass('border-primary shadow-sm');
+      }
+    }, 1000);
+  });
+
+  // Timer
+  const timeLimited = 20;
+  let currentTime = 0;
+  let stopTimer = false;
+
+  const intervalTimer = setInterval(() => {
+    if (stopTimer || currentTime === timeLimited) {
+      stopTimer = true;
+      clearInterval(intervalTimer);
+      dragulaContainer.destroy();
+    } else {
+      currentTime++;
+      $('#timer').text(currentTime);
+    }
+  }, 1000);
+
+  $('#submitSection4').on('click', e => {
+    e.preventDefault();
+    stopTimer = true;
+    clearInterval(intervalTimer);
+    dragulaContainer.destroy();
+    $('.dragula-container.left input').each((index, item) => {
+      console.log($(item).val());
+    });
+    console.log('click click');
   });
 }

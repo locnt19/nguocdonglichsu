@@ -18,8 +18,9 @@ block content
               input.d-none#submit_time_summary(name='time' value='0')
             .question__scroll.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-3.pb-md-4
               .row
+                h4.col-12.text-center#timer 0
                 .col-6
-                  h4 Questions
+                  h4.text-center Questions
                   -for(var item of exams.questions)
                     -var index = exams.questions.indexOf(item)
                     .my-3
@@ -27,12 +28,12 @@ block content
                       input.d-none(name=`answers[${index}][code]` value=item.code)
                       .px-3.py-2.border.rounded
                         p.mb-0 Anwser:
-                        .dragula-container(style='min-height: 42px')
+                        .dragula-container.left(class=`left${index}` style='min-height: 42px')
                           input.d-none.anwser(name=`answers[${index}][answer]`)
                 .col-6
-                  h4 Anwsers
-                  .dragula-container.px-3.py-2.border.rounded
+                  h4.text-center Anwsers
+                  .dragula-container.right.px-3.py-3.border.rounded
                     -for(var item of randomAnwser)
                       .user-select-none(data-anwser=item.true).px-3.py-2.my-2.border.rounded #{item.a}
               .text-center
-                button.btn.btn-primary Chấm điểm
+                button.btn.btn-primary#submitSection4 Chấm điểm
