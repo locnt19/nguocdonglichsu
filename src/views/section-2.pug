@@ -1,54 +1,53 @@
 extends layout
 
 block content
-  form(action='/exams/summary' method='POST')
-    section.bg__exams
-      .container.py-3.min-vh-100
-        .middle__center__md.question__wrapper.mx-auto
-          h3.text-white.font-weight-bold Phần 2: Giải mã lịch sử
-          .card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
-            if exams
-              input.d-none(name='tuan' value=tuanHienTai)
-              input.d-none(name='dot' value=dotHienTai)
-              input.d-none(name='exam' value=exams.code)
-              input.d-none(name='user' value=user._id)
-              input.d-none#submit_time_summary(name='time' value='0')
-              input.d-none(name='tuan' value=tuanHienTai)
-              input.d-none(name='dot' value=dotHienTai)
-              input.d-none(name='exam' value=exams.code)
-              input.d-none(name='user' value=user._id)
-              input.d-none#submit_time_summary(name='time' value='0')
-              img.d-block.mw-100.mx-auto.mb-4(width='300' src='../../images/bandohanhchinh_transparent.png', alt='ban do hanh chinh')
-              -for(var i = 0; i < exams.questions.length; i++)
-                -var item = exams.questions[i]
-                  input.d-none(name=`answers[${i}][code]` value=`${item.code}`)
-                  .tabs(id=`${item.code}` style='display: none')
-                      h5.question__question.font-weight-bold Question #{i + 1}: #{item.question}
-                      .question__answer
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-a` type='radio' name=`answers[${i}][answer]` value='a')
-                          label.custom-control-label.h6(for=`${item.code}-a`) #{item.a}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-b` type='radio' name=`answers[${i}][answer]` value='b')
-                          label.custom-control-label.h6(for=`${item.code}-b`) #{item.b}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-c` type='radio' name=`answers[${i}][answer]` value='c')
-                          label.custom-control-label.h6(for=`${item.code}-c`) #{item.c}
-                        .custom-control.custom-radio.mt-2
-                          input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${i}][answer]` value='d')
-                          label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
-              .text-center
-                button(type='button').btn.btn-primary.question__submit.px-5.mt-4#time_action_next Tiếp theo
-                button(type='submit').d-none.btn.btn-primary.question__submit.px-5.mt-4#time_action_submit Nộp bài
-              .mt-3
-                .d-flex.align-items-center.justify-content-between
-                  .question__time__sum
-                    span(style='font-size: inherit').material-icons.mr-1 alarm
-                    span#time_summary 0
-                  .h5.m-0.question__time
-                    span#time_countdown 20
-                  div
-                    span#current_question 1
-                    span &nbsp; / #{exams.questions.length}
-block scripts
-  script(src='/javascripts/section-2.js')
+  form(method='POST')
+    .container-fluid.p-4.min-vh-100
+      .row
+        .col-12
+          h3.font-weight-bold Phần 2: Giải mã lịch sử
+        .col-auto
+          .section2__left__container
+            .card.section2__question__wrapper
+              .section2__question__card.grid-container
+                //- -for(var i=1; i <= 8; i++)
+                  .section2__question__card__item.default(data-item=`${i}` class=`section2__${i}` data-value='a') #{i}
+                .section2__question__card__item(data-item='1' class=`section2__1` data-value='a') 1
+                .section2__question__card__item(data-item='2' class=`section2__2` data-value='b') 2
+                .section2__question__card__item(data-item='3' class=`section2__3` data-value='c') 3
+                .section2__question__card__item(data-item='4' class=`section2__4` data-value='d') 4
+                .section2__question__card__item(data-item='5' class=`section2__5` data-value='a') 5
+                .section2__question__card__item(data-item='6' class=`section2__6` data-value='b') 6
+                .section2__question__card__item(data-item='7' class=`section2__7` data-value='c') 7
+                .section2__question__card__item(data-item='8' class=`section2__8` data-value='d') 8
+            .d-flex.align-items-center.mt-3
+              button(type='button' data-value='c').btn.btn-primary.section2__question__background.px-5 Trả lời câu hỏi hình nền
+              .ml-auto
+                span Tổng thời gian:  
+                span.font-weight-bold#section2__summaryTimer 0
+        .col
+          .section2__backdrop.mt-5.d-none
+            h4 Phần tiếp theo sẽ bắt đầu sau
+            h2.font-weight-bold#section2__countdownGoToNextPage 10
+          .section2__question__list.d-none
+            -for(var i = 1; i <= 9; i++)
+              .section2__question__item.d-none(data-item=`${i}`)
+                h4.question__question.font-weight-bold Question #{i}: Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, dignissimos?
+                .question__answer
+                  .custom-control.custom-radio.mt-2
+                    input.custom-control-input(id=`section2__answer${i}__a` type='radio' name=`section2__answer${i}` value='a')
+                    label.custom-control-label.h5(for=`section2__answer${i}__a`) anwser a
+                  .custom-control.custom-radio.mt-2
+                    input.custom-control-input(id=`section2__answer${i}__b` type='radio' name=`section2__answer${i}` value='b')
+                    label.custom-control-label.h5(for=`section2__answer${i}__b`) anwser b
+                  .custom-control.custom-radio.mt-2
+                    input.custom-control-input(id=`section2__answer${i}__c` type='radio' name=`section2__answer${i}` value='c')
+                    label.custom-control-label.h5(for=`section2__answer${i}__c`) anwser c
+                  .custom-control.custom-radio.mt-2
+                    input.custom-control-input(id=`section2__answer${i}__d` type='radio' name=`section2__answer${i}` value='d')
+                    label.custom-control-label.h5(for=`section2__answer${i}__d`) anwser d
+            .d-flex.align-items-center.mt-5.pr-5
+              button(type='button').btn.btn-primary.section2__question__check__result.px-5 OK
+              .ml-auto
+                span Thời gian còn lại:  
+                span.font-weight-bold#section2__questionPendingTimer 20

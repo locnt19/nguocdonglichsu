@@ -11,6 +11,9 @@ router.route('/ready-2')
 router.route('/ready-3')
   .get(checkTime, examController.templateReady3)
 
+router.route('/ready-4')
+  .get(checkTime, examController.templateReady4)
+
 
 router.route('/coming-soon')
   .get(examController.templateComingSoon)

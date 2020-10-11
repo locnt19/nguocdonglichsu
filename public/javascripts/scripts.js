@@ -3,6 +3,7 @@ $(document).ready(function () {
   fakeSelectElement();
   comingSoon();
   section1();
+  section2();
   section3();
   section4();
 });
@@ -175,6 +176,164 @@ function section1() {
     }, 1000);
   }
   //#endregion
+}
+
+function section2() {
+  let doneSection2 = false;
+  let anwsered = 0;
+  let showQuestions = false;
+  let summaryCorrectAnwsered = 0;
+  let summaryWrongAnwsered = 0;
+  let questionPending = 0;
+  let trueAnwserPending = '';
+  let section2IntervalTimer;
+  let section2IntervalPendingTimer;
+  let summaryTimer = 0;
+  let questionPendingTimer = 20;
+  const $summaryTimer = $('#section2__summaryTimer');
+  const $questionPendingTimer = $('#section2__questionPendingTimer');
+
+  section2IntervalTimer = setInterval(() => {
+    ++summaryTimer;
+    $summaryTimer.text(summaryTimer);
+  }, 1000);
+
+  $('.section2__question__card__item').on('click', function () {
+    if (!showQuestions && !doneSection2) {
+      showQuestions = true;
+      $(this).addClass('pending'); // add class pending css.
+      questionPending = $(this).data('item');
+      trueAnwserPending = $(this).data('value');
+      $('.section2__question__list').removeClass('d-none');
+      $(`.section2__question__item[data-item=${questionPending}]`).removeClass(
+        'd-none'
+      );
+      section2IntervalPendingTimer = setInterval(() => {
+        if (questionPendingTimer > 0) {
+          --questionPendingTimer;
+          $questionPendingTimer.text(questionPendingTimer);
+        } else {
+          showToast('Time out');
+          hideListQuestion();
+          checkAnwser(questionPending, false);
+          clearIntervalAndResetQuestionPendingTimer();
+        }
+      }, 1000);
+    }
+  });
+
+  $('.section2__question__check__result').on('click', function () {
+    anwsered++;
+    let anwser = $(
+      `input[name=section2__answer${questionPending}]:checked`
+    ).val();
+    if (anwser === trueAnwserPending) {
+      if (questionPending === 9) {
+        checkAnwserBackground(true);
+      } else {
+        checkAnwser(questionPending, true);
+      }
+      clearIntervalAndResetQuestionPendingTimer();
+    } else {
+      if (questionPending === 9) {
+        checkAnwserBackground(false);
+      } else {
+        checkAnwser(questionPending, false);
+      }
+      clearIntervalAndResetQuestionPendingTimer();
+    }
+    hideListQuestion();
+  });
+
+  $('.section2__question__background').on('click', function () {
+    if (!showQuestions && !doneSection2) {
+      showQuestions = true;
+      doneSection2 = true;
+      questionPending = 9;
+      trueAnwserPending = $(this).data('value');
+      $('.section2__question__list').removeClass('d-none');
+      $(`.section2__question__item[data-item=${questionPending}]`).removeClass(
+        'd-none'
+      );
+      section2IntervalPendingTimer = setInterval(() => {
+        if (questionPendingTimer > 0) {
+          --questionPendingTimer;
+          $questionPendingTimer.text(questionPendingTimer);
+        } else {
+          showToast('Time out');
+          hideListQuestion();
+          checkAnwserBackground(false);
+          clearIntervalAndResetQuestionPendingTimer();
+        }
+      }, 1000);
+    }
+  });
+
+  function showToast(text) {
+    Toastify({
+      text: text,
+      gravity: 'top',
+      position: 'right',
+      duration: 3000,
+    }).showToast();
+  }
+
+  function clearIntervalAndResetQuestionPendingTimer() {
+    clearInterval(section2IntervalPendingTimer);
+    questionPendingTimer = 20;
+    $questionPendingTimer.text(questionPendingTimer);
+  }
+
+  function checkAnwser(questionPending, isCorrect) {
+    if (isCorrect) {
+      summaryCorrectAnwsered++;
+      showToast('Yeah Awesome!');
+      $(`.section2__question__card__item[data-item=${questionPending}]`)
+        .removeClass('pending')
+        .addClass('correct')
+        .off();
+    } else {
+      summaryWrongAnwsered++;
+      showToast('Oh nooo!');
+      $(`.section2__question__card__item[data-item=${questionPending}]`)
+        .removeClass('pending')
+        .addClass('wrong')
+        .off();
+    }
+  }
+
+  function checkAnwserBackground(isCorrect) {
+    clearInterval(section2IntervalTimer);
+    if (isCorrect) {
+      $('.section2__question__card__item')
+        .css('border', 'none')
+        .removeClass('pending wrong')
+        .addClass('correct')
+        .off();
+    } else {
+      $('.section2__question__card__item')
+        .css('border', 'none')
+        .removeClass('pending')
+        .addClass('wrong')
+        .off();
+    }
+    $('.section2__backdrop').removeClass('d-none');
+    let countdown = 10;
+    const interval = setInterval(() => {
+      if (countdown > 0) {
+        $('#section2__countdownGoToNextPage').text(--countdown);
+      } else {
+        clearInterval(interval);
+        window.location.href = 'http://localhost:5000/exams/ready-3';
+      }
+    }, 1000);
+  }
+
+  function hideListQuestion() {
+    showQuestions = false;
+    $('.section2__question__list').addClass('d-none');
+    $('.section2__question__item').addClass('d-none');
+  }
 }
 
 function section3() {
