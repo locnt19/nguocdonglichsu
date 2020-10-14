@@ -9,6 +9,13 @@ router.route('/section-1/create')
   .get(questionController.templateSection1Create)
   .post(questionController.createSection1)
 
+router.route('/section-2')
+  .get(questionController.templateSection2)
+
+router.route('/section-2/create')
+  .get(questionController.templateSection2Create)
+  .post(questionController.createSection2)
+
 router.route('/section-3')
   .get(questionController.templateSection3)
 

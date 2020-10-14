@@ -5,15 +5,15 @@ block content
     .col-12.p-0.px-lg-3
       .card.p-3.p-md-5
         .d-flex
-          .h6 Tạo câu hỏi Phần 1
+          .h6 Tạo câu hỏi Phần 2
           small.ml-auto
             if deThi !== null
-              a(href='/questions/section-1') Đã có #{deThi.questions.length} câu hỏi
+              a(href='/questions/section-2') Đã có #{deThi.questions.length} câu hỏi
             else
               | Đề thi chưa có câu hỏi
-        form(method='POST' action='/questions/section-1/create').row
-          input.d-none(name='name' value='Phần 1')
-          input.d-none(name='code' value='P01')
+        form(method='POST' action='/questions/section-2/create').row
+          input.d-none(name='name' value='Phần 2')
+          input.d-none(name='code' value='P02')
           if deThi !== null
             -var deThiCuoi = deThi.questions.length - 1
             input.d-none(id='cauHoiCuoiCuaDeThi' name='questions[0][code]' value=`${deThi.questions[deThiCuoi].code}`)
@@ -43,6 +43,21 @@ block content
             textarea(name='questions[0][d]' placeholder="Câu trả lời D").form-control
           .col-12
             button(type="submit").btn.btn-block.btn-primary Tạo
+      .d-flex.justify-content-center.flex-wrap.mt-3
+        .card.admin__section__2__create__image.p-3.m-2
+          img(style="width: 200px" src="/images/section-2/who is she.jpg" alt="who is she.jpg")
+        .card.admin__section__2__create__image.p-3.m-2
+          img(style="width: 200px" src="/images/section-2/where is this locate.jpg" alt="where is this locate.jpg")
+        .card.admin__section__2__create__image.p-3.m-2
+          img(style="width: 200px" src="/images/section-2/where is this locate 1.jpg" alt="where is this locate 1.jpg")
+        .card.admin__section__2__create__image.p-3.m-2
+          img(style="width: 200px" src="/images/section-2/where is this locate 2.jpg" alt="where is this locate 2.jpg")
+        .card.admin__section__2__create__image.p-3.m-2
+          img(style="width: 200px" src="/images/section-2/where is this locate 3.jpg" alt="where is this locate 3.jpg")
+        .card.admin__section__2__create__image.p-3.m-2
+          img(style="width: 200px" src="/images/section-2/where is this locate 4.jpg" alt="where is this locate 4.jpg")
+        .card.admin__section__2__create__image.p-3.m-2
+          img(style="width: 200px" src="/images/section-2/where is this locate 5.jpg" alt="where is this locate 5.jpg")
   script.
     if (document.querySelector('#cauHoiCuoiCuaDeThi') !== null) {
       var cauHoiCuoiCuaDeThi = document.querySelector('#cauHoiCuoiCuaDeThi').value

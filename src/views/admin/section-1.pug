@@ -7,34 +7,22 @@ block content
         .d-flex
           .h6 Phần 1
           a.small.ml-auto(href='/questions/section-1/create') Thêm câu hỏi mới
-        .table-responsive-lg
-          table.table.table-bordered
-            thead.bg-light
-              tr
-                th.text-center.align-middle.border-0(scope='col')
-                  | #
-                th.align-middle.border-0(scope='col')
-                  | Câu hỏi
-                th.align-middle.border-0(scope='col') Trả lời
-            tbody
-              if deThi !== null
-                -for(let cauHoi of deThi.questions)
-                  tr
-                    td(style='width: 70px').text-center #{cauHoi.code}
-                    td(style='width: 40%') #{cauHoi.question}
-                    td
-                      .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'a'}) A. #{cauHoi.a}
-                      .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'b'}) B. #{cauHoi.b}
-                      .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'c'}) C. #{cauHoi.c}
-                      .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'd'}) D. #{cauHoi.d}
-      //- ul.pagination.justify-content-center.m-0.py-4
-        li.page-item.disabled
-          a.page-link(href="#" tabindex="-1") Previous
-        li.page-item
-          a.page-link(href="#") 1
-        li.page-item
-          a.page-link(href="#") 2
-        li.page-item
-          a.page-link(href="#") 3
-        li.page-item
-          a.page-link(href="#") Next
+        table#table_section1_list.table.table-bordered
+          thead.bg-light
+            tr
+              th.text-center.align-middle.border-0(scope='col')
+                | #
+              th.align-middle.border-0(scope='col')
+                | Câu hỏi
+              th.align-middle.border-0(scope='col') Trả lời
+          tbody
+            if deThi !== null
+              -for(let cauHoi of deThi.questions)
+                tr
+                  td(style='width: 70px').text-center #{cauHoi.code}
+                  td(style='width: 40%') #{cauHoi.question}
+                  td
+                    .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'a'}) A. #{cauHoi.a}
+                    .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'b'}) B. #{cauHoi.b}
+                    .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'c'}) C. #{cauHoi.c}
+                    .mb-2(class={'text-success font-weight-bold': cauHoi.true === 'd'}) D. #{cauHoi.d}

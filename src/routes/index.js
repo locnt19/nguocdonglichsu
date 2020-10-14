@@ -11,7 +11,7 @@ router.get('/', auth.isLogged, indexController.templateTrangChu)
 
 router.use('/admin', adminRoutes)
 
-router.use('/questions', auth.isLogged, questionRoutes)
+router.use('/questions', auth.isAdmin, questionRoutes)
 
 router.use('/users', userRoutes)
 

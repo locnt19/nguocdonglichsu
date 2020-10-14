@@ -322,3 +322,45 @@ body {
 }
 
 /* END SECTION 2 */
+
+.admin__section__2__create__image {
+  flex: 0 0 200px;
+  max-width: 200px;
+  height: 150px;
+}
+
+.admin__section__2__create__image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* DATATABLE */
+.dataTables_info,
+.dataTables_paginate,
+.dataTables_filter,
+.dataTables_length {
+  display: inline-block;
+}
+
+.dataTables_wrapper label {
+  margin-bottom: 0;
+}
+
+table.dataTable {
+  margin-top: 1rem !important;
+}
+
+.dataTables_info {
+  padding-top: 0 !important;
+}
+
+.paginate_button {
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.dataTables_paginate,
+.dataTables_filter {
+  float: right;
+  margin-left: 1rem;
+}
