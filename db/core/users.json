@@ -1,0 +1,195 @@
+[{
+  "_id": {
+    "$oid": "5eec8d95bf1673193c661a28"
+  },
+  "role": "student",
+  "name": "Nguyễn Thành Lộc",
+  "birthday": "19/09/1998",
+  "sex": "Nam",
+  "province": "Tỉnh Bà Rịa - Vũng Tàu",
+  "district": "Huyện Đất Đỏ",
+  "school": "Trung học phổ thông",
+  "nameSchool": "THPT Võ Thị Sáu",
+  "grade": "Khối 12",
+  "classRoom": "12A3",
+  "identity": "273593068",
+  "email": "locnt19@gmail.com",
+  "password": "$2a$08$/C5H.FW8tBfnP1sy0cqL.eMSE3VsyCZ/CHEexvt.hfob5/xcqhmE2",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "5f06266bca86220e34bf4b7e"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE1OTQyMzg1NzF9.hlQuQXt8NyWMKvIskyiDnmNlbDSHaaMnZNIcbB8HcCY"
+    },
+    {
+      "_id": {
+        "$oid": "5f0a09c96d2ad421f832eb63"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE1OTQ0OTMzODV9.vdzmUxRaqh58NrHcfvy3djoX4LL0i36JYv5KJ5yR5k8"
+    },
+    {
+      "_id": {
+        "$oid": "5f0c6cc6ec20fb3a2c412900"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE1OTQ2NDk3OTh9.Wmtcynx7-qnNA1Ttsbk6dtcwV7esEnogsHW-pouqWHA"
+    },
+    {
+      "_id": {
+        "$oid": "5f0df195db8d574b34aa38d7"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE1OTQ3NDkzMzN9.5Dhiz9r6_uhtALm1O4vynRvzkYQcYWWPZNM9ZdhyI8I"
+    },
+    {
+      "_id": {
+        "$oid": "5f0ef97c243a4800172a4750"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE1OTQ4MTY4OTJ9.UT8J_KeU5i0j2hEety3eCKInTNyoh8Dqar3IqyP6C4g"
+    },
+    {
+      "_id": {
+        "$oid": "5f11ed902ca7fb33c4c715d5"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE1OTUwMTA0NDh9.mFkkdqjvfkOAEYvI9700gFG9ala119Qfv6AFJbuK6KU"
+    },
+    {
+      "_id": {
+        "$oid": "5f121a83c427c100176093e2"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE1OTUwMjE5NTV9.qc8fr7xWA-NApGbD_jDcZwrBQSM5aSYdYcbUzdKv5yg"
+    },
+    {
+      "_id": {
+        "$oid": "5f63dc526dccde3254af4191"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDAzNzk5ODZ9.uUBj3VwvuUfHAzVtB1OmjU-S0e-eCWUgdJJVTKgrYjk"
+    },
+    {
+      "_id": {
+        "$oid": "5f7b502197baac2dec658e1f"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDE5MTY5NjF9.7H-VpmBQr7xcG8le4CJXBiLC54e-SEHgPx8axZSylzA"
+    },
+    {
+      "_id": {
+        "$oid": "5f7b56e63c25e328d89ce579"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDE5MTg2OTR9.gkmHC7stGFY7xaxU_8xtrBFGQcanrRxbbPLKotkZfUs"
+    },
+    {
+      "_id": {
+        "$oid": "5f7e029f20aadc30dcd5c4c0"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDIwOTM3Mjd9.A_LaPLH6KhDUcWg5IFJCKMgkNf-asVzVo5c2VAV5vyc"
+    },
+    {
+      "_id": {
+        "$oid": "5f7f462727e1583cd885f540"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDIxNzY1NTF9.PSYAeUSaLxaBQjZMMzc5YFyh95oy7q9HfgNFu5tDCWg"
+    },
+    {
+      "_id": {
+        "$oid": "5f8325baa8936538f433333d"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDI0MzAzOTR9.Q7wGvx2-irb0cN6fN9q1vbDsxbmZUaMyyFcElKAhDME"
+    },
+    {
+      "_id": {
+        "$oid": "5f84bafbfc3b13182adb0116"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDI1MzQxMzl9.8bMxc78i5JEKZyNBpmn37ouU22VDtodMK4j2lwa-XSM"
+    },
+    {
+      "_id": {
+        "$oid": "5f85cb2b431e9c0c3413cb77"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjOGQ5NWJmMTY3MzE5M2M2NjFhMjgiLCJpYXQiOjE2MDI2MDM4MTl9.O2pvb5JQOpGhDRzgdkaZsAGShDphjOcVJJQpovQvnJs"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-06-19T10:04:05.266Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-13T15:43:39.187Z"
+  },
+  "__v": 18,
+  "luotThiConLai": 1
+},{
+  "_id": {
+    "$oid": "5eece820fdaa393af0369b40"
+  },
+  "role": "student",
+  "name": "Hồ Bảo Chi",
+  "luotThiConLai": 0,
+  "birthday": "18/10/1998",
+  "sex": "Nữ",
+  "province": "Tỉnh Bà Rịa - Vũng Tàu",
+  "district": "Huyện Đất Đỏ",
+  "school": "Trung học phổ thông",
+  "nameSchool": "THPT Nguyễn Tấn Thành",
+  "grade": "Lớp 12",
+  "classRoom": "12A1",
+  "identity": "123456789",
+  "email": "baochii.18@gmail.com",
+  "password": "$2a$08$lFXoFJR0LBr5Gzq7NUbV8OTPjXyVOiKdoMTL6UeySiSVrMG3F/Oci",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "5f5a41177ef56d19c861f0a5"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjZTgyMGZkYWEzOTNhZjAzNjliNDAiLCJpYXQiOjE1OTk3NTA0MjN9.MTF60jdNllO5K5aukX_u7B_NL3cndtlm8qRth9v5pZ4"
+    },
+    {
+      "_id": {
+        "$oid": "5f65ceaf379efe0017acce72"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjZTgyMGZkYWEzOTNhZjAzNjliNDAiLCJpYXQiOjE2MDA1MDc1Njd9.tNHI10vL0WCfuNbtdh5RTKkp19NSZwJYbUyDuJ5gCE4"
+    },
+    {
+      "_id": {
+        "$oid": "5f720efe9937de2a14f11698"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjZTgyMGZkYWEzOTNhZjAzNjliNDAiLCJpYXQiOjE2MDEzMTA0NjJ9.lhujN5Tp_jVNwZFjueHzBFYHMbG8gSvP1iFlrDVpVZ8"
+    },
+    {
+      "_id": {
+        "$oid": "5f74a241f331012630ba5c74"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWVjZTgyMGZkYWEzOTNhZjAzNjliNDAiLCJpYXQiOjE2MDE0NzkyMzN9.DQAvmqzJloGc4IJ59eT_DuJEa04MsrDj69Ti8Xqp3t0"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-06-19T16:30:24.671Z"
+  },
+  "updatedAt": {
+    "$date": "2020-09-30T15:20:33.498Z"
+  },
+  "__v": 12
+},{
+  "_id": {
+    "$oid": "5f02ec8b4404600017d8d5ab"
+  },
+  "role": "student",
+  "luotThiConLai": 2,
+  "name": "tạ quang phú",
+  "birthday": "13/8/2002",
+  "sex": "Nam",
+  "province": "Tỉnh Bà Rịa - Vũng Tàu",
+  "district": "Huyện Đất Đỏ",
+  "school": "Trung học phổ thông",
+  "nameSchool": "Võ thị Sáu",
+  "grade": "Lớp 12",
+  "classRoom": "12A1",
+  "identity": "1111111111111",
+  "email": "tqphu.btiu09033@gmail.com",
+  "password": "$2a$08$aqD8th9VtiEPenr1T.aKSumn9GdcoJVMrLlH2vWHDEzxf25RWjJGS",
+  "tokens": [],
+  "createdAt": {
+    "$date": "2020-07-06T09:19:08.065Z"
+  },
+  "updatedAt": {
+    "$date": "2020-07-06T09:21:53.642Z"
+  },
+  "__v": 1
+}]

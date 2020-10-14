@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "5eef9c57ef846911d0a1f963"
+  },
+  "timeZone": "UTC+7",
+  "name": "Đợt 1",
+  "startDate": "2020-09-28",
+  "startTime": "09:00",
+  "finishDate": "2021-02-07",
+  "finishTime": "12:00",
+  "createdAt": {
+    "$date": "2020-06-21T17:43:51.692Z"
+  },
+  "updatedAt": {
+    "$date": "2020-09-28T16:27:37.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f06aa106af9c8107c29233c"
+  },
+  "timeZone": "UTC+7",
+  "name": "Đợt 2",
+  "startDate": "2020-07-09",
+  "startTime": "01:01",
+  "finishDate": "2020-07-09",
+  "finishTime": "01:01",
+  "createdAt": {
+    "$date": "2020-07-09T05:24:32.525Z"
+  },
+  "updatedAt": {
+    "$date": "2020-07-09T15:23:46.196Z"
+  },
+  "__v": 0
+}]
