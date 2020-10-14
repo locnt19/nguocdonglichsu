@@ -25,7 +25,7 @@ router.route('/section-1')
 
 router.route('/section-2')
   .get(checkTime, examController.templateSection2)
-// .post(checkTime, examController.nopBaiThi1)
+  .post(checkTime, examController.nopBaiThi2)
 
 router.route('/section-3')
   .get(checkTime, examController.templateSection3)
@@ -33,7 +33,7 @@ router.route('/section-3')
 
 router.route('/section-4')
   .get(checkTime, examController.templateSection4)
-// .post(checkTime, examController.nopBaiThi1)
+  .post(checkTime, examController.nopBaiThi4)
 
 router.route('/summary')
   .get(checkTime, examController.templateSummary)

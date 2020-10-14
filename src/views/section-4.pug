@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  form(method='POST')
+  form(name="exams_section4" method='POST')
     section.bg__exams
       .container.py-3.min-vh-100
         if exams
@@ -24,7 +24,7 @@ block content
                   -for(var item of exams.questions)
                     -var index = exams.questions.indexOf(item)
                     .my-3
-                      p.mb-2 Question #{index}: #{item.question}
+                      p.mb-2 Question #{index + 1}: #{item.question}
                       input.d-none(name=`answers[${index}][code]` value=item.code)
                       .px-3.py-2.border.rounded
                         p.mb-0 Anwser:

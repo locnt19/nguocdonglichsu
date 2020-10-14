@@ -164,6 +164,9 @@ function section1() {
           }
         } else {
           clearInterval(counter.ticker);
+          if ($(document).has('form[name=exams_section1]').length > 0) {
+            document.forms['exams_section1'].submit();
+          }
         }
       }
       if (counter.summary === counter.maximun) {
@@ -180,7 +183,8 @@ function section1() {
 
 function section2() {
   let doneSection2 = false;
-  let anwsered = 0;
+  let firstQuestion = true;
+  let score = 0;
   let showQuestions = false;
   let summaryCorrectAnwsered = 0;
   let summaryWrongAnwsered = 0;
@@ -190,17 +194,30 @@ function section2() {
   let section2IntervalPendingTimer;
   let summaryTimer = 0;
   let questionPendingTimer = 20;
+  let totalQuestions = 9;
+  const timeLimited = 999;
   const $summaryTimer = $('#section2__summaryTimer');
   const $questionPendingTimer = $('#section2__questionPendingTimer');
 
   section2IntervalTimer = setInterval(() => {
-    ++summaryTimer;
-    $summaryTimer.text(summaryTimer);
+    if (summaryTimer < timeLimited) {
+      ++summaryTimer;
+      $summaryTimer.text(summaryTimer);
+    } else {
+      clearInterval(section2IntervalTimer);
+      clearInterval(section2IntervalPendingTimer);
+      doneSection2 = true;
+      hideListQuestion();
+      chamDiemThi();
+    }
   }, 1000);
 
   $('.section2__question__card__item').on('click', function () {
     if (!showQuestions && !doneSection2) {
       showQuestions = true;
+      if (firstQuestion) {
+        firstQuestion = false;
+      }
       $(this).addClass('pending'); // add class pending css.
       questionPending = $(this).data('item');
       trueAnwserPending = $(this).data('value');
@@ -223,7 +240,6 @@ function section2() {
   });
 
   $('.section2__question__check__result').on('click', function () {
-    anwsered++;
     let anwser = $(
       `input[name=section2__answer${questionPending}]:checked`
     ).val();
@@ -246,7 +262,7 @@ function section2() {
   });
 
   $('.section2__question__background').on('click', function () {
-    if (!showQuestions && !doneSection2) {
+    if (!firstQuestion && !showQuestions && !doneSection2) {
       showQuestions = true;
       doneSection2 = true;
       questionPending = 9;
@@ -305,28 +321,28 @@ function section2() {
   function checkAnwserBackground(isCorrect) {
     clearInterval(section2IntervalTimer);
     if (isCorrect) {
+      summaryCorrectAnwsered = totalQuestions - summaryWrongAnwsered;
+      chamDiemThi();
       $('.section2__question__card__item')
         .css('border', 'none')
         .removeClass('pending wrong')
         .addClass('correct')
         .off();
     } else {
+      chamDiemThi();
       $('.section2__question__card__item')
-        .css('border', 'none')
+        // .css('border', 'none')
         .removeClass('pending')
-        .addClass('wrong')
+        // .addClass('wrong')
         .off();
     }
-    $('.section2__backdrop').removeClass('d-none');
-    let countdown = 10;
-    const interval = setInterval(() => {
-      if (countdown > 0) {
-        $('#section2__countdownGoToNextPage').text(--countdown);
-      } else {
-        clearInterval(interval);
-        window.location.href = 'http://localhost:5000/exams/ready-3';
-      }
-    }, 1000);
+  }
+
+  function chamDiemThi() {
+    score = 20 * summaryCorrectAnwsered;
+    $('#section2__score').val(score);
+    $('#section2__summaryTimeeee').val(summaryTimer);
+    document.forms['exams_section2'].submit();
   }
 
   function hideListQuestion() {
@@ -604,7 +620,7 @@ function section4() {
   });
 
   // Timer
-  const timeLimited = 20;
+  const timeLimited = 1000;
   let currentTime = 0;
   let stopTimer = false;
 
@@ -613,6 +629,9 @@ function section4() {
       stopTimer = true;
       clearInterval(intervalTimer);
       dragulaContainer.destroy();
+      if ($(document).has('form[name=exams_section4]').length > 0) {
+        document.forms['exams_section4'].submit();
+      }
     } else {
       currentTime++;
       $('#timer').text(currentTime);
@@ -620,13 +639,8 @@ function section4() {
   }, 1000);
 
   $('#submitSection4').on('click', e => {
-    e.preventDefault();
     stopTimer = true;
     clearInterval(intervalTimer);
     dragulaContainer.destroy();
-    $('.dragula-container.left input').each((index, item) => {
-      console.log($(item).val());
-    });
-    console.log('click click');
   });
 }
