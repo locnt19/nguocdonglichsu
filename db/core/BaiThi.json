@@ -1,1110 +1,12 @@
 [{
   "_id": {
-    "$oid": "5f12181690740d2d40060516"
+    "$oid": "5f85e8239dfd452a173b50e9"
   },
-  "time": 27,
-  "scope": 200,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
-  "exam": "P01",
-  "user": {
-    "$oid": "5eec8d95bf1673193c661a28"
-  },
-  "answers": [
-    {
-      "code": "Q01",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d40060517"
-      }
-    },
-    {
-      "code": "Q02",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d40060518"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d40060519"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d4006051a"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d4006051b"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d4006051c"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d4006051d"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d4006051e"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d4006051f"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12181690740d2d40060520"
-      }
-    }
-  ],
-  "answersTrue": [
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060521"
-      },
-      "code": "Q01",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060522"
-      },
-      "code": "Q02",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060523"
-      },
-      "code": "Q03",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060524"
-      },
-      "code": "Q04",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060525"
-      },
-      "code": "Q05",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060526"
-      },
-      "code": "Q06",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060527"
-      },
-      "code": "Q07",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060528"
-      },
-      "code": "Q08",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d40060529"
-      },
-      "code": "Q09",
-      "answer": "d"
-    },
-    {
-      "_id": {
-        "$oid": "5f12181690740d2d4006052a"
-      },
-      "code": "Q10",
-      "answer": "a"
-    }
-  ],
-  "createdAt": {
-    "$date": "2020-07-17T21:28:54.483Z"
-  },
-  "updatedAt": {
-    "$date": "2020-07-17T21:28:54.483Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f12190587849814745bff5c"
-  },
-  "time": 27,
-  "scope": 200,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
-  "exam": "P01",
-  "user": {
-    "$oid": "5eec8d95bf1673193c661a28"
-  },
-  "answers": [
-    {
-      "code": "Q01",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff5d"
-      }
-    },
-    {
-      "code": "Q02",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff5e"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff5f"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff60"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff61"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff62"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff63"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff64"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff65"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12190587849814745bff66"
-      }
-    }
-  ],
-  "answersTrue": [
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff67"
-      },
-      "code": "Q01",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff68"
-      },
-      "code": "Q02",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff69"
-      },
-      "code": "Q03",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff6a"
-      },
-      "code": "Q04",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff6b"
-      },
-      "code": "Q05",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff6c"
-      },
-      "code": "Q06",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff6d"
-      },
-      "code": "Q07",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff6e"
-      },
-      "code": "Q08",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff6f"
-      },
-      "code": "Q09",
-      "answer": "d"
-    },
-    {
-      "_id": {
-        "$oid": "5f12190587849814745bff70"
-      },
-      "code": "Q10",
-      "answer": "a"
-    }
-  ],
-  "createdAt": {
-    "$date": "2020-07-17T21:32:53.767Z"
-  },
-  "updatedAt": {
-    "$date": "2020-07-17T21:32:53.767Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f12194dd345b338d487e96e"
-  },
-  "time": 27,
-  "scope": 200,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
-  "exam": "P01",
-  "user": {
-    "$oid": "5eec8d95bf1673193c661a28"
-  },
-  "answers": [
-    {
-      "code": "Q01",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e96f"
-      }
-    },
-    {
-      "code": "Q02",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e970"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e971"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e972"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e973"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e974"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e975"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e976"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e977"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f12194dd345b338d487e978"
-      }
-    }
-  ],
-  "answersTrue": [
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e979"
-      },
-      "code": "Q01",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e97a"
-      },
-      "code": "Q02",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e97b"
-      },
-      "code": "Q03",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e97c"
-      },
-      "code": "Q04",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e97d"
-      },
-      "code": "Q05",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e97e"
-      },
-      "code": "Q06",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e97f"
-      },
-      "code": "Q07",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e980"
-      },
-      "code": "Q08",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e981"
-      },
-      "code": "Q09",
-      "answer": "d"
-    },
-    {
-      "_id": {
-        "$oid": "5f12194dd345b338d487e982"
-      },
-      "code": "Q10",
-      "answer": "a"
-    }
-  ],
-  "createdAt": {
-    "$date": "2020-07-17T21:34:05.134Z"
-  },
-  "updatedAt": {
-    "$date": "2020-07-17T21:34:05.134Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f5a41867ef56d19c861f0a6"
-  },
-  "time": 16,
-  "scope": 200,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
-  "exam": "P01",
-  "user": {
-    "$oid": "5eece820fdaa393af0369b40"
-  },
-  "answers": [
-    {
-      "code": "Q01",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0a7"
-      }
-    },
-    {
-      "code": "Q02",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0a8"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0a9"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0aa"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0ab"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0ac"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0ad"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0ae"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0af"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b0"
-      }
-    }
-  ],
-  "answersTrue": [
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b1"
-      },
-      "code": "Q01",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b2"
-      },
-      "code": "Q02",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b3"
-      },
-      "code": "Q03",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b4"
-      },
-      "code": "Q04",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b5"
-      },
-      "code": "Q05",
-      "answer": "b"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b6"
-      },
-      "code": "Q06",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b7"
-      },
-      "code": "Q07",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b8"
-      },
-      "code": "Q08",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0b9"
-      },
-      "code": "Q09",
-      "answer": "d"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a41867ef56d19c861f0ba"
-      },
-      "code": "Q10",
-      "answer": "a"
-    }
-  ],
-  "createdAt": {
-    "$date": "2020-09-10T15:08:54.969Z"
-  },
-  "updatedAt": {
-    "$date": "2020-09-10T15:08:54.969Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f5a42a67ef56d19c861f0bb"
-  },
-  "time": 25,
+  "time": 11,
   "scope": 40,
   "lanThi": 1,
   "tuan": "Tuần 1",
   "dot": "Đợt 1",
-  "exam": "P03",
-  "user": {
-    "$oid": "5eece820fdaa393af0369b40"
-  },
-  "answers": [
-    {
-      "code": "Q03",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0bc"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0bd"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": "on",
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0be"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0bf"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": "on",
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0c0"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0c1"
-      }
-    },
-    {
-      "code": "Q15",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0c2"
-      }
-    },
-    {
-      "code": "Q16",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0c3"
-      }
-    }
-  ],
-  "answersTrue": [
-    {
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0bc"
-      },
-      "code": "Q03",
-      "answer": "b",
-      "star": null
-    },
-    {
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0be"
-      },
-      "code": "Q07",
-      "answer": "c",
-      "star": "on"
-    },
-    {
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0bf"
-      },
-      "code": "Q08",
-      "answer": "c",
-      "star": null
-    },
-    {
-      "_id": {
-        "$oid": "5f5a42a67ef56d19c861f0c0"
-      },
-      "code": "Q09",
-      "answer": "d",
-      "star": "on"
-    }
-  ],
-  "createdAt": {
-    "$date": "2020-09-10T15:13:42.883Z"
-  },
-  "updatedAt": {
-    "$date": "2020-09-10T15:13:42.883Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f720f179937de2a14f11699"
-  },
-  "time": 17,
-  "scope": 120,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
-  "exam": "P01",
-  "user": {
-    "$oid": "5eece820fdaa393af0369b40"
-  },
-  "answers": [
-    {
-      "code": "Q01",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f1169a"
-      }
-    },
-    {
-      "code": "Q02",
-      "answer": "b",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f1169b"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f1169c"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f1169d"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f1169e"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f1169f"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a0"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a1"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a2"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a3"
-      }
-    }
-  ],
-  "answersTrue": [
-    {
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a4"
-      },
-      "code": "Q01",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a5"
-      },
-      "code": "Q06",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a6"
-      },
-      "code": "Q07",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a7"
-      },
-      "code": "Q08",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a8"
-      },
-      "code": "Q09",
-      "answer": "d"
-    },
-    {
-      "_id": {
-        "$oid": "5f720f179937de2a14f116a9"
-      },
-      "code": "Q10",
-      "answer": "a"
-    }
-  ],
-  "createdAt": {
-    "$date": "2020-09-28T16:28:07.958Z"
-  },
-  "updatedAt": {
-    "$date": "2020-09-28T16:28:07.958Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f72114c9937de2a14f116aa"
-  },
-  "time": 17,
-  "scope": 70,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
-  "exam": "P03",
-  "user": {
-    "$oid": "5eece820fdaa393af0369b40"
-  },
-  "answers": [
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ab"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": "on",
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ac"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": "on",
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ad"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ae"
-      }
-    },
-    {
-      "code": "Q11",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116af"
-      }
-    },
-    {
-      "code": "Q12",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116b0"
-      }
-    },
-    {
-      "code": "Q13",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116b1"
-      }
-    },
-    {
-      "code": "Q14",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116b2"
-      }
-    }
-  ],
-  "answersTrue": [
-    {
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ab"
-      },
-      "code": "Q07",
-      "answer": "c",
-      "star": null
-    },
-    {
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ac"
-      },
-      "code": "Q08",
-      "answer": "c",
-      "star": "on"
-    },
-    {
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ad"
-      },
-      "code": "Q09",
-      "answer": "d",
-      "star": "on"
-    },
-    {
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116ae"
-      },
-      "code": "Q10",
-      "answer": "a",
-      "star": null
-    },
-    {
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116af"
-      },
-      "code": "Q11",
-      "answer": "d",
-      "star": null
-    },
-    {
-      "_id": {
-        "$oid": "5f72114c9937de2a14f116b0"
-      },
-      "code": "Q12",
-      "answer": "a",
-      "star": null
-    }
-  ],
-  "createdAt": {
-    "$date": "2020-09-28T16:37:32.496Z"
-  },
-  "updatedAt": {
-    "$date": "2020-09-28T16:37:32.496Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f7b59ed3c25e328d89ce57b"
-  },
-  "time": 16,
-  "scope": 100,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
   "exam": "P01",
   "user": {
     "$oid": "5eec8d95bf1673193c661a28"
@@ -1112,134 +14,49 @@
   "answers": [
     {
       "code": "Q01",
-      "answer": "a",
+      "answer": "c",
       "star": null,
       "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce57c"
+        "$oid": "5f85e8239dfd452a173b50ea"
       }
     },
     {
       "code": "Q02",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce57d"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce57e"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce57f"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce580"
-      }
-    },
-    {
-      "code": "Q06",
       "answer": "d",
       "star": null,
       "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce581"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce582"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": "c",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce583"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": "d",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce584"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": "a",
-      "star": null,
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce585"
+        "$oid": "5f85e8239dfd452a173b50eb"
       }
     }
   ],
   "answersTrue": [
     {
       "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce586"
+        "$oid": "5f85e8239dfd452a173b50ec"
       },
       "code": "Q01",
-      "answer": "a"
-    },
-    {
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce587"
-      },
-      "code": "Q07",
       "answer": "c"
     },
     {
       "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce588"
+        "$oid": "5f85e8239dfd452a173b50ed"
       },
-      "code": "Q08",
-      "answer": "c"
-    },
-    {
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce589"
-      },
-      "code": "Q09",
+      "code": "Q02",
       "answer": "d"
-    },
-    {
-      "_id": {
-        "$oid": "5f7b59ed3c25e328d89ce58a"
-      },
-      "code": "Q10",
-      "answer": "a"
     }
   ],
   "createdAt": {
-    "$date": "2020-10-05T17:37:49.674Z"
+    "$date": "2020-10-13T17:47:15.184Z"
   },
   "updatedAt": {
-    "$date": "2020-10-05T17:37:49.674Z"
+    "$date": "2020-10-13T17:47:15.184Z"
   },
   "__v": 0
 },{
   "_id": {
-    "$oid": "5f84bb0dfc3b13182adb0117"
+    "$oid": "5f86a36a1e19dc2acc8ec600"
   },
-  "time": 7,
+  "time": 21,
   "scope": 0,
   "lanThi": 1,
   "tuan": "Tuần 1",
@@ -1251,281 +68,441 @@
   "answers": [
     {
       "code": "Q01",
-      "answer": null,
+      "answer": "b",
       "star": null,
       "_id": {
-        "$oid": "5f84bb0dfc3b13182adb0118"
+        "$oid": "5f86a36a1e19dc2acc8ec601"
       }
     },
     {
       "code": "Q02",
-      "answer": null,
+      "answer": "a",
       "star": null,
       "_id": {
-        "$oid": "5f84bb0dfc3b13182adb0119"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb011a"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb011b"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb011c"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb011d"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb011e"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb011f"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb0120"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0dfc3b13182adb0121"
+        "$oid": "5f86a36a1e19dc2acc8ec602"
       }
     }
   ],
   "answersTrue": [],
   "createdAt": {
-    "$date": "2020-10-12T20:22:37.657Z"
+    "$date": "2020-10-14T07:06:18.436Z"
   },
   "updatedAt": {
-    "$date": "2020-10-12T20:22:37.657Z"
+    "$date": "2020-10-14T07:06:18.436Z"
   },
   "__v": 0
 },{
   "_id": {
-    "$oid": "5f84bb0efc3b13182adb0122"
-  },
-  "time": 7,
-  "scope": 0,
-  "lanThi": 1,
-  "tuan": "Tuần 1",
-  "dot": "Đợt 1",
-  "exam": "P01",
-  "user": {
-    "$oid": "5eec8d95bf1673193c661a28"
-  },
-  "answers": [
-    {
-      "code": "Q01",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb0123"
-      }
-    },
-    {
-      "code": "Q02",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb0124"
-      }
-    },
-    {
-      "code": "Q03",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb0125"
-      }
-    },
-    {
-      "code": "Q04",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb0126"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb0127"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb0128"
-      }
-    },
-    {
-      "code": "Q07",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb0129"
-      }
-    },
-    {
-      "code": "Q08",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb012a"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb012b"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb0efc3b13182adb012c"
-      }
-    }
-  ],
-  "answersTrue": [],
-  "createdAt": {
-    "$date": "2020-10-12T20:22:38.097Z"
-  },
-  "updatedAt": {
-    "$date": "2020-10-12T20:22:38.097Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "5f84bb2efc3b13182adb012d"
+    "$oid": "5f86a3ca1e19dc2acc8ec605"
   },
   "time": 6,
-  "scope": -40,
+  "scope": 0,
   "lanThi": 1,
   "tuan": "Tuần 1",
   "dot": "Đợt 1",
-  "exam": "P03",
+  "exam": "P01",
   "user": {
     "$oid": "5eec8d95bf1673193c661a28"
   },
   "answers": [
     {
       "code": "Q01",
-      "answer": null,
+      "answer": "b",
       "star": null,
       "_id": {
-        "$oid": "5f84bb2efc3b13182adb012e"
+        "$oid": "5f86a3ca1e19dc2acc8ec606"
       }
     },
     {
       "code": "Q02",
-      "answer": null,
+      "answer": "a",
       "star": null,
       "_id": {
-        "$oid": "5f84bb2efc3b13182adb012f"
-      }
-    },
-    {
-      "code": "Q05",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb2efc3b13182adb0130"
-      }
-    },
-    {
-      "code": "Q06",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb2efc3b13182adb0131"
-      }
-    },
-    {
-      "code": "Q09",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb2efc3b13182adb0132"
-      }
-    },
-    {
-      "code": "Q10",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb2efc3b13182adb0133"
-      }
-    },
-    {
-      "code": "Q11",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb2efc3b13182adb0134"
-      }
-    },
-    {
-      "code": "Q12",
-      "answer": null,
-      "star": null,
-      "_id": {
-        "$oid": "5f84bb2efc3b13182adb0135"
+        "$oid": "5f86a3ca1e19dc2acc8ec607"
       }
     }
   ],
   "answersTrue": [],
   "createdAt": {
-    "$date": "2020-10-12T20:23:10.770Z"
+    "$date": "2020-10-14T07:07:54.177Z"
   },
   "updatedAt": {
-    "$date": "2020-10-12T20:23:10.770Z"
+    "$date": "2020-10-14T07:07:54.177Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f876858c4fdea3a8c655553"
+  },
+  "time": 199,
+  "scope": 0,
+  "lanThi": 1,
+  "tuan": "Tuần 1",
+  "dot": "Đợt 1",
+  "exam": "P01",
+  "user": {
+    "$oid": "5eec8d95bf1673193c661a28"
+  },
+  "answers": [
+    {
+      "code": "Q23",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c655554"
+      }
+    },
+    {
+      "code": "Q29",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c655555"
+      }
+    },
+    {
+      "code": "Q55",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c655556"
+      }
+    },
+    {
+      "code": "Q43",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c655557"
+      }
+    },
+    {
+      "code": "Q04",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c655558"
+      }
+    },
+    {
+      "code": "Q32",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c655559"
+      }
+    },
+    {
+      "code": "Q68",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c65555a"
+      }
+    },
+    {
+      "code": "Q27",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c65555b"
+      }
+    },
+    {
+      "code": "Q38",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c65555c"
+      }
+    },
+    {
+      "code": "Q60",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f876858c4fdea3a8c65555d"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "createdAt": {
+    "$date": "2020-10-14T21:06:32.120Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-14T21:06:32.120Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8779a7d1a12e581c5cb672"
+  },
+  "time": 15,
+  "scope": 60,
+  "lanThi": 1,
+  "tuan": "Tuần 1",
+  "dot": "Đợt 1",
+  "exam": "P01",
+  "user": {
+    "$oid": "5eec8d95bf1673193c661a28"
+  },
+  "answers": [
+    {
+      "code": "Q32",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb673"
+      }
+    },
+    {
+      "code": "Q59",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb674"
+      }
+    },
+    {
+      "code": "Q40",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb675"
+      }
+    },
+    {
+      "code": "Q45",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb676"
+      }
+    },
+    {
+      "code": "Q48",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb677"
+      }
+    },
+    {
+      "code": "Q46",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb678"
+      }
+    },
+    {
+      "code": "Q31",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb679"
+      }
+    },
+    {
+      "code": "Q07",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb67a"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb67b"
+      }
+    },
+    {
+      "code": "Q61",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb67c"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb67d"
+      },
+      "code": "Q32",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb67e"
+      },
+      "code": "Q59",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8779a7d1a12e581c5cb67f"
+      },
+      "code": "Q48",
+      "answer": "d"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-10-14T22:20:23.995Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-14T22:20:23.995Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f87f41cd1a12e581c5cb689"
+  },
+  "time": 135,
+  "scope": 60,
+  "lanThi": 1,
+  "tuan": "Tuần 1",
+  "dot": "Đợt 1",
+  "exam": "P01",
+  "user": {
+    "$oid": "5f87f27ed1a12e581c5cb687"
+  },
+  "answers": [
+    {
+      "code": "Q31",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb68a"
+      }
+    },
+    {
+      "code": "Q43",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb68b"
+      }
+    },
+    {
+      "code": "Q61",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb68c"
+      }
+    },
+    {
+      "code": "Q68",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb68d"
+      }
+    },
+    {
+      "code": "Q29",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb68e"
+      }
+    },
+    {
+      "code": "Q17",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb68f"
+      }
+    },
+    {
+      "code": "Q39",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb690"
+      }
+    },
+    {
+      "code": "Q58",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb691"
+      }
+    },
+    {
+      "code": "Q45",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb692"
+      }
+    },
+    {
+      "code": "Q67",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb693"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb694"
+      },
+      "code": "Q68",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb695"
+      },
+      "code": "Q17",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f87f41cd1a12e581c5cb696"
+      },
+      "code": "Q58",
+      "answer": "d"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-10-15T07:02:52.439Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-15T07:02:52.439Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f87f44cd1a12e581c5cb697"
+  },
+  "time": 34,
+  "scope": 20,
+  "tuan": "Tuần 1",
+  "dot": "Đợt 1",
+  "exam": "P02",
+  "user": {
+    "$oid": "5f87f27ed1a12e581c5cb687"
+  },
+  "lanThi": 1,
+  "answers": [],
+  "answersTrue": [],
+  "createdAt": {
+    "$date": "2020-10-15T07:03:40.595Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-15T07:03:40.595Z"
   },
   "__v": 0
 }]

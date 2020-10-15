@@ -889,4 +889,913 @@
     "$date": "2020-10-14T16:37:02.066Z"
   },
   "__v": 76
+},{
+  "_id": {
+    "$oid": "5f872ac21e19dc2acc8ec661"
+  },
+  "name": "Phần 3",
+  "code": "P03",
+  "questions": [
+    {
+      "_id": {
+        "$oid": "5f872ac21e19dc2acc8ec662"
+      },
+      "code": "Q01",
+      "question": "What was the origin of the name Baria?",
+      "location": "baria",
+      "true": "a",
+      "a": "Commemorating the merits of the reclaimed woman who established the village of Mo Xoai",
+      "b": "Derived from the Khmer name of a basket near Long Dien",
+      "c": "From a tribe",
+      "d": "No-one knows"
+    },
+    {
+      "_id": {
+        "$oid": "5f872b531e19dc2acc8ec663"
+      },
+      "code": "Q02",
+      "question": "Which hero was NOT born in Ba Ria?",
+      "location": "baria",
+      "a": "Nguyen Thanh Dang",
+      "true": "b",
+      "b": "Nguyen Huu Tho",
+      "c": "Le Thanh Duy",
+      "d": "Hoang Viet"
+    },
+    {
+      "_id": {
+        "$oid": "5f87fa15d1a12e581c5cb699"
+      },
+      "code": "Q03",
+      "question": "Which of the following historic relics in Ba Ria is NOT granted as a national historic relic?",
+      "location": "baria",
+      "a": "Nha Tron, Ba Ria",
+      "b": "Bat Cave and Dieu Linh temple in Dinh Mountain",
+      "c": "Long Phuoc Tunnels",
+      "true": "d",
+      "d": " Long Huong Temple"
+    },
+    {
+      "_id": {
+        "$oid": "5f87fa5fd1a12e581c5cb69a"
+      },
+      "code": "Q04",
+      "question": "When were Long Phuoc Tunnels recognized as a national-level relic by the Ministry of Culture and Information?",
+      "location": "baria",
+      "a": "01/09/1990",
+      "true": "b",
+      "b": "09/01/1990",
+      "c": "10/09/1990",
+      "d": "19/10/1990"
+    },
+    {
+      "_id": {
+        "$oid": "5f87fa7ed1a12e581c5cb69b"
+      },
+      "code": "Q05",
+      "question": "Why did French build the Nha Tron relic originally?",
+      "location": "baria",
+      "a": "Stored food",
+      "b": "Media centre",
+      "true": "c",
+      "c": "Water tower",
+      "d": "Library"
+    },
+    {
+      "_id": {
+        "$oid": "5f87faa3d1a12e581c5cb69c"
+      },
+      "code": "Q06",
+      "question": "When we talk about the places in Dinh Mountain revolutionary base, which one below is NOT right?",
+      "location": "baria",
+      "a": "Day Bi cave, To cave, Mai cave, Dieu Linh pagoda",
+      "b": "To cave, Bung Lung, Mai cave, Doi cave",
+      "c": "Bung Lung, Mai cave, Doi cave, Dieu Linh pagoda",
+      "true": "d",
+      "d": "To cave, Mai cave, Dơi cave, Tinh Do pagoda"
+    },
+    {
+      "_id": {
+        "$oid": "5f87facfd1a12e581c5cb69d"
+      },
+      "code": "Q07",
+      "question": "Who was the young hero sacrifiered when working in the contact task for the Quang Trung-Long Phuoc guerilla?",
+      "location": "baria",
+      "a": "Duong Bach Mai",
+      "b": "Duong Van Manh",
+      "c": "Vo Thi Sau",
+      "d": "Nguyen Thi Dep"
+    },
+    {
+      "_id": {
+        "$oid": "5f87faf0d1a12e581c5cb69e"
+      },
+      "code": "Q08",
+      "question": "Who is the author of ‘the story of Mr Lazaro Phien’, established in 1887, started the Vietnamese script prose?",
+      "location": "baria",
+      "a": "Huynh Khuong Ninh",
+      "b": "Chan Van Quan",
+      "c": "Nguyen Trong Quan",
+      "d": "Huynh Tinh Cua"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-10-14T16:43:46.730Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-15T07:32:00.998Z"
+  },
+  "__v": 7
+},{
+  "_id": {
+    "$oid": "5f87c1b0d1a12e581c5cb684"
+  },
+  "name": "Phần 2",
+  "code": "P02",
+  "questions": [
+    {
+      "_id": {
+        "$oid": "5f87c1b0d1a12e581c5cb685"
+      },
+      "code": "Q01",
+      "question": "When is the Nghinh Ong festival, Vung Tau held?",
+      "true": "a",
+      "a": "The eighth lunar month",
+      "b": "The nineth lunar month",
+      "c": "September",
+      "d": "August"
+    },
+    {
+      "_id": {
+        "$oid": "5f87fe5bd1a12e581c5cb6a0"
+      },
+      "code": "Q02",
+      "question": "Question 2: When is the Thang Tam temple Festival held?",
+      "a": "A. the third lunar month",
+      "true": "b",
+      "b": "B. the second lunar month",
+      "c": "C. the fourth lunar month",
+      "d": "D. the fifth lunar month"
+    },
+    {
+      "_id": {
+        "$oid": "5f87fe85d1a12e581c5cb6a1"
+      },
+      "code": "Q03",
+      "question": "Which of the following scenic spots belongs to Vung Tau city?",
+      "a": "A. Xuan Son Island",
+      "b": "B. Co To Island",
+      "c": "C. Hoa Binh Waterfall",
+      "d": "D. Statue of Christ"
+    },
+    {
+      "_id": {
+        "$oid": "5f87fea9d1a12e581c5cb6a2"
+      },
+      "code": "Q04",
+      "question": "How many wards does Vung Tau city have?",
+      "a": "A. 17 wards",
+      "b": "B. 15 wards",
+      "c": "C. 16 wards",
+      "d": "D. 14 wards"
+    },
+    {
+      "_id": {
+        "$oid": "5f87ff9fd1a12e581c5cb6a3"
+      },
+      "code": "Q05",
+      "question": "Which is a famous temple in Vung Tau?",
+      "true": "a",
+      "a": "Thich Ca Phat Dai Temple",
+      "b": "Bai Dinh Pagoda",
+      "c": "One Pillar Pagoda",
+      "d": "Ve Chai Temple"
+    },
+    {
+      "_id": {
+        "$oid": "5f88007ed1a12e581c5cb6a4"
+      },
+      "code": "Q06",
+      "question": "Which is the mountain in Vung Tau City?",
+      "true": "a",
+      "a": "Great mountain",
+      "b": "Dinh Mountain",
+      "c": "Minh Dam Mountain",
+      "d": "Thi Vai Mountain"
+    },
+    {
+      "_id": {
+        "$oid": "5f880118d1a12e581c5cb6a5"
+      },
+      "code": "Q07",
+      "question": "What is the area of Vung Tau city?",
+      "true": "a",
+      "a": "141.1 km2",
+      "b": "151.1 km2",
+      "c": "161.1 km2",
+      "d": "171.1 km2"
+    },
+    {
+      "_id": {
+        "$oid": "5f88013ed1a12e581c5cb6a6"
+      },
+      "code": "Q08",
+      "question": "Which is the amusement park of Vung Tau City?",
+      "a": "Dam Sen Part",
+      "b": "Fairy Stream",
+      "true": "c",
+      "c": "Ho May Part",
+      "d": "Dai Nam Part"
+    },
+    {
+      "_id": {
+        "$oid": "5f880175d1a12e581c5cb6a7"
+      },
+      "code": "Q09",
+      "question": "Which of the following buildings is located in Vung Tau City?",
+      "a": "Palace of Independence",
+      "b": "Temple of King Bao Dai",
+      "true": "c",
+      "c": "White Palace",
+      "d": "Ho Chi Minh Museum"
+    },
+    {
+      "_id": {
+        "$oid": "5f880c27d1a12e581c5cb6a8"
+      },
+      "code": "Q10",
+      "question": "Where was Vo Thi Sau buried?",
+      "a": "Vo Thi Sau Cemetery",
+      "true": "b",
+      "b": "Hang Duong Cemetery",
+      "c": "Truong Son Cemetery",
+      "d": "Da Phuoc Cemetery"
+    },
+    {
+      "_id": {
+        "$oid": "5f880c52d1a12e581c5cb6a9"
+      },
+      "code": "Q11",
+      "question": "Which district, town or city is Hang Duong cemetery located in?",
+      "a": "Long Dien district",
+      "b": "Xuyen Moc district",
+      "true": "c",
+      "c": "Con Dao district",
+      "d": "Phu My Town"
+    },
+    {
+      "_id": {
+        "$oid": "5f880cd9d1a12e581c5cb6aa"
+      },
+      "code": "Q12",
+      "question": "What is one of the tourist attractions of Con Dao?",
+      "a": "Con Dao National Park",
+      "b": "Secret vault",
+      "true": "c",
+      "c": "Con Dao Tunnels",
+      "d": "Hon Ru Ri"
+    },
+    {
+      "_id": {
+        "$oid": "5f885b9cd1a12e581c5cb6ad"
+      },
+      "code": "Q13",
+      "question": "How many nautical miles is it from Con Dao archipelago to Vung Tau?",
+      "a": "90",
+      "true": "b",
+      "b": "97",
+      "c": "98",
+      "d": "100"
+    },
+    {
+      "_id": {
+        "$oid": "5f885bbfd1a12e581c5cb6ae"
+      },
+      "code": "Q14",
+      "question": "What is the other name of Con Dao archipelago?",
+      "a": "Con Lon archipelago",
+      "b": "Son Tra archipelago",
+      "c": "Hon Ba archipelago",
+      "d": "Hon Trac archipelago"
+    },
+    {
+      "_id": {
+        "$oid": "5f885bfcd1a12e581c5cb6af"
+      },
+      "code": "Q15",
+      "question": "Where is Nui Mot Pagoda?",
+      "a": "in Vung Tau City",
+      "b": "in Ba Ria City",
+      "true": "c",
+      "c": "in Con Dao district",
+      "d": "in Long Dien district"
+    },
+    {
+      "_id": {
+        "$oid": "5f885c30d1a12e581c5cb6b0"
+      },
+      "code": "Q16",
+      "question": "Where is Ma Thien Lanh Bridge?",
+      "a": "in Long Dien district",
+      "b": "in Chau Duc district",
+      "c": "in Phu My Town",
+      "true": "d",
+      "d": "in Con Dao district"
+    },
+    {
+      "_id": {
+        "$oid": "5f885c84d1a12e581c5cb6b1"
+      },
+      "code": "Q17",
+      "question": "Among the following relics of Con Dao, which one is considered as a special national-level monument?",
+      "true": "a",
+      "a": "Hang Duong cemetery relic",
+      "b": "Con Dao Prison",
+      "c": "Temple of Nui Mot",
+      "d": "Con Dao National Park"
+    },
+    {
+      "_id": {
+        "$oid": "5f886568d1a12e581c5cb6b2"
+      },
+      "code": "Q18",
+      "question": "Since April 30, 1975, which administrative unit does Con Dao belong to?",
+      "a": "Con Dao province",
+      "b": "Hau Giang province",
+      "true": "c",
+      "c": "Ba Ria - Vung Tau province",
+      "d": "Con Dao - Vung Tau Special Zone"
+    },
+    {
+      "_id": {
+        "$oid": "5f8865c8d1a12e581c5cb6b3"
+      },
+      "code": "Q19",
+      "question": "Which of the following tunnels belongs to Phu My town?",
+      "true": "a",
+      "a": "Hac Dich Tunnel",
+      "b": "Long Phuoc Tunnel",
+      "c": "Ky Anh Tunnel",
+      "d": "Cu Chi Tunnel"
+    },
+    {
+      "_id": {
+        "$oid": "5f886700d1a12e581c5cb6b4"
+      },
+      "code": "Q20",
+      "question": "Which of the following ports belongs to Phu My town?",
+      "a": "Cat Lo Port",
+      "true": "b",
+      "b": "Cai Mep Port",
+      "c": "Cai Rong Port",
+      "d": "Loc An Port"
+    },
+    {
+      "_id": {
+        "$oid": "5f88671bd1a12e581c5cb6b5"
+      },
+      "code": "Q21",
+      "question": "What is the economic strength of Phu My town?",
+      "true": "a",
+      "a": "Industry",
+      "b": "Travel",
+      "c": "Agriculture",
+      "d": "Fishery"
+    },
+    {
+      "_id": {
+        "$oid": "5f886740d1a12e581c5cb6b6"
+      },
+      "code": "Q22",
+      "question": "What kind of urban area is Phu My?",
+      "a": "I",
+      "b": "II",
+      "c": "III",
+      "true": "d",
+      "d": "IV"
+    },
+    {
+      "_id": {
+        "$oid": "5f886759d1a12e581c5cb6b7"
+      },
+      "code": "Q23",
+      "question": "How many wards and communes are there in Phu My?",
+      "a": "5 wards, 3 communes",
+      "b": "5 wards, 4 communes",
+      "true": "c",
+      "c": "5 wards, 5 communes",
+      "d": "5 wards, 6 communes"
+    },
+    {
+      "_id": {
+        "$oid": "5f886788d1a12e581c5cb6b8"
+      },
+      "code": "Q24",
+      "question": "When was Phu My town established on the basis of Tan Thanh district?",
+      "a": "12/4/2019",
+      "b": "12/5/2019",
+      "true": "c",
+      "c": "12/4/2018",
+      "d": "15/5/2018"
+    },
+    {
+      "_id": {
+        "$oid": "5f8867ead1a12e581c5cb6b9"
+      },
+      "code": "Q25",
+      "question": "Which of the following wards belongs to Phu My town?",
+      "true": "a",
+      "a": "Phuoc Hoa ward",
+      "b": "Tan Hai ward",
+      "c": "Chau Pha ward",
+      "d": "Tan Hoa ward"
+    },
+    {
+      "_id": {
+        "$oid": "5f886855d1a12e581c5cb6ba"
+      },
+      "code": "Q26",
+      "question": "Which is the iconic relic of Ba Ria city?",
+      "a": "Da Bac",
+      "true": "b",
+      "b": "Nha Tron",
+      "c": "Long Huong Bridge",
+      "d": "Embankment"
+    },
+    {
+      "_id": {
+        "$oid": "5f88689dd1a12e581c5cb6bb"
+      },
+      "code": "Q27",
+      "question": "Where is the Long Kien noodle village?",
+      "true": "a",
+      "a": "Ba Ria City",
+      "b": "Vung Tau City",
+      "c": "Long Dien District",
+      "d": "Chau Duc District"
+    },
+    {
+      "_id": {
+        "$oid": "5f88690ad1a12e581c5cb6bc"
+      },
+      "code": "Q28",
+      "question": "Which tunnels belong to Ba Ria city?",
+      "a": "Hac Dich tunnels",
+      "true": "b",
+      "b": "Long Phuoc tunnels",
+      "c": "Ky Anh tunnels",
+      "d": "Cu Chi tunnels"
+    },
+    {
+      "_id": {
+        "$oid": "5f88692bd1a12e581c5cb6bd"
+      },
+      "code": "Q29",
+      "question": "How many communes and wards are there in Ba Ria city?",
+      "a": "2 communes, 7 wards",
+      "b": "7 communes, 2 wards",
+      "true": "c",
+      "c": "3 communes, 8 wards",
+      "d": "8 communes, 3 wards"
+    },
+    {
+      "_id": {
+        "$oid": "5f886950d1a12e581c5cb6be"
+      },
+      "code": "Q30",
+      "question": "What type of city is Ba Ria city?",
+      "a": "I",
+      "true": "b",
+      "b": "II",
+      "c": "III",
+      "d": "IV"
+    },
+    {
+      "_id": {
+        "$oid": "5f88696fd1a12e581c5cb6bf"
+      },
+      "code": "Q31",
+      "question": "When was Ba Ria promoted to the capital city?",
+      "true": "a",
+      "a": "22/8/2012",
+      "b": "22/8/2013",
+      "c": "22/8/2014",
+      "d": "22/8/2015"
+    },
+    {
+      "_id": {
+        "$oid": "5f8869bfd1a12e581c5cb6c0"
+      },
+      "code": "Q32",
+      "question": "On what date was Ba Ria city upgraded to 2nd-class municipality under Ba Ria - Vung Tau province?",
+      "a": "27/11/2012",
+      "b": "27/11/2013",
+      "true": "c",
+      "c": "27/11/2014",
+      "d": "27/11/2015"
+    },
+    {
+      "_id": {
+        "$oid": "5f8869dcd1a12e581c5cb6c1"
+      },
+      "code": "Q33",
+      "question": "What is the area of Ba Ria city?",
+      "true": "a",
+      "a": "91,46 km2",
+      "b": "91,00 km2",
+      "c": "100 km2",
+      "d": "92 km2"
+    },
+    {
+      "_id": {
+        "$oid": "5f886a04d1a12e581c5cb6c2"
+      },
+      "code": "Q34",
+      "question": "When was Dat Do district established?",
+      "true": "a",
+      "a": "09/12/2003",
+      "b": "10/12/2003",
+      "c": "11/11/2004",
+      "d": "12/11/2004"
+    },
+    {
+      "_id": {
+        "$oid": "5f886a29d1a12e581c5cb6c3"
+      },
+      "code": "Q35",
+      "question": "How many administrative units does Dat Do district include?",
+      "a": "1 towns, 7 communes",
+      "b": "2 towns, 5 communes",
+      "c": "1 towns, 8 communes",
+      "true": "d",
+      "d": "2 towns, 6 communes"
+    },
+    {
+      "_id": {
+        "$oid": "5f886a4cd1a12e581c5cb6c4"
+      },
+      "code": "Q36",
+      "question": "Which districts, towns and cities border Dat Do district?",
+      "a": "Xuyen Moc district, Long Dien district, Chau Duc district, Vung Tau city",
+      "b": "Long Dien district, Chau Duc district, Phu My town, Vung Tau city",
+      "true": "c",
+      "c": "Xuyen Moc district, Long Dien district, Chau Duc district, Ba Ria city",
+      "d": "Xuyen Moc district, Ba Ria city, Chau Duc district, Long Dien district"
+    },
+    {
+      "_id": {
+        "$oid": "5f886a76d1a12e581c5cb6c5"
+      },
+      "code": "Q37",
+      "question": "How long is the coastline of Dat Do District?",
+      "true": "a",
+      "a": "18km",
+      "b": "15km",
+      "c": "17km",
+      "d": "16km"
+    },
+    {
+      "_id": {
+        "$oid": "5f886aa2d1a12e581c5cb6c6"
+      },
+      "code": "Q38",
+      "question": "Where is the administrative center of Dat Do district?",
+      "a": "Phuoc Hai town",
+      "true": "b",
+      "b": "Dat Do town",
+      "c": "Long Hai town",
+      "d": "Loc An commune"
+    },
+    {
+      "_id": {
+        "$oid": "5f886acad1a12e581c5cb6c7"
+      },
+      "code": "Q39",
+      "question": "What is the area of Dat Do district?",
+      "true": "a",
+      "a": "190 km2",
+      "b": "210 km2",
+      "c": "230 km2",
+      "d": "250 km2"
+    },
+    {
+      "_id": {
+        "$oid": "5f886af0d1a12e581c5cb6c8"
+      },
+      "code": "Q40",
+      "question": "Dat Do district has 2 towns and 6 communes. They are … .",
+      "true": "a",
+      "a": "Towns: Dat Do, Phuoc Hai and communes: Lang Dai, Loc An, Long My, Long Tan, Phuoc Hoi, Phuoc Long Tho",
+      "b": "Towns: Dat Do, Long Hai and communes: Lang Dai, Loc An, Long Tan, Phuoc Hoi, Long Tho",
+      "c": "Towns: Dat Do, Phuoc Hai and communes: Loc An, Long Hai, Long Tan, Phuoc Hoi, Phuoc Long Tho",
+      "d": "Towns: Phuoc Hai, Long Hai and communes: Lang Dai, Long Hai, Long Tan, Phuoc Hoi, Phuoc Long Tho"
+    },
+    {
+      "_id": {
+        "$oid": "5f886b1ed1a12e581c5cb6c9"
+      },
+      "code": "Q41",
+      "question": "Which one below does NOT belong to Dat Do district?",
+      "a": "Secret cellar",
+      "b": "Minh Dam mountain",
+      "c": "Cay Cam slopes",
+      "true": "d",
+      "d": "Cay Sao slopes"
+    },
+    {
+      "_id": {
+        "$oid": "5f886b38d1a12e581c5cb6ca"
+      },
+      "code": "Q42",
+      "question": "How many rurally administrative units is Long Dien District divided?",
+      "a": "5",
+      "b": "6",
+      "true": "c",
+      "c": "7",
+      "d": "8"
+    },
+    {
+      "_id": {
+        "$oid": "5f886b58d1a12e581c5cb6cb"
+      },
+      "code": "Q43",
+      "question": "Which districts, towns and cities border Long Dien district?",
+      "a": "Dat Do district, Chau Duc district, Xuyen Moc district",
+      "b": "Ba Ria city, Vung Tau city, Xuyen Moc district",
+      "c": "Vung Tau city, Dat Do district, Chau Duc district",
+      "true": "d",
+      "d": "Vung Tau city, Ba Ria city, Dat Do district"
+    },
+    {
+      "_id": {
+        "$oid": "5f886c2fd1a12e581c5cb6cc"
+      },
+      "code": "Q44",
+      "question": "What is the district capital of Long Dien District?",
+      "true": "a",
+      "a": "Long Dien town",
+      "b": "Long Hai town",
+      "c": "Phuoc Hung commune",
+      "d": "Phuoc Tinh commune"
+    },
+    {
+      "_id": {
+        "$oid": "5f886c67d1a12e581c5cb6cd"
+      },
+      "code": "Q45",
+      "question": "Which one below does NOT belong to Long Dien district?",
+      "a": "Dinh Co Long Hai Co Long Hai palace",
+      "b": "To Dinh Thien Thai",
+      "true": "c",
+      "c": "Minh Dam historical relic",
+      "d": "Long Hoa pagoda"
+    },
+    {
+      "_id": {
+        "$oid": "5f886c8bd1a12e581c5cb6ce"
+      },
+      "code": "Q46",
+      "question": "When do the Long Hai fishermen celebrate Dinh Co festival (also known as Le Co)?",
+      "true": "a",
+      "a": "Lunar Febuary",
+      "b": "Lunar March ",
+      "c": "Lunar April",
+      "d": "Lunar May"
+    },
+    {
+      "_id": {
+        "$oid": "5f886cb3d1a12e581c5cb6cf"
+      },
+      "code": "Q47",
+      "question": "Which district or city borders the South-West Long Dien district?",
+      "a": "Dat do district",
+      "b": "Vung Tau city",
+      "true": "c",
+      "c": "Ba Ria city",
+      "d": "Xuyen Moc district"
+    },
+    {
+      "_id": {
+        "$oid": "5f886cd0d1a12e581c5cb6d0"
+      },
+      "code": "Q48",
+      "question": "Which of the following is the key economy of Long Dien district?",
+      "true": "a",
+      "a": "Fishery",
+      "b": "Agriculture",
+      "c": "Forestry",
+      "d": "Agriculture - Fishery"
+    },
+    {
+      "_id": {
+        "$oid": "5f886dbcd1a12e581c5cb6d1"
+      },
+      "code": "Q49",
+      "question": "Which side of Ba Ria Vung Tau province is Xuyen Moc located in?",
+      "true": "a",
+      "a": "The northeast of Ba Ria Vung Tau province",
+      "b": "The east of Ba Ria Vung Tau province",
+      "c": "The south of Ba Ria Vung Tau province",
+      "d": "The southwest of Ba Ria Vung Tau province"
+    },
+    {
+      "_id": {
+        "$oid": "5f886eb5d1a12e581c5cb6d2"
+      },
+      "code": "Q50",
+      "question": "What is the geographical location of Xuyen Moc district?",
+      "a": "The Northside borders Cam My district, Dong Nai province; the Westside borders Xuan Loc district, Dong Nai province; the Eastside boders Ham Tan, Binh Thuan province; the Southside borders the East Sea, the Westside borders Chau Duc District and Dat Do District",
+      "true": "b",
+      "b": "The North borders Xuan Loc district, Dong Nai province; The Northwestside borders Cam My district, Dong Nai province; the eastside boders Ham Tan district, Binh Thuan province, the southside boders the east sea, the westside boders Chau Duc and Dat Do Districts",
+      "c": "The Northside borders Ham Tan district, the Northwestside borders Xuan Loc district, the Eastside borders Cam My district, the Southside borders the East Sea, the Westside borders Chau Duc district and Dat Do District",
+      "d": "The Northside borders Ham Tan district, the Northwest borders Cam My district, the Eastside borders Xuan Loc district, the Southside borders the East sea, the Westside borders Dat Do district and Long Dien district"
+    },
+    {
+      "_id": {
+        "$oid": "5f886ed4d1a12e581c5cb6d3"
+      },
+      "code": "Q51",
+      "question": "How many administrative units is Xuyen Moc district divided into?",
+      "a": "11",
+      "b": "10",
+      "true": "c",
+      "c": "13",
+      "d": "12"
+    },
+    {
+      "_id": {
+        "$oid": "5f886f1dd1a12e581c5cb6d4"
+      },
+      "code": "Q52",
+      "question": "What is the district capital of Xuyen Moc District?",
+      "true": "a",
+      "a": "Phuoc Buu Town",
+      "b": "Phuoc Tan Town",
+      "c": "Hoa Binh commune",
+      "d": "Xuyen Moc Town"
+    },
+    {
+      "_id": {
+        "$oid": "5f886f40d1a12e581c5cb6d5"
+      },
+      "code": "Q53",
+      "question": "Currently, how many towns and communes does Xuyen Moc district have?",
+      "a": "2 towns, 10 communes",
+      "true": "b",
+      "b": "1 town, 12 communes",
+      "c": "3 towns, 10 communes",
+      "d": "2 towns, 11 communes"
+    },
+    {
+      "_id": {
+        "$oid": "5f886f5dd1a12e581c5cb6d6"
+      },
+      "code": "Q54",
+      "question": "How long is the coastline of Xuyen Moc District?",
+      "a": "29km",
+      "true": "b",
+      "b": "31km",
+      "c": "30km",
+      "d": "32km"
+    },
+    {
+      "_id": {
+        "$oid": "5f886f8ed1a12e581c5cb6d7"
+      },
+      "code": "Q55",
+      "question": "What is the largest district administrative unit of BRVT province?",
+      "true": "a",
+      "a": "Xuyen Moc district",
+      "b": "Phu My town",
+      "c": "Vung Tau city",
+      "d": "Chau Duc district"
+    },
+    {
+      "_id": {
+        "$oid": "5f886fced1a12e581c5cb6d8"
+      },
+      "code": "Q56",
+      "question": "In which commune is Xuyen Moc protection forest located?",
+      "a": "Phuoc Tan commune",
+      "true": "b",
+      "b": "Phuoc Thuan commune",
+      "c": "Phuoc Buu town",
+      "d": "Binh Chau commune"
+    },
+    {
+      "_id": {
+        "$oid": "5f887051d1a12e581c5cb6d9"
+      },
+      "code": "Q57",
+      "question": "Where is Grand Ho Tram?",
+      "true": "a",
+      "a": "Phuoc Thuan commune",
+      "b": "Bau Lam commune",
+      "c": "Bong Trang commune",
+      "d": "Bung Rieng commune"
+    },
+    {
+      "_id": {
+        "$oid": "5f88706ed1a12e581c5cb6da"
+      },
+      "code": "Q58",
+      "question": "What is the natural area of Xuyen Moc district?",
+      "a": "442 km2",
+      "b": "742 km2",
+      "c": "542 km2",
+      "true": "d",
+      "d": "642 km2"
+    },
+    {
+      "_id": {
+        "$oid": "5f887088d1a12e581c5cb6db"
+      },
+      "code": "Q59",
+      "question": "How many administrative units is Chau Duc district divided into?",
+      "a": "14",
+      "b": "15",
+      "true": "c",
+      "c": "16",
+      "d": "17"
+    },
+    {
+      "_id": {
+        "$oid": "5f8870bcd1a12e581c5cb6dc"
+      },
+      "code": "Q60",
+      "question": "What is the district capital of Chau Duc District?",
+      "true": "a",
+      "a": "Ngai Giao town",
+      "b": "Suoi Nghe commune",
+      "c": "Kim Long town",
+      "d": "Binh Ba commune"
+    },
+    {
+      "_id": {
+        "$oid": "5f88710ad1a12e581c5cb6dd"
+      },
+      "code": "Q61",
+      "question": "Which place below does NOT belong to Chau Duc district?",
+      "a": "Kim Long tunnels",
+      "true": "b",
+      "b": "Long Phuoc tunnels",
+      "c": "The statue of Binh Gia winning ",
+      "d": "Bau Sen base"
+    },
+    {
+      "_id": {
+        "$oid": "5f88717ed1a12e581c5cb6de"
+      },
+      "code": "Q62",
+      "question": "Where does the Traditional Boat Racing Festival in Quang Thanh, Chau Duc district take place?",
+      "a": "Ray river",
+      "true": "b",
+      "b": "Tam Bo lake",
+      "c": "Xuan Son waterfall",
+      "d": "Da Den lake"
+    },
+    {
+      "_id": {
+        "$oid": "5f8871a7d1a12e581c5cb6df"
+      },
+      "code": "Q63",
+      "question": "When was Chau Duc district established?",
+      "true": "a",
+      "a": "02/06/1994",
+      "b": "03/06/1994",
+      "c": "02/07/1993",
+      "d": "03/07/1993"
+    },
+    {
+      "_id": {
+        "$oid": "5f8871d0d1a12e581c5cb6e0"
+      },
+      "code": "Q64",
+      "question": "When were Kim Long tunnels recognized as a national histrorical relic?",
+      "a": "In 1993",
+      "true": "b",
+      "b": "In 1994",
+      "c": "In 1995",
+      "d": "In 1996"
+    },
+    {
+      "_id": {
+        "$oid": "5f8871f6d1a12e581c5cb6e1"
+      },
+      "code": "Q65",
+      "question": "Kim Long Tunnels are the place where the resounding victory in the resistance against ___ occured.",
+      "a": "France",
+      "b": "Britain",
+      "c": "China",
+      "true": "d",
+      "d": "The U.S.A"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-10-15T03:27:44.419Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-15T15:59:50.678Z"
+  },
+  "__v": 64
 }]
