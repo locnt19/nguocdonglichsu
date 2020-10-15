@@ -26,7 +26,8 @@ const userSchema = mongoose.Schema({
   },
   identity: { // Chứng minh nhân dân
     type: String,
-    required: true
+    default: '123456789'
+    // required: true
   },
   birthday: {
     type: String,
@@ -38,7 +39,8 @@ const userSchema = mongoose.Schema({
   },
   province: {
     type: String,
-    required: true
+    default: 'Bà Rịa - Vũng Tàu'
+    // required: true
   },
   district: {
     type: String,

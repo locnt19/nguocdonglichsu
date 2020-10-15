@@ -1,10 +1,10 @@
-nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm
-  .navbar-brand.font-weight-bold.mr-0(style="color: #3d5170") STEPPING BACK IN HISTORY
+nav.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm.py-2
+  a(href="/admin").navbar-brand.font-weight-bold.mr-0(style="color: #3d5170") STEPPING BACK IN HISTORY
   button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarNav.collapse.navbar-collapse
     ul.navbar-nav.ml-auto
       if quanTriVien
-        li(style='font-weight: 500').navbar-text [#{quanTriVien.role}] #{quanTriVien.name}
+        li(style='font-weight: 500').font-weight-normal.navbar-text [#{quanTriVien.role}] #{quanTriVien.name}
         li.nav-item
-          a.nav-link(href='/admin/logout') Logout
+          a.font-weight-normal.nav-link(href='/admin/logout') Logout

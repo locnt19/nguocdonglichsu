@@ -19,7 +19,7 @@ function toatify() {
       text: message,
       gravity: 'top',
       position: 'right',
-      duration: 3000,
+      duration: 2000,
       callback: function () {
         message = null;
         // console.log('callback: %s', message)

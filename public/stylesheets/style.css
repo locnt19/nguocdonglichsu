@@ -22,6 +22,13 @@ textarea {
 .btn {
   font-family: 'Montserrat', sans-serif;
 }
+.navbar__dropdown__toggle:after {
+  margin-left: 0.35em;
+  border-top: 0.2em solid;
+  border-right: 0.2em solid transparent;
+  border-bottom: 0;
+  border-left: 0.2em solid transparent;
+}
 
 .navbar a {
   font-weight: 500;
@@ -171,6 +178,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .login__wrapper {
+    max-width: 960px;
     height: 100vh;
   }
 
@@ -203,7 +211,7 @@ body {
 
   .question__wrapper {
     width: 100%;
-    max-width: 1100px;
+    max-width: 900px;
   }
 }
 

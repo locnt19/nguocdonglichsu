@@ -10,15 +10,15 @@ block content
             h6(style="color: #3d5170").font-weight-bold.m-0 Số lần thi còn lại: &nbsp;
               if user
                 span #{user.luotThiConLai.code}
-            h5.text-center.text-sm-left
+            //- h5.text-center.text-sm-left
               if thoiGianThi
-                .small Thời gian bắt đầu #{thoiGianThi.name}: &nbsp;
+                .small Thời gian bắt đầu #{thoiGianThi.name}:&nbsp;
                   strong #{thoiGianThi.startTime}
-                  span &nbsp; ngày &nbsp;
+                  span &nbsp;ngày&nbsp;
                   strong #{thoiGianThi.startDate}
-                .small Thời gian kết thúc #{thoiGianThi.name}: &nbsp;
+                .small Thời gian kết thúc #{thoiGianThi.name}:&nbsp;
                   strong #{thoiGianThi.finishTime}
-                  span &nbsp; ngày &nbsp;
+                  span &nbsp;ngày&nbsp;
                   strong #{thoiGianThi.finishDate}
               else
                 span Chưa có thời gian thi
@@ -66,7 +66,8 @@ block content
               .ml-3
                 if user
                   a.text-reset(href="/users/me") #{user.name}
-                  div ID: #{user.identity}
+                  //- div ID: #{user.identity}
+                  br
                   a(href="/users/change-password") Đổi mật khẩu
             .border.rounded.p-3.mt-3
               div
