@@ -21,7 +21,9 @@ block content
             if deThi !== null
               -for(let cauHoi of deThi.questions)
                 tr
-                  td(style='width: 70px').text-center #{cauHoi.code}
+                  td(style='width: 70px').text-center
+                    .mb-3 #{cauHoi.code}
+                    a(class="material-icons" style="font-size: 16px;" href=`/questions/section-3/edit/${cauHoi._id}`) create
                   td(style='width: 130px').text-center #{cauHoi.location}
                   td(style='width: 45%') #{cauHoi.question}
                   td

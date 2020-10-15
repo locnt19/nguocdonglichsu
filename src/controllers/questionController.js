@@ -12,6 +12,18 @@ exports.templateSection1Create = async (req, res) => {
   res.render('admin/section-1-create.pug', { deThi: deThi })
 }
 
+exports.templateSection1Edit = async (req, res) => {
+  const deThi = await DeThi.findOne({ code: 'P01' });
+  let cauHoi;
+  for (const item of deThi.questions) {
+    if (item._id.toString() === req.params.id) {
+      cauHoi = item;
+      break;
+    }
+  }
+  res.render('admin/section-1-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+}
+
 exports.createSection1 = async (req, res) => {
   try {
     const deThiDaTonTai = await DeThi.findOne({ code: req.body.code })
@@ -47,6 +59,18 @@ exports.templateSection2 = async (req, res) => {
 exports.templateSection2Create = async (req, res) => {
   const deThi = await DeThi.findOne({ code: 'P02' })
   res.render('admin/section-2-create.pug', { deThi: deThi })
+}
+
+exports.templateSection2Edit = async (req, res) => {
+  const deThi = await DeThi.findOne({ code: 'P02' });
+  let cauHoi;
+  for (const item of deThi.questions) {
+    if (item._id.toString() === req.params.id) {
+      cauHoi = item;
+      break;
+    }
+  }
+  res.render('admin/section-2-edit.pug', { cauHoi: cauHoi, deThi: deThi });
 }
 
 exports.createSection2 = async (req, res) => {
@@ -86,6 +110,18 @@ exports.templateSection3Create = async (req, res) => {
   res.render('admin/section-3-create.pug', { deThi: deThi })
 }
 
+exports.templateSection3Edit = async (req, res) => {
+  const deThi = await DeThi.findOne({ code: 'P03' });
+  let cauHoi;
+  for (const item of deThi.questions) {
+    if (item._id.toString() === req.params.id) {
+      cauHoi = item;
+      break;
+    }
+  }
+  res.render('admin/section-3-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+}
+
 exports.createSection3 = async (req, res) => {
   try {
     const deThiDaTonTai = await DeThi.findOne({ code: req.body.code })
@@ -122,6 +158,18 @@ exports.templateSection4Create = async (req, res) => {
   res.render('admin/section-4-create.pug', { deThi: deThi })
 }
 
+exports.templateSection4Edit = async (req, res) => {
+  const deThi = await DeThi.findOne({ code: 'P04' });
+  let cauHoi;
+  for (const item of deThi.questions) {
+    if (item._id.toString() === req.params.id) {
+      cauHoi = item;
+      break;
+    }
+  }
+  res.render('admin/section-4-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+}
+
 exports.createSection4 = async (req, res) => {
   try {
     const deThiDaTonTai = await DeThi.findOne({ code: req.body.code })
@@ -146,6 +194,49 @@ exports.createSection4 = async (req, res) => {
     req.flash('message', error)
     // res.json(error)
     res.render('admin/section-4-create.pug')
+  }
+}
+
+exports.editSection1234 = async (req, res) => {
+  const data = req.body;
+  const deThi = await DeThi.findOne({ code: data.codeDeThi });
+  let index = 0;
+  let cauHoi;
+  for (const item of deThi.questions) {
+    if (item._id.toString() === data.idCauHoi) {
+      deThi.questions[index].question = data.question;
+      deThi.questions[index].true = data.true;
+      deThi.questions[index].a = data.a;
+      if (data.codeDeThi === 'P03') {
+        deThi.questions[index].location = data.location;
+      }
+      if (data.codeDeThi !== 'P04') {
+        deThi.questions[index].b = data.b;
+        deThi.questions[index].c = data.c;
+        deThi.questions[index].d = data.d;
+      }
+      cauHoi = deThi.questions[index];
+      break;
+    }
+    index++;
+  }
+  await deThi.save();
+  req.flash('message', 'Cập nhật thành công');
+  switch (data.codeDeThi) {
+    case 'P01':
+      res.render('admin/section-1-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+      break;
+    case 'P02':
+      res.render('admin/section-2-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+      break;
+    case 'P03':
+      res.render('admin/section-3-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+      break;
+    case 'P04':
+      res.render('admin/section-4-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+      break;
+    default:
+      break;
   }
 }
 //#endregion
