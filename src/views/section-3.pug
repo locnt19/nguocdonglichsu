@@ -7,15 +7,10 @@ block content
         .middle__center__md.question__wrapper.mx-auto
           h3.text-white.font-weight-bold Phần 3: Khám phá
           .question__scroll.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-3.pb-md-4
+            input.d-none(name='lanThi' value=infoUser.lanThi.luotThi)
+            input.d-none(name='user' value=infoUser._id)
             if examCode
-              if user.luotThiConLai.section3 === 1
-                input.d-none(name='lanThi' value='2')
-              if user.luotThiConLai.section3 === 2
-                input.d-none(name='lanThi' value='1')
-              input.d-none(name='tuan' value=tuanHienTai)
-              input.d-none(name='dot' value=dotHienTai)
               input.d-none(name='exam' value=examCode)
-              input.d-none(name='user' value=user._id)
               input.d-none#submit_time_summary(name='time' value='0')
               .text-center
                 img.mb-4(width='500' height='424' src='../../images/bandohanhchinh_transparent_500.png' alt='ban do hanh chinh' usemap='#image_map')

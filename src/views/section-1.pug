@@ -6,15 +6,10 @@ block content
       .middle__center__md.question__wrapper.mx-auto
         h3.text-white.font-weight-bold Phần 1: Ngược dòng thời gian
         form(name="exams_section1" method='POST').card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-5.pb-md-4
+          input.d-none(name='lanThi' value=infoUser.lanThi.luotThi)
+          input.d-none(name='user' value=infoUser._id)
           if exams
-            if user.luotThiConLai.section1 === 1
-              input.d-none(name='lanThi' value='2')
-            if user.luotThiConLai.section1 === 2
-              input.d-none(name='lanThi' value='1')
-            input.d-none(name='tuan' value=tuanHienTai)
-            input.d-none(name='dot' value=dotHienTai)
             input.d-none(name='exam' value=exams.code)
-            input.d-none(name='user' value=user._id)
             input.d-none#submit_time_summary(name='time' value='0')
             -for(var i = 0; i < exams.questions.length; i++)
               -var item = exams.questions[i]

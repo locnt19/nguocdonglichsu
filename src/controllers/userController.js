@@ -63,7 +63,6 @@ exports.changePassword = async (req, res) => {
     });
     req.flash('message', 'Đổi mật khẩu thành công <br/> Vui lòng đăng nhập lại');
     res.redirect('/users/logout');
-
   } catch (error) {
     req.flash('message', error);
     res.render('change-password.pug', {
@@ -76,7 +75,6 @@ exports.changePassword = async (req, res) => {
 exports.create = async (req, res) => {
   try {
     const user = new User(req.body);
-    console.log(user);
     const userExists = await User.findOne({ email: req.body.email });
     if (userExists) throw new Error('Email đã tồn tại.');
     for (key in req.body) {
@@ -102,10 +100,10 @@ exports.login = async (req, res) => {
     const user = await User.findByCredentials(email, password);
     const token = await user.generateToken();
     res.cookie('token', token, {
-      // expires: new Date(Date.now() + 60 * 60 * 1000),
+      expires: new Date(Date.now() + 60 * 60 * 1000),
       httpOnly: true
     });
-    req.flash('message', `Chào mừng ${user.name} đã trở lại!`);
+    req.flash('message', `Welcome back, ${user.name}!`);
     res.redirect('/');
   } catch (error) {
     req.flash('message', error);

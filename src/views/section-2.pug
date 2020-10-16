@@ -5,14 +5,9 @@ block content
     if exams
       input#section2__summaryTimeeee(type="text" name="time" placeholder="time")
       input#section2__score(type="text" name="scope" placeholder="scope")
-      input(name='tuan' value=tuanHienTai)
-      input(name='dot' value=dotHienTai)
-      input(name='exam' value=exams.code)
-      input(name='user' value=user._id)
-      if user.luotThiConLai.section2 === 1
-        input(name='lanThi' value='2')
-      if user.luotThiConLai.section2 === 2
-        input(name='lanThi' value='1')
+      input(name='exam' value=examCode)
+      input(name='lanThi' value=infoUser.lanThi.luotThi)
+      input(name='user' value=infoUser._id)
   .container-fluid.p-4.min-vh-100
     .row
       .col-12
@@ -21,18 +16,9 @@ block content
         .section2__left__container
           .card.section2__question__wrapper(style=`background-image: url('/images/section-2/${image}');`)
             .section2__question__card.grid-container
-              -for(var i = 0; i < exams.questions.length; i++)
-                .section2__question__card__item.default(data-item=`${i+1}` class=`section2__${i+1}` data-value='a') #{i+1}
-              //- -for(var i=1; i <= 8; i++)
-                .section2__question__card__item.default(data-item=`${i}` class=`section2__${i}` data-value='a') #{i}
-              //- .section2__question__card__item(data-item='1' class=`section2__1` data-value='a') 1
-              //- .section2__question__card__item(data-item='2' class=`section2__2` data-value='b') 2
-              //- .section2__question__card__item(data-item='3' class=`section2__3` data-value='c') 3
-              //- .section2__question__card__item(data-item='4' class=`section2__4` data-value='d') 4
-              //- .section2__question__card__item(data-item='5' class=`section2__5` data-value='a') 5
-              //- .section2__question__card__item(data-item='6' class=`section2__6` data-value='b') 6
-              //- .section2__question__card__item(data-item='7' class=`section2__7` data-value='c') 7
-              //- .section2__question__card__item(data-item='8' class=`section2__8` data-value='d') 8
+              -for(var i = 0; i < exams.length; i++)
+                if(i < exams.length - 1)
+                  .section2__question__card__item.default(data-item=`${i+1}` class=`section2__${i+1}` data-value='a') #{i+1}
           .d-flex.align-items-center.mt-3
             button(type='button' data-value='c').btn.btn-primary.section2__question__background.px-5 Trả lời câu hỏi hình nền
             .ml-auto
@@ -40,8 +26,8 @@ block content
               span.font-weight-bold#section2__summaryTimer 0
       .col
         .section2__question__list.d-none
-          -for(var i = 0; i < exams.questions.length; i++)
-            -var item = exams.questions[i]
+          -for(var i = 0; i < exams.length; i++)
+            -var item = exams[i]
             .section2__question__item.d-none(data-item=`${i+1}`)
               h4.question__question.font-weight-bold Question #{i+1}: #{item.question}
               .question__answer

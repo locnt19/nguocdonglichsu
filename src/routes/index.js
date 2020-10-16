@@ -15,7 +15,7 @@ router.use('/questions', auth.isAdmin, questionRoutes)
 
 router.use('/users', userRoutes)
 
-router.use('/exams', auth.isLogged, auth.checkLuotThiConLai, examRoutes)
+router.use('/exams', auth.isLogged, examRoutes)
 
 router.post('/api', (req, res) => {
   console.log(JSON.stringify(req.body))

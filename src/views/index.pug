@@ -7,9 +7,9 @@ block content
       .card.p-4.p-md-5
         .row
           .col-lg-8
-            h6(style="color: #3d5170").font-weight-bold.m-0 Số lần thi còn lại: &nbsp;
+            h6(style="color: #3d5170").font-weight-bold.m-0 Số lượt thi còn lại:&nbsp;
               if user
-                span #{user.luotThiConLai.code}
+                span #{user.lanThi.luotThi}
             //- h5.text-center.text-sm-left
               if thoiGianThi
                 .small Thời gian bắt đầu #{thoiGianThi.name}:&nbsp;

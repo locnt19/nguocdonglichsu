@@ -17,17 +17,10 @@ exports.isLogged = async (req, res, next) => {
       console.log('run error')
       throw new Error()
     }
-    const luotThi = {
-      code: user.luotThiConLai,
-      section1: 2,
-      section2: 2,
-      section3: 2,
-      section4: 2,
-    }
     res.locals.user = {
       _id: user._id,
       name: user.name,
-      luotThiConLai: luotThi,
+      lanThi: user.lanThi,
       identity: user.identity, // Chứng minh nhân dân
       birthday: user.birthday,
       sex: user.sex,
@@ -100,4 +93,10 @@ exports.checkLuotThiConLai = async (req, res, next) => {
     console.log(error)
     res.render('500.pug', { title: 'Server Error' })
   }
+}
+
+exports.sendLuotThi = async (req, res, next) => {
+  res.luotThi = req.locals.user.lanThi;
+  console.log(res.luotThi);
+  next();
 }

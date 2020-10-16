@@ -9,9 +9,12 @@ const userSchema = mongoose.Schema({
     required: true,
     trim: true
   },
-  luotThiConLai: {
-    type: Number,
-    default: 2
+  lanThi: {
+    luotThi: { type: Number, default: 2 },
+    phan1: { type: Boolean, default: false },
+    phan2: { type: Boolean, default: false },
+    phan3: { type: Boolean, default: false },
+    phan4: { type: Boolean, default: false },
   },
   email: {
     type: String,
@@ -78,7 +81,8 @@ const userSchema = mongoose.Schema({
       type: String,
       required: true
     }
-  }]
+  }],
+  
 }, { timestamps: true })
 
 // hash the password before saving the user model
