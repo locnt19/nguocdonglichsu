@@ -30,8 +30,8 @@ html
           .row
             .col-lg-3
               div.list-group
-                a(href="/users/me" class={active: currentURL === '/me'}).list-group-item-action.list-group-item Thông tin cá nhân
-                a(href="/users/change-password" class={active: currentURL === '/change-password'}).list-group-item-action.list-group-item Đổi mật khẩu
+                a(href="/users/me" class={active: currentURL === '/me'}).list-group-item-action.list-group-item.py-2 Thông tin cá nhân
+                a(href="/users/change-password" class={active: currentURL === '/change-password'}).list-group-item-action.list-group-item.py-2 Đổi mật khẩu
                 //- a(href="/users/ranking" class={active: currentURL === '/ranking'}).list-group-item-action.list-group-item Xếp hạng của tôi
             .col-lg-9.mt-4.mt-lg-0
               block content
@@ -40,6 +40,7 @@ html
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
     script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js')
+    script(src='/javascripts/dragula.min.js')
     script(src='/javascripts/toastify.js')
     script(src='/javascripts/scripts.js')
     block scripts

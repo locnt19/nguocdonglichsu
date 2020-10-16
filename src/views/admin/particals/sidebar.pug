@@ -1,97 +1,59 @@
 
 nav.admin__sidebar.nav.flex-column.shadow-sm.bg-white.mt-4.mt-lg-0(style='font-weight: 500')
   li.nav-item
-    a.nav-link.active(href='/admin')
+    a.nav-link(href='/admin' class={active: currentURL === '/admin'})
       i.material-icons dashboard
       span.ml-2 Dashboard
   li.nav-item
-    a.nav-link(href='/')
+    a.nav-link(href='/' target='_blank' rel='noopener noreferrer')
       i.material-icons home
       span.ml-2 Giao diện thi
-  //- li.nav-item
-  //-   a.nav-link(href='#')
-  //-     i.material-icons description
-  //-     span.ml-2 Luật lệ
   li.nav-item
-    a.nav-link(href='#')
+    a.nav-link(href='https://drive.google.com/file/d/1QZl00Mp7yfYE_6Xg1IT7DIKxCV4p0Ot9/view' target='_blank' rel='noopener noreferrer')
+      i.material-icons description
+      span.ml-2 Luật lệ
+  li.nav-item
+    a.nav-link(href='/admin/users' class={active: currentURL === '/admin/users'})
       i.material-icons supervisor_account
       span.ml-2 Thí sinh
   li.nav-item
-    a.nav-link(href='/admin/xep-hang')
+    a.nav-link(href='/admin/xep-hang' class={active: currentURL === '/admin/xep-hang'})
       i.material-icons military_tech
       span.ml-2 Xếp hạng
   li.nav-item
-    a.nav-link(href='#questions' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions')
+    a.nav-link(href='#questions' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions'
+      class={active: (currentURL === '/questions/section-1') ||
+        (currentURL === '/questions/section-2') ||
+        (currentURL === '/questions/section-3') ||
+          (currentURL === '/questions/section-4')
+      }
+    )
       i.material-icons bar_chart
       span.ml-2 Câu hỏi
       i.material-icons.float-right arrow_drop_down
-    .collapse#questions
+    .collapse.show#questions
       nav.nav.flex-column.ml-4
         li.nav-item
-          a.nav-link(href='#questions1' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions1')
+          a.nav-link(href='/questions/section-1' class={active: currentURL === '/questions/section-1'})
             i.material-icons looks_one
             span.ml-2 Phần 1
-            i.material-icons.float-right arrow_drop_down
-          .collapse#questions1
-            nav.nav.flex-column
-              li.nav-item
-                a.nav-link(href='/questions/section-1/create')
-                  i.material-icons note_add
-                  span.ml-2 Thêm mới
-              li.nav-item
-                a.nav-link(href='/questions/section-1')
-                  i.material-icons list_alt
-                  span.ml-2 Danh sách
         li.nav-item
-          a.nav-link(href='#questions2' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions2')
+          a.nav-link(href='/questions/section-2' class={active: currentURL === '/questions/section-2'})
             i.material-icons looks_two
             span.ml-2 Phần 2
-            i.material-icons.float-right arrow_drop_down
-          .collapse#questions2
-            nav.nav.flex-column
-              li.nav-item
-                a.nav-link(href='/questions/section-2/create')
-                  i.material-icons note_add
-                  span.ml-2 Thêm mới
-              li.nav-item
-                a.nav-link(href='/questions/section-2')
-                  i.material-icons list_alt
-                  span.ml-2 Danh sách
         li.nav-item
-          a.nav-link(href='#questions3' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions3')
+          a.nav-link(href='/questions/section-3' class={active: currentURL === '/questions/section-3'})
             i.material-icons looks_3
             span.ml-2 Phần 3
-            i.material-icons.float-right arrow_drop_down
-          .collapse#questions3
-            nav.nav.flex-column
-              li.nav-item
-                a.nav-link(href='/questions/section-3/create')
-                  i.material-icons note_add
-                  span.ml-2 Thêm mới
-              li.nav-item
-                a.nav-link(href='/questions/section-3')
-                  i.material-icons list_alt
-                  span.ml-2 Danh sách
         li.nav-item
-          a.nav-link(href='#questions4' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions4')
+          a.nav-link(href='/questions/section-4' class={active: currentURL === '/questions/section-4'})
             i.material-icons looks_4
             span.ml-2 Phần 4
-            i.material-icons.float-right arrow_drop_down
-          .collapse#questions4
-            nav.nav.flex-column
-              li.nav-item
-                a.nav-link(href='/questions/section-4/create')
-                  i.material-icons note_add
-                  span.ml-2 Thêm mới
-              li.nav-item
-                a.nav-link(href='/questions/section-4')
-                  i.material-icons list_alt
-                  span.ml-2 Danh sách
   li.nav-item
-    a.nav-link(href='/admin/thoi-gian-thi')
+    a.nav-link(href='/admin/thoi-gian-thi' class={active: currentURL === '/admin/thoi-gian-thi'})
       i.material-icons alarm_on
       span.ml-2 Thời gian thi
   li.nav-item
-    a.nav-link(href='/admin/quan-tri')
+    a.nav-link(href='/admin/quan-tri' class={active: currentURL === '/admin/quan-tri'})
       i.material-icons verified_user
       span.ml-2 Quản trị

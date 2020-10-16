@@ -1,111 +1,116 @@
-const ThoiGianThi = require('../models/ThoiGianThi')
-const QuanTri = require('../models/QuanTri')
-const jwt = require('jsonwebtoken')
-const moment = require('moment')
-const TuanHienTai = require('../models/TuanHienTai')
+const ThoiGianThi = require('../models/ThoiGianThi');
+const QuanTri = require('../models/QuanTri');
+const jwt = require('jsonwebtoken');
+const moment = require('moment');
+const TuanHienTai = require('../models/TuanHienTai');
 
 exports.templateDashboard = (req, res) => {
-  res.render('admin/dashboard.pug')
-}
+  res.render('admin/dashboard.pug', { title: 'Dashboard' });
+};
 
 exports.templateXepHang = (req, res) => {
-  res.render('admin/xep-hang.pug', { title: 'Xếp hạng' })
-}
+  res.render('admin/xep-hang.pug', { title: 'Xếp hạng' });
+};
 
 exports.templateLogin = (req, res) => {
-  res.render('admin/login.pug', { title: 'Quản trị đăng nhập' })
-}
+  res.render('admin/login.pug', { title: 'Quản trị | Đăng nhập' });
+};
 
 exports.templateQuanTri = async (req, res) => {
   try {
-    const danhSachQuanTri = await QuanTri.find({})
-    res.render('admin/quan-tri.pug', { title: 'Quản trị', danhSachQuanTri: danhSachQuanTri })
+    const danhSachQuanTri = await QuanTri.find({});
+    res.render('admin/quan-tri.pug', {
+      title: 'Quản trị',
+      danhSachQuanTri: danhSachQuanTri,
+    });
   } catch (error) {
-    console.log(error)
-    req.flash('message', error)
-    res.render('admin/quan-tri.pug', { title: 'Quản trị' })
+    console.log(error);
+    req.flash('message', error);
+    res.render('admin/quan-tri.pug', { title: 'Quản trị' });
   }
-}
+};
 
 exports.getThoiGianThi = async (req, res) => {
   try {
-    const tuanHienTai = await TuanHienTai.find({})
-    const thoiGianThi = await ThoiGianThi.find({})
+    const tuanHienTai = await TuanHienTai.find({});
+    const thoiGianThi = await ThoiGianThi.find({});
     res.render('admin/thoi-gian-thi.pug', {
       title: 'Thời gian thi',
       ThoiGianThi: thoiGianThi,
       tuanHienTai: tuanHienTai,
-    })
-  } catch{
+    });
+  } catch {
     res.render('admin/thoi-gian-thi.pug', {
       title: 'Thời gian thi',
-    })
-    req.flash('message', error)
+    });
+    req.flash('message', error);
   }
-}
+};
 
 exports.setThoiGianThi = async (req, res) => {
   try {
-    const thoiGianThiMoi = new ThoiGianThi(req.body)
-    await thoiGianThiMoi.save()
-    req.flash('message', 'Tạo thành công')
-    res.redirect('/admin/thoi-gian-thi')
+    const thoiGianThiMoi = new ThoiGianThi(req.body);
+    await thoiGianThiMoi.save();
+    req.flash('message', 'Tạo thành công');
+    res.redirect('/admin/thoi-gian-thi');
   } catch (error) {
-    console.log(error)
-    req.flash('message', error)
+    console.log(error);
+    req.flash('message', error);
     res.render('admin/thoi-gian-thi.pug', {
-      message: req.flash()
-    })
+      message: req.flash(),
+    });
   }
-}
+};
 
 exports.updateThoiGianThi = async (req, res) => {
   try {
-    await ThoiGianThi.findOneAndUpdate({ name: req.body.name }, req.body)
-    req.flash('message', 'Cập nhật thành công')
-    res.redirect('/admin/thoi-gian-thi')
+    await ThoiGianThi.findOneAndUpdate({ name: req.body.name }, req.body);
+    req.flash('message', 'Cập nhật thành công');
+    res.redirect('/admin/thoi-gian-thi');
   } catch (error) {
-    console.log(error)
-    req.flash('message', error)
+    console.log(error);
+    req.flash('message', error);
     res.render('admin/thoi-gian-thi.pug', {
-      message: req.flash()
-    })
+      message: req.flash(),
+    });
   }
-}
+};
 
 exports.createQuanTri = async (req, res) => {
   try {
-    const quanTri = new QuanTri(req.body)
-    const quanTriExists = await QuanTri.findOne({ username: req.body.username })
-    if (quanTriExists) throw new Error('Username đã tồn tại.')
-    await quanTri.save()
-    console.log('ok')
-    req.flash('message', 'Tạo thành công')
-    res.redirect('/admin/quan-tri')
+    const quanTri = new QuanTri(req.body);
+    const quanTriExists = await QuanTri.findOne({
+      username: req.body.username,
+    });
+    if (quanTriExists) throw new Error('Username đã tồn tại.');
+    await quanTri.save();
+    console.log('ok');
+    req.flash('message', 'Tạo thành công');
+    res.redirect('/admin/quan-tri');
   } catch (error) {
-    console.log(error)
-    req.flash('message', error)
+    console.log(error);
+    req.flash('message', error);
     res.render('admin/quan-tri.pug', {
       message: req.flash(),
-      values: req.body
-    })
+      values: req.body,
+    });
   }
-}
+};
 exports.loginQuanTri = async (req, res) => {
   try {
-    const { username, password } = req.body
-    const quanTri = await QuanTri.findByCredentials(username, password)
-    const token = await quanTri.generateToken()
+    const { username, password } = req.body;
+    const quanTri = await QuanTri.findByCredentials(username, password);
+    const token = await quanTri.generateToken();
     res.cookie('isAdmin', token, {
-      httpOnly: true
-    })
-    req.flash('message', `Chào mừng ${quanTri.name} đã trở lại!`)
-    res.redirect('/admin')
+      httpOnly: true,
+    });
+    req.flash('message', `Chào mừng ${quanTri.name} đã trở lại!`);
+    res.redirect('/admin');
   } catch (error) {
-    req.flash('message', error)
-    res.render('admin/login.pug', { message: req.flash() })
+    req.flash('message', error);
+    res.render('admin/login.pug', { message: req.flash() });
   }
-}
+};
 
 exports.logoutQuanTri = async (req, res) => {
   try {
@@ -113,45 +118,44 @@ exports.logoutQuanTri = async (req, res) => {
     const data = jwt.verify(token, process.env.SECRETKEY);
     const quanTriVien = await QuanTri.findOne({
       _id: data._id,
-      'tokens.token': token
+      'tokens.token': token,
     });
     quanTriVien.tokens = quanTriVien.tokens.filter(t => {
-      return t.token !== token
-    })
+      return t.token !== token;
+    });
     await quanTriVien.save();
     res.clearCookie('isAdmin');
     res.redirect('/admin/login');
   } catch (error) {
-    console.log(error)
-    res.render('500.pug', { title: 'Logout Error' })
+    console.log(error);
+    res.render('500.pug', { title: 'Logout Error' });
   }
 };
 
-
 exports.createTuanHienTai = async (req, res) => {
   try {
-    const tuanHienTai = new TuanHienTai(req.body)
-    await tuanHienTai.save()
-    req.flash('message', 'Tạo Tuần hiện tại thành công')
-    res.redirect('/admin/thoi-gian-thi')
+    const tuanHienTai = new TuanHienTai(req.body);
+    await tuanHienTai.save();
+    req.flash('message', 'Tạo Tuần hiện tại thành công');
+    res.redirect('/admin/thoi-gian-thi');
   } catch (error) {
-    console.log(error)
-    req.flash('message', error)
+    console.log(error);
+    req.flash('message', error);
     res.render('admin/thoi-gian-thi.pug', {
-      message: req.flash()
-    })
+      message: req.flash(),
+    });
   }
-}
+};
 exports.updateTuanHienTai = async (req, res) => {
   try {
-    await ThoiGianThi.findOneAndUpdate({ _id: req.body._id }, req.body)
-    req.flash('message', 'Update Tuần hiện tại thành công')
-    res.redirect('/admin/thoi-gian-thi')
+    await ThoiGianThi.findOneAndUpdate({ _id: req.body._id }, req.body);
+    req.flash('message', 'Update Tuần hiện tại thành công');
+    res.redirect('/admin/thoi-gian-thi');
   } catch (error) {
-    console.log(error)
-    req.flash('message', error)
+    console.log(error);
+    req.flash('message', error);
     res.render('admin/thoi-gian-thi.pug', {
-      message: req.flash()
-    })
+      message: req.flash(),
+    });
   }
-}
+};
