@@ -11,17 +11,17 @@ block content
         table#table_users.table.table-bordered.dt-responsive.nowrap
           thead.bg-light
             tr
-              th
               th.align-middle(scope='col') Họ và tên
               th.align-middle(scope='col') Phần thi
               th.align-middle(scope='col') Điểm
               th.align-middle(scope='col') Thời gian
+              th.align-middle(scope='col') Tốt nhất
           tbody
             if baiThiList !== null && baiThiList.length > 0
               -for(let item of baiThiList)
                 tr
-                  td
                   td #{item.user}
                   td #{item.exam}
                   td #{item.scope}
                   td #{item.time}
+                  td #{item.bestest}

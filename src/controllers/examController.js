@@ -4,19 +4,39 @@ const BaiThi = require('../models/BaiThi');
 const User = require('../models/User');
 
 exports.templateReady = async (req, res) => {
-  res.render('ready.pug', { title: 'Phần 1: Ngược dòng thời gian' });
+  const user = await User.findOne({ _id: res.locals.user._id });
+  if (user.lanThi.luotThi > 0) {
+    res.render('ready.pug', { title: 'Phần 1: Ngược dòng thời gian' });
+  } else {
+    res.redirect('/exams/het-luot');
+  }
 };
 
 exports.templateReady2 = async (req, res) => {
-  res.render('ready-2.pug', { title: 'Phần 2: Giải mã lịch sử' });
+  const user = await User.findOne({ _id: res.locals.user._id });
+  if (user.lanThi.luotThi > 0) {
+    res.render('ready-2.pug', { title: 'Phần 2: Giải mã lịch sử' });
+  } else {
+    res.redirect('/exams/het-luot');
+  }
 };
 
 exports.templateReady3 = async (req, res) => {
-  res.render('ready-3.pug', { title: 'Phần 3: Khám phá' });
+  const user = await User.findOne({ _id: res.locals.user._id });
+  if (user.lanThi.luotThi > 0) {
+    res.render('ready-3.pug', { title: 'Phần 3: Khám phá' });
+  } else {
+    res.redirect('/exams/het-luot');
+  }
 };
 
 exports.templateReady4 = async (req, res) => {
-  res.render('ready-4.pug', { title: 'Phần 4: Kết nối' });
+  const user = await User.findOne({ _id: res.locals.user._id });
+  if (user.lanThi.luotThi > 0) {
+    res.render('ready-4.pug', { title: 'Phần 4: Kết nối' });
+  } else {
+    res.redirect('/exams/het-luot');
+  }
 };
 
 exports.templateComingSoon = async (req, res) => {
@@ -27,9 +47,8 @@ exports.templateComingSoon = async (req, res) => {
 exports.templateSection1 = async (req, res) => {
   try {
     const user = await User.findOne({ _id: res.locals.user._id });
-    if (user.lanThi.luotThi >= 0) {
+    if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan1) {
-        user.lanThi.luotThi -= 1;
         user.lanThi.phan1 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P01' });
@@ -49,7 +68,7 @@ exports.templateSection1 = async (req, res) => {
         res.redirect('/exams/ready-2');
       }
     } else {
-      res.render('het-luot.pug', { title: 'Hết lượt thi' });
+      res.redirect('/exams/het-luot');
     }
   } catch (error) {
     console.log(error);
@@ -62,7 +81,7 @@ exports.templateSection1 = async (req, res) => {
 exports.templateSection2 = async (req, res) => {
   try {
     const user = await User.findOne({ _id: res.locals.user._id });
-    if (user.lanThi.luotThi >= 0) {
+    if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan2) {
         user.lanThi.phan2 = true;
         await user.save();
@@ -94,7 +113,7 @@ exports.templateSection2 = async (req, res) => {
         res.redirect('/exams/ready-3');
       }
     } else {
-      res.render('het-luot.pug', { title: 'Hết lượt thi' });
+      res.redirect('/exams/het-luot');
     }
   } catch (error) {
     console.log(error);
@@ -107,7 +126,7 @@ exports.templateSection2 = async (req, res) => {
 exports.templateSection3 = async (req, res) => {
   try {
     const user = await User.findOne({ _id: res.locals.user._id });
-    if (user.lanThi.luotThi >= 0) {
+    if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan3) {
         user.lanThi.phan3 = true;
         await user.save();
@@ -163,7 +182,7 @@ exports.templateSection3 = async (req, res) => {
         res.redirect('/exams/ready-4');
       }
     } else {
-      res.render('het-luot.pug', { title: 'Hết lượt thi' });
+      res.redirect('/exams/het-luot');
     }
   } catch (error) {
     console.log(error);
@@ -176,8 +195,9 @@ exports.templateSection3 = async (req, res) => {
 exports.templateSection4 = async (req, res) => {
   try {
     const user = await User.findOne({ _id: res.locals.user._id });
-    if (user.lanThi.luotThi >= 0) {
+    if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan4) {
+        user.lanThi.luotThi -= 1;
         user.lanThi.phan4 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P04' });
@@ -204,7 +224,7 @@ exports.templateSection4 = async (req, res) => {
         res.redirect('/');
       }
     } else {
-      res.render('het-luot.pug', { title: 'Hết lượt thi' });
+      res.redirect('/exams/het-luot');
     }
   } catch (error) {
     console.log(error);
@@ -296,9 +316,6 @@ exports.nopBaiThi2 = async (req, res) => {
       exam: data.exam,
     });
     if (baiThiOfUser !== null) {
-      // 1. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 500, time: 200}
-      // 3. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 400, time: 200}
-      // 2. baiThiOfUser{scope: 400, time: 300} >|< baiThi{scope: 500, time: 300}
       if (baiThiOfUser.scope > baiThi.scope) {
         baiThiOfUser.bestest = true;
         baiThi.bestest = false;
@@ -334,6 +351,7 @@ exports.nopBaiThi2 = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 2' });
+
   }
 };
 
@@ -375,9 +393,6 @@ exports.nopBaiThi3 = async (req, res) => {
       exam: data.exam,
     });
     if (baiThiOfUser !== null) {
-      // 1. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 500, time: 200}
-      // 3. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 400, time: 200}
-      // 2. baiThiOfUser{scope: 400, time: 300} >|< baiThi{scope: 500, time: 300}
       if (baiThiOfUser.scope > baiThi.scope) {
         baiThiOfUser.bestest = true;
         baiThi.bestest = false;
@@ -432,9 +447,6 @@ exports.nopBaiThi4 = async (req, res) => {
       exam: data.exam,
     });
     if (baiThiOfUser !== null) {
-      // 1. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 500, time: 200}
-      // 3. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 400, time: 200}
-      // 2. baiThiOfUser{scope: 400, time: 300} >|< baiThi{scope: 500, time: 300}
       if (baiThiOfUser.scope > baiThi.scope) {
         baiThiOfUser.bestest = true;
         baiThi.bestest = false;
