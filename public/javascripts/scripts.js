@@ -460,6 +460,9 @@ function section3() {
         $('.s3_ok').hide();
         $('#start_text').show();
       }
+      if (couterRandom < 4) {
+        $('.s3_ok').removeClass('d-none');
+      }
     }
   });
 
@@ -620,7 +623,7 @@ function section4() {
   });
 
   // Timer
-  const timeLimited = 1000;
+  const timeLimited = 100;
   let currentTime = 0;
   let stopTimer = false;
 

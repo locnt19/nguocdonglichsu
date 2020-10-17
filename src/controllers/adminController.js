@@ -106,7 +106,7 @@ exports.loginQuanTri = async (req, res) => {
     res.cookie('isAdmin', token, {
       httpOnly: true,
     });
-    req.flash('message', `Chào mừng ${quanTri.name} đã trở lại!`);
+    req.flash('message', `Welcome back, ${quanTri.name}!`);
     res.redirect('/admin');
   } catch (error) {
     req.flash('message', error);

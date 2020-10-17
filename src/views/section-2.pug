@@ -11,7 +11,7 @@ block content
   .container-fluid.p-4.min-vh-100
     .row
       .col-12
-        h3.font-weight-bold Phần 2: Giải mã lịch sử
+        h3.font-weight-bold Round 2: History puzzle
       .col-auto
         .section2__left__container
           .card.section2__question__wrapper(style=`background-image: url('/images/section-2/${image}');`)
@@ -20,9 +20,9 @@ block content
                 if(i < exams.length - 1)
                   .section2__question__card__item.default(data-item=`${i+1}` class=`section2__${i+1}` data-value='a') #{i+1}
           .d-flex.align-items-center.mt-3
-            button(type='button' data-value='c').btn.btn-primary.section2__question__background.px-5 Trả lời câu hỏi hình nền
+            button(type='button' data-value='c').btn.btn-primary.section2__question__background.px-5 Answer the question
             .ml-auto
-              span Tổng thời gian:  
+              span Remaining time:  
               span.font-weight-bold#section2__summaryTimer 0
       .col
         .section2__question__list.d-none
@@ -33,18 +33,18 @@ block content
               .question__answer
                 .custom-control.custom-radio.mt-2
                   input.custom-control-input(id=`section2__answer${i+1}__a` type='radio' name=`section2__answer${i+1}` value='a')
-                  label.custom-control-label.h5(for=`section2__answer${i+1}__a`) #{item.a}
+                  label.custom-control-label.h5(for=`section2__answer${i+1}__a`) A. #{item.a}
                 .custom-control.custom-radio.mt-2
                   input.custom-control-input(id=`section2__answer${i+1}__b` type='radio' name=`section2__answer${i+1}` value='b')
-                  label.custom-control-label.h5(for=`section2__answer${i+1}__b`) #{item.b}
+                  label.custom-control-label.h5(for=`section2__answer${i+1}__b`) B. #{item.b}
                 .custom-control.custom-radio.mt-2
                   input.custom-control-input(id=`section2__answer${i+1}__c` type='radio' name=`section2__answer${i+1}` value='c')
-                  label.custom-control-label.h5(for=`section2__answer${i+1}__c`) #{item.c}
+                  label.custom-control-label.h5(for=`section2__answer${i+1}__c`) C. #{item.c}
                 .custom-control.custom-radio.mt-2
                   input.custom-control-input(id=`section2__answer${i+1}__d` type='radio' name=`section2__answer${i+1}` value='d')
-                  label.custom-control-label.h5(for=`section2__answer${i+1}__d`) #{item.d}
+                  label.custom-control-label.h5(for=`section2__answer${i+1}__d`) D. #{item.d}
           .d-flex.align-items-center.mt-5.pr-5
             button(type='button').btn.btn-primary.section2__question__check__result.px-5 OK
             .ml-auto
-              span Thời gian còn lại:  
+              span Remaining time:  
               span.font-weight-bold#section2__questionPendingTimer 20

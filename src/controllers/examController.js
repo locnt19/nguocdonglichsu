@@ -15,7 +15,7 @@ exports.templateReady = async (req, res) => {
 exports.templateReady2 = async (req, res) => {
   const user = await User.findOne({ _id: res.locals.user._id });
   if (user.lanThi.luotThi > 0) {
-    res.render('ready-2.pug', { title: 'Phần 2: Giải mã lịch sử' });
+    res.render('ready-2.pug', { title: 'Round 2: History puzzle' });
   } else {
     res.redirect('/exams/het-luot');
   }
@@ -24,7 +24,7 @@ exports.templateReady2 = async (req, res) => {
 exports.templateReady3 = async (req, res) => {
   const user = await User.findOne({ _id: res.locals.user._id });
   if (user.lanThi.luotThi > 0) {
-    res.render('ready-3.pug', { title: 'Phần 3: Khám phá' });
+    res.render('ready-3.pug', { title: 'Round 3: Exploration' });
   } else {
     res.redirect('/exams/het-luot');
   }
@@ -102,7 +102,7 @@ exports.templateSection2 = async (req, res) => {
         }
         randomQuestion = randomQuestion.slice(0, 9);
         res.render('section-2.pug', {
-          title: 'Phần 2: Giải mã lịch sử',
+          title: 'Round 2: History puzzle',
           examCode: data.code,
           exams: randomQuestion,
           image: arrayImage[Math.floor(Math.random() * arrayImage.length + 0)],
@@ -118,7 +118,7 @@ exports.templateSection2 = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.render('500.pug', {
-      title: 'Phần 2: Giải mã lịch sử',
+      title: 'Round 2: History puzzle',
     });
   }
 };
@@ -171,7 +171,7 @@ exports.templateSection3 = async (req, res) => {
         ];
 
         res.render('section-3.pug', {
-          title: 'Phần 3: Khám phá',
+          title: 'Round 3: Exploration',
           examName: data.name,
           examCode: data.code,
           arrayData: arrayData,
@@ -187,7 +187,7 @@ exports.templateSection3 = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.render('500.pug', {
-      title: 'Phần 3: Khám phá',
+      title: 'Round 3: Exploration',
     });
   }
 };

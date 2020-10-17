@@ -5,7 +5,7 @@ block content
     section.bg__exams
       .container.py-3.min-vh-100
         .middle__center__md.question__wrapper.mx-auto
-          h3.text-white.font-weight-bold Phần 3: Khám phá
+          h3.text-white.font-weight-bold Round 3: Exploration
           .question__scroll.card.p-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pt-md-3.pb-md-4
             input.d-none(name='lanThi' value=infoUser.lanThi.luotThi)
             input.d-none(name='user' value=infoUser._id)
@@ -23,16 +23,16 @@ block content
                   area(data-modal='vungtau' target='' alt='Vũng Tàu' title='Vũng Tàu' href='' coords='156,298,182,313,183,333,160,330,148,338,144,355,130,364,107,375,89,396,75,414,67,407,64,398,54,389,55,377,49,370,54,359,63,364,73,358,86,359,97,344,120,339,103,333,103,322,107,305,98,311,90,320,77,322,60,323,43,312,37,295,51,283,67,281,89,285,97,290,111,297,145,292' shape='poly')
                   area(data-modal='tanthanh' target='' alt='Tân Thành' title='Tân Thành' href='' coords='23,295,39,288,63,279,86,284,104,280,108,267,128,236,142,237,151,204,144,180,138,160,139,145,141,124,138,112,141,88,124,84,110,97,99,118,87,124,74,132,59,128,38,128,20,134,14,149,2,152,17,170,24,194,12,212,24,226,11,250,0,267' shape='poly')
                   area(data-modal='condao' target='' alt='Côn Đảo' title='Côn Đảo' href='' coords='324,357,307,364,295,367,287,378,283,401,295,413,311,408,328,415,340,415,353,414,364,404,379,400,397,396,399,381,377,383,356,387,344,378,352,366,360,354,362,335,341,330,320,332,299,333,297,342,301,352' shape='poly')
-                .small#start_text(style='display: none') Vui lòng chọn vị trí tương ứng trên bản đồ để bắt đầu
+                .small#start_text(style='display: none') Please select the corresponding location on the map to get started
                 .text-center.mb-2
                   button(type='button').mr-2.btn.btn-outline-primary.btn-sm.s3_random random
-                  button(type='button').mr-2.btn.btn-primary.btn-sm.s3_ok OK
+                  button(type='button').mr-2.btn.btn-primary.btn-sm.s3_ok.d-none OK
                 #result_random
-                div Lượt quay còn lại: &nbsp;
+                div Remaining spins: &nbsp;
                   span#random_conlai 4
-                div(style='display: none') Ngôi sao hy vọng: &nbsp;
+                div(style='display: none') Lucky Star: &nbsp;
                   span#star_conlai 2
-                button#luubai(style='display: none' type='submit').mt-2.btn.btn-primary Chấm điểm
+                button#luubai(style='display: none' type='submit').mt-2.btn.btn-primary Go to next round
 
     section
       if arrayData
@@ -61,10 +61,10 @@ block content
                         label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
                     .custom-control.custom-checkbox
                       input.star_checkbox.custom-control-input(id=`${location.code}_star${i}` name=`answers[${index}][${i}][star]` type='checkbox')
-                      label.custom-control-label.text-dark(for=`${location.code}_star${i}`) Đặt ngôi sao hy vọng
+                      label.custom-control-label.text-dark(for=`${location.code}_star${i}`) Lucky Star
               .text-center
-                button(type='button' class=`${location.code}`).btn.btn-primary.question__submit.px-5.mt-4.next_question Tiếp theo
-                button(type='button' style='display: none' class=`${location.code}`).btn.btn-primary.question__submit.px-5.mt-4.s3_stop Lưu bài
+                button(type='button' class=`${location.code}`).btn.btn-primary.question__submit.px-5.mt-4.next_question Next
+                button(type='button' style='display: none' class=`${location.code}`).btn.btn-primary.question__submit.px-5.mt-4.s3_stop Next location
               .mt-3
                 .d-flex.align-items-center.justify-content-between
                   .question__time__sum

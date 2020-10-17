@@ -12,8 +12,8 @@ block content
           h5.font-weight-bold Quản trị mới
           form(method='POST').row
             .col-sm-4
-              label.mb-0.w-100 Họ và tên
-                input.form-control(required name='name' placeholder='Họ và tên' value= values ? values.name : null)
+              label.mb-0.w-100 Full name
+                input.form-control(required name='name' placeholder='Full name' value= values ? values.name : null)
             .col-sm-4
               label.mb-0.w-100 Tài khoản
                 input.form-control(required name='username' placeholder='Username' value= values ? values.username : null)
@@ -48,7 +48,7 @@ block content
                     td= danhSachQuanTri[i].username
                     td= danhSachQuanTri[i].role
                     //- td.text-center
-                      a(href='#') Đăng xuất trên tất cả thiết bị
+                      a(href='#') Log out trên tất cả thiết bị
     else
       .col-md-7.p-0.px-md-3
         .card
@@ -75,4 +75,4 @@ block content
                     td= danhSachQuanTri[i].username
                     td= danhSachQuanTri[i].role
                     //- td.text-center
-                      a(href='#') Đăng xuất trên tất cả thiết bị
+                      a(href='#') Log out trên tất cả thiết bị

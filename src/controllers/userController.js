@@ -17,11 +17,11 @@ exports.templateRegister = (req, res) => {
 }
 
 exports.templateProfile = (req, res) => {
-  res.render('me.pug', { title: 'Thông tin cá nhân' })
+  res.render('me.pug', { title: 'Personal Information' })
 };
 
 exports.templateChangePassword = (req, res) => {
-  res.render('change-password.pug', { title: 'Đổi mật khẩu' });
+  res.render('change-password.pug', { title: 'Change password' });
 }
 
 exports.templateRanking = (req, res) => {
@@ -61,7 +61,7 @@ exports.changePassword = async (req, res) => {
     await User.findOneAndUpdate({ email: data.email }, {
       password: bcrypt.hashSync(data.newPassword, 8)
     });
-    req.flash('message', 'Đổi mật khẩu thành công <br/> Vui lòng đăng nhập lại');
+    req.flash('message', 'Password was successfully changed <br/> Please log in again');
     res.redirect('/users/logout');
   } catch (error) {
     req.flash('message', error);

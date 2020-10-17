@@ -9,13 +9,13 @@ block content
         .h1.mb-0 IN HISTORY
         form(action='/users/register' method='POST').row.mt-5
           .col-md-6.form-group
-            input.form-control(name='name' placeholder='Họ và tên' value=values ? values.name : null required)
+            input.form-control(name='name' placeholder='Full name' value=values ? values.name : null required)
           .col-md-6.form-group
-            input.form-control(name='birthday' type="Date" placeholder='Ngày sinh' value=values ? values.birthday : null required)
+            input.form-control(name='birthday' type="Date" placeholder='Date of birth' value=values ? values.birthday : null required)
           .col-md-6.form-group
             .fake__select.dropdown
               button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                input.w-100.border-0.user-select-none(name='sex' value=values ? values.sex : null placeholder='Giới tính' style='outline: none' readonly)
+                input.w-100.border-0.user-select-none(name='sex' value=values ? values.sex : null placeholder='Gender' style='outline: none' readonly)
                 span.material-icons(style='font-size: inherit') keyboard_arrow_down
               .dropdown-menu
                 .dropdown-item Nam
@@ -23,14 +23,14 @@ block content
           //- .col-md-6.form-group
           //-   .fake__select.dropdown
           //-     button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-          //-       input.w-100.border-0.user-select-none(name='province' value=values ? values.province : null placeholder='Tỉnh/Thành phố' style='outline: none' readonly)
+          //-       input.w-100.border-0.user-select-none(name='province' value=values ? values.province : null placeholder='Province/City' style='outline: none' readonly)
           //-       span.material-icons(style='font-size: inherit') keyboard_arrow_down
           //-     .dropdown-menu
           //-       .dropdown-item Tỉnh Bà Rịa - Vũng Tàu
           .col-md-6.form-group
             .fake__select.dropdown
               button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                input.w-100.border-0.user-select-none(name='district' value=values ? values.district : null placeholder='Quận/Huyện' style='outline: none' readonly)
+                input.w-100.border-0.user-select-none(name='district' value=values ? values.district : null placeholder='Town/District' style='outline: none' readonly)
                 span.material-icons(style='font-size: inherit') keyboard_arrow_down
               .dropdown-menu
                 .dropdown-item Thành phố Vũng Tàu
@@ -44,7 +44,7 @@ block content
           .col-md-6.form-group
             .fake__select.dropdown
               button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                input.w-100.border-0.user-select-none(name='school' value=values ? values.school : null placeholder='Cấp bậc' style='outline: none' readonly)
+                input.w-100.border-0.user-select-none(name='school' value=values ? values.school : null placeholder='Educational background' style='outline: none' readonly)
                 span.material-icons(style='font-size: inherit') keyboard_arrow_down
               .dropdown-menu
                 .dropdown-item Trung học cơ sở
@@ -52,11 +52,11 @@ block content
                 .dropdown-item Cao đẳng
                 .dropdown-item Đại học
           .col-md-6.form-group
-            input.form-control(name='nameSchool' placeholder='Tên trường' value=values ? values.nameSchool : null required)
+            input.form-control(name='nameSchool' placeholder='Name of your school' value=values ? values.nameSchool : null required)
           .col-md-6.form-group
             .fake__select.dropdown
               button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-                input.w-100.border-0.user-select-none(name='grade' value=values ? values.grade : null placeholder='Lớp' style='outline: none' readonly)
+                input.w-100.border-0.user-select-none(name='grade' value=values ? values.grade : null placeholder='Class/Grade' style='outline: none' readonly)
                 span.material-icons(style='font-size: inherit') keyboard_arrow_down
               .dropdown-menu
                 -for(var i = 6; i < 13; i++)
@@ -64,15 +64,15 @@ block content
                 .dropdown-item Cao Đẳng
                 .dropdown-item Đại học
           .col-md-6.form-group
-            input.form-control(name='classRoom' value= values ? values.classRoom : null placeholder='Tên lớp' required)
+            input.form-control(name='classRoom' value= values ? values.classRoom : null placeholder='Class name' required)
           //- .col-md-6.form-group
           //-   input.form-control(name='identity' value= values ? values.identity : null placeholder='Chứng minh nhân dân' required)
           .col-md-6.form-group
-            input.form-control(name='email' value= values ? values.email : null type='email' placeholder='Địa chỉ email' required)
+            input.form-control(name='email' value= values ? values.email : null type='email' placeholder='Email' required)
           .col-md-6.form-group
-            input.form-control(name='password' type='password' placeholder='Mật khẩu' required)
+            input.form-control(name='password' type='password' placeholder='Password' required)
           .col-12.text-center
-            button(type='submit').btn.btn-primary Đăng ký
+            button(type='submit').btn.btn-primary Register!
             .mt-3.small
-              span Đã có tài khoản? &nbsp;
-              a(href='/users/login') Đăng nhập ngay!
+              span Have a account? &nbsp;
+              a(href='/users/login') Login now!

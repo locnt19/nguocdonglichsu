@@ -9,10 +9,10 @@ block content
         .h1.mb-0 IN HISTORY
         form(action='/users/login' method='POST').login__form.mt-5
           .form-group
-            input.form-control(name='email' type='email' placeholder='Địa chỉ email' value= values ? values.email : '')
+            input.form-control(name='email' type='email' placeholder='Email' value= values ? values.email : '')
           .form-group
-            input.form-control(name='password' type='password' placeholder='Mật khẩu')
-          button(type='submit').btn.btn-block.btn-primary Đăng nhập
+            input.form-control(name='password' type='password' placeholder='Password')
+          button(type='submit').btn.btn-block.btn-primary Log in
           .text-center.small.mt-3
-            span Không có tài khoản? &nbsp;
-            a(href='/users/register') Đăng ký ngay!
+            span Do not have an account? &nbsp;
+            a(href='/users/register') Register now!
