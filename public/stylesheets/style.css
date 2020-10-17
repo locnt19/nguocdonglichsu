@@ -388,7 +388,6 @@ table.dataTable {
 
 .paginate_button {
   cursor: pointer;
-  padding: 0 0.5rem;
 }
 
 .dataTables_paginate,

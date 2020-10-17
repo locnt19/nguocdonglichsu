@@ -33,9 +33,10 @@ router.route('/update-tuan-hien-tai')
   .post(auth.isAdmin, adminController.updateTuanHienTai)
 
 
-// router.route('/backdoor/create-account')
-//   .get(adminController.templateQuanTri)
-//   .post(adminController.createQuanTri)
+router.route('/users')
+  .get(adminController.templateUsers)
 
+router.route('/bai-thi')
+  .get(adminController.templateBaiThi)
 
 module.exports = router

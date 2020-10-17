@@ -9,7 +9,10 @@ block content
           .col-lg-8
             h6(style="color: #3d5170").font-weight-bold.m-0 Số lượt thi còn lại:&nbsp;
               if user
-                span #{user.lanThi.luotThi}
+                if user.lanThi.luotThi < 0
+                  span 0
+                else
+                  span #{user.lanThi.luotThi}
             //- h5.text-center.text-sm-left
               if thoiGianThi
                 .small Thời gian bắt đầu #{thoiGianThi.name}:&nbsp;

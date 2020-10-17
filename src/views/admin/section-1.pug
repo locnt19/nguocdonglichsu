@@ -14,11 +14,11 @@ block content
         table#table_section1_list.table.table-bordered
           thead.bg-light
             tr
-              th.text-center.align-middle.border-0(scope='col')
+              th.text-center.align-middle(scope='col')
                 | #
-              th.align-middle.border-0(scope='col')
+              th.align-middle(scope='col')
                 | Câu hỏi
-              th.align-middle.border-0(scope='col') Trả lời
+              th.align-middle(scope='col') Trả lời
           tbody
             if deThi !== null
               -for(let cauHoi of deThi.questions)

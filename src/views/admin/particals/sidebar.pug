@@ -17,6 +17,10 @@ nav.admin__sidebar.nav.flex-column.shadow-sm.bg-white.mt-4.mt-lg-0(style='font-w
       i.material-icons supervisor_account
       span.ml-2 Thí sinh
   li.nav-item
+    a.nav-link(href='/admin/bai-thi' class={active: currentURL === '/admin/bai-thi'})
+      i.material-icons receipt_long
+      span.ml-2 Bài thi
+  li.nav-item
     a.nav-link(href='/admin/xep-hang' class={active: currentURL === '/admin/xep-hang'})
       i.material-icons military_tech
       span.ml-2 Xếp hạng

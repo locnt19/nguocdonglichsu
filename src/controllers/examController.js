@@ -1,89 +1,98 @@
-const ThoiGianThi = require('../models/ThoiGianThi')
-const DeThi = require('../models/DeThi')
-const BaiThi = require('../models/BaiThi')
-const User = require('../models/User')
+const ThoiGianThi = require('../models/ThoiGianThi');
+const DeThi = require('../models/DeThi');
+const BaiThi = require('../models/BaiThi');
+const User = require('../models/User');
 
 exports.templateReady = async (req, res) => {
-  res.render('ready.pug', { title: 'Phần 1: Ngược dòng thời gian' })
-}
+  res.render('ready.pug', { title: 'Phần 1: Ngược dòng thời gian' });
+};
 
 exports.templateReady2 = async (req, res) => {
-  res.render('ready-2.pug', { title: 'Phần 2: Giải mã lịch sử' })
-}
+  res.render('ready-2.pug', { title: 'Phần 2: Giải mã lịch sử' });
+};
 
 exports.templateReady3 = async (req, res) => {
-  res.render('ready-3.pug', { title: 'Phần 3: Khám phá' })
-}
+  res.render('ready-3.pug', { title: 'Phần 3: Khám phá' });
+};
 
 exports.templateReady4 = async (req, res) => {
-  res.render('ready-4.pug', { title: 'Phần 4: Kết nối' })
-}
+  res.render('ready-4.pug', { title: 'Phần 4: Kết nối' });
+};
 
 exports.templateComingSoon = async (req, res) => {
-  const data = await ThoiGianThi.findOne({ name: 'Đợt 1' })
-  res.render('coming-soon.pug', { title: 'Coming soon...', time: data })
-}
+  const data = await ThoiGianThi.findOne({ name: 'Đợt 1' });
+  res.render('coming-soon.pug', { title: 'Coming soon...', time: data });
+};
 
 exports.templateSection1 = async (req, res) => {
   try {
-    // console.log(res.locals.user);
     const user = await User.findOne({ _id: res.locals.user._id });
-    user.lanThi.luotThi -= 1;
-    user.lanThi.phan1 = true;
-    user.save();
     if (user.lanThi.luotThi >= 0) {
-      const data = await DeThi.findOne({ code: 'P01' });
-      const arrayRandom = randomRange(data.questions.length);
-      let randomQuestion = [];
-      for (var i = 0; i < arrayRandom.length; i++) {
-        randomQuestion.push(data.questions[arrayRandom[i]]);
+      if (!user.lanThi.phan1) {
+        user.lanThi.luotThi -= 1;
+        user.lanThi.phan1 = true;
+        await user.save();
+        const data = await DeThi.findOne({ code: 'P01' });
+        const arrayRandom = randomRange(data.questions.length);
+        let randomQuestion = [];
+        for (var i = 0; i < arrayRandom.length; i++) {
+          randomQuestion.push(data.questions[arrayRandom[i]]);
+        }
+        data.questions = randomQuestion.slice(0, 10);
+        res.render('section-1.pug', {
+          title: 'Phần 1: Ngược dòng lịch sử',
+          exams: data,
+          infoUser: user,
+        });
+      } else {
+        req.flash('message', 'Bạn đã thi phần 1');
+        res.redirect('/exams/ready-2');
       }
-      data.questions = randomQuestion.slice(0, 10);
-      res.render('section-1.pug', {
-        title: 'Phần 1: Ngược dòng lịch sử',
-        exams: data,
-        infoUser: user,
-      });
     } else {
       res.render('het-luot.pug', { title: 'Hết lượt thi' });
     }
   } catch (error) {
     console.log(error);
     res.render('500.pug', {
-      title: 'Phần 1: Ngược dòng lịch sử'
+      title: 'Phần 1: Ngược dòng lịch sử',
     });
   }
-}
+};
 
 exports.templateSection2 = async (req, res) => {
   try {
     const user = await User.findOne({ _id: res.locals.user._id });
-    user.lanThi.phan2 = true;
-    user.save();
     if (user.lanThi.luotThi >= 0) {
-      const data = await DeThi.findOne({ code: 'P02' });
-      const arrayImage = [
-        'who is she.jpg',
-        'where is this locate.jpg',
-        'where is this locate 1.jpg',
-        'where is this locate 2.jpg',
-        'where is this locate 3.jpg',
-        'where is this locate 4.jpg',
-        'where is this locate 5.jpg',
-      ];
-      const arrayRandom = randomRange(data.questions.length);
-      let randomQuestion = [];
-      for (var i = 0; i < arrayRandom.length; i++) {
-        randomQuestion.push(data.questions[arrayRandom[i]]);
+      if (!user.lanThi.phan2) {
+        user.lanThi.phan2 = true;
+        await user.save();
+        const data = await DeThi.findOne({ code: 'P02' });
+        const arrayImage = [
+          'who is she.jpg',
+          'where is this locate.jpg',
+          'where is this locate 1.jpg',
+          'where is this locate 2.jpg',
+          'where is this locate 3.jpg',
+          'where is this locate 4.jpg',
+          'where is this locate 5.jpg',
+        ];
+        const arrayRandom = randomRange(data.questions.length);
+        let randomQuestion = [];
+        for (var i = 0; i < arrayRandom.length; i++) {
+          randomQuestion.push(data.questions[arrayRandom[i]]);
+        }
+        randomQuestion = randomQuestion.slice(0, 9);
+        res.render('section-2.pug', {
+          title: 'Phần 2: Giải mã lịch sử',
+          examCode: data.code,
+          exams: randomQuestion,
+          image: arrayImage[Math.floor(Math.random() * arrayImage.length + 0)],
+          infoUser: user,
+        });
+      } else {
+        req.flash('message', 'Bạn đã thi phần 2');
+        res.redirect('/exams/ready-3');
       }
-      randomQuestion = randomQuestion.slice(0, 9);
-      res.render('section-2.pug', {
-        title: 'Phần 2: Giải mã lịch sử',
-        examCode: data.code,
-        exams: randomQuestion,
-        image: arrayImage[Math.floor(Math.random() * arrayImage.length + 0)],
-        infoUser: user,
-      });
     } else {
       res.render('het-luot.pug', { title: 'Hết lượt thi' });
     }
@@ -93,57 +102,66 @@ exports.templateSection2 = async (req, res) => {
       title: 'Phần 2: Giải mã lịch sử',
     });
   }
-}
+};
 
 exports.templateSection3 = async (req, res) => {
   try {
     const user = await User.findOne({ _id: res.locals.user._id });
-    user.lanThi.phan3 = true;
-    user.save();
     if (user.lanThi.luotThi >= 0) {
-      const data = await DeThi.findOne({ code: 'P03' });
-      const datdo = { name: 'Đất Đỏ', code: 'datdo' };
-      const longdien = { name: 'Long Điền', code: 'longdien' };
-      const baria = { name: 'Bà Rịa', code: 'baria' };
-      const vungtau = { name: 'Vũng Tàu', code: 'vungtau' };
-      const condao = { name: 'Côn Đảo', code: 'condao' };
-      const tanthanh = { name: 'Tân Thành', code: 'tanthanh' };
-      const chauduc = { name: 'Châu Đức', code: 'chauduc' };
-      const xuyenmoc = { name: 'Xuyên Mộc', code: 'xuyenmoc' };
+      if (!user.lanThi.phan3) {
+        user.lanThi.phan3 = true;
+        await user.save();
+        const data = await DeThi.findOne({ code: 'P03' });
+        const datdo = { name: 'Đất Đỏ', code: 'datdo' };
+        const longdien = { name: 'Long Điền', code: 'longdien' };
+        const baria = { name: 'Bà Rịa', code: 'baria' };
+        const vungtau = { name: 'Vũng Tàu', code: 'vungtau' };
+        const condao = { name: 'Côn Đảo', code: 'condao' };
+        const tanthanh = { name: 'Tân Thành', code: 'tanthanh' };
+        const chauduc = { name: 'Châu Đức', code: 'chauduc' };
+        const xuyenmoc = { name: 'Xuyên Mộc', code: 'xuyenmoc' };
 
-      datdo.questions = data.questions.filter(i => i.location === 'datdo');
-      longdien.questions = data.questions.filter(
-        i => i.location === 'longdien'
-      );
-      baria.questions = data.questions.filter(i => i.location === 'baria');
-      vungtau.questions = data.questions.filter(i => i.location === 'vungtau');
-      condao.questions = data.questions.filter(i => i.location === 'condao');
-      tanthanh.questions = data.questions.filter(
-        i => i.location === 'tanthanh'
-      );
-      chauduc.questions = data.questions.filter(i => i.location === 'chauduc');
-      xuyenmoc.questions = data.questions.filter(
-        i => i.location === 'xuyenmoc'
-      );
+        datdo.questions = data.questions.filter(i => i.location === 'datdo');
+        longdien.questions = data.questions.filter(
+          i => i.location === 'longdien'
+        );
+        baria.questions = data.questions.filter(i => i.location === 'baria');
+        vungtau.questions = data.questions.filter(
+          i => i.location === 'vungtau'
+        );
+        condao.questions = data.questions.filter(i => i.location === 'condao');
+        tanthanh.questions = data.questions.filter(
+          i => i.location === 'tanthanh'
+        );
+        chauduc.questions = data.questions.filter(
+          i => i.location === 'chauduc'
+        );
+        xuyenmoc.questions = data.questions.filter(
+          i => i.location === 'xuyenmoc'
+        );
 
-      const arrayData = [
-        datdo,
-        longdien,
-        baria,
-        vungtau,
-        condao,
-        tanthanh,
-        chauduc,
-        xuyenmoc,
-      ];
+        const arrayData = [
+          datdo,
+          longdien,
+          baria,
+          vungtau,
+          condao,
+          tanthanh,
+          chauduc,
+          xuyenmoc,
+        ];
 
-      res.render('section-3.pug', {
-        title: 'Phần 3: Khám phá',
-        examName: data.name,
-        examCode: data.code,
-        arrayData: arrayData,
-        infoUser: user,
-      });
+        res.render('section-3.pug', {
+          title: 'Phần 3: Khám phá',
+          examName: data.name,
+          examCode: data.code,
+          arrayData: arrayData,
+          infoUser: user,
+        });
+      } else {
+        req.flash('message', 'Bạn đã thi phần 3');
+        res.redirect('/exams/ready-4');
+      }
     } else {
       res.render('het-luot.pug', { title: 'Hết lượt thi' });
     }
@@ -153,34 +171,38 @@ exports.templateSection3 = async (req, res) => {
       title: 'Phần 3: Khám phá',
     });
   }
-}
+};
 
 exports.templateSection4 = async (req, res) => {
   try {
     const user = await User.findOne({ _id: res.locals.user._id });
-    user.lanThi.phan4 = true;
-    user.save();
     if (user.lanThi.luotThi >= 0) {
-      const data = await DeThi.findOne({ code: 'P04' });
-      const arrayRandom = randomRange(data.questions.length);
-      let randomQuestion = [];
-      for (var i = 0; i < arrayRandom.length; i++) {
-        randomQuestion.push(data.questions[arrayRandom[i]]);
-      }
-      data.questions = randomQuestion.slice(0, 10);
+      if (!user.lanThi.phan4) {
+        user.lanThi.phan4 = true;
+        await user.save();
+        const data = await DeThi.findOne({ code: 'P04' });
+        const arrayRandom = randomRange(data.questions.length);
+        let randomQuestion = [];
+        for (var i = 0; i < arrayRandom.length; i++) {
+          randomQuestion.push(data.questions[arrayRandom[i]]);
+        }
+        data.questions = randomQuestion.slice(0, 10);
 
-      const randomIndexAnwser = randomRange(data.questions.length);
-      let randomAnwser = [];
-      for (var i = 0; i < randomIndexAnwser.length; i++) {
-        randomAnwser.push(data.questions[randomIndexAnwser[i]]);
+        const randomIndexAnwser = randomRange(data.questions.length);
+        let randomAnwser = [];
+        for (var i = 0; i < randomIndexAnwser.length; i++) {
+          randomAnwser.push(data.questions[randomIndexAnwser[i]]);
+        }
+        res.render('section-4.pug', {
+          title: 'Phần 4: Kết nối',
+          exams: data,
+          randomAnwser: randomAnwser,
+          infoUser: user,
+        });
+      } else {
+        req.flash('message', 'Bạn đã thi phần 4');
+        res.redirect('/');
       }
-
-      res.render('section-4.pug', {
-        title: 'Phần 4: Kết nối',
-        exams: data,
-        randomAnwser: randomAnwser,
-        infoUser: user,
-      });
     } else {
       res.render('het-luot.pug', { title: 'Hết lượt thi' });
     }
@@ -190,17 +212,17 @@ exports.templateSection4 = async (req, res) => {
       title: 'Phần 4: Kết nối',
     });
   }
-}
+};
 
 exports.templateSummary = async (req, res) => {
-  res.render('summary.pug', { title: 'Kết quả thi' })
-}
+  res.render('summary.pug', { title: 'Kết quả thi' });
+};
 
 exports.nopBaiThi1 = async (req, res) => {
   try {
     const data = req.body;
     const baiThi = new BaiThi(data);
-    const deThi = await DeThi.findOne({ code: req.body.exam });
+    const deThi = await DeThi.findOne({ code: data.exam });
     const questions = deThi.questions; // array objects
     const userAnswers = baiThi.answers;
     const questionsFilltered = [];
@@ -216,6 +238,39 @@ exports.nopBaiThi1 = async (req, res) => {
     const result = compareArray(anwsersFiltered, questionsFilltered);
     baiThi.scope = result.correct.length * 20;
     baiThi.answersTrue = result.correct;
+
+    const baiThiOfUser = await BaiThi.findOne({
+      user: data.user,
+      exam: data.exam,
+    });
+    if (baiThiOfUser !== null) {
+      // 1. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 500, time: 200}
+      // 3. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 400, time: 200}
+      // 2. baiThiOfUser{scope: 400, time: 300} >|< baiThi{scope: 500, time: 300}
+      if (baiThiOfUser.scope > baiThi.scope) {
+        baiThiOfUser.bestest = true;
+        baiThi.bestest = false;
+      } else {
+        // baiThiOfUser.scope <= baiThi.scope
+        if (baiThiOfUser.scope === baiThi.scope) {
+          if (baiThiOfUser.time > baiThi.time) {
+            baiThiOfUser.bestest = false;
+            baiThi.bestest = true;
+          } else {
+            // baiThiOfUser.time <= baiThi.scope
+            baiThiOfUser.bestest = true;
+            baiThi.bestest = false;
+          }
+        } else {
+          // baiThiOfUser.scope < baiThi.scope
+          baiThiOfUser.bestest = false;
+          baiThi.bestest = true;
+        }
+      }
+      await baiThiOfUser.save();
+    } else {
+      baiThi.bestest = true;
+    }
     await baiThi.save();
     res.render('summary.pug', {
       title: 'Đã chấm điểm',
@@ -228,14 +283,47 @@ exports.nopBaiThi1 = async (req, res) => {
     console.log(error);
     res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 1' });
   }
-}
+};
 
 exports.nopBaiThi2 = async (req, res) => {
   try {
     const data = req.body;
     const baiThi = new BaiThi(data);
+    const deThi = await DeThi.findOne({ code: data.exam });
+
+    const baiThiOfUser = await BaiThi.findOne({
+      user: data.user,
+      exam: data.exam,
+    });
+    if (baiThiOfUser !== null) {
+      // 1. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 500, time: 200}
+      // 3. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 400, time: 200}
+      // 2. baiThiOfUser{scope: 400, time: 300} >|< baiThi{scope: 500, time: 300}
+      if (baiThiOfUser.scope > baiThi.scope) {
+        baiThiOfUser.bestest = true;
+        baiThi.bestest = false;
+      } else {
+        // baiThiOfUser.scope <= baiThi.scope
+        if (baiThiOfUser.scope === baiThi.scope) {
+          if (baiThiOfUser.time > baiThi.time) {
+            baiThiOfUser.bestest = false;
+            baiThi.bestest = true;
+          } else {
+            // baiThiOfUser.time <= baiThi.scope
+            baiThiOfUser.bestest = true;
+            baiThi.bestest = false;
+          }
+        } else {
+          // baiThiOfUser.scope < baiThi.scope
+          baiThiOfUser.bestest = false;
+          baiThi.bestest = true;
+        }
+      }
+      await baiThiOfUser.save();
+    } else {
+      baiThi.bestest = true;
+    }
     await baiThi.save();
-    const deThi = await DeThi.findOne({ code: req.body.exam });
     res.render('summary.pug', {
       title: 'Đã chấm điểm',
       examName: deThi.name,
@@ -247,14 +335,14 @@ exports.nopBaiThi2 = async (req, res) => {
     console.log(error);
     res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 2' });
   }
-}
+};
 
 exports.nopBaiThi3 = async (req, res) => {
   try {
     const data = req.body;
     data.answers = removeNestedArray(req.body.answers);
     const baiThi = new BaiThi(data);
-    const deThi = await DeThi.findOne({ code: req.body.exam });
+    const deThi = await DeThi.findOne({ code: data.exam });
     const questions = deThi.questions; // array objects
     const userAnswers = baiThi.answers;
     const questionsFilltered = [];
@@ -281,6 +369,39 @@ exports.nopBaiThi3 = async (req, res) => {
 
     baiThi.scope = correctPoint + wrongPoint;
     baiThi.answersTrue = result.correct;
+
+    const baiThiOfUser = await BaiThi.findOne({
+      user: data.user,
+      exam: data.exam,
+    });
+    if (baiThiOfUser !== null) {
+      // 1. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 500, time: 200}
+      // 3. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 400, time: 200}
+      // 2. baiThiOfUser{scope: 400, time: 300} >|< baiThi{scope: 500, time: 300}
+      if (baiThiOfUser.scope > baiThi.scope) {
+        baiThiOfUser.bestest = true;
+        baiThi.bestest = false;
+      } else {
+        // baiThiOfUser.scope <= baiThi.scope
+        if (baiThiOfUser.scope === baiThi.scope) {
+          if (baiThiOfUser.time > baiThi.time) {
+            baiThiOfUser.bestest = false;
+            baiThi.bestest = true;
+          } else {
+            // baiThiOfUser.time <= baiThi.scope
+            baiThiOfUser.bestest = true;
+            baiThi.bestest = false;
+          }
+        } else {
+          // baiThiOfUser.scope < baiThi.scope
+          baiThiOfUser.bestest = false;
+          baiThi.bestest = true;
+        }
+      }
+      await baiThiOfUser.save();
+    } else {
+      baiThi.bestest = true;
+    }
     await baiThi.save();
     res.render('summary.pug', {
       title: 'Đã chấm điểm',
@@ -293,7 +414,7 @@ exports.nopBaiThi3 = async (req, res) => {
     console.log(error);
     res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 3' });
   }
-}
+};
 
 exports.nopBaiThi4 = async (req, res) => {
   try {
@@ -305,8 +426,46 @@ exports.nopBaiThi4 = async (req, res) => {
       }
     }
     const baiThi = new BaiThi(data);
-    const deThi = await DeThi.findOne({ code: req.body.exam });
+    const deThi = await DeThi.findOne({ code: data.exam });
+    const baiThiOfUser = await BaiThi.findOne({
+      user: data.user,
+      exam: data.exam,
+    });
+    if (baiThiOfUser !== null) {
+      // 1. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 500, time: 200}
+      // 3. baiThiOfUser{scope: 500, time: 300} >|< baiThi{scope: 400, time: 200}
+      // 2. baiThiOfUser{scope: 400, time: 300} >|< baiThi{scope: 500, time: 300}
+      if (baiThiOfUser.scope > baiThi.scope) {
+        baiThiOfUser.bestest = true;
+        baiThi.bestest = false;
+      } else {
+        // baiThiOfUser.scope <= baiThi.scope
+        if (baiThiOfUser.scope === baiThi.scope) {
+          if (baiThiOfUser.time > baiThi.time) {
+            baiThiOfUser.bestest = false;
+            baiThi.bestest = true;
+          } else {
+            // baiThiOfUser.time <= baiThi.scope
+            baiThiOfUser.bestest = true;
+            baiThi.bestest = false;
+          }
+        } else {
+          // baiThiOfUser.scope < baiThi.scope
+          baiThiOfUser.bestest = false;
+          baiThi.bestest = true;
+        }
+      }
+      await baiThiOfUser.save();
+    } else {
+      baiThi.bestest = true;
+    }
     await baiThi.save();
+    const user = await User.findOne({ _id: data.user });
+    user.lanThi.phan1 = false;
+    user.lanThi.phan2 = false;
+    user.lanThi.phan3 = false;
+    user.lanThi.phan4 = false;
+    await user.save();
     res.render('summary.pug', {
       title: 'Đã chấm điểm',
       examName: deThi.name,
@@ -318,51 +477,54 @@ exports.nopBaiThi4 = async (req, res) => {
     console.log(error);
     res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 4' });
   }
-}
+};
 
 //#region functions
 function compareArray(array1, array2) {
   let result = {
     correct: [],
-    wrong: []
-  }
-  array1.forEach(e1 => array2.forEach(e2 => {
-    if (e1.code === e2.code) {
-      if (e1.answer === e2.answer) {
-        result.correct.push(e1)
-      } else {
-        result.wrong.push(e1)
+    wrong: [],
+  };
+  array1.forEach(e1 =>
+    array2.forEach(e2 => {
+      if (e1.code === e2.code) {
+        if (e1.answer === e2.answer) {
+          result.correct.push(e1);
+        } else {
+          result.wrong.push(e1);
+        }
       }
-    }
-  }))
-  return result
+    })
+  );
+  return result;
 }
 
 function removeNestedArray(array) {
-  var merged = []
+  var merged = [];
 
   for (let i = 0; i < array.length; i++) {
-    const item = array[i]
+    const item = array[i];
     if (item.length > 0) {
       for (const iterator of item) {
-        merged.push(iterator)
+        merged.push(iterator);
       }
     }
   }
-  return merged
+  return merged;
 }
 
 function randomRange(length) {
-  const results = []
-  const possibleValues = Array.from({ length }, (value, i) => i)
+  const results = [];
+  const possibleValues = Array.from({ length }, (value, i) => i);
   for (let i = 0; i < length; i += 1) {
-    const possibleValuesRange = length - (length - possibleValues.length)
-    const randomNumber = Math.floor(Math.random() * possibleValuesRange)
-    const normalizedRandomNumber = randomNumber !== possibleValuesRange ? randomNumber : possibleValuesRange
-    const [nextNumber] = possibleValues.splice(normalizedRandomNumber, 1)
-    results.push(nextNumber)
+    const possibleValuesRange = length - (length - possibleValues.length);
+    const randomNumber = Math.floor(Math.random() * possibleValuesRange);
+    const normalizedRandomNumber =
+      randomNumber !== possibleValuesRange ? randomNumber : possibleValuesRange;
+    const [nextNumber] = possibleValues.splice(normalizedRandomNumber, 1);
+    results.push(nextNumber);
   }
-  return results
+  return results;
 }
 
 //#endregion

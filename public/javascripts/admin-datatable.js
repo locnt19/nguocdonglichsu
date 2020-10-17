@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $('#table_users').DataTable();
+  $('#table_baithi').DataTable();
   $('#table_xephang_users').DataTable();
   $('#table_section1_list').DataTable();
   $('#table_section2_list').DataTable();

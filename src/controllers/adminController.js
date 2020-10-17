@@ -3,6 +3,8 @@ const QuanTri = require('../models/QuanTri');
 const jwt = require('jsonwebtoken');
 const moment = require('moment');
 const TuanHienTai = require('../models/TuanHienTai');
+const User = require('../models/User');
+const BaiThi = require('../models/BaiThi');
 
 exports.templateDashboard = (req, res) => {
   res.render('admin/dashboard.pug', { title: 'Dashboard' });
@@ -157,5 +159,25 @@ exports.updateTuanHienTai = async (req, res) => {
     res.render('admin/thoi-gian-thi.pug', {
       message: req.flash(),
     });
+  }
+};
+
+exports.templateUsers = async (req, res) => {
+  try {
+    const users = await User.find();
+    res.render('admin/users.pug', { title: 'Thí sinh', usersList: users });
+  } catch (error) {
+    req.flash('message', error);
+    res.redirect('/admin');
+  }
+};
+
+exports.templateBaiThi = async (req, res) => {
+  try {
+    const baiThi = await BaiThi.find();
+    res.render('admin/bai-thi.pug', { title: 'Bài thi', baiThiList: baiThi });
+  } catch (error) {
+    req.flash('message', error);
+    res.redirect('/admin');
   }
 };

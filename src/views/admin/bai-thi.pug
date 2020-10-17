@@ -1,0 +1,27 @@
+extends layout-admin.pug
+
+block var
+  -var currentURL = '/admin/bai-thi'
+
+block content
+  h5.font-weight-bold(style='color: #3d5170; padding-left: 15px') Bài thi
+  .row.m-0
+    .col-12.p-0.px-lg-3
+      .card.p-3.px-md-5.py-md-4
+        table#table_users.table.table-bordered.dt-responsive.nowrap
+          thead.bg-light
+            tr
+              th
+              th.align-middle(scope='col') Họ và tên
+              th.align-middle(scope='col') Phần thi
+              th.align-middle(scope='col') Điểm
+              th.align-middle(scope='col') Thời gian
+          tbody
+            if baiThiList !== null && baiThiList.length > 0
+              -for(let item of baiThiList)
+                tr
+                  td
+                  td #{item.user}
+                  td #{item.exam}
+                  td #{item.scope}
+                  td #{item.time}
