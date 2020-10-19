@@ -984,7 +984,8 @@
       "a": "Duong Bach Mai",
       "b": "Duong Van Manh",
       "c": "Vo Thi Sau",
-      "d": "Nguyen Thi Dep"
+      "d": "Nguyen Thi Dep",
+      "true": "b"
     },
     {
       "_id": {
@@ -996,16 +997,472 @@
       "a": "Huynh Khuong Ninh",
       "b": "Chan Van Quan",
       "c": "Nguyen Trong Quan",
+      "d": "Huynh Tinh Cua",
+      "true": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d49c71394497c3a4ab4d8"
+      },
+      "code": "Q09",
+      "question": "Where is the historical revolutionary relic, Mom Tam Nhung’s house now?",
+      "location": "vungtau",
+      "a": "At 6, Tran Phu street, ward 1, Vung Tau city, BRVT province",
+      "true": "b",
+      "b": "At 1, Chan Xuan Do street, Thang Nhi ward, Vung Tau city, BRVT province",
+      "c": "At 5, Phan Chu Trinh street, ward 2, Vung Tau city, BRVT province",
+      "d": "At 1 Le Thanh Nghi, ward 2, Vung Tau city, BRVT province\r\n"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d49e71394497c3a4ab4d9"
+      },
+      "code": "Q10",
+      "question": "When was Bach Dinh recognized as a National-level relic by the Ministry of Culture and Information?",
+      "location": "vungtau",
+      "a": "04/08/1990",
+      "b": "08/04/1992",
+      "true": "c",
+      "c": "04/08/1992 ",
+      "d": "08/04/1990"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4a0e1394497c3a4ab4da"
+      },
+      "code": "Q11",
+      "question": "Where is the secret house that a French officer concealed and protected our secretly revolutionary activists?",
+      "location": "vungtau",
+      "true": "a",
+      "a": "Number 86, Phan Chu Trinh Street.",
+      "b": "Number 18, Le Loi street.",
+      "c": "Water plant stack",
+      "d": "Number 18/5 (Nguyen Quang Vinh's House)"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4a2c1394497c3a4ab4db"
+      },
+      "code": "Q12",
+      "question": "The historical relics, Ancient artillery battlefield and Nui Lon mines, are dubbed?",
+      "location": "vungtau",
+      "a": "Asia's most destructive collection of ancient weapons",
+      "b": "Asia's largest and most valuable collection of ancient weapons",
+      "true": "c",
+      "c": "The largest and most valuable collection of ancient weapons in Indochina",
+      "d": "Indochina's most destructive collection of ancient weapons"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4a531394497c3a4ab4dc"
+      },
+      "code": "Q13",
+      "question": "A patriotic teacher, a son of Ba Ria - Vung Tau province, contributed to the development of the country's education, educated generations of students about the patriotism, gathered a large number of excellence revolutionary teachers.",
+      "location": "tanthanh",
+      "true": "a",
+      "a": "Huynh Khuong Ninh",
+      "b": "Tran Van Quan",
+      "c": "Nguyen Trong Quan",
       "d": "Huynh Tinh Cua"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4a761394497c3a4ab4dd"
+      },
+      "code": "Q14",
+      "question": "What kind of historical sites is Thich Ca Phat Dai?",
+      "location": "vungtau",
+      "a": "special national historical site",
+      "b": "Cultural historical site",
+      "c": "Revolutionary historical site",
+      "true": "d",
+      "d": "Historical – Cultural – Scenic"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4a9a1394497c3a4ab4de"
+      },
+      "code": "Q15",
+      "question": "When was the lighthouse in Nho mountain, in Vung Tau city built?",
+      "location": "vungtau",
+      "a": "1826",
+      "b": "1928",
+      "true": "c",
+      "c": "1862 ",
+      "d": "1682"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4ab91394497c3a4ab4df"
+      },
+      "code": "Q16",
+      "question": "Who said “ I have experienced all happiness as well as sorrows in my life, except the sacrifice for my country revolution.”",
+      "location": "tanthanh",
+      "a": " Nguyen Van Muoi",
+      "b": "Luu Chi Hieu",
+      "true": "c",
+      "c": "Cao Van Ngoc",
+      "d": "Nguyen Van Dinh"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4ae11394497c3a4ab4e0"
+      },
+      "code": "Q17",
+      "question": "When was Co Temple recognized as a National-level relic by the Ministry of Culture and Information?",
+      "location": "longdien",
+      "true": "a",
+      "a": "16/01/1995",
+      "b": "11/06/1995",
+      "c": "16/10/1995",
+      "d": "11/01/1995"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4b091394497c3a4ab4e1"
+      },
+      "code": "Q18",
+      "question": "Which of the following historical sites is recognized as a national historical site in Long Dien?",
+      "location": "longdien",
+      "true": "a",
+      "a": "Long Ban Temple",
+      "b": "Thien Thai temple",
+      "c": "Long Dien Temple",
+      "d": "Chan Tien Mountain"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4b211394497c3a4ab4e2"
+      },
+      "code": "Q19",
+      "question": "When does the Nghinh Co Festival, one of the biggest Southern fishermen festivals, take place?",
+      "location": "longdien",
+      "a": "10th January in Lunar Calender",
+      "b": "15th August in Lunar Calender",
+      "c": "10th March in Lunar Calender",
+      "true": "d",
+      "d": "10th February in Lunar Calender"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4b421394497c3a4ab4e3"
+      },
+      "code": "Q20",
+      "question": "When did Ms. Vo Thi Sau die?",
+      "location": "datdo",
+      "a": "21/03/1952",
+      "b": "23/03/1952",
+      "true": "c",
+      "c": "23/01/1952",
+      "d": "21/01/1952"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4b691394497c3a4ab4e4"
+      },
+      "code": "Q21",
+      "question": "Who was the first Communist Party member of Ba Ria - Vung Tau province, who made great contributions to the Vietnamese revolution and the international Communist movement?",
+      "location": "tanthanh",
+      "true": "a",
+      "a": "Duong Bach Mai",
+      "b": "Nguyen Hung Manh",
+      "c": "Luu Chi Hieu",
+      "d": "Tran Phu"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4b871394497c3a4ab4e5"
+      },
+      "code": "Q22",
+      "question": "Who is a brave soldier that is revered as \"the second Vo Thi Sau\" by the people of Long Dat?",
+      "location": "datdo",
+      "a": "Nguyen Thi Đep",
+      "true": "b",
+      "b": "Tran Thi Thanh",
+      "c": "Nguyen Thi Minh Khai",
+      "d": "Tran Thi Ly"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4c221394497c3a4ab4e6"
+      },
+      "code": "Q23",
+      "question": "The histrorical site, Minh Dam mountain base, was recognized as a national relic in",
+      "location": "datdo",
+      "a": "11/08/1993",
+      "true": "b",
+      "b": "18/01/1993",
+      "c": "06/12/1993",
+      "d": "16/01/1993"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4c871394497c3a4ab4e7"
+      },
+      "code": "Q24",
+      "question": "Which of the following historical sites is recognized as a national historical site in Dat Do district?",
+      "location": "datdo",
+      "a": "Cay Cam historical site",
+      "b": "Thanh My Temple historical site",
+      "c": "Nguyen Thi Dep secret cellar historical site",
+      "true": "d",
+      "d": "Vo Thi Sau memorial house historical site"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4cca1394497c3a4ab4e8"
+      },
+      "code": "Q25",
+      "question": "The histrorical revolutionary site, Nguyen Thi Dep secret cellar is recognized by",
+      "location": "tanthanh",
+      "true": "a",
+      "a": "People’s Committee of Ba Ria-Vung Tau province",
+      "b": "Ministry of Culture, Sports and Tourism",
+      "c": "Ministry of Information and Communications",
+      "d": "Minister of Natural Resources and Environment"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4ce41394497c3a4ab4e9"
+      },
+      "code": "Q26",
+      "question": "In March 1947, the Team 16 organized an ambush to bomb and blast the enemy convoy, the enemy was stopped, our army destroyed a company of Au Phi soldiers (140 people), including the Major, destroyed 10 military vehicles, collected lots of guns and military supplies. Where did this event take place?",
+      "location": "datdo",
+      "a": "Suoi Sau bridge",
+      "true": "b",
+      "b": "Cay Cam slope",
+      "c": "Cong Nhan bridge",
+      "d": "Lang Dai Market"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4cfe1394497c3a4ab4eb"
+      },
+      "code": "Q27",
+      "question": "Who swallowed all the secret documents and destroyed his pens and watch before he was captured by the enemies?",
+      "location": "datdo",
+      "a": "Chau Van Biec",
+      "true": "b",
+      "b": "Ta Van Sau",
+      "c": "Duong Bach Mai",
+      "d": "Nguyen Hung Manh"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4d471394497c3a4ab4ec"
+      },
+      "code": "Q28",
+      "question": "What was the name of the hero who made a resounding victory in the battle of Bau Ong Vuc?",
+      "location": "tanthanh",
+      "true": "a",
+      "a": "Chau Van Biec",
+      "b": "Ta Van Sau",
+      "c": "Duong Bach Mai",
+      "d": "Nguyen Hung Manh"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4e291394497c3a4ab4ed"
+      },
+      "code": "Q29",
+      "question": "When was the historical site, Kim Long tunnels built?",
+      "location": "chauduc",
+      "a": "from 1961 to 1964",
+      "b": "from 1962 to 1963",
+      "true": "c",
+      "c": "from 1962 to 1964",
+      "d": "from 1963 to 1964"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4e441394497c3a4ab4ee"
+      },
+      "code": "Q30",
+      "question": "Which of the following historical sites is recognized as a national historical site in Chau Duc district?",
+      "location": "chauduc",
+      "a": "Bau Sen base area",
+      "b": "The monument commemorating fallen heroes of the 4th Regiment",
+      "true": "c",
+      "c": "Historical relic of Binh Gia victory",
+      "d": "The Battle Memorial of 6/6/1969 of 1- 33rd Regiment"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4e5d1394497c3a4ab4ef"
+      },
+      "code": "Q31",
+      "question": "The historical revolution site, Bau Sen base is located in …",
+      "location": "chauduc",
+      "true": "a",
+      "a": "Xa Bang commune",
+      "b": "Kim Long commune",
+      "c": "Binh Gia commune",
+      "d": "Binh Ba commune"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4e751394497c3a4ab4f0"
+      },
+      "code": "Q32",
+      "question": "Where is the momunent of the 4th Regiment in Chau Duc district?",
+      "location": "chauduc",
+      "true": "a",
+      "a": "Xa Bang Province",
+      "b": "Kim Long Province",
+      "c": "Binh Gia Province",
+      "d": "Binh Ba Province"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4e8f1394497c3a4ab4f1"
+      },
+      "code": "Q33",
+      "question": "The histrorical site, the Binh Gia victory was recognized as a historical site by",
+      "location": "chauduc",
+      "a": "People’s Committee of Ba Ria-Vung Tau province",
+      "true": "b",
+      "b": "Ministry of Culture, Sports and Tourism",
+      "c": "Ministry of Information and Communications",
+      "d": "Minister of Natural Resources and Environment"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4ea61394497c3a4ab4f2"
+      },
+      "code": "Q34",
+      "question": "He is a son of Xuyen Moc in the war against the US. With his cunning and courage, he fought and commanded 120 battles, made many outstanding feats, was honored a People's Armed Forces hero. Who is this hero?",
+      "location": "xuyenmoc",
+      "a": "Phan Trong Binh ",
+      "true": "b",
+      "b": "Nguyen Minh Khanh",
+      "c": "Nguyen Duc Thuan",
+      "d": "Le Van Mot"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d4ec61394497c3a4ab4f3"
+      },
+      "code": "Q35",
+      "question": "Strategic transport route in the sea was called \"Ho Chi Minh Trail on the sea\" to transport supplies from the North to support the Southern Resistance Front. Where is it?",
+      "location": "xuyenmoc",
+      "true": "a",
+      "a": "Loc An harbor",
+      "b": "Cai Mep harbor",
+      "c": "Song Dinh harbor",
+      "d": "My Xuan harbor"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d50231394497c3a4ab4f4"
+      },
+      "code": "Q36",
+      "question": "When was Xuyen Moc Temple ranked and recognized as a historical - cultural site?",
+      "location": "xuyenmoc",
+      "a": "03/02/2015",
+      "true": "b",
+      "b": "02/03/2015",
+      "c": "09/10/2015",
+      "d": "10/09/2015"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d503a1394497c3a4ab4f5"
+      },
+      "code": "Q37",
+      "question": "The historical site, Loc An Pier was recognized as a historical revolutionary relic by:",
+      "location": "xuyenmoc",
+      "a": "People’s Committee of Ba Ria-Vung Tau province",
+      "true": "b",
+      "b": "Ministry of Culture, Sports and Tourism",
+      "c": "Ministry of Information and Communications",
+      "d": "Minister of Natural Resources and Environment"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d505e1394497c3a4ab4f6"
+      },
+      "code": "Q38",
+      "question": "The historical and cultural site: Xuyen Moc temple was recognized as a historical revolutionary relic by:",
+      "location": "xuyenmoc",
+      "true": "a",
+      "a": "People’s Committee of Ba Ria-Vung Tau province",
+      "b": "Ministry of Culture, Sports and Tourism",
+      "c": "Ministry of Information and Communications",
+      "d": "Minister of Natural Resources and Environment"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d507c1394497c3a4ab4f7"
+      },
+      "code": "Q39",
+      "question": "When was Loc An pier ranked and recognized as a historical relic?",
+      "location": "xuyenmoc",
+      "a": "22/04/1995",
+      "b": "02/04/1995 ",
+      "c": "04/02/1995",
+      "true": "d",
+      "d": "20/04/1995"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d50c11394497c3a4ab4f8"
+      },
+      "code": "Q40",
+      "question": "By which agency was Con Dao prison's revolutionary historical site recognized as a special national relic?",
+      "location": "condao",
+      "a": "People’s Committee of Ba Ria-Vung Tau province",
+      "b": "Ministry of Culture, Sports and Tourism",
+      "c": "Ministry of Information and Communications",
+      "true": "d",
+      "d": "Prime Minister"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d50de1394497c3a4ab4f9"
+      },
+      "code": "Q41",
+      "question": "Which hero is known as ‘the old-man in the tiger cage’?",
+      "location": "condao",
+      "a": "Nguyen Van Muoi ",
+      "b": "Luu Chi Hieu ",
+      "true": "c",
+      "c": "Cao Van Ngoc ",
+      "d": "Nguyen Van Dinh "
+    },
+    {
+      "_id": {
+        "$oid": "5f8d50f61394497c3a4ab4fa"
+      },
+      "code": "Q42",
+      "question": "When was Con Dao prison's revolutionary historical relic area recognized as a special National Relic, ranked by the Prime Minister?",
+      "location": "condao",
+      "true": "a",
+      "a": "10/05/2012",
+      "b": "05/10/2010",
+      "c": "01/05/2012",
+      "d": "05/10/2012"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d51151394497c3a4ab4fb"
+      },
+      "code": "Q43",
+      "question": "Nui Mot Pagoda was recognized as a provincial relic according to Decision No. 4025 /QD-UBND dated 04/12/2009. What type of relic is it?",
+      "location": "condao",
+      "a": "National special monument",
+      "b": "historical-cultural monument",
+      "c": "historical revolutionary relic",
+      "true": "d",
+      "d": "historical - cultural - scenic relics"
     }
   ],
   "createdAt": {
     "$date": "2020-10-14T16:43:46.730Z"
   },
   "updatedAt": {
-    "$date": "2020-10-15T07:32:00.998Z"
+    "$date": "2020-10-19T08:40:53.409Z"
   },
-  "__v": 7
+  "__v": 42
 },{
   "_id": {
     "$oid": "5f87c1b0d1a12e581c5cb684"
@@ -1031,11 +1488,11 @@
       },
       "code": "Q02",
       "question": "Question 2: When is the Thang Tam temple Festival held?",
-      "a": "A. the third lunar month",
+      "a": "The third lunar month",
       "true": "b",
-      "b": "B. the second lunar month",
-      "c": "C. the fourth lunar month",
-      "d": "D. the fifth lunar month"
+      "b": "The second lunar month",
+      "c": "The fourth lunar month",
+      "d": "The fifth lunar month"
     },
     {
       "_id": {
@@ -1043,10 +1500,11 @@
       },
       "code": "Q03",
       "question": "Which of the following scenic spots belongs to Vung Tau city?",
-      "a": "A. Xuan Son Island",
-      "b": "B. Co To Island",
-      "c": "C. Hoa Binh Waterfall",
-      "d": "D. Statue of Christ"
+      "a": "Xuan Son Island",
+      "b": "Co To Island",
+      "c": "Hoa Binh Waterfall",
+      "d": "Statue of Christ",
+      "true": "d"
     },
     {
       "_id": {
@@ -1054,10 +1512,11 @@
       },
       "code": "Q04",
       "question": "How many wards does Vung Tau city have?",
-      "a": "A. 17 wards",
-      "b": "B. 15 wards",
-      "c": "C. 16 wards",
-      "d": "D. 14 wards"
+      "a": "17 wards",
+      "b": "15 wards",
+      "c": "16 wards",
+      "d": "14 wards",
+      "true": "c"
     },
     {
       "_id": {
@@ -1151,7 +1610,7 @@
       "question": "What is one of the tourist attractions of Con Dao?",
       "a": "Con Dao National Park",
       "b": "Secret vault",
-      "true": "c",
+      "true": "a",
       "c": "Con Dao Tunnels",
       "d": "Hon Ru Ri"
     },
@@ -1176,7 +1635,8 @@
       "a": "Con Lon archipelago",
       "b": "Son Tra archipelago",
       "c": "Hon Ba archipelago",
-      "d": "Hon Trac archipelago"
+      "d": "Hon Trac archipelago",
+      "true": "a"
     },
     {
       "_id": {
@@ -1795,7 +2255,391 @@
     "$date": "2020-10-15T03:27:44.419Z"
   },
   "updatedAt": {
-    "$date": "2020-10-15T15:59:50.678Z"
+    "$date": "2020-10-19T08:29:44.149Z"
   },
   "__v": 64
+},{
+  "_id": {
+    "$oid": "5f8d440d1394497c3a4ab4ae"
+  },
+  "name": "Phần 4",
+  "code": "P04",
+  "questions": [
+    {
+      "_id": {
+        "$oid": "5f8d440d1394497c3a4ab4af"
+      },
+      "code": "Q01",
+      "question": "BR-VT province was officially established ...",
+      "true": "Q01",
+      "a": "August 12th, 1991"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d441f1394497c3a4ab4b0"
+      },
+      "code": "Q02",
+      "question": "The province of BR-VT was completely liberated ……",
+      "true": "Q02",
+      "a": "April 26th, 1975"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d44301394497c3a4ab4b1"
+      },
+      "code": "Q03",
+      "question": "Long Phuoc Tunnel Revolutionary Historical Site recognized by the Ministry of Culture and Information as a national monument",
+      "true": "Q03",
+      "a": "January 9th, 1990"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d44421394497c3a4ab4b2"
+      },
+      "code": "Q04",
+      "question": "The Nui Dinh base is recognized by the Ministry of Culture and Information as a national historical and cultural relic",
+      "true": "Q04",
+      "a": "December 16th, 1993"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d44521394497c3a4ab4b3"
+      },
+      "code": "Q05",
+      "question": "Binh Gia campaign (old Phuoc Tuy province - now BR-VT province) was started",
+      "true": "Q05",
+      "a": "December 2nd, 1964"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d44681394497c3a4ab4b4"
+      },
+      "code": "Q06",
+      "question": "Binh Gia campaign (Phuoc Tuy province is now BR-VT province) ended in",
+      "true": "Q06",
+      "a": "March 7th, 1965"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d44731394497c3a4ab4b5"
+      },
+      "code": "Q07",
+      "question": "The Binh Gia Victory Monument is recognized by the Ministry of Culture and Information as a national-level historical monument",
+      "true": "Q07",
+      "a": "October 15th, 1994"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d44851394497c3a4ab4b6"
+      },
+      "code": "Q08",
+      "question": "Loc An Pier was recognized as a national historical relic",
+      "true": "Q08",
+      "a": "In 1995"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d44a81394497c3a4ab4b7"
+      },
+      "code": "Q09",
+      "question": "The breeding season of sea turtles in Con Dao",
+      "true": "Q09",
+      "a": "From April to October"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d457c1394497c3a4ab4b8"
+      },
+      "code": "Q10",
+      "question": "The casting village in Long Dien was formed",
+      "true": "Q10",
+      "a": "17th century"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d45db1394497c3a4ab4b9"
+      },
+      "code": "Q11",
+      "question": "The province of BR-VT has a total of …………. Districts, towns and cities.",
+      "true": "Q11",
+      "a": "8"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d45e81394497c3a4ab4ba"
+      },
+      "code": "Q12",
+      "question": "Ba Ria was named after  ………. Reclaimed",
+      "true": "Q12",
+      "a": "A woman from Binh Dinh entered the Mo Xoai area"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d45f71394497c3a4ab4bb"
+      },
+      "code": "Q13",
+      "question": "Vo Thi Sau was buried at ...",
+      "true": "Q13",
+      "a": "Hang Duong cemetery"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d46031394497c3a4ab4bc"
+      },
+      "code": "Q14",
+      "question": "Hac Dich Tunnel is located in ...",
+      "true": "Q14",
+      "a": "Phu My town"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d46141394497c3a4ab4bd"
+      },
+      "code": "Q15",
+      "question": "Long Huong temple is a provincial architecture of ...",
+      "true": "Q15",
+      "a": "Ba Ria City"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d46281394497c3a4ab4be"
+      },
+      "code": "Q16",
+      "question": "Ho May Park is a tourist destination of ...",
+      "true": "Q16",
+      "a": "Vung Tau City"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d46351394497c3a4ab4bf"
+      },
+      "code": "Q17",
+      "question": "Ba Ria City has tunnel ...",
+      "true": "Q17",
+      "a": "Long Phuoc"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d464c1394497c3a4ab4c0"
+      },
+      "code": "Q18",
+      "question": "Thang Tam Whale festival usually takes place",
+      "true": "Q18",
+      "a": "16/8- 18/8 lunar"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d46581394497c3a4ab4c1"
+      },
+      "code": "Q19",
+      "question": "Vung Tau International Kite Festival first took place in …",
+      "true": "Q19",
+      "a": "2009"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d46701394497c3a4ab4c2"
+      },
+      "code": "Q20",
+      "question": "Hon Ba (Vung Tau) was built in …",
+      "true": "Q20",
+      "a": "1781"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d46821394497c3a4ab4c3"
+      },
+      "code": "Q21",
+      "question": "The Chongqing Festival (Long Son big house) was held every year on ...",
+      "true": "Q21",
+      "a": "At night of the 8th and 9th of the lunar calendar"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d468f1394497c3a4ab4c4"
+      },
+      "code": "Q22",
+      "question": "Long Phuoc Tunnel was built ...",
+      "true": "Q22",
+      "a": "1948"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d470e1394497c3a4ab4c5"
+      },
+      "code": "Q23",
+      "question": "Ba Ria city was established….",
+      "true": "Q23",
+      "a": "August 22nd, 2012"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d471a1394497c3a4ab4c6"
+      },
+      "code": "Q24",
+      "question": "How many fields did BR-VT province determine economic development according to the 7th Provincial Party Congress?",
+      "true": "Q24",
+      "a": "4"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d472b1394497c3a4ab4c7"
+      },
+      "code": "Q25",
+      "question": "The port of Con Dao is now called ...",
+      "true": "Q25",
+      "a": "Ben Dam port"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d47391394497c3a4ab4c8"
+      },
+      "code": "Q26",
+      "question": "Dat Do district was established ...",
+      "true": "Q26",
+      "a": "January 9th, 2003"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d47451394497c3a4ab4c9"
+      },
+      "code": "Q27",
+      "question": "Currently, Dat Do district has… communes",
+      "true": "Q27",
+      "a": "6"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d47571394497c3a4ab4ca"
+      },
+      "code": "Q28",
+      "question": "Up to now, Dat Do district has…  administrative units.",
+      "true": "Q28",
+      "a": "2 towns, 6 communes"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d47691394497c3a4ab4cb"
+      },
+      "code": "Q29",
+      "question": "The administrative center of Dat Do district is now in ...",
+      "true": "Q29",
+      "a": "Dat Do town"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d47751394497c3a4ab4cc"
+      },
+      "code": "Q30",
+      "question": "The secret tunnel is located in the district ...",
+      "true": "Q30",
+      "a": "Dat Do district"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d47801394497c3a4ab4cd"
+      },
+      "code": "Q31",
+      "question": "Hang Duong cemetery is now located in ...",
+      "true": "Q31",
+      "a": "Con Dao district"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d478b1394497c3a4ab4ce"
+      },
+      "code": "Q32",
+      "question": "When was Phu My upgraded to a town?",
+      "true": "Q32",
+      "a": "April 12th, 2018"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d47971394497c3a4ab4cf"
+      },
+      "code": "Q33",
+      "question": "Phu My is a city of class ...",
+      "true": "Q33",
+      "a": "4"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d48421394497c3a4ab4d0"
+      },
+      "code": "Q34",
+      "question": "Phu My is considered as … area of Ba Ria - Vung Tau province.",
+      "true": "Q34",
+      "a": "Industry"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d484e1394497c3a4ab4d1"
+      },
+      "code": "Q35",
+      "question": "... is a port located in Phu My Town.",
+      "true": "Q35",
+      "a": "Cai Mep"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d48581394497c3a4ab4d2"
+      },
+      "code": "Q36",
+      "question": "Phu My has… administrative units.",
+      "true": "Q36",
+      "a": "10"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d48661394497c3a4ab4d3"
+      },
+      "code": "Q37",
+      "question": "Hac Dich commune of Phu My town has been changed to ...",
+      "true": "Q37",
+      "a": "Hac Dich ward"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d48711394497c3a4ab4d4"
+      },
+      "code": "Q38",
+      "question": "Con Dao belongs to the administrative units of ...",
+      "true": "Q38",
+      "a": "Ba Ria Vung Tau province"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d48d91394497c3a4ab4d5"
+      },
+      "code": "Q39",
+      "question": "The current administrative system of Con Dao ...",
+      "true": "Q39",
+      "a": "No dependency levels such as commune, ward or town"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d48e21394497c3a4ab4d6"
+      },
+      "code": "Q40",
+      "question": "The population of Con Dao in 2016 is ...",
+      "true": "Q40",
+      "a": "6.600 People"
+    },
+    {
+      "_id": {
+        "$oid": "5f8d48ec1394497c3a4ab4d7"
+      },
+      "code": "Q41",
+      "question": "Thanh Gia Peak is the highest mountain located in...",
+      "true": "Q41",
+      "a": "Con Dao district"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-10-19T07:45:17.468Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-19T08:06:04.934Z"
+  },
+  "__v": 40
 }]

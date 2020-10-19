@@ -4,15 +4,15 @@
   },
   "timeZone": "UTC+7",
   "name": "Đợt 1",
-  "startDate": "2020-09-28",
+  "startDate": "2020-10-15",
   "startTime": "09:00",
-  "finishDate": "2021-02-07",
-  "finishTime": "12:00",
+  "finishDate": "2020-10-31",
+  "finishTime": "09:00",
   "createdAt": {
     "$date": "2020-06-21T17:43:51.692Z"
   },
   "updatedAt": {
-    "$date": "2020-09-28T16:27:37.464Z"
+    "$date": "2020-10-14T22:12:12.027Z"
   },
   "__v": 0
 },{

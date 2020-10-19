@@ -1,105 +1,111 @@
 [{
   "_id": {
-    "$oid": "5eec8d95bf1673193c661a28"
+    "$oid": "5f8d52171394497c3a4ab4fc"
   },
+  "lanThi": {
+    "luotThi": 1,
+    "phan1": false,
+    "phan2": false,
+    "phan3": false,
+    "phan4": false
+  },
+  "identity": "123456789",
+  "province": "Bà Rịa - Vũng Tàu",
+  "role": "student",
+  "name": "Trương Vỹ Thành",
+  "birthday": "08-01-2000",
+  "sex": "Nam",
+  "district": "Huyện Long Điền",
+  "school": "Trung học phổ thông",
+  "nameSchool": "Cao đẳng Sư phạm Bà Rịa - Vũng Tàu",
+  "grade": "Cao Đẳng",
+  "classRoom": "23A4",
+  "email": "vythanh1800@gmail.com",
+  "password": "$2a$08$7.VdsjwkvdAo6y6xCMu.1uGHB262EWgnIDKcXk8FI0LifOdf5l5wS",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "5f8d521f1394497c3a4ab4fd"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkNTIxNzEzOTQ0OTdjM2E0YWI0ZmMiLCJpYXQiOjE2MDMwOTcxMTl9.RuDsnemG-wNvqhbrW3V2Ov-G1owtxmw-8qhHpFfbXsA"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-10-19T08:45:11.812Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-19T08:59:41.581Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "5f8dc36ea608ea14145d5fd7"
+  },
+  "lanThi": {
+    "luotThi": 2,
+    "phan1": false,
+    "phan2": false,
+    "phan3": false,
+    "phan4": false
+  },
+  "identity": "123456789",
+  "province": "Bà Rịa - Vũng Tàu",
   "role": "student",
   "name": "Nguyễn Thành Lộc",
-  "birthday": "19/09/1998",
+  "birthday": "19-09-1998",
   "sex": "Nam",
-  "province": "Tỉnh Bà Rịa - Vũng Tàu",
   "district": "Huyện Đất Đỏ",
-  "school": "Trung học phổ thông",
-  "nameSchool": "THPT Võ Thị Sáu",
-  "grade": "Khối 12",
+  "school": "THPT",
+  "nameSchool": "Võ Thị Sáu",
+  "grade": "Lớp 12",
   "classRoom": "12A3",
-  "identity": "273593068",
   "email": "locnt19@gmail.com",
   "password": "$2a$08$/C5H.FW8tBfnP1sy0cqL.eMSE3VsyCZ/CHEexvt.hfob5/xcqhmE2",
-  "tokens": [],
+  "__v": 2,
   "createdAt": {
-    "$date": "2020-06-19T10:04:05.266Z"
+    "$date": "2020-10-19T19:02:25.219Z"
   },
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "5f8de2c15dafd11a3c09bdd3"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkYzM2ZWE2MDhlYTE0MTQ1ZDVmZDciLCJpYXQiOjE2MDMxMzQxNDV9.6j_XM_IHFcHH69dxv805gQJ9ANpHS9PJabrVvKVHODM"
+    }
+  ],
   "updatedAt": {
-    "$date": "2020-10-14T22:20:01.890Z"
-  },
-  "__v": 28,
-  "luotThiConLai": 1
+    "$date": "2020-10-19T19:29:08.914Z"
+  }
 },{
   "_id": {
-    "$oid": "5eece820fdaa393af0369b40"
+    "$oid": "5f8dd0071394497c3a4ab54c"
   },
-  "role": "student",
-  "name": "Hồ Bảo Chi",
-  "luotThiConLai": 0,
-  "birthday": "18/10/1998",
-  "sex": "Nữ",
-  "province": "Tỉnh Bà Rịa - Vũng Tàu",
-  "district": "Huyện Đất Đỏ",
-  "school": "Trung học phổ thông",
-  "nameSchool": "THPT Nguyễn Tấn Thành",
-  "grade": "Lớp 12",
-  "classRoom": "12A1",
+  "lanThi": {
+    "luotThi": 1,
+    "phan1": false,
+    "phan2": false,
+    "phan3": false,
+    "phan4": false
+  },
   "identity": "123456789",
-  "email": "baochii.18@gmail.com",
-  "password": "$2a$08$lFXoFJR0LBr5Gzq7NUbV8OTPjXyVOiKdoMTL6UeySiSVrMG3F/Oci",
-  "tokens": [],
-  "createdAt": {
-    "$date": "2020-06-19T16:30:24.671Z"
-  },
-  "updatedAt": {
-    "$date": "2020-10-14T14:56:25.749Z"
-  },
-  "__v": 17
-},{
-  "_id": {
-    "$oid": "5f02ec8b4404600017d8d5ab"
-  },
+  "province": "Bà Rịa - Vũng Tàu",
   "role": "student",
-  "luotThiConLai": 2,
-  "name": "tạ quang phú",
-  "birthday": "13/8/2002",
-  "sex": "Nam",
-  "province": "Tỉnh Bà Rịa - Vũng Tàu",
+  "name": "Nguyễn Thanh Ngân",
+  "birthday": "01-07-2000",
+  "sex": "Nữ",
   "district": "Huyện Đất Đỏ",
-  "school": "Trung học phổ thông",
-  "nameSchool": "Võ thị Sáu",
-  "grade": "Lớp 12",
-  "classRoom": "12A1",
-  "identity": "1111111111111",
-  "email": "tqphu.btiu09033@gmail.com",
-  "password": "$2a$08$aqD8th9VtiEPenr1T.aKSumn9GdcoJVMrLlH2vWHDEzxf25RWjJGS",
+  "school": "Đại học",
+  "nameSchool": "Trường Đại học Tài chính Marketing",
+  "grade": "Cao Đẳng",
+  "classRoom": "CLC_18CTQ01",
+  "email": "thanhngan172000@gmail.com",
+  "password": "$2a$08$UzpsEO55/7s78pqv7zxIaO0jEstfVKL9yPPXKVTSDUkO72Qp9ZuZm",
   "tokens": [],
   "createdAt": {
-    "$date": "2020-07-06T09:19:08.065Z"
+    "$date": "2020-10-19T17:42:31.421Z"
   },
   "updatedAt": {
-    "$date": "2020-07-06T09:21:53.642Z"
+    "$date": "2020-10-19T17:54:47.711Z"
   },
-  "__v": 1
-},{
-  "_id": {
-    "$oid": "5f87f27ed1a12e581c5cb687"
-  },
-  "luotThiConLai": 2,
-  "role": "student",
-  "name": "Thôi Đại Việt",
-  "birthday": "05/01/1989",
-  "sex": "Nam",
-  "province": "Tỉnh Bà Rịa - Vũng Tàu",
-  "district": "Thành phố Bà Rịa",
-  "school": "Trung học phổ thông",
-  "nameSchool": "THPT Châu Thành",
-  "grade": "Lớp 12",
-  "classRoom": "12A3",
-  "identity": "273262758",
-  "email": "tdaiviet@gmail.com",
-  "password": "$2a$08$don25OA8tm0n2B2Vi77yS.2A.aOUwny6.DgPHecdpsEtb8IuBkUzS",
-  "tokens": [],
-  "createdAt": {
-    "$date": "2020-10-15T06:55:58.533Z"
-  },
-  "updatedAt": {
-    "$date": "2020-10-15T06:56:11.271Z"
-  },
-  "__v": 1
+  "__v": 2
 }]
