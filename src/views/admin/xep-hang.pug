@@ -8,41 +8,27 @@ block content
   .row.m-0
     .col-12.p-0.px-lg-3
       .card.p-3.p-md-5
-        table#table_xephang_users.table.table-bordered
+        table#table_xephang_users.table.table-bordered.dt-responsive.nowrap
           thead.bg-light
             tr
-              th.border-0(scope='col')
-              th.text-center.align-middle.border-0(scope='col')
-                | #
-              th.align-middle.border-0(scope='col')
-                | Họ tên
-              th.align-middle.border-0(scope='col')
-                | Điểm
-              th.align-middle.border-0(scope='col')
-                | Thời gian
+              th
+              th.align-middle(scope='col') Họ và tên
+              th.align-middle(scope='col') Điểm
+              th.align-middle(scope='col') Thời gian
+              th.align-middle(scope='col') Ngày sinh
+              th.align-middle(scope='col') Tên lớp
+              th.align-middle(scope='col') Trường
+              th.align-middle(scope='col') Email
+              th.align-middle(scope='col') ID
           tbody
-            -for(var i = 1; i < 10; i++)
+            -for(var user of listUser)
               tr
                 td
-                td.text-center 1
-                td Nguyễn Thành Lộc
-                td #{i*40}
-                td #{i*20}s
-              tr
-                td
-                td.text-center 2
-                td Nguyễn Lộc Thành
-                td #{i*38}
-                td #{i*19}s
-              tr
-                td
-                td.text-center 3
-                td Lorem ipsum dolor sit.
-                td #{i*36}
-                td #{i*18}s
-              tr
-                td
-                td.text-center 4
-                td Lorem, ipsum.
-                td #{i*34}
-                td #{i*17}s
+                td #{user.name}
+                td #{user.summaryScore}
+                td #{user.summaryTime}
+                td #{user.birthday}
+                td #{user.classRoom}
+                td #{user.nameSchool}
+                td #{user.email}
+                td #{user._id}

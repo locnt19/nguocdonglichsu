@@ -10,8 +10,36 @@ exports.templateDashboard = (req, res) => {
   res.render('admin/dashboard.pug', { title: 'Dashboard' });
 };
 
-exports.templateXepHang = (req, res) => {
-  res.render('admin/xep-hang.pug', { title: 'Xếp hạng' });
+exports.templateXepHang = async (req, res) => {
+  const listBaiThi = await BaiThi.find({ bestest: true });
+  const listUser = await User.find({ "lanThi.luotThi": { $lt: 2 } }); // https://stackjava.com/mongodb/truy-van-du-lieu-document-find-select-where-trong-mongodb.html
+  // console.log(listBaiThi);
+  // console.log("================");
+  // console.log(listUser);
+  let newArr = [];
+  for (const iUser of listUser) {
+    const temp = {
+      _id: iUser._id,
+      name: iUser.name,
+      nameSchool: iUser.nameSchool,
+      classRoom: iUser.classRoom,
+      birthday: iUser.birthday,
+      email: iUser.email,
+      summaryScore: 0,
+      summaryTime: 0
+    }
+    for (const iBaiThi of listBaiThi) {
+      if (iUser._id.toString() === iBaiThi.user) {
+        temp.summaryScore += iBaiThi.scope;
+        temp.summaryTime += iBaiThi.time;
+      }
+    }
+    newArr.push(temp);
+  }
+  res.render('admin/xep-hang.pug', {
+    title: 'Xếp hạng',
+    listUser: newArr
+  });
 };
 
 exports.templateLogin = (req, res) => {
@@ -174,9 +202,25 @@ exports.templateUsers = async (req, res) => {
 
 exports.templateBaiThi = async (req, res) => {
   try {
-    const baiThi = await BaiThi.find();
-    res.render('admin/bai-thi.pug', { title: 'Bài thi', baiThiList: baiThi });
+    const listBaiThi = await BaiThi.find();
+    const listUser = await User.find({ "lanThi.luotThi": { $lt: 2 } });
+    let newArr = [];
+    for (const iUser of listUser) {
+      for (const iBaiThi of listBaiThi) {
+        if (iUser._id.toString() === iBaiThi.user) {
+          iBaiThi.name = iUser.name;
+          iBaiThi.nameSchool = iUser.nameSchool;
+          iBaiThi.classRoom = iUser.classRoom;
+          iBaiThi.birthday = iUser.birthday;
+          iBaiThi.email = iUser.email;
+          newArr.push(iBaiThi);
+        }
+      }
+    }
+    // console.log(newArr);
+    res.render('admin/bai-thi.pug', { title: 'Bài thi', listBaiThi: newArr });
   } catch (error) {
+    console.log(error);
     req.flash('message', error);
     res.redirect('/admin');
   }

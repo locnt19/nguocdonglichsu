@@ -159,6 +159,63 @@ exports.templateSection3 = async (req, res) => {
           i => i.location === 'xuyenmoc'
         );
 
+        const indexDatDoRandom = randomRange(datdo.questions.length);
+        let randomDatDoQuestion = [];
+        for (var i = 0; i < indexDatDoRandom.length; i++) {
+          randomDatDoQuestion.push(datdo.questions[indexDatDoRandom[i]]);
+        }
+        datdo.questions = randomDatDoQuestion.slice(0, 2);
+
+        const indexLongDienRandom = randomRange(longdien.questions.length);
+        let randomLongDienQuestion = [];
+        for (var i = 0; i < indexLongDienRandom.length; i++) {
+          randomLongDienQuestion.push(longdien.questions[indexLongDienRandom[i]]);
+        }
+        longdien.questions = randomLongDienQuestion.slice(0, 2);
+
+        const indexBaRiaRandom = randomRange(baria.questions.length);
+        let randomBaRiaQuestion = [];
+        for (var i = 0; i < indexBaRiaRandom.length; i++) {
+          randomBaRiaQuestion.push(baria.questions[indexBaRiaRandom[i]]);
+        }
+        baria.questions = randomBaRiaQuestion.slice(0, 2);
+
+        const indexVungTauRandom = randomRange(vungtau.questions.length);
+        let randomVungTauQuestion = [];
+        for (var i = 0; i < indexVungTauRandom.length; i++) {
+          randomVungTauQuestion.push(vungtau.questions[indexVungTauRandom[i]]);
+        }
+        vungtau.questions = randomVungTauQuestion.slice(0, 2);
+
+        const indexConDaoRandom = randomRange(condao.questions.length);
+        let randomConDaoQuestion = [];
+        for (var i = 0; i < indexConDaoRandom.length; i++) {
+          randomConDaoQuestion.push(condao.questions[indexConDaoRandom[i]]);
+        }
+        condao.questions = randomConDaoQuestion.slice(0, 2);
+
+        const indexTanThanhRandom = randomRange(tanthanh.questions.length);
+        let randomTanThanhQuestion = [];
+        for (var i = 0; i < indexTanThanhRandom.length; i++) {
+          randomTanThanhQuestion.push(tanthanh.questions[indexTanThanhRandom[i]]);
+        }
+        tanthanh.questions = randomTanThanhQuestion.slice(0, 2);
+        condao.questions = randomConDaoQuestion.slice(0, 2);
+
+        const indexChauDucRandom = randomRange(chauduc.questions.length);
+        let randomChauDucQuestion = [];
+        for (var i = 0; i < indexChauDucRandom.length; i++) {
+          randomChauDucQuestion.push(chauduc.questions[indexChauDucRandom[i]]);
+        }
+        chauduc.questions = randomChauDucQuestion.slice(0, 2);
+
+        const indexXuyenMocRandom = randomRange(xuyenmoc.questions.length);
+        let randomXuyenMocQuestion = [];
+        for (var i = 0; i < indexXuyenMocRandom.length; i++) {
+          randomXuyenMocQuestion.push(xuyenmoc.questions[indexXuyenMocRandom[i]]);
+        }
+        xuyenmoc.questions = randomXuyenMocQuestion.slice(0, 2);
+
         const arrayData = [
           datdo,
           longdien,

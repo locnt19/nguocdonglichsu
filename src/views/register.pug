@@ -11,7 +11,12 @@ block content
           .col-md-6.form-group
             input.form-control(name='name' placeholder='Full name' value=values ? values.name : null required)
           .col-md-6.form-group
-            input.form-control(name='birthday' type="Date" placeholder='Date of birth' value=values ? values.birthday : null required)
+            .row
+              .col-6.d-flex
+                input.form-control(name='dd' type='number' min='1' max='31' placeholder='DD' required)
+                input.ml-3.form-control(name='mm' type='number' min='1' max='12' placeholder='MM' required)
+              .col-6.pl-0
+                input.form-control(name='yyyy' type='number' placeholder='YYYY' required)
           .col-md-6.form-group
             .fake__select.dropdown
               button.form-control.text-left.d-flex.align-items-center.justify-content-between.pr-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
@@ -74,5 +79,5 @@ block content
           .col-12.text-center
             button(type='submit').btn.btn-primary Register!
             .mt-3.small
-              span Have a account? &nbsp;
+              span Already have an account?&nbsp;
               a(href='/users/login') Login now!

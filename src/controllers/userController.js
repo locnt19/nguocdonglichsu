@@ -82,6 +82,8 @@ exports.create = async (req, res) => {
         throw new Error('Vui lòng nhập đầy đủ thông tin.');
       }
     }
+    console.log(req.body);
+    user.birthday = `${req.body.dd}-${req.body.mm}-${req.body.yyyy}`;
     await user.save();
     req.flash('message', 'Đăng ký thành công!');
     res.redirect('/users/login');

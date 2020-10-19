@@ -11,24 +11,26 @@ block content
         table#table_users.table.table-bordered.dt-responsive.nowrap
           thead.bg-light
             tr
-              th.align-middle(scope='col') Full name
+              th
+              th.align-middle(scope='col') Họ và tên
               th.align-middle(scope='col') Lượt
                 br
                 | thi
-              th.align-middle(scope='col') Gender
+              th.align-middle(scope='col') Giới tính
               th.align-middle(scope='col') Email
               th.align-middle(scope='col') Năm sinh
-              th.align-middle(scope='col') Huyện / Thành Phố
+              th.align-middle(scope='col') Huyện/Thành Phố
               th.align-middle(scope='col') Cấp bậc
               th.align-middle(scope='col') Trường
               th.align-middle(scope='col') Lớp
               th.align-middle(scope='col') Tên lớp
               th.align-middle(scope='col') Tỉnh
-              th.align-middle(scope='col') Mã
+              th.align-middle(scope='col') ID
           tbody
             if usersList !== null && usersList.length > 0
               -for(let user of usersList)
                 tr
+                  td
                   td #{user.name}
                   td #{user.lanThi.luotThi}
                   td #{user.sex}

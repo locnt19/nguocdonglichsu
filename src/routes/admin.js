@@ -3,7 +3,8 @@ const auth = require('../middleware/auth')
 const adminController = require('../controllers/adminController')
 
 router.route('/')
-  .get(auth.isAdmin, adminController.templateDashboard)
+  // .get(auth.isAdmin, adminController.templateDashboard)
+  .get(auth.isAdmin, adminController.templateXepHang)
 
 router.route('/login')
   .get(adminController.templateLogin)
@@ -34,9 +35,9 @@ router.route('/update-tuan-hien-tai')
 
 
 router.route('/users')
-  .get(adminController.templateUsers)
+  .get(auth.isAdmin, adminController.templateUsers)
 
 router.route('/bai-thi')
-  .get(adminController.templateBaiThi)
+  .get(auth.isAdmin, adminController.templateBaiThi)
 
 module.exports = router

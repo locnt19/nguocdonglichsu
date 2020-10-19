@@ -11,17 +11,31 @@ block content
         table#table_users.table.table-bordered.dt-responsive.nowrap
           thead.bg-light
             tr
-              th.align-middle(scope='col') Full name
+              th
+              th.align-middle(scope='col') Họ và tên
               th.align-middle(scope='col') Phần thi
               th.align-middle(scope='col') Điểm
               th.align-middle(scope='col') Thời gian
-              th.align-middle(scope='col') Tốt nhất
+              th.align-middle(scope='col') Lượt thi
+              th.align-middle(scope='col') Tên lớp
+              th.align-middle(scope='col') Ngày sinh
+              th.align-middle(scope='col') Trường
+              th.align-middle(scope='col') Email
+              th.align-middle(scope='col') Đã thi
+              th.align-middle(scope='col') ID
           tbody
-            if baiThiList !== null && baiThiList.length > 0
-              -for(let item of baiThiList)
+            if listBaiThi !== null && listBaiThi.length > 0
+              -for(let item of listBaiThi)
                 tr
-                  td #{item.user}
+                  td
+                  td #{item.name}
                   td #{item.exam}
                   td #{item.scope}
                   td #{item.time}
-                  td #{item.bestest}
+                  td #{item.lanThi}
+                  td #{item.classRoom}
+                  td #{item.birthday}
+                  td #{item.nameSchool}
+                  td #{item.email}
+                  td #{item.createdAt}
+                  td #{item._id}
