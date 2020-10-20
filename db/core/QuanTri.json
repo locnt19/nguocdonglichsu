@@ -3,135 +3,29 @@
     "$oid": "5efafdc0fc124b269c27b4f1"
   },
   "role": "root",
-  "name": "Nguyễn Thành Lộc",
+  "name": "Root Account",
   "username": "root",
   "password": "$2a$08$E.uTOdolpzzM3EnCXDRaSeD5RrhJYGHhkK3KMb71X9CKOEMttTxBS",
-  "tokens": [
-    {
-      "_id": {
-        "$oid": "5efb67bac2617800178bd1d3"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE1OTM1MzQzOTR9.ZAN1y5gJMgMvPASRyND3gObSXrTqL5nmyujOKJ8RvrI"
-    },
-    {
-      "_id": {
-        "$oid": "5f10940fa881772bc4bf76fa"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE1OTQ5MjE5OTl9.RNoavypN-DkxykqB6_vZL8DmpjxU97Bf0_O_230QVM0"
-    },
-    {
-      "_id": {
-        "$oid": "5f121aabc427c100176093e3"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE1OTUwMjE5OTV9.Fo-ZbxgKOAVRNSoNAyqpIP1mHmIoXIjDLYo_IjE2uDI"
-    },
-    {
-      "_id": {
-        "$oid": "5f63dc5e6dccde3254af4192"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE2MDAzNzk5OTh9.FG0MtpqHok7iC5D-gMDt3jNnS9KPmmzCbkU4asOtQM4"
-    },
-    {
-      "_id": {
-        "$oid": "5f65ce8f379efe0017acce71"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE2MDA1MDc1MzV9.JcB1vljob0LRmv-sjj65-vZobErZkbbUGcrjomEqvOM"
-    },
-    {
-      "_id": {
-        "$oid": "5f7205f75dc197152c2e362c"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE2MDEzMDgxNTF9.XLAaAx80vNLvunUok7SQoF5egZ4v5FjPq08UOfs3hX0"
-    },
-    {
-      "_id": {
-        "$oid": "5f85cb1d431e9c0c3413cb76"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE2MDI2MDM4MDV9.9GsCeNXpV9zjGVKI0lL1s26TG5m98z_OODgXzGqAkhM"
-    },
-    {
-      "_id": {
-        "$oid": "5f8d2f301394497c3a4ab4ab"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE2MDMwODgxNzZ9.hefsXEldyZYmW-U4h4U-cOZUm9cCseFgXpyM4lgmDwE"
-    },
-    {
-      "_id": {
-        "$oid": "5f8d436e1394497c3a4ab4ac"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmRjMGZjMTI0YjI2OWMyN2I0ZjEiLCJpYXQiOjE2MDMwOTMzNTh9.PaqEceQbf62zrSwPXHeObiqvuexjQs6vPjicPIKHAAY"
-    }
-  ],
   "createdAt": {
     "$date": "2020-06-30T08:54:25.048Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T19:51:58.899Z"
+    "$date": "2020-10-20T18:54:36.600Z"
   },
-  "__v": 23
+  "__v": 31
 },{
   "_id": {
     "$oid": "5efafff9bdd07b23a88908b8"
   },
   "role": "admin",
-  "name": "Quản trị 1",
+  "name": "Administrator",
   "username": "admin",
   "password": "$2a$08$0TTJUdbi0WsLOhBUH7xnaO8P025maPvXLkgO66ymqVa3K130tbR/2",
-  "tokens": [
-    {
-      "_id": {
-        "$oid": "5efb0007bdd07b23a88908b9"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE1OTM1MDc4NDd9.w0UUlP5fl1SeJFXbbl9vuYBoGD0RIqiOkZJNGAx1ZSw"
-    },
-    {
-      "_id": {
-        "$oid": "5f0015b9f04a930017c06500"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE1OTM4NDEwODF9.wyRRvent6Y5L5oYclM5MC0796O04BG_TqxcI4Qj4JLs"
-    },
-    {
-      "_id": {
-        "$oid": "5f06a761bad22e100ce31a1f"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE1OTQyNzE1ODV9.t0zlv0g6CgNYZEfIKfE0fNYb2oPYL9cgdnSNfM3F8qg"
-    },
-    {
-      "_id": {
-        "$oid": "5f0a0a096d2ad421f832eb64"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE1OTQ0OTM0NDl9.FAAlEI9CgRnVImK53szarvoVwucUuLlFjdUGGfrQ1Js"
-    },
-    {
-      "_id": {
-        "$oid": "5f0eda456c3307329c410d07"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE1OTQ4MDg5MDF9.B028cBINm1ET19cHl2OK6pYEyNCIq0G8C7ggjBmJJls"
-    },
-    {
-      "_id": {
-        "$oid": "5f0ef987243a4800172a4751"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE1OTQ4MTY5MDN9.CExbfdjhyDYDxeGVG1bs1LPzgTg43vODZMsBn6YAnF8"
-    },
-    {
-      "_id": {
-        "$oid": "5f8d43a61394497c3a4ab4ad"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE2MDMwOTM0MTR9.KyNfijcrbA2tZuc_06wYN2jTP6WYsuoocluZR1tXees"
-    },
-    {
-      "_id": {
-        "$oid": "5f8d4cf71394497c3a4ab4ea"
-      },
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWZhZmZmOWJkZDA3YjIzYTg4OTA4YjgiLCJpYXQiOjE2MDMwOTU3OTl9.zsi9_FfzcGIHtKUkU-cA4USG_ffx7iodSp5PqjTprPM"
-    }
-  ],
   "createdAt": {
     "$date": "2020-06-30T09:03:53.112Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T08:23:19.688Z"
+    "$date": "2020-10-20T13:22:16.402Z"
   },
-  "__v": 10
+  "__v": 16
 }]
