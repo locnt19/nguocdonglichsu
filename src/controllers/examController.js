@@ -254,7 +254,6 @@ exports.templateSection4 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan4) {
-        user.lanThi.luotThi -= 1;
         user.lanThi.phan4 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P04' });
@@ -534,6 +533,7 @@ exports.nopBaiThi4 = async (req, res) => {
     user.lanThi.phan2 = false;
     user.lanThi.phan3 = false;
     user.lanThi.phan4 = false;
+    user.lanThi.luotThi -= 1;
     await user.save();
     res.render('summary.pug', {
       title: 'Đã chấm điểm',
