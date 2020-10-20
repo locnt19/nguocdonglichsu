@@ -49,7 +49,7 @@ exports.templateSection1 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan1) {
-        // user.lanThi.phan1 = true;
+        user.lanThi.phan1 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P01' });
         const arrayRandom = randomRange(data.questions.length);
@@ -83,7 +83,7 @@ exports.templateSection2 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan2) {
-        // user.lanThi.phan2 = true;
+        user.lanThi.phan2 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P02' });
         const dataImage = await DeThi.findOne({ code: 'P020' });
@@ -125,7 +125,7 @@ exports.templateSection3 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan3) {
-        // user.lanThi.phan3 = true;
+        user.lanThi.phan3 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P03' });
         const datdo = { name: 'Đất Đỏ', code: 'datdo' };
@@ -256,7 +256,7 @@ exports.templateSection4 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan4) {
-        // user.lanThi.phan4 = true;
+        user.lanThi.phan4 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P04' });
         const arrayRandom = randomRange(data.questions.length);

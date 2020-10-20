@@ -10,7 +10,7 @@ const userSchema = mongoose.Schema({
     trim: true
   },
   lanThi: {
-    luotThi: { type: Number, default: 2 },
+    luotThi: { type: Number, default: 999 },
     phan1: { type: Boolean, default: false },
     phan2: { type: Boolean, default: false },
     phan3: { type: Boolean, default: false },

@@ -122,15 +122,18 @@ block content
                   th.align-middle(scope='col') Round
                   th.align-middle(scope='col') Point
                   th.align-middle(scope='col') Time
-              tbody
-                tr
-                  td 1
-                  td P1: Ngược dòng thời gian
-                  td 100
-                  td 200s
-                tr
-                  td.font-weight-bold(colspan='2') Summary:
-                  td 400
-                  td 640s
+              if(baiThiTotNhat.length > 0)
+                tbody
+                  -var i = 1;
+                  -for(var iBaiThi of baiThiTotNhat)
+                    tr
+                      td= i++
+                      td= iBaiThi.exam
+                      td= iBaiThi.scope
+                      td= iBaiThi.time
+                  tr.bg-light
+                    td.font-weight-bold(colspan='2') Summary:
+                    td #{summaryScore}
+                    td #{summaryTime}
             //- a(href='/users/ranking')
               | Xem chi tiết kết quả

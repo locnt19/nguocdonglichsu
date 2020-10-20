@@ -649,6 +649,7 @@ function section4() {
     } else {
       currentTime++;
       $('#timer').text(currentTime);
+      $('.round__4 #submit_time_summary').val(currentTime);
     }
   }, 1000);
 
