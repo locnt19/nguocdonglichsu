@@ -6,64 +6,7 @@ block content
     .container.mt-5
       .card.p-4.p-md-5
         .row
-          .col-lg-8
-            h6(style="color: #3d5170").font-weight-bold.m-0 Số lượt thi còn lại:&nbsp;
-              if user
-                if user.lanThi.luotThi < 0
-                  span 0
-                else
-                  span #{user.lanThi.luotThi}
-            //- h5.text-center.text-sm-left
-              if thoiGianThi
-                .small Thời gian bắt đầu #{thoiGianThi.name}:&nbsp;
-                  strong #{thoiGianThi.startTime}
-                  span &nbsp;ngày&nbsp;
-                  strong #{thoiGianThi.startDate}
-                .small Thời gian kết thúc #{thoiGianThi.name}:&nbsp;
-                  strong #{thoiGianThi.finishTime}
-                  span &nbsp;ngày&nbsp;
-                  strong #{thoiGianThi.finishDate}
-              else
-                span Chưa có thời gian thi
-            //- table.table.table-hover.table-bordered
-            //-   thead.bg-light
-            //-     tr
-            //-       th.align-middle.border-0(scope='col')
-            //-         | #
-            //-       th.align-middle.border-0(scope='col')
-            //-         | Bài thi
-            //-       th.align-middle.border-0(scope='col')
-            //-         | Điểm
-            //-       th.align-middle.border-0(scope='col')
-            //-         | Thời gian
-            //-   tbody
-            //-     tr
-            //-       td 1
-            //-       td P1: Ngược dòng thời gian
-            //-       td 100
-            //-       td 200s
-            //-     tr
-            //-       td 2
-            //-       td P2: Giải mã lịch sử
-            //-       td 100
-            //-       td 180s
-            //-     tr
-            //-       td 3
-            //-       td P3: Khám phá
-            //-       td 100
-            //-       td 160s
-            //-     tr
-            //-       td 4
-            //-       td P4: Kết nối
-            //-       td 100
-            //-       td 100s
-            //-     tr
-            //-       td.font-weight-bold(colspan='2') Tổng:
-            //-       td 400
-            //-       td 640s
-            //- a(href='/users/ranking')
-            //-   | Xem chi tiết kết quả
-          .col-lg-4.mt-5.mt-lg-0
+          .col-lg-5
             .d-flex.align-items-center
               img(src="https://via.placeholder.com/64" alt="64x64")
               .ml-3
@@ -73,11 +16,33 @@ block content
                   br
                   a(href="/users/change-password") Change password
             .border.rounded.p-3.mt-3
-              div
-                span #{user.grade}
-                span.ml-3 Lớp #{user.classRoom}
-              div Trường #{user.nameSchool}
-              div #{user.district}
+              table
+                tbody
+                  tr
+                    td
+                      div Class/Grade:&nbsp;
+                    td.pl-3
+                      strong.font-weight-bold #{user.grade}
+                  tr
+                    td
+                      div Class name:&nbsp;
+                    td.pl-3
+                      strong.font-weight-bold #{user.classRoom}
+                  tr
+                    td
+                      div Background:&nbsp;
+                    td.pl-3
+                      strong.font-weight-bold #{user.school}
+                  tr
+                    td
+                      div School name:&nbsp;
+                    td.pl-3
+                      strong.font-weight-bold #{user.nameSchool}
+                  tr
+                    td
+                      div Town/District:&nbsp;
+                    td.pl-3
+                      strong.font-weight-bold #{user.district}
             //- .text-primary.font-weight-bold.mt-4 Xếp hạng Tuần 1
             //- ul.list-group.mt-2
             //-   li.list-group-item.border.font-weight-normal.px-4
@@ -130,3 +95,42 @@ block content
             //-           .col-7 Lớp: 12A3
             //-         div Trường: THPT Võ THị Sáu
             //-         div Huyện: Đất Đỏ
+
+          .col-lg-7.mt-4.mt-lg-0
+            h6(style="color: #3d5170").font-weight-bold.m-0 Remaining:&nbsp;
+              if user
+                if user.lanThi.luotThi < 0
+                  span 0
+                else
+                  span #{user.lanThi.luotThi}
+            //- h5.text-center.text-sm-left
+              if thoiGianThi
+                .small Thời gian bắt đầu #{thoiGianThi.name}:&nbsp;
+                  strong #{thoiGianThi.startTime}
+                  span &nbsp;ngày&nbsp;
+                  strong #{thoiGianThi.startDate}
+                .small Thời gian kết thúc #{thoiGianThi.name}:&nbsp;
+                  strong #{thoiGianThi.finishTime}
+                  span &nbsp;ngày&nbsp;
+                  strong #{thoiGianThi.finishDate}
+              else
+                span Chưa có thời gian thi
+            table.table.table-hover.table-bordered.mb-2.mt-2
+              thead.bg-light
+                tr
+                  th.align-middle(scope='col' style='width: 5%') #
+                  th.align-middle(scope='col') Round
+                  th.align-middle(scope='col') Point
+                  th.align-middle(scope='col') Time
+              tbody
+                tr
+                  td 1
+                  td P1: Ngược dòng thời gian
+                  td 100
+                  td 200s
+                tr
+                  td.font-weight-bold(colspan='2') Summary:
+                  td 400
+                  td 640s
+            //- a(href='/users/ranking')
+              | Xem chi tiết kết quả

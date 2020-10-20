@@ -3,11 +3,11 @@ extends layout
 block content
   .bg__body
     .login__wrapper.p-0.container.position-relative
-      .login__container.bg__image__page2.middle__center__md.shadow.p-3.p-md-5
+      .login__container.bg__image__page2.middle__center__md.shadow.p-3.p-md-5.pt-5
         div Welcome to
         .h2.mb-0 Stepping back
         .h1.mb-0 IN HISTORY
-        form(action='/users/login' method='POST').login__form.mt-5
+        form(action='/users/login' method='POST').login__form.mt-4
           .form-group
             input.form-control(name='email' type='email' placeholder='Email' value= values ? values.email : '')
           .form-group

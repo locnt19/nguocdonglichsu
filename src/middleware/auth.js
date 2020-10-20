@@ -71,32 +71,3 @@ exports.isAdmin = async (req, res, next) => {
     res.render('403.pug', { title: 'Forbidden' })
   }
 }
-
-exports.checkLuotThiConLai = async (req, res, next) => {
-  try {
-    const token = req.cookies.token
-    const data = jwt.verify(token, process.env.SECRETKEY)
-    const user = await User.findOne({
-      _id: data._id,
-      'tokens.token': token
-    })
-    if (!user) {
-      console.log('run error')
-      throw new Error()
-    }
-    // console.log(user)
-    if (user.luotThiConLai.code <= 0) {
-      res.render('het-luot.pug', { title: 'Hết lượt thi' })
-    }
-    next()
-  } catch (error) {
-    console.log(error)
-    res.render('500.pug', { title: 'Server Error' })
-  }
-}
-
-exports.sendLuotThi = async (req, res, next) => {
-  res.luotThi = req.locals.user.lanThi;
-  console.log(res.luotThi);
-  next();
-}

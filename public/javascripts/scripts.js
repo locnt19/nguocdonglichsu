@@ -118,9 +118,9 @@ function section1() {
   var nextQuestion = 1;
 
   var counter = {
-    maximun: listTabs.length * 20,
+    maximun: listTabs.length * 30, // Maximum time for round 1
     summary: 0, // Tổng thời gian  trả lời câu hỏi
-    end: 20, // Thời gian trả lời mỗi câu hỏi
+    end: 30, // Thời gian trả lời mỗi câu hỏi
     action_next: $('#time_action_next'),
     innerHTML_end: $('#time_countdown'),
     innerHTML_summary: $('#time_summary'),
@@ -132,7 +132,7 @@ function section1() {
   $('#time_action_next').click(function () {
     if (nextQuestion < listTabs.length) {
       // console.log(nextQuestion)
-      counter.end = 20; // reset thời gian trả lời 1 câu hỏi
+      counter.end = 30; // reset thời gian trả lời 1 câu hỏi
       counter.innerHTML_end.text(counter.end);
       $(`#${listTabs[nextQuestion - 1]}`).hide();
       $(`#${listTabs[nextQuestion]}`).show();
@@ -152,7 +152,7 @@ function section1() {
       counter.summary++;
       if (counter.end === 0) {
         if (nextQuestion < listTabs.length) {
-          counter.end = 20; // reset thời gian trả lời 1 câu hỏi
+          counter.end = 30; // reset thời gian trả lời 1 câu hỏi
           $(`#${listTabs[nextQuestion - 1]}`).hide();
           $(`#${listTabs[nextQuestion]}`).show();
           nextQuestion++;
@@ -193,7 +193,7 @@ function section2() {
   let section2IntervalTimer;
   let section2IntervalPendingTimer;
   let summaryTimer = 0;
-  let questionPendingTimer = 20;
+  let questionPendingTimer = 999;
   let totalQuestions = 9;
   const timeLimited = 999;
   const $summaryTimer = $('#section2__summaryTimer');
@@ -296,7 +296,7 @@ function section2() {
 
   function clearIntervalAndResetQuestionPendingTimer() {
     clearInterval(section2IntervalPendingTimer);
-    questionPendingTimer = 20;
+    questionPendingTimer = 30;
     $questionPendingTimer.text(questionPendingTimer);
   }
 
@@ -342,7 +342,18 @@ function section2() {
     score = 20 * summaryCorrectAnwsered;
     $('#section2__score').val(score);
     $('#section2__summaryTimeeee').val(summaryTimer);
-    document.forms['exams_section2'].submit();
+    Toastify({
+      text: 'Go to next round after 3 seconds.',
+      gravity: 'top',
+      position: 'right',
+      duration: 2000,
+      callback: function () {
+        message = null;
+      },
+    }).showToast();
+    setTimeout(() => {
+      document.forms['exams_section2'].submit();
+    }, 3000);
   }
 
   function hideListQuestion() {
@@ -355,9 +366,9 @@ function section2() {
 function section3() {
   //#region Section 3
   var counter = {
-    end: 20, // Thời gian trả lời mỗi câu hỏi
+    end: 30, // Thời gian trả lời mỗi câu hỏi
     sumaryCounter: 0,
-    maximumCounter: 180,
+    maximumCounter: 999,
     selector_cowndown: $('.time_countdown'),
     selector_summary: $('.time_summary'),
     selector_submit_summary: $('#submit_time_summary'),
@@ -402,7 +413,7 @@ function section3() {
 
   //#region Count timer
   $('.s3_start').click(function () {
-    counter.end = 20;
+    counter.end = 30;
     counter.selector_cowndown.text(counter.end);
     clearInterval(counter.ticker);
     startCounter(counter);
@@ -483,7 +494,7 @@ function section3() {
       );
       $('body').addClass('overflow-hidden');
       // start couter
-      counter.end = 20;
+      counter.end = 30;
       counter.selector_cowndown.text(counter.end);
       clearInterval(counter.ticker);
       startCounter(counter);
@@ -560,7 +571,7 @@ function section3() {
       counter.end--;
       counter.sumaryCounter++;
       if (counter.end === 0) {
-        counter.end = 20;
+        counter.end = 30;
       }
       if (counter.sumaryCounter === counter.maximumCounter) {
         clearInterval(counter.ticker);

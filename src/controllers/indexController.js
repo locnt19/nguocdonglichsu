@@ -7,7 +7,7 @@ exports.templateTrangChu = async (req, res) => {
   thoiGianThi.startDate = moment(thoiGianThi.startDate).format('DD-MM-YYYY')
   thoiGianThi.finishDate = moment(thoiGianThi.finishDate).format('DD-MM-YYYY')
   res.render('index.pug', {
-    title: 'Trang chủ - Ngược dòng lịch sử',
+    title: 'Home - STEPPING BACK IN HISTORY',
     thoiGianThi: thoiGianThi
   })
 }

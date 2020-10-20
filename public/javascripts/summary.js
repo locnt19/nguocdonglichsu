@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
       summaryTime = 0;
       window.location.assign(`${href}`);
     }
+    if (href === '/') {
+      $('#text_link').text('home');
+    }
     $('#summary_time').text(summaryTime);
   }, 1000);
   // #endregion

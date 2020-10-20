@@ -6,7 +6,7 @@ const User = require('../models/User');
 exports.templateReady = async (req, res) => {
   const user = await User.findOne({ _id: res.locals.user._id });
   if (user.lanThi.luotThi > 0) {
-    res.render('ready.pug', { title: 'Phần 1: Ngược dòng thời gian' });
+    res.render('ready.pug', { title: 'Round 1: Trace back the history' });
   } else {
     res.redirect('/exams/het-luot');
   }
@@ -33,7 +33,7 @@ exports.templateReady3 = async (req, res) => {
 exports.templateReady4 = async (req, res) => {
   const user = await User.findOne({ _id: res.locals.user._id });
   if (user.lanThi.luotThi > 0) {
-    res.render('ready-4.pug', { title: 'Phần 4: Kết nối' });
+    res.render('ready-4.pug', { title: 'Round 4: Matching' });
   } else {
     res.redirect('/exams/het-luot');
   }
@@ -49,7 +49,7 @@ exports.templateSection1 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan1) {
-        user.lanThi.phan1 = true;
+        // user.lanThi.phan1 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P01' });
         const arrayRandom = randomRange(data.questions.length);
@@ -59,12 +59,12 @@ exports.templateSection1 = async (req, res) => {
         }
         data.questions = randomQuestion.slice(0, 10);
         res.render('section-1.pug', {
-          title: 'Phần 1: Ngược dòng lịch sử',
+          title: 'Round 1: Trace back the history',
           exams: data,
           infoUser: user,
         });
       } else {
-        req.flash('message', 'Bạn đã thi phần 1');
+        req.flash('message', 'You have passed round 1.');
         res.redirect('/exams/ready-2');
       }
     } else {
@@ -73,7 +73,7 @@ exports.templateSection1 = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.render('500.pug', {
-      title: 'Phần 1: Ngược dòng lịch sử',
+      title: 'Round 1: Trace back the history',
     });
   }
 };
@@ -83,33 +83,30 @@ exports.templateSection2 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan2) {
-        user.lanThi.phan2 = true;
+        // user.lanThi.phan2 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P02' });
-        const arrayImage = [
-          'who is she.jpg',
-          'where is this locate.jpg',
-          'where is this locate 1.jpg',
-          'where is this locate 2.jpg',
-          'where is this locate 3.jpg',
-          'where is this locate 4.jpg',
-          'where is this locate 5.jpg',
-        ];
+        const dataImage = await DeThi.findOne({ code: 'P020' });
+
         const arrayRandom = randomRange(data.questions.length);
         let randomQuestion = [];
         for (var i = 0; i < arrayRandom.length; i++) {
           randomQuestion.push(data.questions[arrayRandom[i]]);
         }
-        randomQuestion = randomQuestion.slice(0, 9);
+        randomQuestion = randomQuestion.slice(0, 8);
+        randomQuestion.push(
+          dataImage.questions[
+            Math.floor(Math.random() * dataImage.questions.length)
+          ]
+        );
         res.render('section-2.pug', {
           title: 'Round 2: History puzzle',
           examCode: data.code,
           exams: randomQuestion,
-          image: arrayImage[Math.floor(Math.random() * arrayImage.length + 0)],
           infoUser: user,
         });
       } else {
-        req.flash('message', 'Bạn đã thi phần 2');
+        req.flash('message', 'You have passed round 2.');
         res.redirect('/exams/ready-3');
       }
     } else {
@@ -128,7 +125,7 @@ exports.templateSection3 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan3) {
-        user.lanThi.phan3 = true;
+        // user.lanThi.phan3 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P03' });
         const datdo = { name: 'Đất Đỏ', code: 'datdo' };
@@ -169,7 +166,9 @@ exports.templateSection3 = async (req, res) => {
         const indexLongDienRandom = randomRange(longdien.questions.length);
         let randomLongDienQuestion = [];
         for (var i = 0; i < indexLongDienRandom.length; i++) {
-          randomLongDienQuestion.push(longdien.questions[indexLongDienRandom[i]]);
+          randomLongDienQuestion.push(
+            longdien.questions[indexLongDienRandom[i]]
+          );
         }
         longdien.questions = randomLongDienQuestion.slice(0, 2);
 
@@ -197,10 +196,12 @@ exports.templateSection3 = async (req, res) => {
         const indexTanThanhRandom = randomRange(tanthanh.questions.length);
         let randomTanThanhQuestion = [];
         for (var i = 0; i < indexTanThanhRandom.length; i++) {
-          randomTanThanhQuestion.push(tanthanh.questions[indexTanThanhRandom[i]]);
+          randomTanThanhQuestion.push(
+            tanthanh.questions[indexTanThanhRandom[i]]
+          );
         }
         tanthanh.questions = randomTanThanhQuestion.slice(0, 2);
-        
+
         const indexChauDucRandom = randomRange(chauduc.questions.length);
         let randomChauDucQuestion = [];
         for (var i = 0; i < indexChauDucRandom.length; i++) {
@@ -211,7 +212,9 @@ exports.templateSection3 = async (req, res) => {
         const indexXuyenMocRandom = randomRange(xuyenmoc.questions.length);
         let randomXuyenMocQuestion = [];
         for (var i = 0; i < indexXuyenMocRandom.length; i++) {
-          randomXuyenMocQuestion.push(xuyenmoc.questions[indexXuyenMocRandom[i]]);
+          randomXuyenMocQuestion.push(
+            xuyenmoc.questions[indexXuyenMocRandom[i]]
+          );
         }
         xuyenmoc.questions = randomXuyenMocQuestion.slice(0, 2);
 
@@ -228,13 +231,13 @@ exports.templateSection3 = async (req, res) => {
 
         res.render('section-3.pug', {
           title: 'Round 3: Exploration',
-          examName: data.name,
+          examName: 'Round 3',
           examCode: data.code,
           arrayData: arrayData,
           infoUser: user,
         });
       } else {
-        req.flash('message', 'Bạn đã thi phần 3');
+        req.flash('message', 'You have passed round 3.');
         res.redirect('/exams/ready-4');
       }
     } else {
@@ -253,7 +256,7 @@ exports.templateSection4 = async (req, res) => {
     const user = await User.findOne({ _id: res.locals.user._id });
     if (user.lanThi.luotThi > 0) {
       if (!user.lanThi.phan4) {
-        user.lanThi.phan4 = true;
+        // user.lanThi.phan4 = true;
         await user.save();
         const data = await DeThi.findOne({ code: 'P04' });
         const arrayRandom = randomRange(data.questions.length);
@@ -269,13 +272,13 @@ exports.templateSection4 = async (req, res) => {
           randomAnwser.push(data.questions[randomIndexAnwser[i]]);
         }
         res.render('section-4.pug', {
-          title: 'Phần 4: Kết nối',
+          title: 'Round 4: Matching',
           exams: data,
           randomAnwser: randomAnwser,
           infoUser: user,
         });
       } else {
-        req.flash('message', 'Bạn đã thi phần 4');
+        req.flash('message', 'You have passed round 4.');
         res.redirect('/');
       }
     } else {
@@ -284,13 +287,13 @@ exports.templateSection4 = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.render('500.pug', {
-      title: 'Phần 4: Kết nối',
+      title: 'Round 4: Matching',
     });
   }
 };
 
 exports.templateSummary = async (req, res) => {
-  res.render('summary.pug', { title: 'Kết quả thi' });
+  res.render('summary.pug', { title: 'Result' });
 };
 
 exports.nopBaiThi1 = async (req, res) => {
@@ -348,15 +351,15 @@ exports.nopBaiThi1 = async (req, res) => {
     }
     await baiThi.save();
     res.render('summary.pug', {
-      title: 'Đã chấm điểm',
-      examName: deThi.name,
+      title: 'Round 1: Trace back the history',
+      examName: 'Round 1',
       time: baiThi.time,
       scope: baiThi.scope,
       next: '/exams/ready-2',
     });
   } catch (error) {
     console.log(error);
-    res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 1' });
+    res.render('500.pug', { title: 'ERROR | Round 1: Trace back the history' });
   }
 };
 
@@ -397,16 +400,15 @@ exports.nopBaiThi2 = async (req, res) => {
     }
     await baiThi.save();
     res.render('summary.pug', {
-      title: 'Đã chấm điểm',
-      examName: deThi.name,
+      title: 'Round 2: History puzzle',
+      examName: 'Round 2',
       time: baiThi.time,
       scope: baiThi.scope,
       next: '/exams/ready-3',
     });
   } catch (error) {
     console.log(error);
-    res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 2' });
-
+    res.render('500.pug', { title: 'ERROR | Round 2: History puzzle' });
   }
 };
 
@@ -474,15 +476,15 @@ exports.nopBaiThi3 = async (req, res) => {
     }
     await baiThi.save();
     res.render('summary.pug', {
-      title: 'Đã chấm điểm',
-      examName: deThi.name,
+      title: 'Round 3: Exploration',
+      examName: 'Round 3',
       time: baiThi.time,
       scope: baiThi.scope,
       next: '/exams/ready-4',
     });
   } catch (error) {
     console.log(error);
-    res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 3' });
+    res.render('500.pug', { title: 'ERROR | Round 3: Exploration' });
   }
 };
 
@@ -535,15 +537,15 @@ exports.nopBaiThi4 = async (req, res) => {
     user.lanThi.luotThi -= 1;
     await user.save();
     res.render('summary.pug', {
-      title: 'Đã chấm điểm',
-      examName: deThi.name,
+      title: 'Round 4: Matching',
+      examName: 'Round 4',
       time: baiThi.time,
       scope: baiThi.scope,
       next: '/',
     });
   } catch (error) {
     console.log(error);
-    res.render('500.pug', { title: 'Lỗi chấm điểm thi phần 4' });
+    res.render('500.pug', { title: 'ERROR | Round 4: Matching' });
   }
 };
 
