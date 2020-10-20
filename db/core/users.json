@@ -3,11 +3,11 @@
     "$oid": "5f8d52171394497c3a4ab4fc"
   },
   "lanThi": {
-    "luotThi": 1,
-    "phan1": false,
-    "phan2": false,
-    "phan3": false,
-    "phan4": false
+    "luotThi": 994,
+    "phan1": true,
+    "phan2": true,
+    "phan3": true,
+    "phan4": true
   },
   "identity": "123456789",
   "province": "Bà Rịa - Vũng Tàu",
@@ -28,23 +28,47 @@
         "$oid": "5f8d521f1394497c3a4ab4fd"
       },
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkNTIxNzEzOTQ0OTdjM2E0YWI0ZmMiLCJpYXQiOjE2MDMwOTcxMTl9.RuDsnemG-wNvqhbrW3V2Ov-G1owtxmw-8qhHpFfbXsA"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea1a83a5ac1358dea6180"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkNTIxNzEzOTQ0OTdjM2E0YWI0ZmMiLCJpYXQiOjE2MDMxODMwMTZ9.cXCM_v2o7pSNIIs8jqQlr4GqNMQ-YaZHLV891geCRA4"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eccbf3a5ac1358dea620f"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkNTIxNzEzOTQ0OTdjM2E0YWI0ZmMiLCJpYXQiOjE2MDMxOTQwNDd9.zbj3MoBe7ua0c9s3gyMM7u7piqw28-Y5MQvQ9iwNkdk"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ed06d3a5ac1358dea6245"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkNTIxNzEzOTQ0OTdjM2E0YWI0ZmMiLCJpYXQiOjE2MDMxOTQ5ODl9.-MteJS-R3YoPYlCTPJ1hxOofE5CfA9P7LHILukWsIHQ"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee40c3a5ac1358dea6273"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkNTIxNzEzOTQ0OTdjM2E0YWI0ZmMiLCJpYXQiOjE2MDMyMDAwMTJ9.3ORitNydz7dkgAYoyklXju41q57i_wIkUrLOQITR3gw"
     }
   ],
   "createdAt": {
     "$date": "2020-10-19T08:45:11.812Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T08:59:41.581Z"
+    "$date": "2020-10-20T13:20:12.204Z"
   },
-  "__v": 1
+  "__v": 9
 },{
   "_id": {
     "$oid": "5f8dc36ea608ea14145d5fd7"
   },
   "lanThi": {
-    "luotThi": 2,
+    "luotThi": 999,
     "phan1": false,
-    "phan2": false,
+    "phan2": true,
     "phan3": false,
     "phan4": false
   },
@@ -61,7 +85,7 @@
   "classRoom": "12A3",
   "email": "locnt19@gmail.com",
   "password": "$2a$08$/C5H.FW8tBfnP1sy0cqL.eMSE3VsyCZ/CHEexvt.hfob5/xcqhmE2",
-  "__v": 2,
+  "__v": 10,
   "createdAt": {
     "$date": "2020-10-19T19:02:25.219Z"
   },
@@ -71,17 +95,41 @@
         "$oid": "5f8de2c15dafd11a3c09bdd3"
       },
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkYzM2ZWE2MDhlYTE0MTQ1ZDVmZDciLCJpYXQiOjE2MDMxMzQxNDV9.6j_XM_IHFcHH69dxv805gQJ9ANpHS9PJabrVvKVHODM"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4e1d41ada420cec63b14"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkYzM2ZWE2MDhlYTE0MTQ1ZDVmZDciLCJpYXQiOjE2MDMxNjE2Mjl9.wh73VcM_ojPotZHB16ff34CqIfMj1TDJlq7yy1JcuXA"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e5ff53a5ac1358dea614e"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkYzM2ZWE2MDhlYTE0MTQ1ZDVmZDciLCJpYXQiOjE2MDMxNjYxOTd9.2mg-H9bjhRKXagyfKkE22grJcJOwAZuA7xOOLqVBeDs"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ed8b79a57c9202cad42fd"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkYzM2ZWE2MDhlYTE0MTQ1ZDVmZDciLCJpYXQiOjE2MDMxOTcxMTF9.Q3_svdfcRy0NKGO99-nJHRYrcrf5b0ZivJKH1P_5gkk"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee3973a5ac1358dea6272"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhkYzM2ZWE2MDhlYTE0MTQ1ZDVmZDciLCJpYXQiOjE2MDMxOTk4OTV9.YT_2WnWIbrSm8XHtRKmxxEymwF6sILtBcbiQEmauaZA"
     }
   ],
   "updatedAt": {
-    "$date": "2020-10-19T19:29:08.914Z"
+    "$date": "2020-10-20T13:18:58.162Z"
   }
 },{
   "_id": {
     "$oid": "5f8dd0071394497c3a4ab54c"
   },
   "lanThi": {
-    "luotThi": 1,
+    "luotThi": 999,
     "phan1": false,
     "phan2": false,
     "phan3": false,
@@ -108,4 +156,139 @@
     "$date": "2020-10-19T17:54:47.711Z"
   },
   "__v": 2
+},{
+  "_id": {
+    "$oid": "5f8e40a041ada420cec63ac1"
+  },
+  "lanThi": {
+    "luotThi": 997,
+    "phan1": false,
+    "phan2": false,
+    "phan3": false,
+    "phan4": false
+  },
+  "identity": "123456789",
+  "province": "Bà Rịa - Vũng Tàu",
+  "role": "student",
+  "name": "Phạm Duy",
+  "sex": "Nam",
+  "district": "Huyện Đất Đỏ",
+  "school": "Đại học",
+  "nameSchool": "ĐH khoa học xã hội và nhân văn",
+  "grade": "Đại học",
+  "classRoom": "25",
+  "email": "bantnth.tinhdoanbrvt@gmail.com",
+  "password": "$2a$08$vne4ZAMvboBgFi.lptWOyu07XvAii/KKxFSQyVgaih/ZHkvz/XizS",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "5f8e5d0f41ada420cec63b51"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhlNDBhMDQxYWRhNDIwY2VjNjNhYzEiLCJpYXQiOjE2MDMxNjU0NTV9.xfaKi_T8FwdGscSQjMTY9lKlV1_rdCuKXSSs9IE0JSI"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee05f3a5ac1358dea6247"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhlNDBhMDQxYWRhNDIwY2VjNjNhYzEiLCJpYXQiOjE2MDMxOTkwNzF9.194uja35Le0Jy0pT_9uuSARtDrjJ86iz6ijLJ0dQ4r4"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee05f3a5ac1358dea6248"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhlNDBhMDQxYWRhNDIwY2VjNjNhYzEiLCJpYXQiOjE2MDMxOTkwNzF9.194uja35Le0Jy0pT_9uuSARtDrjJ86iz6ijLJ0dQ4r4"
+    }
+  ],
+  "birthday": "13-08-1991",
+  "createdAt": {
+    "$date": "2020-10-20T01:42:56.775Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:59:34.284Z"
+  },
+  "__v": 5
+},{
+  "_id": {
+    "$oid": "5f8e540e41ada420cec63b3b"
+  },
+  "lanThi": {
+    "luotThi": 998,
+    "phan1": false,
+    "phan2": false,
+    "phan3": false,
+    "phan4": false
+  },
+  "identity": "123456789",
+  "province": "Bà Rịa - Vũng Tàu",
+  "role": "student",
+  "name": "quân",
+  "sex": "Nam",
+  "district": "Thành phố Bà Rịa",
+  "school": "Trung học phổ thông",
+  "nameSchool": "Châu thành",
+  "grade": "Lớp 11",
+  "classRoom": "11a3",
+  "email": "nguyendzuy8338@gmail.com",
+  "password": "$2a$08$Kk3Hk5eCS/sB0UJNx8qJlupODJ07ututSyx6bYJNFNg/PtyqypOnK",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "5f8e541941ada420cec63b3c"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhlNTQwZTQxYWRhNDIwY2VjNjNiM2IiLCJpYXQiOjE2MDMxNjMxNjF9.LP1rM9ge5shAz00uYNJmpxucJY4Pb9tY-zwsod9klJA"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e98033a5ac1358dea6150"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhlNTQwZTQxYWRhNDIwY2VjNjNiM2IiLCJpYXQiOjE2MDMxODA1NDd9.KMIH8Tfckrvqpa6p7qTh-ErrF7_6YWgfBIror4IsxwU"
+    }
+  ],
+  "birthday": "1-1-2003",
+  "createdAt": {
+    "$date": "2020-10-20T03:05:50.841Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:19:51.726Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "5f8e9e823a5ac1358dea616e"
+  },
+  "lanThi": {
+    "luotThi": 2,
+    "phan1": true,
+    "phan2": true,
+    "phan3": true,
+    "phan4": true
+  },
+  "identity": "123456789",
+  "province": "Bà Rịa - Vũng Tàu",
+  "role": "student",
+  "name": "Nguyễn Thị Thanh Mai",
+  "sex": "Nữ",
+  "district": "Thành phố Vũng Tàu",
+  "school": "Cao đẳng",
+  "nameSchool": "22M2",
+  "grade": "Cao Đẳng",
+  "classRoom": "22M2",
+  "email": "thanhmainguyen.vt2000@gmail.com",
+  "password": "$2a$08$2y7K2j8OBaxE65H4SzZmFOXFEFLQbBZJfjs83pg9JR/eev7xkmiQq",
+  "tokens": [
+    {
+      "_id": {
+        "$oid": "5f8e9e8b3a5ac1358dea616f"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjhlOWU4MjNhNWFjMTM1OGRlYTYxNmUiLCJpYXQiOjE2MDMxODIyMTl9.W_-fE9adpFhOj9CHbbptGW662EPFZkXOZIcVtelJEUM"
+    }
+  ],
+  "birthday": "21-08-2000",
+  "createdAt": {
+    "$date": "2020-10-20T08:23:30.550Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:30:44.679Z"
+  },
+  "__v": 1
 }]

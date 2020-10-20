@@ -159,7 +159,7 @@
     "$date": "2020-10-19T08:48:30.287Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T08:48:30.287Z"
+    "$date": "2020-10-20T09:08:01.481Z"
   },
   "__v": 0
 },{
@@ -651,7 +651,7 @@
     "$date": "2020-10-19T08:59:41.484Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T08:59:41.484Z"
+    "$date": "2020-10-20T09:11:55.199Z"
   },
   "__v": 0
 },{
@@ -1413,6 +1413,4047 @@
   },
   "updatedAt": {
     "$date": "2020-10-19T19:40:32.288Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e415d41ada420cec63ac3"
+  },
+  "time": 77,
+  "scope": 100,
+  "lanThi": 2,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q49",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ac4"
+      }
+    },
+    {
+      "code": "Q30",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ac5"
+      }
+    },
+    {
+      "code": "Q12",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ac6"
+      }
+    },
+    {
+      "code": "Q50",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ac7"
+      }
+    },
+    {
+      "code": "Q22",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ac8"
+      }
+    },
+    {
+      "code": "Q48",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ac9"
+      }
+    },
+    {
+      "code": "Q02",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63aca"
+      }
+    },
+    {
+      "code": "Q60",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63acb"
+      }
+    },
+    {
+      "code": "Q67",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63acc"
+      }
+    },
+    {
+      "code": "Q09",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63acd"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ace"
+      },
+      "code": "Q22",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63acf"
+      },
+      "code": "Q48",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ad0"
+      },
+      "code": "Q02",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ad1"
+      },
+      "code": "Q60",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e415d41ada420cec63ad2"
+      },
+      "code": "Q67",
+      "answer": "b"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T01:46:05.354Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:51:49.514Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e41dd41ada420cec63ad3"
+  },
+  "time": 109,
+  "scope": 0,
+  "exam": "P02",
+  "lanThi": 2,
+  "user": "5f8e40a041ada420cec63ac1",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T01:48:13.884Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:31:31.726Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e424841ada420cec63ad4"
+  },
+  "time": 53,
+  "scope": 40,
+  "lanThi": 2,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P03",
+  "answers": [
+    {
+      "code": "Q19",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad5"
+      }
+    },
+    {
+      "code": "Q18",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad6"
+      }
+    },
+    {
+      "code": "Q43",
+      "answer": "d",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad7"
+      }
+    },
+    {
+      "code": "Q41",
+      "answer": "c",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad8"
+      }
+    },
+    {
+      "code": "Q30",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad9"
+      }
+    },
+    {
+      "code": "Q32",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ada"
+      }
+    },
+    {
+      "code": "Q35",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e424841ada420cec63adb"
+      }
+    },
+    {
+      "code": "Q39",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e424841ada420cec63adc"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad6"
+      },
+      "code": "Q18",
+      "answer": "a",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad7"
+      },
+      "code": "Q43",
+      "answer": "d",
+      "star": "on"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e424841ada420cec63ad8"
+      },
+      "code": "Q41",
+      "answer": "c",
+      "star": "on"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e424841ada420cec63adb"
+      },
+      "code": "Q35",
+      "answer": "a",
+      "star": null
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T01:50:00.849Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T01:50:00.849Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e42b641ada420cec63ae1"
+  },
+  "time": 20,
+  "scope": 20,
+  "lanThi": 1,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q16",
+      "answer": "Q16",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae2"
+      }
+    },
+    {
+      "code": "Q08",
+      "answer": "Q26",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae3"
+      }
+    },
+    {
+      "code": "Q14",
+      "answer": "Q14",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae4"
+      }
+    },
+    {
+      "code": "Q24",
+      "answer": "Q11",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae5"
+      }
+    },
+    {
+      "code": "Q33",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae6"
+      }
+    },
+    {
+      "code": "Q25",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae7"
+      }
+    },
+    {
+      "code": "Q11",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae8"
+      }
+    },
+    {
+      "code": "Q38",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63ae9"
+      }
+    },
+    {
+      "code": "Q26",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63aea"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e42b641ada420cec63aeb"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T01:51:50.611Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:15:20.910Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e4bc441ada420cec63aec"
+  },
+  "time": 110,
+  "scope": 120,
+  "lanThi": 1,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q67",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63aed"
+      }
+    },
+    {
+      "code": "Q50",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63aee"
+      }
+    },
+    {
+      "code": "Q49",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63aef"
+      }
+    },
+    {
+      "code": "Q27",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63af0"
+      }
+    },
+    {
+      "code": "Q29",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63af1"
+      }
+    },
+    {
+      "code": "Q05",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63af2"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63af3"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63af4"
+      }
+    },
+    {
+      "code": "Q62",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63af5"
+      }
+    },
+    {
+      "code": "Q25",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4bc441ada420cec63af6"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e4bc541ada420cec63af7"
+      },
+      "code": "Q50",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4bc541ada420cec63af8"
+      },
+      "code": "Q27",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4bc541ada420cec63af9"
+      },
+      "code": "Q29",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4bc541ada420cec63afa"
+      },
+      "code": "Q01",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4bc541ada420cec63afb"
+      },
+      "code": "Q21",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4bc541ada420cec63afc"
+      },
+      "code": "Q25",
+      "answer": "c"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T02:30:29.163Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:30:29.163Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e4c0341ada420cec63afd"
+  },
+  "time": 47,
+  "scope": 20,
+  "exam": "P02",
+  "lanThi": 1,
+  "user": "5f8e40a041ada420cec63ac1",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T02:31:31.776Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:31:31.776Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e4da641ada420cec63aff"
+  },
+  "time": 104,
+  "scope": 180,
+  "lanThi": 1,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q45",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b00"
+      }
+    },
+    {
+      "code": "Q72",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b01"
+      }
+    },
+    {
+      "code": "Q28",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b02"
+      }
+    },
+    {
+      "code": "Q56",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b03"
+      }
+    },
+    {
+      "code": "Q63",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b04"
+      }
+    },
+    {
+      "code": "Q09",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b05"
+      }
+    },
+    {
+      "code": "Q50",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b06"
+      }
+    },
+    {
+      "code": "Q18",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b07"
+      }
+    },
+    {
+      "code": "Q48",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b08"
+      }
+    },
+    {
+      "code": "Q68",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b09"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b0a"
+      },
+      "code": "Q45",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b0b"
+      },
+      "code": "Q72",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b0c"
+      },
+      "code": "Q28",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b0d"
+      },
+      "code": "Q56",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b0e"
+      },
+      "code": "Q63",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b0f"
+      },
+      "code": "Q50",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b10"
+      },
+      "code": "Q18",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b11"
+      },
+      "code": "Q48",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4da641ada420cec63b12"
+      },
+      "code": "Q68",
+      "answer": "a"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T02:38:30.547Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:38:30.547Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e4e0e41ada420cec63b13"
+  },
+  "time": 90,
+  "scope": 80,
+  "exam": "P02",
+  "lanThi": 1,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T02:40:15.092Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:40:15.092Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e4ec041ada420cec63b16"
+  },
+  "time": 66,
+  "scope": 200,
+  "lanThi": 2,
+  "user": "5f8dc36ea608ea14145d5fd7",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q65",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b17"
+      }
+    },
+    {
+      "code": "Q16",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b18"
+      }
+    },
+    {
+      "code": "Q10",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b19"
+      }
+    },
+    {
+      "code": "Q68",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b1a"
+      }
+    },
+    {
+      "code": "Q31",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b1b"
+      }
+    },
+    {
+      "code": "Q58",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b1c"
+      }
+    },
+    {
+      "code": "Q28",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b1d"
+      }
+    },
+    {
+      "code": "Q02",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b1e"
+      }
+    },
+    {
+      "code": "Q72",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b1f"
+      }
+    },
+    {
+      "code": "Q69",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b20"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b21"
+      },
+      "code": "Q65",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b22"
+      },
+      "code": "Q16",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b23"
+      },
+      "code": "Q10",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b24"
+      },
+      "code": "Q68",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b25"
+      },
+      "code": "Q31",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b26"
+      },
+      "code": "Q58",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b27"
+      },
+      "code": "Q28",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b28"
+      },
+      "code": "Q02",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b29"
+      },
+      "code": "Q72",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e4ec041ada420cec63b2a"
+      },
+      "code": "Q69",
+      "answer": "d"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T02:43:12.342Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:43:12.342Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e4f0141ada420cec63b2b"
+  },
+  "time": 58,
+  "scope": 60,
+  "exam": "P02",
+  "lanThi": 2,
+  "user": "5f8dc36ea608ea14145d5fd7",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T02:44:17.580Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:44:17.580Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e514b41ada420cec63b2c"
+  },
+  "time": 96,
+  "scope": 60,
+  "lanThi": 1,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P03",
+  "answers": [
+    {
+      "code": "Q22",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b2d"
+      }
+    },
+    {
+      "code": "Q20",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b2e"
+      }
+    },
+    {
+      "code": "Q19",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b2f"
+      }
+    },
+    {
+      "code": "Q17",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b30"
+      }
+    },
+    {
+      "code": "Q43",
+      "answer": "d",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b31"
+      }
+    },
+    {
+      "code": "Q42",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b32"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b33"
+      }
+    },
+    {
+      "code": "Q13",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b34"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b2d"
+      },
+      "code": "Q22",
+      "answer": "b",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b30"
+      },
+      "code": "Q17",
+      "answer": "a",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b31"
+      },
+      "code": "Q43",
+      "answer": "d",
+      "star": "on"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b32"
+      },
+      "code": "Q42",
+      "answer": "a",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b33"
+      },
+      "code": "Q21",
+      "answer": "a",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8e514b41ada420cec63b34"
+      },
+      "code": "Q13",
+      "answer": "a",
+      "star": null
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T02:54:03.656Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T02:54:03.656Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e550a41ada420cec63b3f"
+  },
+  "time": 88,
+  "scope": 120,
+  "lanThi": 2,
+  "user": "5f8e540e41ada420cec63b3b",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q22",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b40"
+      }
+    },
+    {
+      "code": "Q05",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b41"
+      }
+    },
+    {
+      "code": "Q58",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b42"
+      }
+    },
+    {
+      "code": "Q14",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b43"
+      }
+    },
+    {
+      "code": "Q59",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b44"
+      }
+    },
+    {
+      "code": "Q10",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b45"
+      }
+    },
+    {
+      "code": "Q30",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b46"
+      }
+    },
+    {
+      "code": "Q19",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b47"
+      }
+    },
+    {
+      "code": "Q53",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b48"
+      }
+    },
+    {
+      "code": "Q47",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e550a41ada420cec63b49"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e550b41ada420cec63b4a"
+      },
+      "code": "Q22",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e550b41ada420cec63b4b"
+      },
+      "code": "Q58",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e550b41ada420cec63b4c"
+      },
+      "code": "Q59",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e550b41ada420cec63b4d"
+      },
+      "code": "Q10",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e550b41ada420cec63b4e"
+      },
+      "code": "Q30",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e550b41ada420cec63b4f"
+      },
+      "code": "Q47",
+      "answer": "b"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T03:10:03.144Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T03:10:03.144Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e557741ada420cec63b50"
+  },
+  "time": 89,
+  "scope": 60,
+  "exam": "P02",
+  "lanThi": 2,
+  "user": "5f8e540e41ada420cec63b3b",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T03:11:51.343Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T03:11:51.343Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e987f3a5ac1358dea6151"
+  },
+  "time": 116,
+  "scope": 120,
+  "lanThi": 999,
+  "user": "5f8e540e41ada420cec63b3b",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q12",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6152"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6153"
+      }
+    },
+    {
+      "code": "Q05",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6154"
+      }
+    },
+    {
+      "code": "Q50",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6155"
+      }
+    },
+    {
+      "code": "Q34",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6156"
+      }
+    },
+    {
+      "code": "Q20",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6157"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6158"
+      }
+    },
+    {
+      "code": "Q71",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea6159"
+      }
+    },
+    {
+      "code": "Q61",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea615a"
+      }
+    },
+    {
+      "code": "Q54",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e987f3a5ac1358dea615b"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e98803a5ac1358dea615c"
+      },
+      "code": "Q12",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e98803a5ac1358dea615d"
+      },
+      "code": "Q36",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e98803a5ac1358dea615e"
+      },
+      "code": "Q05",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e98803a5ac1358dea615f"
+      },
+      "code": "Q50",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e98803a5ac1358dea6160"
+      },
+      "code": "Q71",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e98803a5ac1358dea6161"
+      },
+      "code": "Q54",
+      "answer": "a"
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T07:57:52.158Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T07:57:52.158Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e99213a5ac1358dea6162"
+  },
+  "time": 92,
+  "scope": 40,
+  "exam": "P02",
+  "lanThi": 999,
+  "user": "5f8e540e41ada420cec63b3b",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T08:00:33.230Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:00:33.230Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e9da73a5ac1358dea6163"
+  },
+  "time": 20,
+  "scope": 20,
+  "lanThi": 999,
+  "user": "5f8e540e41ada420cec63b3b",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q01",
+      "answer": "Q01",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea6164"
+      }
+    },
+    {
+      "code": "Q11",
+      "answer": "Q11",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea6165"
+      }
+    },
+    {
+      "code": "Q05",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea6166"
+      }
+    },
+    {
+      "code": "Q24",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea6167"
+      }
+    },
+    {
+      "code": "Q02",
+      "answer": "Q05",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea6168"
+      }
+    },
+    {
+      "code": "Q29",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea6169"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea616a"
+      }
+    },
+    {
+      "code": "Q39",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea616b"
+      }
+    },
+    {
+      "code": "Q38",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea616c"
+      }
+    },
+    {
+      "code": "Q20",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9da73a5ac1358dea616d"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T08:19:51.619Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:19:51.619Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e9eca3a5ac1358dea6170"
+  },
+  "time": 34,
+  "scope": 60,
+  "lanThi": 2,
+  "user": "5f8e9e823a5ac1358dea616e",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q22",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6171"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6172"
+      }
+    },
+    {
+      "code": "Q13",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6173"
+      }
+    },
+    {
+      "code": "Q53",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6174"
+      }
+    },
+    {
+      "code": "Q08",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6175"
+      }
+    },
+    {
+      "code": "Q59",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6176"
+      }
+    },
+    {
+      "code": "Q71",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6177"
+      }
+    },
+    {
+      "code": "Q41",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6178"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea6179"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea617a"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea617b"
+      },
+      "code": "Q22",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea617c"
+      },
+      "code": "Q21",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8e9eca3a5ac1358dea617d"
+      },
+      "code": "Q13",
+      "answer": "c"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T08:24:42.494Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:24:42.494Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8e9f5c3a5ac1358dea617e"
+  },
+  "time": 126,
+  "scope": 60,
+  "exam": "P02",
+  "lanThi": 2,
+  "user": "5f8e9e823a5ac1358dea616e",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T08:27:09.089Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:27:09.089Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea2543a5ac1358dea6181"
+  },
+  "time": 112,
+  "scope": 200,
+  "lanThi": 999,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q52",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6182"
+      }
+    },
+    {
+      "code": "Q62",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6183"
+      }
+    },
+    {
+      "code": "Q68",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6184"
+      }
+    },
+    {
+      "code": "Q59",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6185"
+      }
+    },
+    {
+      "code": "Q38",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6186"
+      }
+    },
+    {
+      "code": "Q73",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6187"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6188"
+      }
+    },
+    {
+      "code": "Q40",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6189"
+      }
+    },
+    {
+      "code": "Q10",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea618a"
+      }
+    },
+    {
+      "code": "Q55",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea618b"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea618c"
+      },
+      "code": "Q52",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea618d"
+      },
+      "code": "Q62",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea618e"
+      },
+      "code": "Q68",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea618f"
+      },
+      "code": "Q59",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6190"
+      },
+      "code": "Q38",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6191"
+      },
+      "code": "Q73",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6192"
+      },
+      "code": "Q37",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6193"
+      },
+      "code": "Q40",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6194"
+      },
+      "code": "Q10",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea2543a5ac1358dea6195"
+      },
+      "code": "Q55",
+      "answer": "d"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T08:39:48.355Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:39:48.355Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea2e13a5ac1358dea6196"
+  },
+  "time": 132,
+  "scope": 80,
+  "exam": "P02",
+  "lanThi": 999,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T08:42:10.124Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:42:10.124Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea4203a5ac1358dea6197"
+  },
+  "time": 94,
+  "scope": 100,
+  "lanThi": 999,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P03",
+  "answers": [
+    {
+      "code": "Q22",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea6198"
+      }
+    },
+    {
+      "code": "Q24",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea6199"
+      }
+    },
+    {
+      "code": "Q08",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619a"
+      }
+    },
+    {
+      "code": "Q02",
+      "answer": "b",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619b"
+      }
+    },
+    {
+      "code": "Q10",
+      "answer": "c",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619c"
+      }
+    },
+    {
+      "code": "Q11",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619d"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619e"
+      }
+    },
+    {
+      "code": "Q39",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619f"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea6198"
+      },
+      "code": "Q22",
+      "answer": "b",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea6199"
+      },
+      "code": "Q24",
+      "answer": "d",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619a"
+      },
+      "code": "Q08",
+      "answer": "c",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619b"
+      },
+      "code": "Q02",
+      "answer": "b",
+      "star": "on"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619c"
+      },
+      "code": "Q10",
+      "answer": "c",
+      "star": "on"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619d"
+      },
+      "code": "Q11",
+      "answer": "a",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619e"
+      },
+      "code": "Q36",
+      "answer": "b",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea4203a5ac1358dea619f"
+      },
+      "code": "Q39",
+      "answer": "d",
+      "star": null
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T08:47:28.888Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:47:28.888Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea5013a5ac1358dea61a8"
+  },
+  "time": 20,
+  "scope": 100,
+  "lanThi": 999,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q19",
+      "answer": "Q19",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61a9"
+      }
+    },
+    {
+      "code": "Q28",
+      "answer": "Q28",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61aa"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "Q01",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61ab"
+      }
+    },
+    {
+      "code": "Q03",
+      "answer": "Q03",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61ac"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": "Q36",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61ad"
+      }
+    },
+    {
+      "code": "Q12",
+      "answer": "Q12",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61ae"
+      }
+    },
+    {
+      "code": "Q07",
+      "answer": "Q07",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61af"
+      }
+    },
+    {
+      "code": "Q29",
+      "answer": "Q29",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61b0"
+      }
+    },
+    {
+      "code": "Q05",
+      "answer": "Q05",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61b1"
+      }
+    },
+    {
+      "code": "Q24",
+      "answer": "Q24",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea5013a5ac1358dea61b2"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T08:51:13.241Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:51:13.241Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea6a33a5ac1358dea61b3"
+  },
+  "time": 95,
+  "scope": 180,
+  "lanThi": 998,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q40",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61b4"
+      }
+    },
+    {
+      "code": "Q10",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61b5"
+      }
+    },
+    {
+      "code": "Q06",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61b6"
+      }
+    },
+    {
+      "code": "Q09",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61b7"
+      }
+    },
+    {
+      "code": "Q03",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61b8"
+      }
+    },
+    {
+      "code": "Q41",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61b9"
+      }
+    },
+    {
+      "code": "Q53",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61ba"
+      }
+    },
+    {
+      "code": "Q33",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61bb"
+      }
+    },
+    {
+      "code": "Q69",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61bc"
+      }
+    },
+    {
+      "code": "Q68",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61bd"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61be"
+      },
+      "code": "Q40",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61bf"
+      },
+      "code": "Q10",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61c0"
+      },
+      "code": "Q06",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61c1"
+      },
+      "code": "Q03",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61c2"
+      },
+      "code": "Q41",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61c3"
+      },
+      "code": "Q53",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61c4"
+      },
+      "code": "Q33",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61c5"
+      },
+      "code": "Q69",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea6a33a5ac1358dea61c6"
+      },
+      "code": "Q68",
+      "answer": "a"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T08:58:11.741Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:58:11.741Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea6fa3a5ac1358dea61c7"
+  },
+  "time": 66,
+  "scope": 60,
+  "exam": "P02",
+  "lanThi": 998,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T08:59:38.632Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T08:59:38.632Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea78d3a5ac1358dea61c8"
+  },
+  "time": 78,
+  "scope": 55,
+  "lanThi": 998,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P03",
+  "answers": [
+    {
+      "code": "Q19",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61c9"
+      }
+    },
+    {
+      "code": "Q17",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61ca"
+      }
+    },
+    {
+      "code": "Q16",
+      "answer": "c",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61cb"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61cc"
+      }
+    },
+    {
+      "code": "Q33",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61cd"
+      }
+    },
+    {
+      "code": "Q29",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61ce"
+      }
+    },
+    {
+      "code": "Q38",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61cf"
+      }
+    },
+    {
+      "code": "Q34",
+      "answer": "b",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61d0"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61c9"
+      },
+      "code": "Q19",
+      "answer": "d",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61cb"
+      },
+      "code": "Q16",
+      "answer": "c",
+      "star": "on"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61cc"
+      },
+      "code": "Q21",
+      "answer": "a",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61ce"
+      },
+      "code": "Q29",
+      "answer": "c",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea78d3a5ac1358dea61d0"
+      },
+      "code": "Q34",
+      "answer": "b",
+      "star": "on"
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T09:02:05.473Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T09:02:05.473Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea8663a5ac1358dea61d6"
+  },
+  "time": 20,
+  "scope": 100,
+  "lanThi": 998,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q40",
+      "answer": "Q40",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61d7"
+      }
+    },
+    {
+      "code": "Q18",
+      "answer": "Q18",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61d8"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": "Q37",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61d9"
+      }
+    },
+    {
+      "code": "Q11",
+      "answer": "Q11",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61da"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "Q01",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61db"
+      }
+    },
+    {
+      "code": "Q04",
+      "answer": "Q04",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61dc"
+      }
+    },
+    {
+      "code": "Q23",
+      "answer": "Q23",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61dd"
+      }
+    },
+    {
+      "code": "Q02",
+      "answer": "Q02",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61de"
+      }
+    },
+    {
+      "code": "Q14",
+      "answer": "Q14",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61df"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "Q21",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8663a5ac1358dea61e0"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T09:05:42.789Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T09:05:42.789Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea8f13a5ac1358dea61e1"
+  },
+  "time": 62,
+  "scope": 40,
+  "lanThi": 997,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q11",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e2"
+      }
+    },
+    {
+      "code": "Q45",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e3"
+      }
+    },
+    {
+      "code": "Q18",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e4"
+      }
+    },
+    {
+      "code": "Q22",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e5"
+      }
+    },
+    {
+      "code": "Q26",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e6"
+      }
+    },
+    {
+      "code": "Q72",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e7"
+      }
+    },
+    {
+      "code": "Q54",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e8"
+      }
+    },
+    {
+      "code": "Q56",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61e9"
+      }
+    },
+    {
+      "code": "Q08",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61ea"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61eb"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61ec"
+      },
+      "code": "Q11",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ea8f13a5ac1358dea61ed"
+      },
+      "code": "Q18",
+      "answer": "d"
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T09:08:01.536Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T09:08:01.536Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea9923a5ac1358dea61ee"
+  },
+  "time": 128,
+  "scope": 120,
+  "exam": "P02",
+  "lanThi": 997,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T09:10:42.267Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T09:10:42.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ea9db3a5ac1358dea61ef"
+  },
+  "time": 14,
+  "scope": 0,
+  "lanThi": 997,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q39",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f0"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f1"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f2"
+      }
+    },
+    {
+      "code": "Q30",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f3"
+      }
+    },
+    {
+      "code": "Q27",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f4"
+      }
+    },
+    {
+      "code": "Q26",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f5"
+      }
+    },
+    {
+      "code": "Q38",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f6"
+      }
+    },
+    {
+      "code": "Q20",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f7"
+      }
+    },
+    {
+      "code": "Q41",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f8"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ea9db3a5ac1358dea61f9"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T09:11:55.251Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T09:11:55.251Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8eaa473a5ac1358dea61fa"
+  },
+  "time": 69,
+  "scope": 160,
+  "lanThi": 996,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q42",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea61fb"
+      }
+    },
+    {
+      "code": "Q41",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea61fc"
+      }
+    },
+    {
+      "code": "Q16",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea61fd"
+      }
+    },
+    {
+      "code": "Q60",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea61fe"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea61ff"
+      }
+    },
+    {
+      "code": "Q45",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6200"
+      }
+    },
+    {
+      "code": "Q28",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6201"
+      }
+    },
+    {
+      "code": "Q70",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6202"
+      }
+    },
+    {
+      "code": "Q33",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6203"
+      }
+    },
+    {
+      "code": "Q71",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6204"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6205"
+      },
+      "code": "Q41",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6206"
+      },
+      "code": "Q16",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6207"
+      },
+      "code": "Q60",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6208"
+      },
+      "code": "Q36",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea6209"
+      },
+      "code": "Q28",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea620a"
+      },
+      "code": "Q70",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea620b"
+      },
+      "code": "Q33",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eaa473a5ac1358dea620c"
+      },
+      "code": "Q71",
+      "answer": "a"
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T09:13:43.232Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T09:13:43.232Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ead283a5ac1358dea620d"
+  },
+  "time": 92,
+  "scope": 20,
+  "exam": "P02",
+  "lanThi": 996,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T09:26:00.512Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T09:26:00.512Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ecce03a5ac1358dea6210"
+  },
+  "time": 11,
+  "scope": 0,
+  "lanThi": 996,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q05",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6211"
+      }
+    },
+    {
+      "code": "Q36",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6212"
+      }
+    },
+    {
+      "code": "Q34",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6213"
+      }
+    },
+    {
+      "code": "Q18",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6214"
+      }
+    },
+    {
+      "code": "Q27",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6215"
+      }
+    },
+    {
+      "code": "Q06",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6216"
+      }
+    },
+    {
+      "code": "Q12",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6217"
+      }
+    },
+    {
+      "code": "Q08",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6218"
+      }
+    },
+    {
+      "code": "Q26",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea6219"
+      }
+    },
+    {
+      "code": "Q02",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecce03a5ac1358dea621a"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T11:41:20.392Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T11:41:20.392Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ecd4d3a5ac1358dea621b"
+  },
+  "time": 42,
+  "scope": 120,
+  "lanThi": 995,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q53",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea621c"
+      }
+    },
+    {
+      "code": "Q41",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea621d"
+      }
+    },
+    {
+      "code": "Q49",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea621e"
+      }
+    },
+    {
+      "code": "Q50",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea621f"
+      }
+    },
+    {
+      "code": "Q39",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6220"
+      }
+    },
+    {
+      "code": "Q16",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6221"
+      }
+    },
+    {
+      "code": "Q58",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6222"
+      }
+    },
+    {
+      "code": "Q15",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6223"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6224"
+      }
+    },
+    {
+      "code": "Q55",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6225"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6226"
+      },
+      "code": "Q53",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6227"
+      },
+      "code": "Q50",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6228"
+      },
+      "code": "Q16",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea6229"
+      },
+      "code": "Q58",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea622a"
+      },
+      "code": "Q21",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ecd4d3a5ac1358dea622b"
+      },
+      "code": "Q55",
+      "answer": "d"
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T11:43:09.562Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T11:43:09.562Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ecdb73a5ac1358dea622c"
+  },
+  "time": 102,
+  "scope": 100,
+  "exam": "P02",
+  "lanThi": 995,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T11:44:56.044Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T11:44:56.044Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ecdcd3a5ac1358dea622d"
+  },
+  "time": 2,
+  "scope": 0,
+  "lanThi": 995,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q33",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea622e"
+      }
+    },
+    {
+      "code": "Q20",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea622f"
+      }
+    },
+    {
+      "code": "Q19",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6230"
+      }
+    },
+    {
+      "code": "Q22",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6231"
+      }
+    },
+    {
+      "code": "Q27",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6232"
+      }
+    },
+    {
+      "code": "Q04",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6233"
+      }
+    },
+    {
+      "code": "Q40",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6234"
+      }
+    },
+    {
+      "code": "Q07",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6235"
+      }
+    },
+    {
+      "code": "Q29",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6236"
+      }
+    },
+    {
+      "code": "Q34",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ecdcd3a5ac1358dea6237"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T11:45:17.673Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T11:45:17.673Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ece653a5ac1358dea6239"
+  },
+  "time": 6,
+  "scope": 0,
+  "lanThi": 994,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q68",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea623a"
+      }
+    },
+    {
+      "code": "Q53",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea623b"
+      }
+    },
+    {
+      "code": "Q52",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea623c"
+      }
+    },
+    {
+      "code": "Q18",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea623d"
+      }
+    },
+    {
+      "code": "Q14",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea623e"
+      }
+    },
+    {
+      "code": "Q28",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea623f"
+      }
+    },
+    {
+      "code": "Q72",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea6240"
+      }
+    },
+    {
+      "code": "Q20",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea6241"
+      }
+    },
+    {
+      "code": "Q54",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea6242"
+      }
+    },
+    {
+      "code": "Q60",
+      "answer": null,
+      "star": null,
+      "_id": {
+        "$oid": "5f8ece653a5ac1358dea6243"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T11:47:50.095Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T11:47:50.095Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8eceb33a5ac1358dea6244"
+  },
+  "time": 71,
+  "scope": 100,
+  "exam": "P02",
+  "lanThi": 994,
+  "user": "5f8d52171394497c3a4ab4fc",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T11:49:07.802Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T11:49:07.802Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ee0e03a5ac1358dea6249"
+  },
+  "time": 113,
+  "scope": 120,
+  "lanThi": 999,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q26",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea624a"
+      }
+    },
+    {
+      "code": "Q34",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea624b"
+      }
+    },
+    {
+      "code": "Q55",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea624c"
+      }
+    },
+    {
+      "code": "Q56",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea624d"
+      }
+    },
+    {
+      "code": "Q46",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea624e"
+      }
+    },
+    {
+      "code": "Q24",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea624f"
+      }
+    },
+    {
+      "code": "Q69",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6250"
+      }
+    },
+    {
+      "code": "Q68",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6251"
+      }
+    },
+    {
+      "code": "Q04",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6252"
+      }
+    },
+    {
+      "code": "Q16",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6253"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6254"
+      },
+      "code": "Q55",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6255"
+      },
+      "code": "Q24",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6256"
+      },
+      "code": "Q69",
+      "answer": "d"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6257"
+      },
+      "code": "Q68",
+      "answer": "a"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6258"
+      },
+      "code": "Q04",
+      "answer": "c"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee0e03a5ac1358dea6259"
+      },
+      "code": "Q16",
+      "answer": "d"
+    }
+  ],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T13:06:41.011Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:06:41.011Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ee1763a5ac1358dea625a"
+  },
+  "time": 131,
+  "scope": 80,
+  "exam": "P02",
+  "lanThi": 999,
+  "user": "5f8e40a041ada420cec63ac1",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T13:09:11.138Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:09:11.138Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ee2363a5ac1358dea625b"
+  },
+  "time": 69,
+  "scope": -5,
+  "lanThi": 999,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P03",
+  "answers": [
+    {
+      "code": "Q23",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea625c"
+      }
+    },
+    {
+      "code": "Q22",
+      "answer": "b",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea625d"
+      }
+    },
+    {
+      "code": "Q17",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea625e"
+      }
+    },
+    {
+      "code": "Q19",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea625f"
+      }
+    },
+    {
+      "code": "Q07",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea6260"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea6261"
+      }
+    },
+    {
+      "code": "Q31",
+      "answer": "d",
+      "star": "on",
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea6262"
+      }
+    },
+    {
+      "code": "Q32",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea6263"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea625d"
+      },
+      "code": "Q22",
+      "answer": "b",
+      "star": "on"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ee2363a5ac1358dea6260"
+      },
+      "code": "Q07",
+      "answer": "b",
+      "star": null
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T13:12:23.105Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:12:23.105Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8ee2e83a5ac1358dea6266"
+  },
+  "time": 20,
+  "scope": 30,
+  "lanThi": 999,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q40",
+      "answer": "Q40",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea6267"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": "Q37",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea6268"
+      }
+    },
+    {
+      "code": "Q33",
+      "answer": "Q33",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea6269"
+      }
+    },
+    {
+      "code": "Q21",
+      "answer": "Q05",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea626a"
+      }
+    },
+    {
+      "code": "Q12",
+      "answer": "Q01",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea626b"
+      }
+    },
+    {
+      "code": "Q04",
+      "answer": "Q12",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea626c"
+      }
+    },
+    {
+      "code": "Q30",
+      "answer": "Q17",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea626d"
+      }
+    },
+    {
+      "code": "Q05",
+      "answer": "Q21",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea626e"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "Q30",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea626f"
+      }
+    },
+    {
+      "code": "Q17",
+      "answer": "Q04",
+      "star": null,
+      "_id": {
+        "$oid": "5f8ee2e83a5ac1358dea6270"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T13:15:20.956Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:15:20.956Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8eeb753a5ac1358dea6275"
+  },
+  "time": 137,
+  "scope": 40,
+  "lanThi": 998,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P01",
+  "answers": [
+    {
+      "code": "Q68",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea6276"
+      }
+    },
+    {
+      "code": "Q26",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea6277"
+      }
+    },
+    {
+      "code": "Q57",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea6278"
+      }
+    },
+    {
+      "code": "Q52",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea6279"
+      }
+    },
+    {
+      "code": "Q24",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea627a"
+      }
+    },
+    {
+      "code": "Q70",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea627b"
+      }
+    },
+    {
+      "code": "Q34",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea627c"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea627d"
+      }
+    },
+    {
+      "code": "Q10",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea627e"
+      }
+    },
+    {
+      "code": "Q25",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea627f"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea6280"
+      },
+      "code": "Q24",
+      "answer": "b"
+    },
+    {
+      "_id": {
+        "$oid": "5f8eeb753a5ac1358dea6281"
+      },
+      "code": "Q10",
+      "answer": "d"
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T13:51:49.569Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:51:49.569Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8eebfa3a5ac1358dea6282"
+  },
+  "time": 117,
+  "scope": 20,
+  "exam": "P02",
+  "lanThi": 998,
+  "user": "5f8e40a041ada420cec63ac1",
+  "answers": [],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T13:54:02.458Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:54:02.458Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8eecb43a5ac1358dea6283"
+  },
+  "time": 103,
+  "scope": -10,
+  "lanThi": 998,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P03",
+  "answers": [
+    {
+      "code": "Q11",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6284"
+      }
+    },
+    {
+      "code": "Q10",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6285"
+      }
+    },
+    {
+      "code": "Q42",
+      "answer": "c",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6286"
+      }
+    },
+    {
+      "code": "Q40",
+      "answer": "b",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6287"
+      }
+    },
+    {
+      "code": "Q31",
+      "answer": "a",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6288"
+      }
+    },
+    {
+      "code": "Q33",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6289"
+      }
+    },
+    {
+      "code": "Q37",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea628a"
+      }
+    },
+    {
+      "code": "Q38",
+      "answer": "d",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea628b"
+      }
+    }
+  ],
+  "answersTrue": [
+    {
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6284"
+      },
+      "code": "Q11",
+      "answer": "a",
+      "star": null
+    },
+    {
+      "_id": {
+        "$oid": "5f8eecb43a5ac1358dea6288"
+      },
+      "code": "Q31",
+      "answer": "a",
+      "star": null
+    }
+  ],
+  "bestest": false,
+  "createdAt": {
+    "$date": "2020-10-20T13:57:08.699Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:57:08.699Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f8eed463a5ac1358dea628e"
+  },
+  "time": 20,
+  "scope": 30,
+  "lanThi": 998,
+  "user": "5f8e40a041ada420cec63ac1",
+  "exam": "P04",
+  "answers": [
+    {
+      "code": "Q41",
+      "answer": "Q41",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea628f"
+      }
+    },
+    {
+      "code": "Q33",
+      "answer": "Q33",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6290"
+      }
+    },
+    {
+      "code": "Q16",
+      "answer": "Q16",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6291"
+      }
+    },
+    {
+      "code": "Q08",
+      "answer": "Q04",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6292"
+      }
+    },
+    {
+      "code": "Q19",
+      "answer": "Q01",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6293"
+      }
+    },
+    {
+      "code": "Q20",
+      "answer": "Q19",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6294"
+      }
+    },
+    {
+      "code": "Q15",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6295"
+      }
+    },
+    {
+      "code": "Q04",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6296"
+      }
+    },
+    {
+      "code": "Q06",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6297"
+      }
+    },
+    {
+      "code": "Q01",
+      "answer": "",
+      "star": null,
+      "_id": {
+        "$oid": "5f8eed463a5ac1358dea6298"
+      }
+    }
+  ],
+  "answersTrue": [],
+  "bestest": true,
+  "createdAt": {
+    "$date": "2020-10-20T13:59:34.182Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T13:59:34.182Z"
   },
   "__v": 0
 }]

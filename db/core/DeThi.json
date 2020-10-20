@@ -1135,7 +1135,7 @@
         "$oid": "5f8d4b211394497c3a4ab4e2"
       },
       "code": "Q19",
-      "question": "When does the Nghinh Co Festival, one of the biggest Southern fishermen festivals, take place?",
+      "question": "When does the Dinh Co Festival, one of the biggest Southern fishermen festivals, take place?",
       "location": "longdien",
       "a": "10th January in Lunar Calender",
       "b": "15th August in Lunar Calender",
@@ -1460,7 +1460,7 @@
     "$date": "2020-10-14T16:43:46.730Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T08:40:53.409Z"
+    "$date": "2020-10-20T03:34:45.238Z"
   },
   "__v": 42
 },{
@@ -1487,7 +1487,7 @@
         "$oid": "5f87fe5bd1a12e581c5cb6a0"
       },
       "code": "Q02",
-      "question": "Question 2: When is the Thang Tam temple Festival held?",
+      "question": "When is the Thang Tam temple Festival held?",
       "a": "The third lunar month",
       "true": "b",
       "b": "The second lunar month",
@@ -2255,7 +2255,7 @@
     "$date": "2020-10-15T03:27:44.419Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T08:29:44.149Z"
+    "$date": "2020-10-20T11:46:12.167Z"
   },
   "__v": 64
 },{
@@ -2560,7 +2560,7 @@
       "code": "Q33",
       "question": "Phu My is a city of class ...",
       "true": "Q33",
-      "a": "4"
+      "a": "IV"
     },
     {
       "_id": {
@@ -2639,7 +2639,106 @@
     "$date": "2020-10-19T07:45:17.468Z"
   },
   "updatedAt": {
-    "$date": "2020-10-19T08:06:04.934Z"
+    "$date": "2020-10-20T02:50:36.916Z"
   },
   "__v": 40
+},{
+  "_id": {
+    "$oid": "5f8ef1f72694f12ea4e8b457"
+  },
+  "name": "Phần 2 - Hình nền",
+  "code": "P020",
+  "questions": [
+    {
+      "_id": {
+        "$oid": "5f8ef1f72694f12ea4e8b458"
+      },
+      "image": "/images/section-2/who is she.jpg",
+      "question": "who is she.jpg",
+      "true": "a",
+      "a": "Câu A",
+      "b": "Câu B",
+      "c": "Câu C",
+      "d": "Câu D"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ef525d45b09090cc955ab"
+      },
+      "image": "/images/section-2/where is this locate.jpg",
+      "question": "where is this locate.jpg",
+      "true": "a",
+      "a": "Câu A",
+      "b": "Câu B",
+      "c": "Câu C",
+      "d": "Câu D"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ef56cd45b09090cc955ac"
+      },
+      "image": "/images/section-2/where is this locate 1.jpg",
+      "question": "where is this locate 1.jpg",
+      "a": "Câu A",
+      "b": "Câu B",
+      "c": "Câu C",
+      "true": "d",
+      "d": "Câu D"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ef580d45b09090cc955ad"
+      },
+      "image": "/images/section-2/where is this locate 2.jpg",
+      "question": "where is this locate 2.jpg",
+      "true": "a",
+      "a": "Câu A",
+      "b": "Câu B",
+      "c": "Câu C",
+      "d": "Câu D"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ef595d45b09090cc955ae"
+      },
+      "image": "/images/section-2/where is this locate 3.jpg",
+      "question": "where is this locate 3.jpg",
+      "true": "a",
+      "a": "Câu A",
+      "b": "Câu B",
+      "c": "Câu C",
+      "d": "Câu D"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ef5aad45b09090cc955af"
+      },
+      "image": "/images/section-2/where is this locate 4.jpg",
+      "question": "where is this locate 4.jpg",
+      "a": "Câu A",
+      "true": "b",
+      "b": "Câu B",
+      "c": "Câu C",
+      "d": "Câu D"
+    },
+    {
+      "_id": {
+        "$oid": "5f8ef5bcd45b09090cc955b0"
+      },
+      "image": "/images/section-2/where is this locate 5.jpg",
+      "question": "where is this locate 5.jpg",
+      "true": "a",
+      "a": "Câu A",
+      "b": "Câu B",
+      "c": "Câu C",
+      "d": "Câu D"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-10-20T14:19:35.791Z"
+  },
+  "updatedAt": {
+    "$date": "2020-10-20T14:51:49.240Z"
+  },
+  "__v": 6
 }]
