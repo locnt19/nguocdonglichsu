@@ -200,8 +200,7 @@ exports.templateSection3 = async (req, res) => {
           randomTanThanhQuestion.push(tanthanh.questions[indexTanThanhRandom[i]]);
         }
         tanthanh.questions = randomTanThanhQuestion.slice(0, 2);
-        condao.questions = randomConDaoQuestion.slice(0, 2);
-
+        
         const indexChauDucRandom = randomRange(chauduc.questions.length);
         let randomChauDucQuestion = [];
         for (var i = 0; i < indexChauDucRandom.length; i++) {
