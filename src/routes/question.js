@@ -41,8 +41,19 @@ router.route('/section-4/create')
   .get(questionController.templateSection4Create)
   .post(questionController.createSection4)
 
-  router.route('/section-4/edit/:id')
+router.route('/section-4/edit/:id')
   .get(questionController.templateSection4Edit)
+  .post(questionController.editSection1234)
+
+router.route('/section-2-hinh-nen')
+  .get(questionController.templateSection2HinhNen)
+
+router.route('/section-2-hinh-nen/create')
+  .get(questionController.templateSection2HinhNenCreate)
+  .post(questionController.createSection2HinhNen)
+
+router.route('/section-2-hinh-nen/edit/:id')
+  .get(questionController.templateSection2HinhNenEdit)
   .post(questionController.editSection1234)
 
 module.exports = router

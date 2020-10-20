@@ -623,7 +623,7 @@ function section4() {
   });
 
   // Timer
-  const timeLimited = 100;
+  const timeLimited = 200;
   let currentTime = 0;
   let stopTimer = false;
 

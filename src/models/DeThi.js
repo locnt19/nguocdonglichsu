@@ -7,6 +7,7 @@ const deThiSchema = mongoose.Schema({
     code: { type: String },
     location: { type: String },
     question: { type: String },
+    image: { type: String },
     a: { type: String },
     b: { type: String },
     c: { type: String },
