@@ -15,4 +15,8 @@ $(document).ready(function () {
   $('#table_section2_list').DataTable();
   $('#table_section3_list').DataTable();
   $('#table_section4_list').DataTable();
+  $('#table_section2_hinhnen_list').DataTable({
+    order: [],
+    columnDefs: [{ orderable: false, targets: [0, 1] }]
+  });
 });

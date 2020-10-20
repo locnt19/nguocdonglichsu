@@ -235,8 +235,58 @@ exports.editSection1234 = async (req, res) => {
     case 'P04':
       res.render('admin/section-4-edit.pug', { cauHoi: cauHoi, deThi: deThi });
       break;
+    case 'P020':
+      res.render('admin/section-2-hinh-nen-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+      break;
     default:
       break;
   }
 }
 //#endregion
+
+//#region Phần 2 Hình nền
+exports.templateSection2HinhNen = async (req, res) => {
+  const deThi = await DeThi.findOne({ code: 'P020' })
+  res.render('admin/section-2-hinh-nen.pug', { deThi: deThi })
+}
+
+exports.templateSection2HinhNenCreate = async (req, res) => {
+  const deThi = await DeThi.findOne({ code: 'P020' })
+  res.render('admin/section-2-hinh-nen-create.pug', { deThi: deThi })
+}
+
+exports.templateSection2HinhNenEdit = async (req, res) => {
+  const deThi = await DeThi.findOne({ code: 'P020' });
+  let cauHoi;
+  for (const item of deThi.questions) {
+    if (item._id.toString() === req.params.id) {
+      cauHoi = item;
+      break;
+    }
+  }
+  res.render('admin/section-2-hinh-nen-edit.pug', { cauHoi: cauHoi, deThi: deThi });
+}
+
+exports.createSection2HinhNen = async (req, res) => {
+  try {
+    const deThiDaTonTai = await DeThi.findOne({ code: req.body.code })
+    // lưu nếu chưa tồn tại section-2-hinh-nen
+    if (deThiDaTonTai === null) {
+      const deThiMoi = new DeThi(req.body);
+      await deThiMoi.save()
+      req.flash('message', 'Tạo thành công')
+      res.redirect('/questions/section-2-hinh-nen/create')
+    }
+    else {
+      const deThi = await DeThi.findOne({ code: req.body.code })
+      deThi.questions.push(req.body.questions[0])
+      await deThi.save()
+      // thông báo tạo thành công
+      req.flash('message', 'Thêm thành công')
+      res.redirect('/questions/section-2-hinh-nen/create')
+    }
+  } catch (error) {
+    req.flash('message', error)
+    res.render('admin/section-2-hinh-nen-create.pug')
+  }
+}

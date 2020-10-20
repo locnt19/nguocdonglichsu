@@ -12,7 +12,8 @@ exports.templateDashboard = (req, res) => {
 
 exports.templateXepHang = async (req, res) => {
   const listBaiThi = await BaiThi.find({ bestest: true });
-  const listUser = await User.find({ "lanThi.luotThi": { $lt: 2 } }); // https://stackjava.com/mongodb/truy-van-du-lieu-document-find-select-where-trong-mongodb.html
+  // const listUser = await User.find({ "lanThi.luotThi": { $lt: 2 } }); // https://stackjava.com/mongodb/truy-van-du-lieu-document-find-select-where-trong-mongodb.html
+  const listUser = await User.find();
   // console.log(listBaiThi);
   // console.log("================");
   // console.log(listUser);
