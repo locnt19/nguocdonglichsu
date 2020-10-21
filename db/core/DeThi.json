@@ -2654,91 +2654,91 @@
         "$oid": "5f8ef1f72694f12ea4e8b458"
       },
       "image": "/images/section-2/who is she.jpg",
-      "question": "who is she.jpg",
-      "true": "a",
-      "a": "Câu A",
-      "b": "Câu B",
-      "c": "Câu C",
-      "d": "Câu D"
+      "question": "who is she?",
+      "true": "b",
+      "a": "Nguyen Thi Dep",
+      "b": "Vo Thi Sau",
+      "c": "Nguyen Thi Thanh",
+      "d": "Duong Bạc Mai"
     },
     {
       "_id": {
         "$oid": "5f8ef525d45b09090cc955ab"
       },
       "image": "/images/section-2/where is this locate.jpg",
-      "question": "where is this locate.jpg",
-      "true": "a",
-      "a": "Câu A",
-      "b": "Câu B",
-      "c": "Câu C",
-      "d": "Câu D"
+      "question": "where is this locate?",
+      "true": "b",
+      "a": "Vung Tau city",
+      "b": "Dat Do district",
+      "c": "Long Dien district",
+      "d": "Chau Duc district"
     },
     {
       "_id": {
         "$oid": "5f8ef56cd45b09090cc955ac"
       },
       "image": "/images/section-2/where is this locate 1.jpg",
-      "question": "where is this locate 1.jpg",
-      "a": "Câu A",
-      "b": "Câu B",
-      "c": "Câu C",
-      "true": "d",
-      "d": "Câu D"
+      "question": "where is this locate?",
+      "a": "Con Dao district",
+      "b": "Chau Duc district",
+      "c": "Ba Ria city",
+      "true": "b",
+      "d": "Vung Tau city"
     },
     {
       "_id": {
         "$oid": "5f8ef580d45b09090cc955ad"
       },
       "image": "/images/section-2/where is this locate 2.jpg",
-      "question": "where is this locate 2.jpg",
+      "question": "where is this locate?",
       "true": "a",
-      "a": "Câu A",
-      "b": "Câu B",
-      "c": "Câu C",
-      "d": "Câu D"
+      "a": "Ba Ria city",
+      "b": "Vung Tau city",
+      "c": "Dat Do district",
+      "d": "Xuyen Moc district"
     },
     {
       "_id": {
         "$oid": "5f8ef595d45b09090cc955ae"
       },
       "image": "/images/section-2/where is this locate 3.jpg",
-      "question": "where is this locate 3.jpg",
-      "true": "a",
-      "a": "Câu A",
-      "b": "Câu B",
-      "c": "Câu C",
-      "d": "Câu D"
+      "question": "where is this locate?",
+      "true": "b",
+      "a": "Ba Ria city",
+      "b": "Vung Tau city",
+      "c": "Xuyen Moc district",
+      "d": "Long Dien distrct"
     },
     {
       "_id": {
         "$oid": "5f8ef5aad45b09090cc955af"
       },
       "image": "/images/section-2/where is this locate 4.jpg",
-      "question": "where is this locate 4.jpg",
-      "a": "Câu A",
+      "question": "where is this locate?",
+      "a": "Long Dien district",
       "true": "b",
-      "b": "Câu B",
-      "c": "Câu C",
-      "d": "Câu D"
+      "b": "Con Dao district",
+      "c": "Chau Duc district",
+      "d": "Vung Tau city"
     },
     {
       "_id": {
         "$oid": "5f8ef5bcd45b09090cc955b0"
       },
       "image": "/images/section-2/where is this locate 5.jpg",
-      "question": "where is this locate 5.jpg",
+      "question": "where is this locate?",
       "true": "a",
-      "a": "Câu A",
-      "b": "Câu B",
-      "c": "Câu C",
-      "d": "Câu D"
+      "a": "Dat Do district",
+      "b": "Long Dien district",
+      "c": "Vũng Tau city",
+      "d": "Xuyen Moc district"
     }
   ],
   "createdAt": {
     "$date": "2020-10-20T14:19:35.791Z"
   },
   "updatedAt": {
-    "$date": "2020-10-20T14:51:49.240Z"
+    "$date": "2020-10-21T01:49:07.095Z"
   },
   "__v": 6
 }]
