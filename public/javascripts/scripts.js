@@ -194,7 +194,7 @@ function section2() {
   let section2IntervalPendingTimer;
   let summaryTimer = 0;
   let questionPendingTimer = 999;
-  let totalQuestions = 9;
+  let anwserBackGroundIsCorrect = false;
   const timeLimited = 999;
   const $summaryTimer = $('#section2__summaryTimer');
   const $questionPendingTimer = $('#section2__questionPendingTimer');
@@ -321,8 +321,8 @@ function section2() {
   function checkAnwserBackground(isCorrect) {
     clearInterval(section2IntervalTimer);
     if (isCorrect) {
-      summaryCorrectAnwsered = totalQuestions - summaryWrongAnwsered;
-      chamDiemThi();
+      anwserBackGroundIsCorrect = true;
+      chamDiemThi(anwserBackGroundIsCorrect);
       $('.section2__question__card__item')
         .css('border', 'none')
         .removeClass('pending wrong')
@@ -338,8 +338,12 @@ function section2() {
     }
   }
 
-  function chamDiemThi() {
-    score = 20 * summaryCorrectAnwsered;
+  function chamDiemThi(anwserBackGroundIsCorrect = false) {
+    if (anwserBackGroundIsCorrect) {
+      score = 120 - 10 * summaryWrongAnwsered; // => 120 là tổng số điểm của Round 2.
+    } else {
+      score = 10 * summaryCorrectAnwsered;
+    }
     $('#section2__score').val(score);
     $('#section2__summaryTimeeee').val(summaryTimer);
     Toastify({
