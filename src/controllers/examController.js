@@ -314,7 +314,7 @@ exports.nopBaiThi1 = async (req, res) => {
       }
     }
     const result = compareArray(anwsersFiltered, questionsFilltered);
-    baiThi.scope = result.correct.length * 20;
+    baiThi.scope = result.correct.length * 10;
     baiThi.answersTrue = result.correct;
 
     const baiThiOfUser = await BaiThi.findOne({
