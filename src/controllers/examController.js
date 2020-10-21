@@ -437,9 +437,10 @@ exports.nopBaiThi3 = async (req, res) => {
     for (const item of result.wrong) {
       if (item.star !== null) {
         wrongPoint -= 10;
-      } else {
-        wrongPoint -= 5;
       }
+      // else {
+      // wrongPoint -= 5;
+      // }
     }
 
     baiThi.scope = correctPoint + wrongPoint;
