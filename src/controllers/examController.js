@@ -314,7 +314,7 @@ exports.nopBaiThi1 = async (req, res) => {
       }
     }
     const result = compareArray(anwsersFiltered, questionsFilltered);
-    baiThi.scope = result.correct.length * 20;
+    baiThi.scope = result.correct.length * 10;
     baiThi.answersTrue = result.correct;
 
     const baiThiOfUser = await BaiThi.findOne({
@@ -437,9 +437,10 @@ exports.nopBaiThi3 = async (req, res) => {
     for (const item of result.wrong) {
       if (item.star !== null) {
         wrongPoint -= 10;
-      } else {
-        wrongPoint -= 5;
       }
+      // else {
+      // wrongPoint -= 5;
+      // }
     }
 
     baiThi.scope = correctPoint + wrongPoint;
