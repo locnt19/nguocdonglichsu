@@ -7,7 +7,7 @@ exports.templateTrangChu = async (req, res) => {
   const thoiGianThi = await ThoiGianThi.findOne({ name: 'Đợt 1' });
   thoiGianThi.startDate = moment(thoiGianThi.startDate).format('DD-MM-YYYY');
   thoiGianThi.finishDate = moment(thoiGianThi.finishDate).format('DD-MM-YYYY');
-
+  const formatedThoiGianThiFinishDate = moment(thoiGianThi.finishDate).format('YYYY-MM-DD');
   const baiThiTotNhat = await BaiThi.find({
     user: res.locals.user._id,
     bestest: true,
@@ -24,6 +24,7 @@ exports.templateTrangChu = async (req, res) => {
   res.render('index.pug', {
     title: 'Home - Stepping back in History',
     thoiGianThi: thoiGianThi,
+    formatedThoiGianThiFinishDate: formatedThoiGianThiFinishDate,
     baiThiTotNhat: baiThiTotNhat,
     summaryScore: summaryScore,
     summaryTime: summaryTime,

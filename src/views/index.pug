@@ -103,16 +103,26 @@ block content
                   span 0
                 else
                   span #{user.lanThi.luotThi}
-            //- h5.text-center.text-sm-left
+            h5.text-center.text-sm-left
+              input#index__thoigianconlai.d-none(value=formatedThoiGianThiFinishDate ? `${formatedThoiGianThiFinishDate} ${thoiGianThi.finishTime} ${thoiGianThi.timeZone}` : null)
               if thoiGianThi
-                .small Thời gian bắt đầu #{thoiGianThi.name}:&nbsp;
-                  strong #{thoiGianThi.startTime}
+                .small.font-weight-normal Thời gian bắt đầu:&nbsp;
+                  strong.font-weight-bold #{thoiGianThi.startTime}
                   span &nbsp;ngày&nbsp;
-                  strong #{thoiGianThi.startDate}
-                .small Thời gian kết thúc #{thoiGianThi.name}:&nbsp;
-                  strong #{thoiGianThi.finishTime}
+                  strong.font-weight-bold #{thoiGianThi.startDate}
+                .small.font-weight-normal Thời gian kết thúc:&nbsp;
+                  strong.font-weight-bold #{thoiGianThi.finishTime}
                   span &nbsp;ngày&nbsp;
-                  strong #{thoiGianThi.finishDate}
+                  strong.font-weight-bold #{thoiGianThi.finishDate}
+                .small.font-weight-normal Thời gian còn lại:&nbsp;
+                  span.font-weight-bold#index__thoigianconlai__dd 00
+                  span &nbsp;days&nbsp;
+                  span.font-weight-bold#index__thoigianconlai__hr 00
+                  span &nbsp;hours&nbsp;
+                  span.font-weight-bold#index__thoigianconlai__min 00
+                  span &nbsp;mins&nbsp;
+                  span.font-weight-bold#index__thoigianconlai__sec 00
+                  span &nbsp;seconds
               else
                 span Chưa có thời gian thi
             table.table.table-hover.table-bordered.mb-2.mt-2

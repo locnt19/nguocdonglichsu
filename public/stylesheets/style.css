@@ -108,6 +108,14 @@ body {
 .bg__navbar {
   background: url("../images/background/bg__navbar.png") 100% 100% fixed;
 }
+.bg__summary {
+  background-color: #E20001;
+  background-image: url("../images/background/bg__summary.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .bg__1 {
   background-color: #fff2cd;
   background-image: url("../images/background/bg_1.jpg");
@@ -149,6 +157,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+  /* .bg__summary, */
   .bg__1,
   .bg__2,
   .bg__3,
