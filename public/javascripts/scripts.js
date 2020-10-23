@@ -87,7 +87,6 @@ function timeAvailable() {
       if (comingSoon.remain <= 0) {
         clearInterval(comingSoon.ticker);
         comingSoon.remain = 0;
-        // window.location.assign('/exams');
       }
       var secs = comingSoon.remain;
       var days = Math.floor(secs / 86400); // 1 day = 60 secs * 60 mins * 24 hrs
@@ -235,7 +234,7 @@ function section2() {
   let summaryTimer = 0;
   let questionPendingTimer = 30;
   let anwserBackGroundIsCorrect = false;
-  const timeLimited = 999;
+  const timeLimited = 270;
   const $summaryTimer = $('#section2__summaryTimer');
   const $questionPendingTimer = $('#section2__questionPendingTimer');
 
@@ -412,7 +411,7 @@ function section3() {
   var counter = {
     end: 30, // Thời gian trả lời mỗi câu hỏi
     sumaryCounter: 0,
-    maximumCounter: 999,
+    maximumCounter: 240,
     selector_cowndown: $('.time_countdown'),
     selector_summary: $('.time_summary'),
     selector_submit_summary: $('#submit_time_summary'),
@@ -519,6 +518,23 @@ function section3() {
         $('.s3_random').hide();
         $('.s3_ok').hide();
         $('#start_text').show();
+        $('area:not(.active)').each(function () {
+          $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).remove();
+        });
+        $('area:not(.active)').remove();
+        $('area.active').click(function (e) {
+          e.preventDefault();
+          $(`.modal_chucnang__wrapper[data-modal=${this.dataset.modal}]`).addClass(
+            'show'
+          );
+          $('body').addClass('overflow-hidden');
+          // start couter
+          counter.end = 30;
+          counter.selector_cowndown.text(counter.end);
+          clearInterval(counter.ticker);
+          startCounter(counter);
+          // end couter
+        });
       }
       if (couterRandom < 4) {
         $('.s3_ok').removeClass('d-none');
@@ -648,11 +664,14 @@ function section3() {
         //   }
         // }
         counter.end = 30;
-        clearInterval(counter.ticker);
+        // clearInterval(counter.ticker);
       }
       if (counter.sumaryCounter === counter.maximumCounter) {
         clearInterval(counter.ticker);
         counter.end = 0;
+        if ($(document).has('form[name=exams_section3]').length > 0) {
+          document.forms['exams_section3'].submit();
+        }
       }
       counter.selector_summary.text(counter.sumaryCounter);
       counter.selector_submit_summary.val(counter.sumaryCounter);

@@ -106,23 +106,23 @@ block content
             h5.text-center.text-sm-left
               input#index__thoigianconlai.d-none(value=formatedThoiGianThiFinishDate ? `${formatedThoiGianThiFinishDate} ${thoiGianThi.finishTime} ${thoiGianThi.timeZone}` : null)
               if thoiGianThi
-                .small.font-weight-normal Thời gian bắt đầu:&nbsp;
+                .small.font-weight-normal Starting at &nbsp;
                   strong.font-weight-bold #{thoiGianThi.startTime}
-                  span &nbsp;ngày&nbsp;
+                  span ,&nbsp;
                   strong.font-weight-bold #{thoiGianThi.startDate}
-                .small.font-weight-normal Thời gian kết thúc:&nbsp;
+                .small.font-weight-normal And finish at&nbsp;
                   strong.font-weight-bold #{thoiGianThi.finishTime}
-                  span &nbsp;ngày&nbsp;
+                  span ,&nbsp;
                   strong.font-weight-bold #{thoiGianThi.finishDate}
-                .small.font-weight-normal Thời gian còn lại:&nbsp;
-                  span.font-weight-bold#index__thoigianconlai__dd 00
-                  span &nbsp;days&nbsp;
-                  span.font-weight-bold#index__thoigianconlai__hr 00
-                  span &nbsp;hours&nbsp;
-                  span.font-weight-bold#index__thoigianconlai__min 00
-                  span &nbsp;mins&nbsp;
-                  span.font-weight-bold#index__thoigianconlai__sec 00
-                  span &nbsp;seconds
+                .small.font-weight-normal.mt-3 Time remaining: &nbsp;
+                  span.font-weight-bold#index__thoigianconlai__dd 0
+                  span &nbsp;day&nbsp;
+                  span.font-weight-bold#index__thoigianconlai__hr 0
+                  span &nbsp;hour&nbsp;
+                  span.font-weight-bold#index__thoigianconlai__min 0
+                  span &nbsp;min&nbsp;
+                  span.font-weight-bold#index__thoigianconlai__sec 0
+                  span &nbsp;second
               else
                 span Chưa có thời gian thi
             table.table.table-hover.table-bordered.mb-2.mt-2
