@@ -1,5 +1,8 @@
 extends layout
 
+block scripts
+  script(src='/javascripts/section-2.js')
+
 block content
   form.d-none(name="exams_section2" method='POST')
     if exams

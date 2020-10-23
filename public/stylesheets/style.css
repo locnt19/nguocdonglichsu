@@ -166,6 +166,16 @@ body {
     background-size: cover;
   }
 }
+@media screen and (max-width: 575.98px) {
+  .bg__summary,
+  .bg__1,
+  .bg__2,
+  .bg__3,
+  .bg__4,
+  .bg__5 {
+    background-size: cover;
+  }
+}
 
 .image__handle__error__403 {
   background: url("../images/403.jpg");
