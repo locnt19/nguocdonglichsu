@@ -133,7 +133,7 @@ exports.templateSection3 = async (req, res) => {
         const baria = { name: 'Bà Rịa', code: 'baria' };
         const vungtau = { name: 'Vũng Tàu', code: 'vungtau' };
         const condao = { name: 'Côn Đảo', code: 'condao' };
-        const tanthanh = { name: 'Tân Thành', code: 'tanthanh' };
+        const tanthanh = { name: 'Châu Đức', code: 'tanthanh' };
         const chauduc = { name: 'Châu Đức', code: 'chauduc' };
         const xuyenmoc = { name: 'Xuyên Mộc', code: 'xuyenmoc' };
 
