@@ -1,9 +1,9 @@
 extends layout
 
 block content
-  .bg__body
-    .login__wrapper.p-0.container.position-relative
-      .login__container.bg__image__page2.middle__center__md.shadow.p-3.p-md-5.pt-5
+  .bg__1
+    .login__wrapper.p-0.container.pt-sm-4.pt-md-5
+      .login__container.bg__image__page2.bg__card.shadow.p-3.p-md-5
         div Welcome to
         .h2.mb-0 Stepping back
         .h1.mb-0 IN HISTORY
@@ -13,6 +13,6 @@ block content
           .form-group
             input.form-control(name='password' type='password' placeholder='Password')
           button(type='submit').btn.btn-block.btn-primary Log in
-          .text-center.small.mt-3
+          .text-center.small.font-weight-normal.mt-3
             span Don't have an account?&nbsp;
             a(href='/users/register') Register now!

@@ -2,11 +2,11 @@ extends layout
 
 block content
   form(method='POST')
-    section.bg__exams
-      .container.px-0.px-md-3.py-3.min-vh-100
-        .question__wrapper.mt-5.mx-auto
-          h3.text-white.font-weight-bold.ready__title Round 3: Exploration
-          .card.p-md-3.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.py-md-4
+    section.bg__4
+      .container-fluid(style="max-width: 1200px").pb-5.min-vh-100
+        .pt-3.mx-auto
+          //- h3.font-weight-bold.ready__title Round 3: Exploration
+          .card.px-sm-4.pt-sm-4.pb-sm-3.px-md-5.pb-md-4.pt-md-0
             input.d-none(name='lanThi' value=infoUser.lanThi.luotThi)
             input.d-none(name='user' value=infoUser._id)
             if examCode
@@ -24,8 +24,8 @@ block content
                   area(data-modal="tanthanh" alt="Phú Mỹ" title="Phú Mỹ" href="" coords="15,210,32,201,60,197,69,205,93,169,109,155,103,133,100,117,103,99,101,77,101,61,86,63,79,79,64,91,45,95,29,93,12,102,2,109,17,121,19,137,11,151,24,160,12,171,4,185" shape="poly")
                   area(data-modal="chauduc" alt="Châu Đức" title="Châu Đức" href="" coords="85,63,83,41,111,25,125,19,128,29,148,30,181,35,182,69,189,79,208,77,220,95,211,122,219,129,204,151,185,151,168,143,154,147,150,163,137,151,115,163,107,152,100,117,101,86,98,64" shape="poly")
 
-                img.mb-4(width='500' height='424' src='/images/bandohanhchinh_transparent_500.png' alt='ban do hanh chinh' usemap='#image_map')
-                map.map-hanhchinh(name='image_map')
+                //- img.mb-4(width='500' height='424' src='/images/bandohanhchinh_transparent_500.png' alt='ban do hanh chinh' usemap='#image_map')
+                //- map.map-hanhchinh(name='image_map')
                   area(data-modal='xuyenmoc' alt='Xuyên Mộc' title='Xuyên Mộc' href='' coords='302,111 299,103 299,92 298,85 305,80 309,66 317,62 344,31 384,2 405,8 405,20 419,34 431,30 433,50 461,77 466,100 462,114 474,138 497,182 494,206 471,238 442,262 402,266 380,286 345,293 315,291 318,273 324,268 316,231 310,224 301,220 293,213 295,207 310,194 311,181 302,171 307,164 306,150 314,145 314,129 305,119 303,111 302,109 ' shape='polygon')
                   area(data-modal='chauduc' alt='Châu Đức' title='Châu Đức' href='' coords='296,112 306,115 314,129 314,142 307,146 307,160 304,166 303,171 309,178 313,192 299,205 286,208 282,206 277,210 278,213 259,214 249,207 229,203 215,222 212,232 203,224 197,220 196,213 187,213 176,216 171,224 170,230 163,228 158,224 151,216 151,208 151,203 147,199 146,182 140,169 143,155 140,145 143,141 143,124 139,109 141,95 139,87 123,86 119,80 118,53 131,52 158,31 179,24 180,34 196,38 203,36 216,42 252,44 262,52 262,93 264,108 273,117 285,110 296,112 ' shape='polygon')
                   area(data-modal='datdo' alt='Đất Đỏ' title='Đất Đỏ' href='' coords='295,209,300,217,309,219,315,225,320,239,324,261,324,269,318,275,318,283,315,291,303,298,296,305,287,305,278,311,267,317,256,327,243,341,233,351,224,363,218,351,213,336,212,329,217,323,218,313,218,305,224,301,223,294,218,286,219,277,218,263,218,256,208,253,213,229,214,220,228,202,251,205,260,214,280,213,283,205,288,205' shape='poly')
@@ -34,6 +34,17 @@ block content
                   area(data-modal='vungtau' target='' alt='Vũng Tàu' title='Vũng Tàu' href='' coords='156,298,182,313,183,333,160,330,148,338,144,355,130,364,107,375,89,396,75,414,67,407,64,398,54,389,55,377,49,370,54,359,63,364,73,358,86,359,97,344,120,339,103,333,103,322,107,305,98,311,90,320,77,322,60,323,43,312,37,295,51,283,67,281,89,285,97,290,111,297,145,292' shape='poly')
                   area(data-modal='tanthanh' target='' alt='Tân Thành' title='Tân Thành' href='' coords='23,295,39,288,63,279,86,284,104,280,108,267,128,236,142,237,151,204,144,180,138,160,139,145,141,124,138,112,141,88,124,84,110,97,99,118,87,124,74,132,59,128,38,128,20,134,14,149,2,152,17,170,24,194,12,212,24,226,11,250,0,267' shape='poly')
                   area(data-modal='condao' target='' alt='Côn Đảo' title='Côn Đảo' href='' coords='324,357,307,364,295,367,287,378,283,401,295,413,311,408,328,415,340,415,353,414,364,404,379,400,397,396,399,381,377,383,356,387,344,378,352,366,360,354,362,335,341,330,320,332,299,333,297,342,301,352' shape='poly')
+                img(src='/images/section-3/round-3.png' alt='ban do hanh chinh' usemap='#image_map')
+                map(name="image_map")
+                  area(data-modal='condao' alt="Huyện Côn Đảo" title="Huyện Côn Đảo" href="" coords="534,572,832,811" shape="rect")
+                  area(data-modal='xuyenmoc' alt="Huyện Xuyên Mộc" title="Huyện Xuyên Mộc" href="" coords="569,544,605,542,636,545,651,541,662,545,674,528,687,511,713,504,744,504,758,485,774,466,791,447,812,423,814,399,819,383,814,361,798,326,791,305,781,288,786,263,779,240,765,223,753,214,732,195,737,167,713,171,699,150,701,136,699,122,680,127,666,129,652,138,640,148,621,150,614,169,598,185,577,211,560,226,555,249,551,268,567,284,579,308,570,327,558,341,553,362,548,374,562,393,537,431,546,445,560,452,572,464,577,492,579,516,567,530,558,535,558,542" shape="poly")
+                  area(data-modal='datdo' alt="Huyện Đất Đỏ" title="Huyện Đất Đỏ" href="" coords="537,428,545,444,561,450,571,467,578,490,575,514,561,530,565,544,525,564,491,587,428,654,421,634,418,600,431,590,428,577,433,553,424,541,428,520,424,506,424,492,414,492,414,475,419,459,428,445,435,428,445,416,468,419,478,428,494,433,518,435" shape="poly")
+                  area(data-modal='longdien' alt="Huyện Long Điền" title="Huyện Long Điền" href="" coords="428,654,421,635,417,600,428,588,428,574,433,552,424,541,428,519,424,494,409,496,391,508,374,515,365,515,353,534,344,545,325,552,332,564,348,569,369,585,374,604,360,607,344,616,337,628,372,621,407,654,417,659" shape="poly")
+                  area(data-modal='vungtau' alt="Thành Phố Vũng Tàu" title="Thành Phố Vũng Tàu" href="" coords="351,609,369,602,369,585,348,567,332,562,322,548,311,541,304,552,289,548,285,557,268,555,257,541,242,538,224,534,224,527,209,536,198,529,186,536,172,543,169,555,184,571,207,588,233,585,247,574,261,571,257,585,259,604,273,607,275,611,273,607,257,618,240,630,235,642,217,640,205,654,191,647,184,659,191,670,193,689,205,694,205,708,221,725,240,694,275,661,297,647,311,644,325,618,344,597" shape="poly")
+                  area(data-modal='baria' alt="Thành Phố Bà Rịa" title="Thành Phố Bà Rịa" href="" coords="325,552,346,547,355,531,365,514,388,510,414,496,414,477,412,455,395,434,381,437,365,441,353,458,339,453,334,444,327,444,325,465,311,463,297,470,282,491,268,498,268,514,266,529,259,540,257,545,271,557,282,559,289,550,304,552,311,540" shape="poly")
+                  area(data-modal='tanthanh' alt="Huyện Tân Thành" title="Huyện Tân Thành" href="" coords="169,543,200,527,226,529,242,534,257,536,266,519,268,494,282,486,294,468,308,463,325,458,329,439,327,423,322,402,322,385,313,369,322,354,306,338,311,321,322,319,322,302,311,284,322,275,320,251,313,247,287,247,282,273,268,282,254,299,238,313,221,317,202,315,186,313,167,313,136,327,136,339,122,339,113,343,132,360,155,369,172,372,169,407,148,409,134,435,148,442,151,457,136,478,127,497,118,505,127,522,146,545,155,536" shape="poly")
+                  area(data-modal='chauduc' alt="Huyện Châu Đức" title="Huyện Châu Đức" href="" coords="329,439,339,449,353,456,365,439,393,432,409,453,414,465,426,449,440,420,466,418,478,428,506,435,520,435,537,428,560,397,548,373,555,343,567,328,562,312,553,298,541,288,525,286,508,295,487,277,492,262,485,253,492,239,487,217,487,196,478,186,417,182,400,174,386,184,374,182,372,160,358,165,344,167,329,182,311,196,299,203,285,205,292,222,287,248,315,248,322,259,320,276,313,283,322,304,318,321,332,328,327,342,334,344,346,335,348,347,337,358,320,354,313,370,322,387" shape="poly")
+
                 .small#start_text(style='display: none') Please select the corresponding location on the map to get started
                 .text-center.mb-2
                   button(type='button').mr-2.btn.btn-outline-primary.btn-sm.s3_random random
@@ -49,8 +60,8 @@ block content
       if arrayData
         -for(var location of arrayData)
           -var index = arrayData.indexOf(location)
-          section.modal_chucnang__wrapper.p-5.bg-white(data-modal=location.code)
-            .container
+          section.modal_chucnang__wrapper.p-5.bg__4(data-modal=location.code)
+            .card.p-4.bg__card.container.middle__center__md
               h4.font-weight-bold.text-center #{location.name}
               -for(var i = 0; i < location.questions.length; i++)
                 -var item = location.questions[i]
@@ -60,16 +71,16 @@ block content
                     .question__answer
                       .custom-control.custom-radio.mt-2
                         input.custom-control-input(id=`${item.code}-a` type='radio' name=`answers[${index}][${i}][answer]` value='a')
-                        label.custom-control-label.h6(for=`${item.code}-a`) #{item.a}
+                        label.custom-control-label.h6(for=`${item.code}-a`) A. #{item.a}
                       .custom-control.custom-radio.mt-2
                         input.custom-control-input(id=`${item.code}-b` type='radio' name=`answers[${index}][${i}][answer]` value='b')
-                        label.custom-control-label.h6(for=`${item.code}-b`) #{item.b}
+                        label.custom-control-label.h6(for=`${item.code}-b`) B. #{item.b}
                       .custom-control.custom-radio.mt-2
                         input.custom-control-input(id=`${item.code}-c` type='radio' name=`answers[${index}][${i}][answer]` value='c')
-                        label.custom-control-label.h6(for=`${item.code}-c`) #{item.c}
+                        label.custom-control-label.h6(for=`${item.code}-c`) C. #{item.c}
                       .custom-control.custom-radio.mt-2
                         input.custom-control-input(id=`${item.code}-d` type='radio' name=`answers[${index}][${i}][answer]` value='d')
-                        label.custom-control-label.h6(for=`${item.code}-d`) #{item.d}
+                        label.custom-control-label.h6(for=`${item.code}-d`) D. #{item.d}
                     .custom-control.custom-checkbox
                       input.star_checkbox.custom-control-input(id=`${location.code}_star${i}` name=`answers[${index}][${i}][star]` type='checkbox')
                       label.custom-control-label.text-dark(for=`${location.code}_star${i}`) Lucky Star

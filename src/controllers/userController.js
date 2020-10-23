@@ -6,14 +6,14 @@ exports.templateLogin = (req, res) => {
   if (req.cookies.token) {
     res.redirect('/');
   };
-  res.render('login.pug', { title: 'Đăng nhập' });
+  res.render('login.pug', { title: 'Login' });
 }
 
 exports.templateRegister = (req, res) => {
   if (req.cookies.token) {
     res.redirect('/');
   };
-  res.render('register.pug', { title: 'Đăng ký' });
+  res.render('register.pug', { title: 'Register' });
 }
 
 exports.templateProfile = (req, res) => {
@@ -85,7 +85,7 @@ exports.create = async (req, res) => {
     console.log(req.body);
     user.birthday = `${req.body.dd}-${req.body.mm}-${req.body.yyyy}`;
     await user.save();
-    req.flash('message', 'Đăng ký thành công!');
+    req.flash('message', 'Register thành công!');
     res.redirect('/users/login');
   } catch (error) {
     req.flash('message', error);

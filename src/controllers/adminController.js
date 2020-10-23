@@ -44,7 +44,7 @@ exports.templateXepHang = async (req, res) => {
 };
 
 exports.templateLogin = (req, res) => {
-  res.render('admin/login.pug', { title: 'Quản trị | Đăng nhập' });
+  res.render('admin/login.pug', { title: 'Quản trị | Login' });
 };
 
 exports.templateQuanTri = async (req, res) => {

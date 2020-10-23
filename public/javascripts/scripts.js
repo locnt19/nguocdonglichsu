@@ -193,7 +193,7 @@ function section2() {
   let section2IntervalTimer;
   let section2IntervalPendingTimer;
   let summaryTimer = 0;
-  let questionPendingTimer = 999;
+  let questionPendingTimer = 30;
   let anwserBackGroundIsCorrect = false;
   const timeLimited = 999;
   const $summaryTimer = $('#section2__summaryTimer');
@@ -382,6 +382,10 @@ function section3() {
 
   var listLocations = [];
 
+  var groupQuestionLocation = [];
+  var questionCurrent = 0;
+
+  //#region 
   const locations = [
     'Đất Đỏ',
     'Long Điền',
@@ -425,6 +429,7 @@ function section3() {
 
   $('.s3_stop').click(function () {
     done++;
+    questionCurrent = 0;
     var listCheck = $('.star_checkbox:checked');
     if (listCheck.length >= 2) {
       $('.star_checkbox').parents('.custom-checkbox').hide();
@@ -543,39 +548,67 @@ function section3() {
     }
     return results;
   };
+  //#endregion
 
   function tabCauHoi(name) {
     var listTab = [];
     var curentTab = 0;
+    questionCurrent = curentTab;
+    const temp = {
+      name: name,
+      id: [],
+    };
     $(`.tabs.${name}`).each(function () {
       listTab.push(this.id);
+      temp.id.push(this.id);
     });
-    $(`#${listTab[curentTab]}`).show(); // Hiển thị câu hỏi đầu tiên
+    groupQuestionLocation.push(temp);
+    $(`#${listTab[questionCurrent]}`).show(); // Hiển thị câu hỏi đầu tiên
     $(`.next_question.${name}`).click(function () {
+      // start couter
+      counter.end = 30;
+      counter.selector_cowndown.text(counter.end);
+      clearInterval(counter.ticker);
+      startCounter(counter);
+      // end couter
       var listCheck = $('.star_checkbox:checked');
       if (listCheck.length >= 2) {
         $('.star_checkbox').parents('.custom-checkbox').hide();
         // console.log($('.star_checkbox'))
       }
-      ++curentTab;
-      if (curentTab < listTab.length) {
-        $(`#${listTab[curentTab - 1]}`).hide();
-        $(`#${listTab[curentTab]}`).show();
-        $(`.current_question.${name}`).text(curentTab + 1);
+      ++questionCurrent;
+      if (questionCurrent < listTab.length) {
+        $(`#${listTab[questionCurrent - 1]}`).hide();
+        $(`#${listTab[questionCurrent]}`).show();
+        $(`.current_question.${name}`).text(questionCurrent + 1);
       }
-      if (curentTab + 1 == listTab.length) {
+      if (questionCurrent + 1 == listTab.length) {
         $(`.next_question.${name}`).hide();
         $(`.s3_stop.${name}`).show();
       }
+      // console.log(questionCurrent);
     });
   }
-
+  console.log(groupQuestionLocation)
   function startCounter(counter) {
     counter.ticker = setInterval(function () {
       counter.end--;
       counter.sumaryCounter++;
       if (counter.end === 0) {
+        // if ($('.modal_chucnang__wrapper').hasClass('show')) {
+        //   const name = $('.modal_chucnang__wrapper.show').data('modal');
+        //   for (const item of groupQuestionLocation) {
+        //     console.log(item);
+        //     if (item.name === name) {
+        //       $(`#${item.id[questionCurrent - 1]}`).hide();
+        //       $(`#${item.id[questionCurrent]}`).show();
+        //       $(`.current_question.${name}`).text(questionCurrent + 1);
+        //       break;
+        //     }
+        //   }
+        // }
         counter.end = 30;
+        clearInterval(counter.ticker);
       }
       if (counter.sumaryCounter === counter.maximumCounter) {
         clearInterval(counter.ticker);
