@@ -1,0 +1,24 @@
+{ 
+    "_id" : ObjectId("5eef9c57ef846911d0a1f963"), 
+    "timeZone" : "UTC+7", 
+    "name" : "Đợt 1", 
+    "startDate" : "2020-10-23", 
+    "startTime" : "08:30", 
+    "finishDate" : "2020-10-31", 
+    "finishTime" : "12:00", 
+    "createdAt" : ISODate("2020-06-21T17:43:51.692+0000"), 
+    "updatedAt" : ISODate("2020-10-24T01:42:03.296+0000"), 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5f06aa106af9c8107c29233c"), 
+    "timeZone" : "UTC+7", 
+    "name" : "Đợt 2", 
+    "startDate" : "2020-07-09", 
+    "startTime" : "01:01", 
+    "finishDate" : "2020-07-09", 
+    "finishTime" : "01:01", 
+    "createdAt" : ISODate("2020-07-09T05:24:32.525+0000"), 
+    "updatedAt" : ISODate("2020-07-09T15:23:46.196+0000"), 
+    "__v" : NumberInt(0)
+}

@@ -1,0 +1,8 @@
+{ 
+    "_id" : ObjectId("5f0a157da9a21f1134c04650"), 
+    "tenDot" : "Đợt 1", 
+    "tenTuan" : "Tuần 1", 
+    "createdAt" : ISODate("2020-07-11T19:39:41.814+0000"), 
+    "updatedAt" : ISODate("2020-07-11T19:39:41.814+0000"), 
+    "__v" : NumberInt(0)
+}
