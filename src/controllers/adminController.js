@@ -27,8 +27,8 @@ exports.templateXepHang = async (req, res) => {
       birthday: iUser.birthday,
       email: iUser.email,
       summaryScore: 0,
-      summaryTime: 0
-    }
+      summaryTime: 0,
+    };
     for (const iBaiThi of listBaiThi) {
       if (iUser._id.toString() === iBaiThi.user) {
         temp.summaryScore += iBaiThi.scope;
@@ -39,7 +39,7 @@ exports.templateXepHang = async (req, res) => {
   }
   res.render('admin/xep-hang.pug', {
     title: 'Xếp hạng',
-    listUser: newArr
+    listUser: newArr,
   });
 };
 
@@ -226,4 +226,8 @@ exports.templateBaiThi = async (req, res) => {
     req.flash('message', error);
     res.redirect('/admin');
   }
+};
+
+exports.templateXepHangDonVi = async (req, res) => {
+  res.render('404.pug', { title: 'Xếp hạng theo đơn vị' });
 };

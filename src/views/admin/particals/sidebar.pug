@@ -21,9 +21,21 @@ nav.admin__sidebar.nav.flex-column.flex-nowrap.h-100.overflow-auto.shadow-sm.bg-
       i.material-icons receipt_long
       span.ml-2 Bài thi
   li.nav-item
-    a.nav-link(href='/admin/xep-hang' class={active: currentURL === '/admin/xep-hang'})
+    a.nav-link(href='#ranking' class={active: (currentURL === '/admin/xep-hang') || (currentURL === '/admin/xep-hang/don-vi')} data-toggle='collapse' role='button' aria-expanded='false' aria-control='ranking')
       i.material-icons military_tech
       span.ml-2 Xếp hạng
+      i.material-icons.float-right arrow_drop_down
+    .collapse.show#ranking
+      nav.nav.flex-column.ml-4
+        li.nav-item
+          a.nav-link(href='/admin/xep-hang' class={active: currentURL === '/admin/xep-hang'})
+            i.material-icons star_rate
+            span.ml-2 Xếp hạng chung
+        li.nav-item
+          a.nav-link(href='/admin/xep-hang/don-vi' class={active: currentURL === '/admin/xep-hang/don-vi'})
+            i.material-icons location_on
+            span.ml-2 Theo đơn vị
+
   li.nav-item
     a.nav-link(href='#questions' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions'
       class={active: (currentURL === '/questions/section-1') ||

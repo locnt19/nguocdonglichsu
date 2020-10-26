@@ -20,6 +20,9 @@ router.route('/quan-tri')
 router.route('/xep-hang')
   .get(auth.isAdmin, adminController.templateXepHang)
 
+router.route('/xep-hang/don-vi')
+  .get(auth.isAdmin, adminController.templateXepHangDonVi)
+
 router.route('/thoi-gian-thi')
   .get(auth.isAdmin, adminController.getThoiGianThi)
   .post(auth.isAdmin, adminController.setThoiGianThi)

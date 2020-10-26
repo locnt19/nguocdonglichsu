@@ -8,7 +8,7 @@ $(document).ready(function () {
     columnDefs: [{ orderable: false, targets: [0] }]
   });
   $('#table_xephang_users').DataTable({
-    order: [],
+    order: [[2, "desc"]],
     columnDefs: [{ orderable: false, targets: [0] }]
   });
   $('#table_section1_list').DataTable();

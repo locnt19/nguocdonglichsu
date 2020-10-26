@@ -26,6 +26,7 @@ block content
               th.align-middle(scope='col') Tên lớp
               th.align-middle(scope='col') Tỉnh
               th.align-middle(scope='col') ID
+              th.align-middle(scope='col') Chi tiết lượt thi
           tbody
             if usersList !== null && usersList.length > 0
               -for(let user of usersList)
@@ -43,3 +44,8 @@ block content
                   td #{user.classRoom}
                   td #{user.province}
                   td #{user._id}
+                  td
+                    .mb-2 Phần 1: #{user.lanThi.phan1 ? 'Đã thi' : 'Chưa thi'}
+                    .mb-2 Phần 2: #{user.lanThi.phan2 ? 'Đã thi' : 'Chưa thi'}
+                    .mb-2 Phần 3: #{user.lanThi.phan3 ? 'Đã thi' : 'Chưa thi'}
+                    .mb-2 Phần 4: #{user.lanThi.phan4 ? 'Đã thi' : 'Chưa thi'}
