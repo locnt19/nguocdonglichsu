@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 function section1() {
+  var submited = false;
   //#region Section 1
   var listTabs = [];
   $('.question__wrapper .tabs').each(function () {
@@ -63,7 +64,10 @@ function section1() {
         } else {
           clearInterval(counter.ticker);
           if ($(document).has('form[name=exams_section1]').length > 0) {
-            document.forms['exams_section1'].submit();
+            if (!submited) {
+              submited = true;
+              document.forms['exams_section1'].submit();
+            }
           }
         }
       }
