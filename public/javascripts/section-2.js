@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 function section2() {
+  let submited = false;
   let doneSection2 = false;
   let firstQuestion = true;
   let score = 0;
@@ -177,7 +178,10 @@ function section2() {
       },
     }).showToast();
     setTimeout(() => {
-      document.forms['exams_section2'].submit();
+      if(!submited) {
+        submited = true;
+        document.forms['exams_section2'].submit();
+      }
     }, 3000);
   }
 
