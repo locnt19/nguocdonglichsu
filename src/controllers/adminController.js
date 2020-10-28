@@ -11,12 +11,9 @@ exports.templateDashboard = (req, res) => {
 };
 
 exports.templateXepHang = async (req, res) => {
-  const listBaiThi = await BaiThi.find({ bestest: true });
+  const listBaiThi = await BaiThi.find({ bestest: true, scope: { $gt: 0 } });
   // const listUser = await User.find({ "lanThi.luotThi": { $lt: 2 } }); // https://stackjava.com/mongodb/truy-van-du-lieu-document-find-select-where-trong-mongodb.html
-  const listUser = await User.find();
-  // console.log(listBaiThi);
-  // console.log("================");
-  // console.log(listUser);
+  const listUser = await User.find({ 'lanThi.luotThi': { $lt: 2 } });
   let newArr = [];
   for (const iUser of listUser) {
     const temp = {
@@ -204,8 +201,7 @@ exports.templateUsers = async (req, res) => {
 exports.templateBaiThi = async (req, res) => {
   try {
     const listBaiThi = await BaiThi.find();
-    // const listUser = await User.find({ "lanThi.luotThi": { $lt: 2 } });
-    const listUser = await User.find();
+    const listUser = await User.find({ 'lanThi.luotThi': { $lt: 2 } });
     let newArr = [];
     for (const iUser of listUser) {
       for (const iBaiThi of listBaiThi) {

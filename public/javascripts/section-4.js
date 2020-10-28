@@ -67,7 +67,8 @@ function section4() {
     }
   }, 1000);
 
-  $('#submitSection4').on('click', e => {
+  $('#submitSection4').on('click', function (e) {
+    e.preventDefault();
     stopTimer = true;
     clearInterval(intervalTimer);
     dragulaContainer.destroy();

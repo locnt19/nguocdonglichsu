@@ -290,3 +290,4 @@ exports.createSection2HinhNen = async (req, res) => {
     res.render('admin/section-2-hinh-nen-create.pug')
   }
 }
+//#endregion
