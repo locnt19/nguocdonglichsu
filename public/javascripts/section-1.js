@@ -80,5 +80,13 @@ function section1() {
       counter.innerHTML_end.text(counter.end);
     }, 1000);
   }
+
+  $('#time_action_submit').on('click', function (e) {
+    e.preventDefault();
+    if (!submited) {
+      submited = true;
+      document.forms['exams_section1'].submit();
+    }
+  })
   //#endregion
 }
