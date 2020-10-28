@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 function section4() {
+  var submited = false;
   //#region Dragula plugin
   const dragulaContainer = new dragula({
     isContainer: function (el) {
@@ -53,7 +54,11 @@ function section4() {
       clearInterval(intervalTimer);
       dragulaContainer.destroy();
       if ($(document).has('form[name=exams_section4]').length > 0) {
-        document.forms['exams_section4'].submit();
+        // document.forms['exams_section4'].submit();
+        if (!submited) {
+          submited = true;
+          document.forms['exams_section4'].submit();
+        }
       }
     } else {
       currentTime++;
@@ -66,5 +71,9 @@ function section4() {
     stopTimer = true;
     clearInterval(intervalTimer);
     dragulaContainer.destroy();
+    if (!submited) {
+      submited = true;
+      document.forms['exams_section4'].submit();
+    }
   });
 }

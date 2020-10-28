@@ -9,6 +9,7 @@ $(document).ready(function () {
 });
 
 function section3() {
+  var submited = false;
   //#region Section 3
   var counter = {
     end: 30, // Thời gian trả lời mỗi câu hỏi
@@ -272,7 +273,10 @@ function section3() {
         clearInterval(counter.ticker);
         counter.end = 0;
         if ($(document).has('form[name=exams_section3]').length > 0) {
-          document.forms['exams_section3'].submit();
+          if (!submited) {
+            submited = true;
+            document.forms['exams_section3'].submit();
+          }
         }
       }
       counter.selector_summary.text(counter.sumaryCounter);
@@ -288,5 +292,13 @@ function section3() {
         e.preventDefault();
       });
   }
+
+  $('#luubai').on('click', function (e) {
+    e.preventDefault();
+    if (!submited) {
+      submited = true;
+      document.forms['exams_section3'].submit();
+    }
+  })
   //#endregion
 }
