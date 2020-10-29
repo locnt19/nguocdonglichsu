@@ -21,7 +21,7 @@ nav.admin__sidebar.nav.flex-column.flex-nowrap.h-100.overflow-auto.shadow-sm.bg-
       i.material-icons receipt_long
       span.ml-2 Bài thi
   li.nav-item
-    a.nav-link(href='#ranking' class={active: (currentURL === '/admin/xep-hang') || (currentURL === '/admin/xep-hang/don-vi')} data-toggle='collapse' role='button' aria-expanded='false' aria-control='ranking')
+    a.nav-link(href='#ranking' data-toggle='collapse' role='button' aria-expanded='false' aria-control='ranking' class={active: (currentURL === '/admin/xep-hang') || (currentURL === '/admin/xep-hang/don-vi/THCS') || (currentURL === '/admin/xep-hang/don-vi/THPT') || (currentURL === '/admin/xep-hang/don-vi/CD') || (currentURL === '/admin/xep-hang/don-vi/DH')})
       i.material-icons military_tech
       span.ml-2 Xếp hạng
       i.material-icons.float-right arrow_drop_down
@@ -32,9 +32,21 @@ nav.admin__sidebar.nav.flex-column.flex-nowrap.h-100.overflow-auto.shadow-sm.bg-
             i.material-icons star_rate
             span.ml-2 Xếp hạng chung
         li.nav-item
-          a.nav-link(href='/admin/xep-hang/don-vi' class={active: currentURL === '/admin/xep-hang/don-vi'})
+          a.nav-link(href='/admin/xep-hang/don-vi/THCS' class={active: currentURL === '/admin/xep-hang/don-vi/THCS'})
             i.material-icons location_on
-            span.ml-2 Theo đơn vị
+            span.ml-2 Đơn vị THCS
+        li.nav-item
+          a.nav-link(href='/admin/xep-hang/don-vi/THPT' class={active: currentURL === '/admin/xep-hang/don-vi/THPT'})
+            i.material-icons location_on
+            span.ml-2 Đơn vị THPT
+        li.nav-item
+          a.nav-link(href='/admin/xep-hang/don-vi/CD' class={active: currentURL === '/admin/xep-hang/don-vi/CD'})
+            i.material-icons location_on
+            span.ml-2 Đơn vị Cao đẳng
+        li.nav-item
+          a.nav-link(href='/admin/xep-hang/don-vi/DH' class={active: currentURL === '/admin/xep-hang/don-vi/DH'})
+            i.material-icons location_on
+            span.ml-2 Đơn vị Đại học
 
   li.nav-item
     a.nav-link(href='#questions' data-toggle='collapse' role='button' aria-expanded='false' aria-controls='questions'

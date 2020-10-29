@@ -41,7 +41,7 @@ router.route('/summary')
 
 router.route('/het-luot')
   .get((req, res) => {
-    res.render('het-luot.pug', { title: 'Hết lượt thi' })
+    res.render('het-luot.pug', { title: 'You have completed your exam.' })
   })
 
 module.exports = router

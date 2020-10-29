@@ -17,7 +17,9 @@ block content
               th.align-middle(scope='col') Thời gian
               th.align-middle(scope='col') Ngày sinh
               th.align-middle(scope='col') Tên lớp
+              th.align-middle(scope='col') Huyện/Thành Phố
               th.align-middle(scope='col') Trường
+              th.align-middle(scope='col') Bậc
               th.align-middle(scope='col') Email
               th.align-middle(scope='col') ID
           tbody
@@ -29,6 +31,8 @@ block content
                 td #{user.summaryTime}
                 td #{user.birthday}
                 td #{user.classRoom}
+                td #{user.district}
                 td #{user.nameSchool}
+                td #{user.school}
                 td #{user.email}
                 td #{user._id}

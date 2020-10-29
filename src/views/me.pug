@@ -60,6 +60,8 @@ block content
         .dropdown-menu
           .dropdown-item Trung học cơ sở
           .dropdown-item Trung học phổ thông
+          .dropdown-item Cao đẳng
+          .dropdown-item Đại học
     .col-sm-6.form-group
       label.d-block.m-0 Name of your school
         input.form-control(required name='nameSchool' placeholder='Name of your school' value=user.nameSchool)
@@ -72,6 +74,8 @@ block content
         .dropdown-menu
           -for(var i = 6; i < 13; i++)
             .dropdown-item Lớp #{i}
+          .dropdown-item Cao Đẳng
+          .dropdown-item Đại học
     .col-sm-6.form-group
       label.d-block.m-0 Class name
         input.form-control(required name='classRoom' laceholder='Class name' value=user.classRoom)

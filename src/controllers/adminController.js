@@ -23,6 +23,8 @@ exports.templateXepHang = async (req, res) => {
       classRoom: iUser.classRoom,
       birthday: iUser.birthday,
       email: iUser.email,
+      district: iUser.district,
+      school: iUser.school,
       summaryScore: 0,
       summaryTime: 0,
     };
@@ -225,5 +227,67 @@ exports.templateBaiThi = async (req, res) => {
 };
 
 exports.templateXepHangDonVi = async (req, res) => {
-  res.render('404.pug', { title: 'Xếp hạng theo đơn vị' });
+  try {
+    let subTitle = '';
+    let data = [];
+    switch (req.params.donvi) {
+      case 'THCS':
+        subTitle = 'Trung học cơ sở';
+        data = await findAndMapUserWithBaiThi(subTitle);
+        break;
+      case 'THPT':
+        subTitle = 'Trung học phổ thông';
+        data = await findAndMapUserWithBaiThi(subTitle);
+      case 'CD':
+        subTitle = 'Cao đẳng';
+        data = await findAndMapUserWithBaiThi(subTitle);
+        break;
+      case 'DH':
+        subTitle = 'Đại học';
+        data = await findAndMapUserWithBaiThi(subTitle);
+        break;
+      default:
+        break;
+    }
+    res.render('admin/xep-hang-don-vi.pug', {
+      title: `Xếp hạng ${subTitle}`,
+      subTitle: `Xếp hạng ➡ ${subTitle}`,
+      params: req.params.donvi,
+      listUser: data,
+    });
+  } catch (error) {
+    req.flash('message', error);
+    res.render('500.pug', { title: 'ERROR Xếp hạng đơn vị' });
+  }
 };
+
+async function findAndMapUserWithBaiThi(donVi) {
+  const listBaiThi = await BaiThi.find({ bestest: true, scope: { $gt: 0 } });
+  const listUser = await User.find({
+    'lanThi.luotThi': { $lt: 2 },
+    school: donVi,
+  });
+  let newArr = [];
+  for (const iUser of listUser) {
+    const temp = {
+      _id: iUser._id,
+      name: iUser.name,
+      nameSchool: iUser.nameSchool,
+      classRoom: iUser.classRoom,
+      birthday: iUser.birthday,
+      email: iUser.email,
+      district: iUser.district,
+      school: iUser.school,
+      summaryScore: 0,
+      summaryTime: 0,
+    };
+    for (const iBaiThi of listBaiThi) {
+      if (iUser._id.toString() === iBaiThi.user) {
+        temp.summaryScore += iBaiThi.scope;
+        temp.summaryTime += iBaiThi.time;
+      }
+    }
+    newArr.push(temp);
+  }
+  return newArr;
+}

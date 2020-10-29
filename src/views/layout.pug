@@ -23,7 +23,7 @@ html
     link(rel='stylesheet' href='/stylesheets/dragula.min.css')
     link(rel='stylesheet' href='/stylesheets/toastify.css')
     link(rel='stylesheet' href='/stylesheets/style.css?version=1.0.0')
-  body
+  body(style="user-select: none;")
     code
       if flash.message
         #server-message.d-none= flash.message

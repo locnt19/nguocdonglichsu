@@ -1,13 +1,16 @@
 $(document).ready(function () {
   $('#table_users').DataTable({
+    responsive: true,
     order: [],
     columnDefs: [{ orderable: false, targets: [0] }]
   });
   $('#table_baithi').DataTable({
+    responsive: true,
     order: [],
     columnDefs: [{ orderable: false, targets: [0] }]
   });
   $('#table_xephang_users').DataTable({
+    responsive: true,
     order: [[2, "desc"]],
     columnDefs: [{ orderable: false, targets: [0] }]
   });
