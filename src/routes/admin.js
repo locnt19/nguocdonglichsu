@@ -3,8 +3,8 @@ const auth = require('../middleware/auth')
 const adminController = require('../controllers/adminController')
 
 router.route('/')
-  // .get(auth.isAdmin, adminController.templateDashboard)
-  .get(auth.isAdmin, adminController.templateXepHang)
+  .get(auth.isAdmin, adminController.templateDashboard)
+  // .get(auth.isAdmin, adminController.templateXepHang)
 
 router.route('/login')
   .get(adminController.templateLogin)

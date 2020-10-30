@@ -82,7 +82,14 @@ const userSchema = mongoose.Schema({
       required: true
     }
   }],
-  
+  time: {
+    type: Number,
+    default: 0
+  },
+  scope: {
+    type: Number,
+    default: 0
+  }
 }, { timestamps: true })
 
 // hash the password before saving the user model

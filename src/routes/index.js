@@ -6,6 +6,7 @@ const adminRoutes = require('./admin');
 const examRoutes = require('./exam');
 const User = require('../models/User');
 const BaiThi = require('../models/BaiThi');
+const adminController = require('../controllers/adminController');
 
 const indexController = require('../controllers/indexController');
 
@@ -28,6 +29,8 @@ router.get('/super-api/users', async (req, res) => {
   const users = await User.find();
   res.json(users);
 });
+
+// router.get('/super-api/super-users', adminController.updatePointForUser);
 
 router.put('/super-api/users/reset-lan-thi/:id', async (req, res) => {
   try {
@@ -54,6 +57,16 @@ router.get('/super-api/users/:id', async (req, res) => {
 router.get('/super-api/bai-thi', async (req, res) => {
   const baiThi = await BaiThi.find({ bestest: true });
   res.json(baiThi);
+});
+
+router.delete('/super-api/bai-thi-sai', (req, res) => {
+  BaiThi.deleteMany({ bestest: false })
+    .then(() => {
+      res.json({ responsiveCode: 200, message: 'Delete successful.' });
+    })
+    .catch(error => {
+      res.json({ responsiveCode: 200, message: error });
+    });
 });
 
 router.get('/super-api/bai-thi/:id', async (req, res) => {
