@@ -239,6 +239,7 @@ exports.templateXepHangDonVi = async (req, res) => {
       case 'THPT':
         subTitle = 'Trung học phổ thông';
         data = await findAndMapUserWithBaiThi(subTitle);
+        break;
       case 'CD':
         subTitle = 'Cao đẳng';
         data = await findAndMapUserWithBaiThi(subTitle);

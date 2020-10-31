@@ -30,7 +30,7 @@ router.get('/super-api/users', async (req, res) => {
   res.json(users);
 });
 
-// router.get('/super-api/super-users', adminController.updatePointForUser);
+router.get('/super-api/super-users', adminController.updatePointForUser);
 
 router.put('/super-api/users/reset-lan-thi/:id', async (req, res) => {
   try {
