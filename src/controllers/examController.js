@@ -57,7 +57,7 @@ exports.templateSection1 = async (req, res) => {
         for (var i = 0; i < arrayRandom.length; i++) {
           randomQuestion.push(data.questions[arrayRandom[i]]);
         }
-        data.questions = randomQuestion.slice(0, 10);
+        data.questions = randomQuestion.slice(0, 15);
         res.render('section-1.pug', {
           title: 'Round 1: Trace back the history',
           exams: data,
@@ -438,9 +438,6 @@ exports.nopBaiThi3 = async (req, res) => {
       if (item.star !== null) {
         wrongPoint -= 10;
       }
-      // else {
-      // wrongPoint -= 5;
-      // }
     }
 
     baiThi.scope = correctPoint + wrongPoint;

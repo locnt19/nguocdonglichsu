@@ -1,0 +1,3257 @@
+[
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 670,
+    "scope": 300,
+    "_id": { "$oid": "5f979c572a15a912cc8f70ee" },
+    "name": "Võ Thái An",
+    "sex": "Nam",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19CGKL-QT",
+    "email": "0815448175@gmai.com",
+    "password": "$2a$08$0wXH.tBgRPbeOctiT9WtK.H4sFjQzpO9tMieYfBBZce.ftQjcK8fO",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f979c5d2a15a912cc8f70ef" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OWM1NzJhMTVhOTEyY2M4ZjcwZWUiLCJpYXQiOjE2MDM3NzE0ODV9.f-8Acm7Zvw0s9SYpCB0rnKq64B_-LEUu437npdY5CdE"
+      }
+    ],
+    "birthday": "14-10-1997",
+    "createdAt": "2020-10-27T04:04:40.062Z",
+    "updatedAt": "2020-10-30T18:01:39.234Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 538,
+    "scope": 300,
+    "_id": { "$oid": "5f9d85fe6353423091e8a49f" },
+    "name": "Dương Anh Kiệt",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Lê Quý Đôn High School",
+    "grade": "Lớp 10",
+    "classRoom": "10 Sinh",
+    "email": "12345lanthuy@gmail.com",
+    "password": "$2a$08$vtuZwhF4LiYRu2uMgpshBuK/QmUW/.D33N9y.byqkKQ.70tFJiKgi",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d860a6353423091e8a4c1" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkODVmZTYzNTM0MjMwOTFlOGE0OWYiLCJpYXQiOjE2MDQxNTg5ODZ9.284sYxBd8pnSTIEyKYEY8ulNxsRmsz3QbYZHKWeZUEs"
+      },
+      {
+        "_id": { "$oid": "5fa17f4def20d25b8e352af4" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkODVmZTYzNTM0MjMwOTFlOGE0OWYiLCJpYXQiOjE2MDQ0MTk0MDV9.oiQjxpkIUIINet5LZwwPgp80D65fHCCe-PoSmcJCG-o"
+      }
+    ],
+    "birthday": "20-08-2005",
+    "createdAt": "2020-10-31T15:42:54.096Z",
+    "updatedAt": "2020-11-03T16:03:25.606Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 460,
+    "scope": 250,
+    "_id": { "$oid": "5f966fc5f2f6f645d2f6d76e" },
+    "name": "Hồ Sâm Tuấn",
+    "sex": "Nam",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Lý Thường Kiệt",
+    "grade": "Lớp 9",
+    "classRoom": "9A4",
+    "email": "2006tuancut@gmail.com",
+    "password": "$2a$08$G6WMlA5iamdIt7KrS6mi3eVMiCtRsiuzmVqToc6dBOscB8hXvK9EO",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f966ff0f2f6f645d2f6d786" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NmZjNWYyZjZmNjQ1ZDJmNmQ3NmUiLCJpYXQiOjE2MDM2OTQ1NzZ9.RBstsmoFh1MT0Rf2K6Ns8uaETPudThykLBok2YW0jjg"
+      },
+      {
+        "_id": { "$oid": "5f9670ddf2f6f645d2f6d86e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NmZjNWYyZjZmNjQ1ZDJmNmQ3NmUiLCJpYXQiOjE2MDM2OTQ4MTN9.rnbwTObm74ROxg9Ywyr_t7MnEMKcwXj8CSitLC2uZ7M"
+      },
+      {
+        "_id": { "$oid": "5fa0d347ef20d25b8e352929" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NmZjNWYyZjZmNjQ1ZDJmNmQ3NmUiLCJpYXQiOjE2MDQzNzUzNjd9.gYZO3Wuq1G2VpJq91ZAc6mVi6bEaVEAouoAkexpG4c0"
+      }
+    ],
+    "birthday": "6-1-2006",
+    "createdAt": "2020-10-26T06:42:13.607Z",
+    "updatedAt": "2020-11-03T03:49:27.650Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 354,
+    "scope": 250,
+    "_id": { "$oid": "5f9d30856353423091e83ef6" },
+    "name": "Tran Thi Anh Thu",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Chau Duc",
+    "grade": "Lớp 9",
+    "classRoom": "9a6",
+    "email": "anhthu0306206@gmail.com",
+    "password": "$2a$08$En0cJ2WsaiyOoAO.udNEl.G3CxPu/yQkgy8d9SG2hFPauXmImZzZ6",
+    "tokens": [],
+    "birthday": "3-6-2006",
+    "createdAt": "2020-10-31T09:38:13.173Z",
+    "updatedAt": "2020-10-31T16:05:12.651Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 519,
+    "scope": 280,
+    "_id": { "$oid": "5f978a602a15a912cc8f6872" },
+    "name": "Huỳnh Khánh Linh",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19HAN-QT",
+    "email": "asdhuynhlinh123@gmail.com",
+    "password": "$2a$08$THon05Ii6z.ji0P1ONjwS.I3D95By0pOWuebD1q8il2XIRpvoj06.",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f978a692a15a912cc8f6874" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OGE2MDJhMTVhOTEyY2M4ZjY4NzIiLCJpYXQiOjE2MDM3NjY4ODl9.j5rUowif3KDZSLpAN7etwHZopoU_jhG0GhkIAXOJyx8"
+      }
+    ],
+    "birthday": "18-7-2001",
+    "createdAt": "2020-10-27T02:48:00.960Z",
+    "updatedAt": "2020-10-30T18:01:35.134Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 488,
+    "scope": 330,
+    "_id": { "$oid": "5f9816a101750c3a173c50ed" },
+    "name": "Tran Huynh Kim Trang",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao Dang Su Pham Ba Ria Vung Tau",
+    "grade": "Cao Đẳng",
+    "classRoom": "22M1",
+    "email": "banhdau08@gmail.com",
+    "password": "$2a$08$zombWCwCSJqvR1EpMNz1jelsQnIQTuvOwK813veb5Zy4gHWBQXE/G",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f98f2b001750c3a173ca5c4" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MTZhMTAxNzUwYzNhMTczYzUwZWQiLCJpYXQiOjE2MDM4NTkxMjB9.zfatWNxiFLri6fiUqL2ptQalKVw6pMK-wOj6piPcWtE"
+      },
+      {
+        "_id": { "$oid": "5f995dbd26572f73cf46a925" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MTZhMTAxNzUwYzNhMTczYzUwZWQiLCJpYXQiOjE2MDM4ODY1MjV9.Duxub8fPOEQ_Qr1sYASypbjEFgHo_XtMxBxLhTCFQAQ"
+      },
+      {
+        "_id": { "$oid": "5f9e6af0ef20d25b8e3527e0" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MTZhMTAxNzUwYzNhMTczYzUwZWQiLCJpYXQiOjE2MDQyMTc1ODR9.xalDcZo-3iztPAfH033vrJeoOpIl7UMylrbKhKin7kg"
+      },
+      {
+        "_id": { "$oid": "5f9ec8c9ef20d25b8e352854" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MTZhMTAxNzUwYzNhMTczYzUwZWQiLCJpYXQiOjE2MDQyNDE2MDl9.USE-i49q2b1dw6onDAaRZqhGJj4X2pmvGePBoqV7rv4"
+      },
+      {
+        "_id": { "$oid": "5f9fa0f4ef20d25b8e3528a8" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MTZhMTAxNzUwYzNhMTczYzUwZWQiLCJpYXQiOjE2MDQyOTY5NDh9.S4Tr8YWZjUQ6JY7jhPpJ-kGCjyL5Zlo201AJP8JoCWc"
+      },
+      {
+        "_id": { "$oid": "5f9fdd32ef20d25b8e3528c1" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MTZhMTAxNzUwYzNhMTczYzUwZWQiLCJpYXQiOjE2MDQzMTIzNzB9.4bp-JAOG3W-k2a3P8I-WR6m23FTKU_75BamFDBBR3iE"
+      }
+    ],
+    "birthday": "11-8-1999",
+    "createdAt": "2020-10-27T12:46:25.776Z",
+    "updatedAt": "2020-11-02T10:19:30.258Z",
+    "__v": 12
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 711,
+    "scope": 250,
+    "_id": { "$oid": "5f9c30b3fcf5fd5aaa921f67" },
+    "name": "Mai Ngọc Bích Trâm",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Lê Quang Cường",
+    "grade": "Lớp 7",
+    "classRoom": "7A3",
+    "email": "bichtram11032008@gmail.com",
+    "password": "$2a$08$gRhBPaYponivFPSMjliTqOLk4oPlM3RwY/DUEOKLt0TuU0.BQFN9e",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9c30b9fcf5fd5aaa921f68" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljMzBiM2ZjZjVmZDVhYWE5MjFmNjciLCJpYXQiOjE2MDQwNzE2MDl9.BLEAwxC0sJRir1WHt07ozv70a1q658YVqU7hBLjadmE"
+      }
+    ],
+    "birthday": "11-3-2008",
+    "createdAt": "2020-10-30T15:26:43.990Z",
+    "updatedAt": "2020-10-30T18:06:36.084Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 434,
+    "scope": 160,
+    "_id": { "$oid": "5f9a46da7793b824057344ee" },
+    "name": "Bùi Thanh Đức",
+    "sex": "Nam",
+    "district": "Thành phố Bà Rịa",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Nguyễn Trãi",
+    "grade": "Lớp 9",
+    "classRoom": "9A3",
+    "email": "btd01022006@gmail.com",
+    "password": "$2a$08$Vm4y5gMn91BRN7meNoYqMeJDZisreiyD7w2blaLlJZ6La7/lNrWxW",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9a46f67793b824057344ef" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlhNDZkYTc3OTNiODI0MDU3MzQ0ZWUiLCJpYXQiOjE2MDM5NDYyMzB9.8Gu1x86ZadE6zBvpqVrY7OvGdMAdPhZVQtJR-Ho0Vg0"
+      }
+    ],
+    "birthday": "1-2-2006",
+    "createdAt": "2020-10-29T04:36:42.386Z",
+    "updatedAt": "2020-10-30T18:04:43.332Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": true
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 464,
+    "scope": 290,
+    "_id": { "$oid": "5f9d43f06353423091e84a83" },
+    "name": "Nguyễn Hà Châu Anh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Lê Quý Đôn",
+    "grade": "Lớp 12",
+    "classRoom": "12 Sinh",
+    "email": "chauanhbleble@gmail.com",
+    "password": "$2a$08$LpVxBPn8G.SXldZQ2qMudugr9vJF3rhmF2NAOegBf.a8xoCPf2nwS",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d43fe6353423091e84a85" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDNmMDYzNTM0MjMwOTFlODRhODMiLCJpYXQiOjE2MDQxNDIwNzh9.z7ntvhu3r8lAhIqjUGW9B8damkEG2ZIC_eemKcZQyzo"
+      }
+    ],
+    "birthday": "03-04-2003",
+    "createdAt": "2020-10-31T11:01:04.468Z",
+    "updatedAt": "2020-10-31T16:05:24.958Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 807,
+    "scope": 210,
+    "_id": { "$oid": "5f9cf9046353423091e82c23" },
+    "name": "Trần Nguyễn Vĩnh Hoàng",
+    "sex": "Nam",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Châu Đức",
+    "grade": "Lớp 8",
+    "classRoom": "8a6",
+    "email": "chauduc1902@gmail.com",
+    "password": "$2a$08$nVXQN19zfPiwfYefuRvXge2KzJoXPEbG5iYG2hJ6yzdiVSN83WDcK",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9cf9146353423091e82c24" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljZjkwNDYzNTM0MjMwOTFlODJjMjMiLCJpYXQiOjE2MDQxMjI5MDB9.stcfq97ggmA-0QR1u6xlQpOmUF872pxINcKXixjdSbM"
+      },
+      {
+        "_id": { "$oid": "5f9d4b626353423091e84f59" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljZjkwNDYzNTM0MjMwOTFlODJjMjMiLCJpYXQiOjE2MDQxNDM5NzB9.ZQCJ-zmjG05qZ9gH93rtCZSIH8KIDd_CtikFf2J1D3I"
+      }
+    ],
+    "birthday": "19-2-2007",
+    "createdAt": "2020-10-31T05:41:25.005Z",
+    "updatedAt": "2020-11-03T03:54:26.828Z",
+    "__v": 4
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 592,
+    "scope": 300,
+    "_id": { "$oid": "5f9d39f76353423091e84527" },
+    "name": "NGUYỄN KHÁNH LINH",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Chuyên Lê Quý Đôn",
+    "grade": "Lớp 12",
+    "classRoom": "12AV2",
+    "email": "cheesyfood123@gmail.com",
+    "password": "$2a$08$915FvHUmD1jVoRFyX2Nr8ufqvptJrrsndwrByQbKfOi7/Lra9roUm",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d3a096353423091e84535" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzlmNzYzNTM0MjMwOTFlODQ1MjciLCJpYXQiOjE2MDQxMzk1Mjl9.oKZpAXyL0Q8pYny584mez09XxVRb9PbJOE6xrD8lwCg"
+      }
+    ],
+    "birthday": "13-11-2003",
+    "createdAt": "2020-10-31T10:18:31.321Z",
+    "updatedAt": "2020-10-31T16:05:19.634Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 408,
+    "scope": 260,
+    "_id": { "$oid": "5f9a38077793b824057332a5" },
+    "name": "Dang Thi Anh Tien",
+    "sex": "Nữ",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "CAO DANG SU PHAM BA RIA - VUNG TAU",
+    "grade": "Cao Đẳng",
+    "classRoom": "23C4",
+    "email": "dangthianhtien2001@gmail.com",
+    "password": "$2a$08$4.01fngJRi8w7XwbUMSzR.fyvlXaH2Swm6tS5xIGs.FhcQoSuiv0C",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9a381f7793b824057332ed" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlhMzgwNzc3OTNiODI0MDU3MzMyYTUiLCJpYXQiOjE2MDM5NDI0MzF9.TwXmW5nFMRaX8A0d7_Lfj3e7m4jnt_fCIEwzDiTU_Ow"
+      }
+    ],
+    "birthday": "08-01-2001",
+    "createdAt": "2020-10-29T03:33:27.572Z",
+    "updatedAt": "2020-10-30T18:04:32.376Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 309,
+    "scope": 250,
+    "_id": { "$oid": "5f98ec0401750c3a173c95d3" },
+    "name": "Dang thi thao",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao đẳng sư phạm",
+    "grade": "Cao Đẳng",
+    "classRoom": "22c4",
+    "email": "dangthithaod1nhvt@gmail.com",
+    "password": "$2a$08$9ooAqDmcCC9.NK3W0bEsY.TohiBheVz0VPc.EzA7g8T3A7LvhijZK",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f98ec0c01750c3a173c95f2" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4ZWMwNDAxNzUwYzNhMTczYzk1ZDMiLCJpYXQiOjE2MDM4NTc0MjB9.Ua2BPPyHaJZBVaITxFNoCrkgoq86HioGjZH-PNMdpG8"
+      }
+    ],
+    "birthday": "26-03-2000",
+    "createdAt": "2020-10-28T03:56:52.957Z",
+    "updatedAt": "2020-10-30T18:02:58.916Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 265,
+    "scope": 310,
+    "_id": { "$oid": "5f9d70b96353423091e877e0" },
+    "name": "Phạm Hoàng Danh",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trưởng THPT chuyên Lê  Quý Đôn",
+    "grade": "Lớp 11",
+    "classRoom": "11 Hóa 2",
+    "email": "danhphamvts@gmail.com",
+    "password": "$2a$08$zQ1QjtRS46G3GgLS7hFtOOHFkBnyhAvbVmlT5qoS3EPEvcsKkojEi",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d70d86353423091e877fc" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNzBiOTYzNTM0MjMwOTFlODc3ZTAiLCJpYXQiOjE2MDQxNTM1NjB9.ORNK4SHFT_J8F7jBDGUDB86OYIAcBoMN9ABon659FBw"
+      }
+    ],
+    "birthday": "16-1-2004",
+    "createdAt": "2020-10-31T14:12:09.566Z",
+    "updatedAt": "2020-10-31T16:06:08.183Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 585,
+    "scope": 340,
+    "_id": { "$oid": "5f9d4d366353423091e850d4" },
+    "name": "Phạm Ngọc Anh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Lê Quý Đôn",
+    "grade": "Lớp 12",
+    "classRoom": "12 toán 1",
+    "email": "dcpham310323@gmail.com",
+    "password": "$2a$08$QXGIH62HGCFzfJNCppOPl.PyVh.NF.lN5fGVRt9S.QgmCoU/PG.v6",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d5b3f6353423091e85a01" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNGQzNjYzNTM0MjMwOTFlODUwZDQiLCJpYXQiOjE2MDQxNDgwMzF9.S7GE77nW1UX5K9dRzxRzVIZvjXXLJgytakpiDBDstJQ"
+      }
+    ],
+    "birthday": "31-03-2003",
+    "createdAt": "2020-10-31T11:40:38.402Z",
+    "updatedAt": "2020-10-31T16:05:32.937Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": true,
+      "phan2": true,
+      "phan3": true,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 767,
+    "scope": 280,
+    "_id": { "$oid": "5f97e2b501750c3a173c4c89" },
+    "name": "Đoàn Hồng Nam",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường Cao Đẳng Kỹ Thuật Công Nghệ BRVT",
+    "grade": "Cao Đẳng",
+    "classRoom": "T19CNTT1",
+    "email": "doanhongnambctech@gmail.com",
+    "password": "$2a$08$Wy77Wna8C7M9eg8NP68qK.GOb8PtKjoXWtBXsxORR/YXyso/llYRu",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f97e2bc01750c3a173c4c8a" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3ZTJiNTAxNzUwYzNhMTczYzRjODkiLCJpYXQiOjE2MDM3ODk1MDB9.fpgCaLfOCbh6EFs14MVP3G0E6GKn2tBPnOxiE8GCwek"
+      }
+    ],
+    "birthday": "28-11-2004",
+    "createdAt": "2020-10-27T09:04:53.109Z",
+    "updatedAt": "2020-10-30T18:01:59.288Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 426,
+    "scope": 270,
+    "_id": { "$oid": "5f979fec2a15a912cc8f72cd" },
+    "name": "hoàng võ trung dũng",
+    "sex": "Nam",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Cao đẳng",
+    "nameSchool": "cao đẳng công nghệ kỹ thuật bà rịa vũng tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "cd19 cgkl qt",
+    "email": "dunghoangbrvt@gmail.com",
+    "password": "$2a$08$ZglYj3IPnRD9pK6FPM2o5.AY4l0OuPEunZbTFTyOdnjfxiD1Ukr4.",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f979ff52a15a912cc8f72e4" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OWZlYzJhMTVhOTEyY2M4ZjcyY2QiLCJpYXQiOjE2MDM3NzI0MDV9.rsGjvtdAb_xOXuT_NdQz0eo4etvR8xEzvy7ualPAhBI"
+      }
+    ],
+    "birthday": "24-2-2001",
+    "createdAt": "2020-10-27T04:19:57.020Z",
+    "updatedAt": "2020-10-30T18:01:41.785Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 556,
+    "scope": 170,
+    "_id": { "$oid": "5f9bcaeefcf5fd5aaa91efae" },
+    "name": "Lê Phan Tùng Dương",
+    "sex": "Nam",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Châu Đức",
+    "grade": "Lớp 9",
+    "classRoom": "9A6",
+    "email": "duongchetni05062006@gmail.com",
+    "password": "$2a$08$JsvAaOorz6G8WEJiti0EZ.79isIUbtEoOPMioZdIPpyVpfzsse/3y",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9bcaf5fcf5fd5aaa91efaf" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjliY2FlZWZjZjVmZDVhYWE5MWVmYWUiLCJpYXQiOjE2MDQwNDU1NTd9.cDZB9u8eUMqI08BDTWOoRjpVdquSvMRybSQH8sPIjeE"
+      }
+    ],
+    "birthday": "5-6-2006",
+    "createdAt": "2020-10-30T08:12:30.557Z",
+    "updatedAt": "2020-10-30T18:05:49.488Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 370,
+    "scope": 190,
+    "_id": { "$oid": "5f9d34f96353423091e8418f" },
+    "name": "Bui Ngoc Gia Han",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Chau Duc",
+    "grade": "Lớp 9",
+    "classRoom": "9a6",
+    "email": "giahan.14022006hh@gmai.com",
+    "password": "$2a$08$udWudB9l925ftoyh/g.ezef0Mk0xq/YWp0ebnrCpJrSV9ZflRRQsS",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d35046353423091e8419c" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzRmOTYzNTM0MjMwOTFlODQxOGYiLCJpYXQiOjE2MDQxMzgyNDR9.DbSV2V9OWvv24MsXLw0MLaqFC8eFpqAdUvRaUEVUVkE"
+      }
+    ],
+    "birthday": "14-2-2006",
+    "createdAt": "2020-10-31T09:57:13.823Z",
+    "updatedAt": "2020-10-31T16:05:16.359Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 462,
+    "scope": 160,
+    "_id": { "$oid": "5f9d77046353423091e88327" },
+    "name": "Nguyen Tu Anh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Nguyễn An Ninh",
+    "grade": "Lớp 9",
+    "classRoom": "9,1",
+    "email": "ginanguyen1008a@gmail.com",
+    "password": "$2a$08$hqnVkSFB9zpqQ42Ejqhi8O267.5MHRZcGLxhaRQvWYkx9eEPsWYDC",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d77116353423091e88329" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNzcwNDYzNTM0MjMwOTFlODgzMjciLCJpYXQiOjE2MDQxNTUxNTN9.aZaFABkdc5m5KrzX6V-PbvcJFtCtgJOPzZZd8UMOr10"
+      }
+    ],
+    "birthday": "11-11-2006",
+    "createdAt": "2020-10-31T14:39:00.102Z",
+    "updatedAt": "2020-10-31T16:06:20.253Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 511,
+    "scope": 230,
+    "_id": { "$oid": "5f9d600b6353423091e85e99" },
+    "name": "đặng nguyễn quỳnh giang",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "thcs châu đức",
+    "grade": "Lớp 9",
+    "classRoom": "9a6",
+    "email": "haicaosubaria@gmail.com",
+    "password": "$2a$08$3qdGQ78Q7cKY/pbtKiloJ.iwm64rQH7TQVZa.k5L7Lm8/qQk7JyZ2",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d7d9d6353423091e891c2" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNjAwYjYzNTM0MjMwOTFlODVlOTkiLCJpYXQiOjE2MDQxNTY4Mjl9.IxmE31C_o7CvfAMQ2ZdeQS5_mKDFV-MWOEYPOo4JxJA"
+      },
+      {
+        "_id": { "$oid": "5f9d7e526353423091e8931a" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNjAwYjYzNTM0MjMwOTFlODVlOTkiLCJpYXQiOjE2MDQxNTcwMTB9.TYt6aLos4wXGF_qGXAgcOD2fOiAvDh9EbpFqxfPpJ5M"
+      },
+      {
+        "_id": { "$oid": "5f9d7e9f6353423091e8942a" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNjAwYjYzNTM0MjMwOTFlODVlOTkiLCJpYXQiOjE2MDQxNTcwODd9.Pu0XeeqNGUqh-whVEshCMJzhYvhdcx-gXmq6Zldf9qk"
+      }
+    ],
+    "birthday": "25-4-2006",
+    "createdAt": "2020-10-31T13:00:59.681Z",
+    "updatedAt": "2020-10-31T16:05:44.890Z",
+    "__v": 5
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 301,
+    "scope": 250,
+    "_id": { "$oid": "5f996ffd26572f73cf46af8e" },
+    "name": "Trần Thị Hiền Trang",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao Đẳng Sưu Phạm Bà Rịa Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "23d2",
+    "email": "hientrang.040201@gmail.com",
+    "password": "$2a$08$DcDvM5X4DqvITlxO1eptG.6G8EqWpEFQKQhY1H33vzAzCtG2lkDJK",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9a1ae97793b82405731d69" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NmZmZDI2NTcyZjczY2Y0NmFmOGUiLCJpYXQiOjE2MDM5MzQ5NTN9.2GU05ge2U-_NXUIqsPpM-AnRxub-mDGACxhEwLh0Hjs"
+      }
+    ],
+    "birthday": "04-02-2001",
+    "createdAt": "2020-10-28T13:19:57.828Z",
+    "updatedAt": "2020-10-30T18:03:30.897Z",
+    "__v": 5
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 673,
+    "scope": 300,
+    "_id": { "$oid": "5f98202101750c3a173c562a" },
+    "name": "Trịnh Minh Hiếu",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Nguyễn Huệ",
+    "grade": "Lớp 11",
+    "classRoom": "11T2",
+    "email": "hiubeotm@gmail.com",
+    "password": "$2a$08$cVIRz78mhzIyyl8Bjb8hl.2mK49KfzTycZmQS4UY1hPOc5USRDm/W",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f98207001750c3a173c5653" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MjAyMTAxNzUwYzNhMTczYzU2MmEiLCJpYXQiOjE2MDM4MDUyOTZ9.wrsa3vauRI5fpLPCMOoVNGsPDj-kO415BIhzJN0QrG4"
+      },
+      {
+        "_id": { "$oid": "5f9bda2bfcf5fd5aaa91f3fc" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MjAyMTAxNzUwYzNhMTczYzU2MmEiLCJpYXQiOjE2MDQwNDk0NTF9.Bs1vjhlF1XCYg78yQbivQgHhnfO5t-xBO3boO-w19DE"
+      }
+    ],
+    "birthday": "18-08-2004",
+    "createdAt": "2020-10-27T13:26:57.068Z",
+    "updatedAt": "2020-10-30T18:02:11.158Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 346,
+    "scope": 290,
+    "_id": { "$oid": "5f9d6c106353423091e870f0" },
+    "name": "Hoàng Đình Trực",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Lê Qúy Đôn High school",
+    "grade": "Lớp 10",
+    "classRoom": "10 Lý",
+    "email": "hoangdinhtruc1@gmail.com",
+    "password": "$2a$08$KQ.XLI2GP.CqM15lZ9hAyebSuvnjB.b1x2yHtoEUc50VidT72HYrS",
+    "tokens": [],
+    "birthday": "5-7-2005",
+    "createdAt": "2020-10-31T13:52:16.130Z",
+    "updatedAt": "2020-10-31T16:06:02.113Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": -1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 473,
+    "scope": 300,
+    "_id": { "$oid": "5f978a4d2a15a912cc8f6870" },
+    "name": "Nguyễn Hoàng Long",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao Đẳng Kĩ Thuật Công Nghệ Bà Rịa Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19HAN-QT",
+    "email": "hoanglongpro9877@gmail.com",
+    "password": "$2a$08$lqzbksZy4NbJ5zRnb11SROV/sDN5patpi3hYlBoE.1i5ke9Hz/aCC",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f97940d2a15a912cc8f6e2d" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OGE0ZDJhMTVhOTEyY2M4ZjY4NzAiLCJpYXQiOjE2MDM3NjkzNTd9.sRrSDWfffu1uG_4jAADVqV4dQDKMRRbAdPlpJ9UAgv4"
+      }
+    ],
+    "birthday": "18-02-2001",
+    "createdAt": "2020-10-27T02:47:41.762Z",
+    "updatedAt": "2020-10-30T18:01:34.914Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 323,
+    "scope": 300,
+    "_id": { "$oid": "5f9d73586353423091e87c11" },
+    "name": "Trần Lê Hoàng Quyên",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Chuyên Lê Quý Đôn",
+    "grade": "Lớp 10",
+    "classRoom": "10 Toán 1",
+    "email": "hoangquyennan@gmail.com",
+    "password": "$2a$08$bsIyENuGWRSQAJv8X/tTF.lnuri4ZMCvRvYWFbCMVDw4Vt5y/yevi",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d735e6353423091e87c12" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNzM1ODYzNTM0MjMwOTFlODdjMTEiLCJpYXQiOjE2MDQxNTQyMDZ9.py3LbBMURb4dQQC6QsHtCz4t85WDz0uMkt98zYlMfhM"
+      }
+    ],
+    "birthday": "12-11-2005",
+    "createdAt": "2020-10-31T14:23:20.704Z",
+    "updatedAt": "2020-10-31T16:06:15.040Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 449,
+    "scope": 360,
+    "_id": { "$oid": "5f9d33fd6353423091e840d1" },
+    "name": "Trần Hồng Lĩnh",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Đại học",
+    "nameSchool": "Đại học Bà Rịa-Vũng Tàu",
+    "grade": "Đại học",
+    "classRoom": "DH18DC",
+    "email": "honglinhtranbvu@gmail.com",
+    "password": "$2a$08$Ivna4F2uXkov7/8sAyOnbeMlUFIMhTZKSgtBPwbtzQroxBeUICfXK",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d34406353423091e840ec" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzNmZDYzNTM0MjMwOTFlODQwZDEiLCJpYXQiOjE2MDQxMzgwNDh9.vi3mxTFpTDDa38nXhDiHOUAM-DUdoHt09WW4xa4ZUUo"
+      },
+      {
+        "_id": { "$oid": "5f9d4cb66353423091e8502e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzNmZDYzNTM0MjMwOTFlODQwZDEiLCJpYXQiOjE2MDQxNDQzMTB9.FBgWtdV1cTMIFqoe6gIHUWEGBT4NuYYZD-4dXXHzsTE"
+      }
+    ],
+    "birthday": "07-11-1999",
+    "createdAt": "2020-10-31T09:53:01.529Z",
+    "updatedAt": "2020-10-31T16:05:15.143Z",
+    "__v": 4
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 450,
+    "scope": 280,
+    "_id": { "$oid": "5f9c0ff6fcf5fd5aaa92077d" },
+    "name": "Nguyễn Việt Anh",
+    "sex": "Nam",
+    "district": "Thành phố Bà Rịa",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Lê Quang Cường",
+    "grade": "Lớp 7",
+    "classRoom": "7A1",
+    "email": "huychuongvang245@gmail.com",
+    "password": "$2a$08$T2s5mHuXaDXnQSeVlQE4B.NJGsbYc6ZeBYvwmJI5i/BaxhKg/EZ1W",
+    "tokens": [],
+    "birthday": "24-02-2020",
+    "createdAt": "2020-10-30T13:07:02.383Z",
+    "updatedAt": "2020-10-30T18:06:15.885Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 506,
+    "scope": 260,
+    "_id": { "$oid": "5f97807f2a15a912cc8f681e" },
+    "name": "Huỳnh Thị Thu Hà",
+    "sex": "Nữ",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Phước Tân",
+    "grade": "Lớp 9",
+    "classRoom": "9a1",
+    "email": "huynhha111597@gmail.com",
+    "password": "$2a$08$.YFHa6okT8s1OlQwmf1ywe.QJW/BLKzVouASv9GmyuJ910x.lTy.S",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9792152a15a912cc8f6cf2" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3ODA3ZjJhMTVhOTEyY2M4ZjY4MWUiLCJpYXQiOjE2MDM3Njg4NTN9.K5CJ6wT_Yj8gI3Uv2lMy3r7khjYUF5C6RQ7s7SoUKag"
+      }
+    ],
+    "birthday": "15-11-1997",
+    "createdAt": "2020-10-27T02:05:51.297Z",
+    "updatedAt": "2020-10-30T18:01:33.993Z",
+    "__v": 7
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 475,
+    "scope": 300,
+    "_id": { "$oid": "5f97c7c32a15a912cc8f7762" },
+    "name": "Phạm Hồng Vân",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Trần Nguyên Hãn",
+    "grade": "Lớp 12",
+    "classRoom": "12D",
+    "email": "hvpham1128@gmail.com",
+    "password": "$2a$08$.wfSJ.dgeQsx3FtNR6ull.Wlo5aEZdh33KbnuZkPrGnlhaYJBtSqi",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f97c7d02a15a912cc8f7764" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3YzdjMzJhMTVhOTEyY2M4Zjc3NjIiLCJpYXQiOjE2MDM3ODI2MDh9.Lca0tN7dfO4GPYxmb4arzmoXH8FUtwzNC_fG3ygWjiw"
+      }
+    ],
+    "birthday": "28-11-2003",
+    "createdAt": "2020-10-27T07:09:55.208Z",
+    "updatedAt": "2020-10-30T18:01:47.385Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 364,
+    "scope": 230,
+    "_id": { "$oid": "5f9d2acf6353423091e83821" },
+    "name": "Hoàng Ngọc Bảo Trân",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Châu Đức",
+    "grade": "Lớp 9",
+    "classRoom": "9a6",
+    "email": "hythieen@gmai.com",
+    "password": "$2a$08$lLUIKbzSSnZaqjMn0rXIZ.e1pHs/uz/JXKypTOXXrOWAI4CYHScK6",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d710a6353423091e8782f" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMmFjZjYzNTM0MjMwOTFlODM4MjEiLCJpYXQiOjE2MDQxNTM2MTB9.K6S9pH9IfszIl1yjyrqKBiwi-iKI2nJ5pzTgi8VBt-4"
+      },
+      {
+        "_id": { "$oid": "5fa13d09ef20d25b8e352aa4" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMmFjZjYzNTM0MjMwOTFlODM4MjEiLCJpYXQiOjE2MDQ0MDI0NDF9.f2w7uRp3yyGP2LbTpBQcozgJWQCJ4ysvMympxPoCIfc"
+      }
+    ],
+    "birthday": "19-2-2006",
+    "createdAt": "2020-10-31T09:13:51.493Z",
+    "updatedAt": "2020-11-03T11:20:41.495Z",
+    "__v": 6
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 554,
+    "scope": 290,
+    "_id": { "$oid": "5f98090201750c3a173c4f5e" },
+    "name": "Ngô Thị Hương Giang",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Đại học",
+    "nameSchool": "Đại học Bà Rịa-Vũng Tàu",
+    "grade": "Đại học",
+    "classRoom": "DH18TL",
+    "email": "iris.huonggiang@gmail.com",
+    "password": "$2a$08$j9D6T5A.TzLqH43o.SCg0OYi4j8/t5mpg8P5Q6au5rvAczhs0nF7S",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f98090901750c3a173c4f5f" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MDkwMjAxNzUwYzNhMTczYzRmNWUiLCJpYXQiOjE2MDM3OTkzMDV9.DgmOGjqUaNZ4Y3V8gjdDk-5tL6Zr7lLYJ6je9sN1q4Y"
+      },
+      {
+        "_id": { "$oid": "5f980a9d01750c3a173c4f61" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MDkwMjAxNzUwYzNhMTczYzRmNWUiLCJpYXQiOjE2MDM3OTk3MDl9.9rEGg880FycIB8V3fezxjk9Vp-pE9vtkfcSUHMTnI3I"
+      },
+      {
+        "_id": { "$oid": "5f9d1aa56353423091e8336e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MDkwMjAxNzUwYzNhMTczYzRmNWUiLCJpYXQiOjE2MDQxMzE0OTN9.NOWFsXQHIfvoJS8xsOgTpYZ9bdjbWR2Vg2IjgwwRKwk"
+      },
+      {
+        "_id": { "$oid": "5f9fdd00ef20d25b8e3528bf" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MDkwMjAxNzUwYzNhMTczYzRmNWUiLCJpYXQiOjE2MDQzMTIzMjB9.9C2mK3X-esiy1nsVKjdkEbNrqFtP9SHXPAr-9XmY--8"
+      }
+    ],
+    "birthday": "14-04-2000",
+    "createdAt": "2020-10-27T11:48:18.404Z",
+    "updatedAt": "2020-11-02T10:18:40.274Z",
+    "__v": 6
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 275,
+    "scope": 330,
+    "_id": { "$oid": "5f9d78326353423091e8852d" },
+    "name": "Chu Huệ Minh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trung học phổ thông chuyên Lê Quý Đôn",
+    "grade": "Lớp 11",
+    "classRoom": "11H2",
+    "email": "kakaanhanh001@gmail.com",
+    "password": "$2a$08$UBdTm2C2cnimjUp7BREK/e7ygZu6VTqu0tBRJNPu0l7KwOjr5QwIi",
+    "tokens": [],
+    "birthday": "25-05-2004",
+    "createdAt": "2020-10-31T14:44:02.122Z",
+    "updatedAt": "2020-10-31T16:06:23.032Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 502,
+    "scope": 360,
+    "_id": { "$oid": "5f9d67b46353423091e869ac" },
+    "name": "Nguyễn khắc Vĩnh Kim",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Vũng Tàu",
+    "grade": "Lớp 11",
+    "classRoom": "11A8",
+    "email": "kim29042004@gmail.com",
+    "password": "$2a$08$d0lEFODoziRBBpfMbFEJQOlc48b9Pf0tySRauMCRxslBs0Yg2T/cu",
+    "tokens": [],
+    "birthday": "29-04-2004",
+    "createdAt": "2020-10-31T13:33:40.890Z",
+    "updatedAt": "2020-10-31T16:05:56.503Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 471,
+    "scope": 290,
+    "_id": { "$oid": "5f98335b01750c3a173c65ac" },
+    "name": "Lê Thị Quỳnh Giang",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Nguyễn Huệ",
+    "grade": "Lớp 12",
+    "classRoom": "12AN2",
+    "email": "le03102003@gmail.com",
+    "password": "$2a$08$UqtTynwjUH.sMy9l6bYeEOwW7bpCY2rncvS4Re8ORxFZ5GSNWBM7a",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f98338101750c3a173c65c9" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MzM1YjAxNzUwYzNhMTczYzY1YWMiLCJpYXQiOjE2MDM4MTAxNzd9.rGflNsQte0_NiwdI2n-rRBkpoGyn4rMW5pXZcCNnZ80"
+      },
+      {
+        "_id": { "$oid": "5f9837ac01750c3a173c6899" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MzM1YjAxNzUwYzNhMTczYzY1YWMiLCJpYXQiOjE2MDM4MTEyNDR9.e9tDmyk3N8ctPMXhZJ5NSy6kFBT4bMA4cMG5IhQWwi0"
+      }
+    ],
+    "birthday": "3-10-2003",
+    "createdAt": "2020-10-27T14:48:59.466Z",
+    "updatedAt": "2020-10-30T18:02:25.469Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 385,
+    "scope": 240,
+    "_id": { "$oid": "5f9d62c36353423091e861cd" },
+    "name": "Lê Đỗ Bảo Anh",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "thcs châu đức",
+    "grade": "Lớp 9",
+    "classRoom": "9a6",
+    "email": "ledobaoanh12@gmail.com",
+    "password": "$2a$08$wRSqzUWxuX9g.EN1sPZBB.RhqyhvYp4HCxt6B3iaXPqMJtk0/.56O",
+    "tokens": [],
+    "birthday": "16-12-2006",
+    "createdAt": "2020-10-31T13:12:35.663Z",
+    "updatedAt": "2020-10-31T16:05:49.739Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 559,
+    "scope": 340,
+    "_id": { "$oid": "5f9d57d96353423091e8575d" },
+    "name": "Lê Hồng Minh",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "thpt chuyên Lê Quý Đôn",
+    "grade": "Lớp 12",
+    "classRoom": "12 Toán 1",
+    "email": "lehongdaiminh@gmail.com",
+    "password": "$2a$08$m2GnaYlYMBr7Geh/Pjm5IuCIUinthX7G8t1T/N5VEJbWj0huqP33q",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d57de6353423091e85760" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNTdkOTYzNTM0MjMwOTFlODU3NWQiLCJpYXQiOjE2MDQxNDcxNjZ9.xZbDRJMzJc8khw_QNk_YIR0FrpqB1tIXJGKNa7HPomM"
+      }
+    ],
+    "birthday": "9-2-2003",
+    "createdAt": "2020-10-31T12:26:01.558Z",
+    "updatedAt": "2020-10-31T16:05:37.765Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": true,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 396,
+    "scope": 180,
+    "_id": { "$oid": "5f9d86bf6353423091e8a61f" },
+    "name": "Lê Kim Khanh",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Châu Đức",
+    "grade": "Lớp 9",
+    "classRoom": "9a6",
+    "email": "lekimkhanh1206@gmail.com",
+    "password": "$2a$08$V0kAsNNFkF6lccgvF5rs7uokfG55l1fhWC1XHf1xYD3eZNxtjZVKW",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d86cf6353423091e8a642" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkODZiZjYzNTM0MjMwOTFlOGE2MWYiLCJpYXQiOjE2MDQxNTkxODN9.q7fPqYzoQxz5Q6_UeZUNCIJRxTBABJbmMW6GKyyASxs"
+      },
+      {
+        "_id": { "$oid": "5f9ec06aef20d25b8e352846" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkODZiZjYzNTM0MjMwOTFlOGE2MWYiLCJpYXQiOjE2MDQyMzk0NjZ9.VJl8c9vXYWgBtpQG6MULjkMxlZtBp-ufBPKjPbT74TE"
+      }
+    ],
+    "birthday": "8-12-2006",
+    "createdAt": "2020-10-31T15:46:07.217Z",
+    "updatedAt": "2020-11-01T14:04:26.578Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 250,
+    "scope": 190,
+    "_id": { "$oid": "5f9ce8746353423091e8273a" },
+    "name": "Đoàn Huỳnh Minh Nguyệt",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Thcs Châu Đức",
+    "grade": "Lớp 8",
+    "classRoom": "8a6",
+    "email": "lengocyen22042007@gmail.com",
+    "password": "$2a$08$zzcsrq87NcJikj3nWBeN8.Vo6IKpj/w8WaexMN3il1u7YPeXkvcAe",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9ce8896353423091e8273b" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljZTg3NDYzNTM0MjMwOTFlODI3M2EiLCJpYXQiOjE2MDQxMTg2NjV9.sXNhpTyYsNhTLuE3Kwo8hMz627a1LB4ZHusrNUCqK28"
+      },
+      {
+        "_id": { "$oid": "5f9cecb46353423091e8285b" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljZTg3NDYzNTM0MjMwOTFlODI3M2EiLCJpYXQiOjE2MDQxMTk3MzJ9.0-Xam_4FflyIGeTl8vlJ6Tq16gsts99cJAQOKaulynM"
+      }
+    ],
+    "birthday": "2-6-2007",
+    "createdAt": "2020-10-31T04:30:44.670Z",
+    "updatedAt": "2020-10-31T16:04:56.713Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 607,
+    "scope": 290,
+    "_id": { "$oid": "5f9d53d26353423091e8556f" },
+    "name": "Phạm Vũ Linh Anh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Vũng Tàu",
+    "grade": "Lớp 11",
+    "classRoom": "11D1",
+    "email": "linhanhokiyune2004@gmail.com",
+    "password": "$2a$08$WMOzo4iR/n3WMUVW43ZHqui6qhCZ2o3k8l3zHSSgagx41gOH8rrq.",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d53db6353423091e85571" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNTNkMjYzNTM0MjMwOTFlODU1NmYiLCJpYXQiOjE2MDQxNDYxMzl9.3HsCVCIWOCEBfWJj0BIeP-1QoltL9k1ImFm3GFnlMt8"
+      }
+    ],
+    "birthday": "20-12-2004",
+    "createdAt": "2020-10-31T12:08:50.366Z",
+    "updatedAt": "2020-10-31T16:05:34.962Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 388,
+    "scope": 190,
+    "_id": { "$oid": "5f9d32c16353423091e8403d" },
+    "name": "Tran Thi Ngoc Thao",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Chau Duc",
+    "grade": "Lớp 9",
+    "classRoom": "9a6",
+    "email": "lunatran1206@gmail.com",
+    "password": "$2a$08$i2mnc2fanrpMAQO4AJCGP.Gi61e1vWJM92LmSzXpWrw3haJHNY.Ai",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9e34feef20d25b8e3527cb" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzJjMTYzNTM0MjMwOTFlODQwM2QiLCJpYXQiOjE2MDQyMDM3NzR9.zSMswbWEkcba9w-tPnwRA_vvQlfCgI1ypvWTVnhd7Bk"
+      }
+    ],
+    "birthday": "12-1-2006",
+    "createdAt": "2020-10-31T09:47:45.608Z",
+    "updatedAt": "2020-11-01T04:09:34.662Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 267,
+    "scope": 280,
+    "_id": { "$oid": "5f9a27527793b82405732025" },
+    "name": "Mai Thị Ánh",
+    "sex": "Nữ",
+    "district": "Huyện Long Điền",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường cao đẳng sư phạm Bà Rịa Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "22DSP",
+    "email": "maianh29082811@gmail.com",
+    "password": "$2a$08$FJyc/wydR956/5WKYQXwZO2vdMamfR9m.C1KsHbIXbQrirG46SUVK",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9a433f7793b824057344e2" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlhMjc1Mjc3OTNiODI0MDU3MzIwMjUiLCJpYXQiOjE2MDM5NDUyNzl9.BN-em9AM4SUnDMbw693kdI9Nkjiro0kQJJw96_WAk_A"
+      }
+    ],
+    "birthday": "29-08-2000",
+    "createdAt": "2020-10-29T02:22:10.224Z",
+    "updatedAt": "2020-10-30T18:04:03.552Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 151,
+    "scope": 330,
+    "_id": { "$oid": "5f9d86146353423091e8a4d8" },
+    "name": "Hà Thị Nguyệt Ánh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trung học phổ thông chuyên Lê Quý Đôn",
+    "grade": "Lớp 11",
+    "classRoom": "11H2",
+    "email": "maianh76pt@gmail.com",
+    "password": "$2a$08$oijHn1T0hb3nreWtBx3RkeKcUr5YmMU/YN3wOVhljCaz1naHpEdt.",
+    "tokens": [],
+    "birthday": "30-10-2004",
+    "createdAt": "2020-10-31T15:43:16.402Z",
+    "updatedAt": "2020-10-31T16:06:54.198Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 373,
+    "scope": 250,
+    "_id": { "$oid": "5f9d728e6353423091e87a91" },
+    "name": "Nguyễn Minh Hậu",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Châu Đức",
+    "grade": "Lớp 8",
+    "classRoom": "8a6",
+    "email": "minhold0302@gmail.com",
+    "password": "$2a$08$7cHym/cGZ82TI/UrxCSmBeXZSFO7Gua.jQVrP3TzUcWzMTkFXgG8C",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d77c66353423091e88452" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNzI4ZTYzNTM0MjMwOTFlODdhOTEiLCJpYXQiOjE2MDQxNTUzMzR9.lgZu4yJ74wVBkeb0TBRCpKuJxLCULruauOPdKsKw5l0"
+      }
+    ],
+    "birthday": "3-2-2007",
+    "createdAt": "2020-10-31T14:19:58.145Z",
+    "updatedAt": "2020-10-31T16:06:13.100Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 350,
+    "scope": 280,
+    "_id": { "$oid": "5f9789e02a15a912cc8f6867" },
+    "name": "Nguyễn Minh Thành",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường Cao đẳng Kỹ thuật Công Nghệ Bà Rịa - Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19Hàn-QT",
+    "email": "minhthanhiphone12@gmail.com",
+    "password": "$2a$08$oR1mNKwd3v7GNKF/wvqyeu6reWvYE3WnIuXdOW.eiKWsfW8oveRou",
+    "tokens": [],
+    "birthday": "23-12-2000",
+    "createdAt": "2020-10-27T02:45:52.401Z",
+    "updatedAt": "2020-10-30T18:01:34.194Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 616,
+    "scope": 300,
+    "_id": { "$oid": "5f9d4c3c6353423091e84fcd" },
+    "name": "Nguyễn Thị Minh Thy",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Chuyên Lê Quý Đôn",
+    "grade": "Lớp 12",
+    "classRoom": "12AV3",
+    "email": "minhthy2147@gmail.com",
+    "password": "$2a$08$L5AFZaxja7x2RAytnMztnu30m1/Q2lUUzZqOnf50PLdkXfhXF5VYu",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d4c4f6353423091e84fda" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNGMzYzYzNTM0MjMwOTFlODRmY2QiLCJpYXQiOjE2MDQxNDQyMDd9.UnLCPBo23qupHC4LpYXrUJt06qF6nk2Xr1JUyzD3GMQ"
+      }
+    ],
+    "birthday": "26-03-2003",
+    "createdAt": "2020-10-31T11:36:28.353Z",
+    "updatedAt": "2020-10-31T16:05:32.443Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 571,
+    "scope": 170,
+    "_id": { "$oid": "5f9827e101750c3a173c5c92" },
+    "name": "Trần Hoàng My",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Nguyễn Huệ",
+    "grade": "Lớp 12",
+    "classRoom": "TN3",
+    "email": "mjin000000@gmail.com",
+    "password": "$2a$08$JPe4SN3mMuvWpLBYlOD7kugKTO3i1bh6VMtiSwqu5i.9WlX07SQg6",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9827f101750c3a173c5cbb" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MjdlMTAxNzUwYzNhMTczYzVjOTIiLCJpYXQiOjE2MDM4MDcyMTd9.ZEQfxbRxZ-w62mfsxR1bnuDRoOpQJonAxjvafUXfyac"
+      },
+      {
+        "_id": { "$oid": "5f983c5b01750c3a173c6aed" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MjdlMTAxNzUwYzNhMTczYzVjOTIiLCJpYXQiOjE2MDM4MTI0NDN9.7jUXAGRWeqJtP3xguwiVMpIPaY9IrN7eIvSEu-Pzc2o"
+      },
+      {
+        "_id": { "$oid": "5f9ecf79ef20d25b8e352870" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4MjdlMTAxNzUwYzNhMTczYzVjOTIiLCJpYXQiOjE2MDQyNDMzMjF9.tsHls3Mxj8rv5PJ4WoVKZcDXtWMcfuWxgUw1CcFwpxo"
+      }
+    ],
+    "birthday": "25-09-2003",
+    "createdAt": "2020-10-27T14:00:01.507Z",
+    "updatedAt": "2020-11-01T15:08:41.047Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 651,
+    "scope": 170,
+    "_id": { "$oid": "5f9cc0916353423091e8185d" },
+    "name": "Trần Mỹ Trúc",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Trường THCS Lê Quang Cường",
+    "grade": "Lớp 7",
+    "classRoom": "7A3",
+    "email": "mytructran2008@gmail.com",
+    "password": "$2a$08$v8bz785Icjv4X0oc8KR9wO1lGRR9G2yQAygnNVpfDCHyz0AZpRtsq",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9cc0a06353423091e8185e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljYzA5MTYzNTM0MjMwOTFlODE4NWQiLCJpYXQiOjE2MDQxMDg0NDh9.bdryqGZsVRFIRnQtWJEY-dd1M3cneF5rjC9OALEHnDg"
+      },
+      {
+        "_id": { "$oid": "5f9cf5016353423091e82b4e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljYzA5MTYzNTM0MjMwOTFlODE4NWQiLCJpYXQiOjE2MDQxMjE4NTd9.8DKBTC74oBg2aGblw_ssOmpWsPF8DI0mc07kIvgoEKU"
+      },
+      {
+        "_id": { "$oid": "5f9d15936353423091e8322c" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljYzA5MTYzNTM0MjMwOTFlODE4NWQiLCJpYXQiOjE2MDQxMzAxOTV9.F6k4WHb_ax7REozQJ1f-9WznKRFM4SzeuNaaLX1PcQI"
+      }
+    ],
+    "birthday": "9-5-2008",
+    "createdAt": "2020-10-31T01:40:33.836Z",
+    "updatedAt": "2020-10-31T16:04:41.509Z",
+    "__v": 5
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 443,
+    "scope": 300,
+    "_id": { "$oid": "5f9d2e3a6353423091e83ccb" },
+    "name": "Nguyễn Thu Ngân",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trần Nguyên Hãn",
+    "grade": "Lớp 10",
+    "classRoom": "10D1",
+    "email": "ngannguyen05082005@gmail.com",
+    "password": "$2a$08$DETIKt0KYMw6z/ih6o28Xe/M6hnMhFMDljaWwZdJ0F7vmVx8WCO6i",
+    "tokens": [],
+    "birthday": "08-05-2005",
+    "createdAt": "2020-10-31T09:28:26.497Z",
+    "updatedAt": "2020-10-31T16:05:11.978Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 338,
+    "scope": 320,
+    "_id": { "$oid": "5f9d30ba6353423091e83f11" },
+    "name": "Đỗ Ngọc Linh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trần Nguyên Hãn",
+    "grade": "Lớp 10",
+    "classRoom": "10D1",
+    "email": "ngoclinhdo248@gmail.com",
+    "password": "$2a$08$vCT6rH3zmCZXzUVVepa/BOLjy9bRdtJx.DpvjTJFZ8FZxa.LfaIia",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d30c86353423091e83f14" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzBiYTYzNTM0MjMwOTFlODNmMTEiLCJpYXQiOjE2MDQxMzcxNjB9.mFYZw6ClUzrBc6AIif3m6566z1O6Zoqi7G4Gj72BXWk"
+      }
+    ],
+    "birthday": "16-02-2005",
+    "createdAt": "2020-10-31T09:39:06.200Z",
+    "updatedAt": "2020-10-31T16:05:12.784Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 578,
+    "scope": 350,
+    "_id": { "$oid": "5f98e76901750c3a173c79c2" },
+    "name": "Luu Thi Ngoc Tram",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Cao đẳng",
+    "nameSchool": "BRVT college of education",
+    "grade": "Cao Đẳng",
+    "classRoom": "22DTM",
+    "email": "ngoctram0264@gmail.com",
+    "password": "$2a$08$sgUQ8f3STBQb7YqlLfHtF.gSPjds7usnO8XeGLZ/xx6Vjf/jKYJf2",
+    "tokens": [],
+    "birthday": "7-10-0",
+    "createdAt": "2020-10-28T03:37:13.522Z",
+    "updatedAt": "2020-10-30T18:02:43.546Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 463,
+    "scope": 260,
+    "_id": { "$oid": "5f9a274e7793b82405732022" },
+    "name": "Ngo Nu Hoang Anh",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Cao đẳng",
+    "nameSchool": "Ba Ria- Vung Tau College of Education",
+    "grade": "Cao Đẳng",
+    "classRoom": "22DSP",
+    "email": "ngonuhoanganh1032000@gmail.com",
+    "password": "$2a$08$x6SO./DaQBKYxVL85ovEJ.T2h8lFkRdbA5VVwGGwBdHjZBp9t3qGW",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9a31017793b82405732703" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlhMjc0ZTc3OTNiODI0MDU3MzIwMjIiLCJpYXQiOjE2MDM5NDA2MDl9.9aoiTX9aJLK7tYlCMhaa__LRIBbMgYw8-kalIH1vp60"
+      },
+      {
+        "_id": { "$oid": "5f9aacadcb97733cb5b9396f" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlhMjc0ZTc3OTNiODI0MDU3MzIwMjIiLCJpYXQiOjE2MDM5NzIyNjl9.86WouSh5QrFGhSIzyttxRvnnvVzPSvSgupGHw3wojHk"
+      }
+    ],
+    "birthday": "10-3-2000",
+    "createdAt": "2020-10-29T02:22:06.734Z",
+    "updatedAt": "2020-10-30T18:04:03.268Z",
+    "__v": 4
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 631,
+    "scope": 320,
+    "_id": { "$oid": "5f9944f726572f73cf46a5cd" },
+    "name": "Nguyễn Thị Anh Thy",
+    "sex": "Nữ",
+    "district": "Huyện Long Điền",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường Cao Đẳng Sư Phạm BRVT",
+    "grade": "Cao Đẳng",
+    "classRoom": "22a4",
+    "email": "nguyenanhthy892@gmail.com",
+    "password": "$2a$08$zFUeNXngOUxi2nDs5ehDYuYPCCVhgooZaqZBRaWAL8mjCm0T9Xjri",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f99450126572f73cf46a5ce" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDM4ODAxOTN9.s5JrAKtomeZSeve45PtQZjkYA8prK6gmlrQUjgGb67g"
+      },
+      {
+        "_id": { "$oid": "5f99761726572f73cf46b383" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDM4OTI3NTl9.wMQF_yofqlPQKe1GDEwzBbjzOrhyKGtrooxsSrrBhrs"
+      },
+      {
+        "_id": { "$oid": "5f9ac354cb97733cb5b94066" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDM5NzgwNjh9.81-YJLBzjaPGAEMYJmGK2wpakMp9CwMV1Pbtt-6riT8"
+      },
+      {
+        "_id": { "$oid": "5f9bfb8bfcf5fd5aaa91ff6c" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDQwNTc5OTV9.5kLoOOaI03igj9eh3meaG8sY4n8NhXTSoZmczv5ZIYw"
+      },
+      {
+        "_id": { "$oid": "5f9fee8def20d25b8e3528c4" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDQzMTY4MTN9.tYDt-vWqPkgeBwGw9jiT2F5BmlRNgWE8tdiz9QraThk"
+      },
+      {
+        "_id": { "$oid": "5fa02072ef20d25b8e3528f1" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDQzMjk1ODZ9.YGAGabQeJqFni2fsN1tvmrR9-xbSgrTqjgihja4I_Zs"
+      },
+      {
+        "_id": { "$oid": "5fa02072ef20d25b8e3528f2" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDQzMjk1ODZ9.YGAGabQeJqFni2fsN1tvmrR9-xbSgrTqjgihja4I_Zs"
+      },
+      {
+        "_id": { "$oid": "5fa089c7ef20d25b8e35291e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDQzNTY1NTF9.K2mheACBStBFanBJcrNJGEcylC25CzKMfI4QaRK5o7Y"
+      },
+      {
+        "_id": { "$oid": "5fa11b58ef20d25b8e352a1d" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDQzOTM4MTZ9.APD6L80H1P_o0elQ61KxKyYklLshT97IVrJOR-fm_q4"
+      },
+      {
+        "_id": { "$oid": "5fa17c7eef20d25b8e352af3" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5NDRmNzI2NTcyZjczY2Y0NmE1Y2QiLCJpYXQiOjE2MDQ0MTg2ODZ9.AAlNSqz00MoPBHHi94RJuDs1o3vdjF5n_7YppJFPovU"
+      }
+    ],
+    "birthday": "8-9-2000",
+    "createdAt": "2020-10-28T10:16:23.444Z",
+    "updatedAt": "2020-11-03T15:51:26.108Z",
+    "__v": 14
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 602,
+    "scope": 260,
+    "_id": { "$oid": "5f978d5e2a15a912cc8f69ce" },
+    "name": "nguyen cong nam",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "trường cao đẳng kỹ thuật công nghệ bà rịa vũng tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19HANQT",
+    "email": "nguyencongnamcd19hanqt@gmail.com",
+    "password": "$2a$08$BGPxkVNckVroO39yYvPpX.bjqZ7S6sRCeWLEiHIIMFFpPT1/V48PS",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f978d822a15a912cc8f69cf" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OGQ1ZTJhMTVhOTEyY2M4ZjY5Y2UiLCJpYXQiOjE2MDM3Njc2ODJ9.GNLaTedIURcZRZP82DrzW2T0D2on19JtzP8Bvkjp6kk"
+      }
+    ],
+    "birthday": "01-01-01",
+    "createdAt": "2020-10-27T03:00:46.648Z",
+    "updatedAt": "2020-10-30T18:01:36.866Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 655,
+    "scope": 300,
+    "_id": { "$oid": "5f9d5e306353423091e85cf9" },
+    "name": "Nguyễn Diệu Hiền",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trường Trung học phổ thông chuyên Lê Quý Đôn",
+    "grade": "Lớp 10",
+    "classRoom": "10AV2",
+    "email": "nguyendieuh6@gmail.com",
+    "password": "$2a$08$EC5TyEJW2y6E5/Exnbhth.RQDUi8njIU7jDXSDVrzKogDuTSQdvwC",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d5e586353423091e85cfd" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNWUzMDYzNTM0MjMwOTFlODVjZjkiLCJpYXQiOjE2MDQxNDg4MjR9.ci8mRQuRZXQJ9HvoXgE9dCVEW_WuClIUvR7pLZFS-G0"
+      },
+      {
+        "_id": { "$oid": "5f9d755b6353423091e8807e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNWUzMDYzNTM0MjMwOTFlODVjZjkiLCJpYXQiOjE2MDQxNTQ3MTV9.8UfXcHUiAFBgBrZszDPLUUMpEYEif6tzs6RUK79Ag-U"
+      },
+      {
+        "_id": { "$oid": "5fa17c77ef20d25b8e352af2" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNWUzMDYzNTM0MjMwOTFlODVjZjkiLCJpYXQiOjE2MDQ0MTg2Nzl9.cq8_pMuqDjl0peqJUwQT4_MzPe_QVFl9I6cI8jFRwrg"
+      }
+    ],
+    "birthday": "3-2-2005",
+    "createdAt": "2020-10-31T12:53:04.505Z",
+    "updatedAt": "2020-11-03T15:51:19.398Z",
+    "__v": 5
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 525,
+    "scope": 290,
+    "_id": { "$oid": "5f97cada2a15a912cc8f7896" },
+    "name": "Nguyễn Đức Thắng",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trần NGuyên Hãn",
+    "grade": "Lớp 12",
+    "classRoom": "12D",
+    "email": "nguyendt30102003@gmail.com",
+    "password": "$2a$08$UgRUfl3WjPOmAJnG3cFM.O7zPVWdbTMzl34KWC.O43ABy/iipsjke",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f97caef2a15a912cc8f78b3" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3Y2FkYTJhMTVhOTEyY2M4Zjc4OTYiLCJpYXQiOjE2MDM3ODM0MDd9.ofQD7ltyFvVYsTnXe41Fh7fN4Q_d0CPwXazH4EfJRws"
+      }
+    ],
+    "birthday": "30-2-2003",
+    "createdAt": "2020-10-27T07:23:06.983Z",
+    "updatedAt": "2020-10-30T18:01:51.186Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 619,
+    "scope": 300,
+    "_id": { "$oid": "5f98e34c01750c3a173c73e3" },
+    "name": "NGUYEN LE QUYNH TRAM",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao đẳng sư phạm Bà Rịa Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "22DTM",
+    "email": "nguyenlequynhtram9@gmail.com",
+    "password": "$2a$08$qQjAG5J2zSL/9YwJWInJ6O19oYOPuV5LOw67.Ly0vK6JbenlmQX.C",
+    "tokens": [],
+    "birthday": "29-09-2000",
+    "createdAt": "2020-10-28T03:19:40.993Z",
+    "updatedAt": "2020-10-30T18:02:36.803Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": true,
+      "phan2": true,
+      "phan3": true,
+      "phan4": true
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 440,
+    "scope": 180,
+    "_id": { "$oid": "5f9cc0606353423091e8185a" },
+    "name": "Nguyễn Ngọc Minh Anh",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Lê Quang Cường",
+    "grade": "Lớp 7",
+    "classRoom": "7A3",
+    "email": "nguyenngocminhanh321@gmail.com",
+    "password": "$2a$08$dQ.XPqIab1CevdYjCgvoyuRhJrFdGzaqgKm5KkefJSa5dS7uOAwO.",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9cc0696353423091e8185b" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljYzA2MDYzNTM0MjMwOTFlODE4NWEiLCJpYXQiOjE2MDQxMDgzOTN9.8xFABbfHeAqFVLZWoKSt0RcfQyCK7NjE9XObeCkq0kc"
+      },
+      {
+        "_id": { "$oid": "5f9cea896353423091e827bc" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljYzA2MDYzNTM0MjMwOTFlODE4NWEiLCJpYXQiOjE2MDQxMTkxNzd9.n8oigVwvf_mFwvZuGTHAQQ9DXGhzz5s1OS6PBAb5KBY"
+      }
+    ],
+    "birthday": "29-9-2008",
+    "createdAt": "2020-10-31T01:39:44.512Z",
+    "updatedAt": "2020-10-31T16:04:41.374Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 729,
+    "scope": 270,
+    "_id": { "$oid": "5f98ef9201750c3a173c9f80" },
+    "name": "nguyenthithanhtuy",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Cao đẳng",
+    "nameSchool": "truong CDSP ba ria vung tau",
+    "grade": "Cao Đẳng",
+    "classRoom": "23k",
+    "email": "nguyenttthuy1602@gmail.com",
+    "password": "$2a$08$q972knx/zYC7W5NTymC5Ou7BESPmqaoTWzik8g45GvqqqaR37gIbW",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f98efab01750c3a173c9faa" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk4ZWY5MjAxNzUwYzNhMTczYzlmODAiLCJpYXQiOjE2MDM4NTgzNDd9.JnO-NLwxXZ0qbcD31o4NoLs9Re2KlM2u2wajnxTankQ"
+      }
+    ],
+    "birthday": "16-2-2001",
+    "createdAt": "2020-10-28T04:12:02.410Z",
+    "updatedAt": "2020-10-30T18:03:02.465Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 630,
+    "scope": 360,
+    "_id": { "$oid": "5f9d48766353423091e84d36" },
+    "name": "Nguyễn Yến Nhi",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT chuyên Lê Quý Đôn",
+    "grade": "Lớp 10",
+    "classRoom": "10Văn",
+    "email": "nguyenyennhi912005@gmail.com",
+    "password": "$2a$08$uDUWuIeZiFzkwIST/sc5L.GNI7NjRCAEJEQn8kXWZTbfvyRmSvQNu",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d48876353423091e84d5e" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDg3NjYzNTM0MjMwOTFlODRkMzYiLCJpYXQiOjE2MDQxNDMyMzl9.JbI0-lOOExTigOU4YC23_gg6UrT5JzAKTue4HwnNiA0"
+      },
+      {
+        "_id": { "$oid": "5f9d68d46353423091e86b90" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDg3NjYzNTM0MjMwOTFlODRkMzYiLCJpYXQiOjE2MDQxNTE1MDh9.ULKmVEdks6nhBidxF3flsh8VdDbt9GS_s8V7W9F8tnU"
+      },
+      {
+        "_id": { "$oid": "5f9e3c86ef20d25b8e3527d0" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDg3NjYzNTM0MjMwOTFlODRkMzYiLCJpYXQiOjE2MDQyMDU3MDJ9.Bud59zu51xFM_JLLQYfSqRH1d8kxtLWHl0KPRpTPNSA"
+      }
+    ],
+    "birthday": "28-10-2005",
+    "createdAt": "2020-10-31T11:20:22.128Z",
+    "updatedAt": "2020-11-01T04:41:42.549Z",
+    "__v": 5
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 289,
+    "scope": 310,
+    "_id": { "$oid": "5f998da526572f73cf46c169" },
+    "name": "Nguyễn Thị Phương Uyên",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học cơ sở",
+    "nameSchool": "trường thcs Châu Thành",
+    "grade": "Lớp 9",
+    "classRoom": "9/2",
+    "email": "nhtphuong.dulich@gmail.com",
+    "password": "$2a$08$/iBf.0lIaVrmZ9lgkV6Zs.12k6jkF5BY/9EACUQ3FC7QFGCqhhY1q",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f998dbe26572f73cf46c183" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5OGRhNTI2NTcyZjczY2Y0NmMxNjkiLCJpYXQiOjE2MDM4OTg4MTR9.IEHOgHuG2UWP5ACPvRvFBo5h2jwTuQpWFP1-hwm5r_Y"
+      },
+      {
+        "_id": { "$oid": "5f99989626572f73cf46c5b8" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5OGRhNTI2NTcyZjczY2Y0NmMxNjkiLCJpYXQiOjE2MDM5MDE1OTB9.5JncHk4ISUMI2wVes0NWpb7k14NL-4okMBWMwLvBsto"
+      }
+    ],
+    "birthday": "16-03-2005",
+    "createdAt": "2020-10-28T15:26:29.587Z",
+    "updatedAt": "2020-10-30T18:03:50.716Z",
+    "__v": 10
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 167,
+    "scope": 310,
+    "_id": { "$oid": "5f99b0ad26572f73cf46c766" },
+    "name": "Nguyễn Thị Phương",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trường THPT Trần Nguyên Hãn",
+    "grade": "Lớp 12",
+    "classRoom": "12a1",
+    "email": "nhtphuong.math@gmail.com",
+    "password": "$2a$08$EPDhe6QpcVx.JSMq4pDFMu0PSF355qbW104zR3Laj9nP3K.7DsGCa",
+    "tokens": [],
+    "birthday": "13/01/2003",
+    "createdAt": "2020-10-28T17:55:57.706Z",
+    "updatedAt": "2020-10-30T18:03:55.395Z",
+    "__v": 6
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 181,
+    "scope": 310,
+    "_id": { "$oid": "5f99b48026572f73cf46c789" },
+    "name": "Dương Hoàng Yến",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trường THPT Trần Nguyên Hãn",
+    "grade": "Lớp 11",
+    "classRoom": "11B",
+    "email": "nhtphuong.mathematic@gmail.com",
+    "password": "$2a$08$HVvxBH3v8bMrCNoXe9AQgupNiNyUVVpkYuKJvZRU.tTbzt1iuFx4O",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f99b4d226572f73cf46c78d" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YjQ4MDI2NTcyZjczY2Y0NmM3ODkiLCJpYXQiOjE2MDM5MDg4MTh9.l8Fhd0yZ-fVTSJyxTSWfhezmZEEpHKMyYhimFaEYlsA"
+      }
+    ],
+    "birthday": "25-03-2004",
+    "createdAt": "2020-10-28T18:12:16.457Z",
+    "updatedAt": "2020-10-30T18:03:56.516Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 198,
+    "scope": 290,
+    "_id": { "$oid": "5f999d5226572f73cf46c65a" },
+    "name": "Nguyễn Ngọc Phương",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Trường THCS duy tân",
+    "grade": "Lớp 8",
+    "classRoom": "8a1",
+    "email": "nhtphuong.tea@gmail.com",
+    "password": "$2a$08$zySKjCz3LaK.zuf1dggNvuJv4Nenn94a27CpcnymiuUEjw8w1.Dt6",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f999d5d26572f73cf46c65b" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5OWQ1MjI2NTcyZjczY2Y0NmM2NWEiLCJpYXQiOjE2MDM5MDI4MTN9.hWQeFLEmK7oetojF1NLZsc2E1WU78xDx_vB9uW6Dq6U"
+      }
+    ],
+    "birthday": "16/7/2006",
+    "createdAt": "2020-10-28T16:33:23.016Z",
+    "updatedAt": "2020-11-02T06:28:34.792Z",
+    "__v": 7
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 548,
+    "scope": 300,
+    "_id": { "$oid": "5f978a3e2a15a912cc8f686e" },
+    "name": "Phạm Văn Phương",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường Cao đẳng Kỹ thuật Công Nghệ Bà Rịa-Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19HAN-QT",
+    "email": "phamvanphuonglonghai@gmail.com",
+    "password": "$2a$08$0UO55wYuKQzt.Oa1W.cQJuYmgSy1bHkcYDN53QWIz9IAkKeprLACy",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f978a4c2a15a912cc8f686f" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OGEzZTJhMTVhOTEyY2M4ZjY4NmUiLCJpYXQiOjE2MDM3NjY4NjB9.axjS5M5PZyw_JBwa_lzzsFGAChpgLYa4u8q8t1bVr3o"
+      }
+    ],
+    "birthday": "12-5-2001",
+    "createdAt": "2020-10-27T02:47:26.878Z",
+    "updatedAt": "2020-10-30T18:01:34.737Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 161,
+    "scope": 290,
+    "_id": { "$oid": "5f9a386a7793b82405733427" },
+    "name": "Đinh Vương Phương Thy",
+    "sex": "Nữ",
+    "district": "Thành phố Bà Rịa",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao đẳng sư phạm Bà Rịa Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "23A2",
+    "email": "pthy107201@gmail.com",
+    "password": "$2a$08$t5UogtxYif7fUEX7bR5E1eCBpWU/ETLyWwAvjOiukw6PH/i9gtR5S",
+    "tokens": [],
+    "birthday": "10-07-2001",
+    "createdAt": "2020-10-29T03:35:06.521Z",
+    "updatedAt": "2020-10-30T18:04:33.428Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 212,
+    "scope": 310,
+    "_id": { "$oid": "5f99bd1826572f73cf46c7c2" },
+    "name": "Nguyễn Hồng Trúc Phương",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao Đẳng Sư Phạm Bà Rịa Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "23A2",
+    "email": "sallaely927@gmail.com",
+    "password": "$2a$08$YqHLGb5.3GoXiLHWQQH9GeXNfkI0v6fhjnXbgNqKGZa4cZi7mvvqm",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f99bd3426572f73cf46c7c3" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDM5MTA5NjR9.muRrEpGZU4sholbUm2imcj4SiNqrQkT60Kb1d6NB-BE"
+      },
+      {
+        "_id": { "$oid": "5f9a37fe7793b82405733297" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDM5NDIzOTh9.c-iB469k_N6Cc9uuMv4WVzEyoAztv_kGuWC-5Kz4bSA"
+      },
+      {
+        "_id": { "$oid": "5f9a4bd37793b82405734553" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDM5NDc0NzV9.JEsru37hmhbXRSbt5pAXvHkg2gebKfLaMVNLP7SUZvI"
+      },
+      {
+        "_id": { "$oid": "5f9b5fd1fcf5fd5aaa91dd55" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQwMTgxMjl9.sIy7wYOWSGAgETP6CyHm1_EZSP3n-leMUS_B8100ohM"
+      },
+      {
+        "_id": { "$oid": "5f9c4134fcf5fd5aaa9228d9" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQwNzU4Mjh9.aiq4Jj01MJYxWqk_X81QQHRtDC3-qekeKMf6xgTNNVk"
+      },
+      {
+        "_id": { "$oid": "5f9c6e4e8fbae41e3f64ef99" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQwODczNzR9.zBHIAC8C6strYSP7v8vOQMNBKZ0zC3wpV5Y_Rat-K9M"
+      },
+      {
+        "_id": { "$oid": "5f9d75026353423091e87ff3" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQxNTQ2MjZ9.heaNwCfR_SuFMO6rv8xeroViIUOMHQ2IuCC7f1oR_5g"
+      },
+      {
+        "_id": { "$oid": "5f9fa716ef20d25b8e3528b1" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQyOTg1MTh9.bmU79XZ0KnBwY6PvCTJN-U6SdYnafwX3pVJAUKFkzDo"
+      },
+      {
+        "_id": { "$oid": "5f9fc003ef20d25b8e3528b9" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQzMDQ4OTl9.t2TAN2g7WGr_7Ll_QCaW_blQbc5Aq8nyqRKO3gRlT-0"
+      },
+      {
+        "_id": { "$oid": "5f9ff9bfef20d25b8e3528c5" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQzMTk2Nzl9.gi3Be4254iUeOfOzKZm_xGjBmmbw6QxKm-VDTv0qYx8"
+      },
+      {
+        "_id": { "$oid": "5fa0b5ccef20d25b8e352924" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQzNjc4MjB9.-FqQZTcelqnW6Lzoj7mqIhLd_hU9Yt_y5kDgkS9rZ-k"
+      },
+      {
+        "_id": { "$oid": "5fa125d4ef20d25b8e352a4b" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQzOTY1MDB9.CsB7JIxSY3NChx3YqIVMa6sAldMcLTbmb8MXPg5PUmo"
+      },
+      {
+        "_id": { "$oid": "5fa173fdef20d25b8e352ad8" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk5YmQxODI2NTcyZjczY2Y0NmM3YzIiLCJpYXQiOjE2MDQ0MTY1MDl9.VnhtRqmiaVLkhBCwwxE39Z_Ew0TUTysZMAMM3YzOOKI"
+      }
+    ],
+    "birthday": "7-2-1992",
+    "createdAt": "2020-10-28T18:48:56.360Z",
+    "updatedAt": "2020-11-03T15:15:09.608Z",
+    "__v": 17
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 384,
+    "scope": 320,
+    "_id": { "$oid": "5f9d684e6353423091e86ac3" },
+    "name": "Pham Minh Anh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT chuyên Lê Quý Đôn",
+    "grade": "Lớp 12",
+    "classRoom": "12AV3",
+    "email": "teresaphamm3@gmail.com",
+    "password": "$2a$08$TmM8DefZPlE5k6MC2NXiTOn9ZATRQrKU9kZkqWsui8swfZwaQvBZu",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d75896353423091e880d6" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNjg0ZTYzNTM0MjMwOTFlODZhYzMiLCJpYXQiOjE2MDQxNTQ3NjF9.dIxRTVJnr5hDNT0v_U3MzYrjrJFDRwG1BPC2RH-SPJk"
+      }
+    ],
+    "birthday": "27-06-2003",
+    "createdAt": "2020-10-31T13:36:14.945Z",
+    "updatedAt": "2020-10-31T16:05:57.506Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 672,
+    "scope": 300,
+    "_id": { "$oid": "5f9d78946353423091e8860f" },
+    "name": "Nguyễn Thái Nhân",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trường THPT Chuyên Lê Quý Đôn",
+    "grade": "Lớp 10",
+    "classRoom": "10 Anh 2",
+    "email": "thainhanlqd@gmail.com",
+    "password": "$2a$08$aO3Eb2ZSBS0lTDKsC3PgO.f7TebU70lw.nR/EKLEC3Jq7vaRJdale",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d789d6353423091e88630" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNzg5NDYzNTM0MjMwOTFlODg2MGYiLCJpYXQiOjE2MDQxNTU1NDl9.-Z-Ueb_d_MGvzsMOv5vGL2fbjT_Ika8EzJi8QvLDAMQ"
+      }
+    ],
+    "birthday": "26-9-2005",
+    "createdAt": "2020-10-31T14:45:40.964Z",
+    "updatedAt": "2020-10-31T16:06:23.441Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 128,
+    "scope": 280,
+    "_id": { "$oid": "5f9a38857793b82405733498" },
+    "name": "vo thị  thanh châu",
+    "sex": "Nữ",
+    "district": "Huyện Châu Đức",
+    "school": "Cao đẳng",
+    "nameSchool": "cao đang su phạm bà rịa vũng tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "23a2",
+    "email": "thanhchau160403@gmail.com",
+    "password": "$2a$08$BBCNf3TJTx4vMrXAN1q4yeKNsPOuOAMxXFVVcvb1fp1V23oMh.Zey",
+    "tokens": [],
+    "birthday": "16-3-1992",
+    "createdAt": "2020-10-29T03:35:33.767Z",
+    "updatedAt": "2020-10-30T18:04:33.562Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 338,
+    "scope": 340,
+    "_id": { "$oid": "5f979ad92a15a912cc8f70c7" },
+    "name": "PHẠM THANH MAI",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao đẳng sư phạm BR-VT",
+    "grade": "Cao Đẳng",
+    "classRoom": "23A4",
+    "email": "thanhmai1491@gmail.com",
+    "password": "$2a$08$YNHHE/q.yvHOrLRroNe.SeIOoUOB7BFAhBFIZdeqmKOGr/WcLr986",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f979adc2a15a912cc8f70c8" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OWFkOTJhMTVhOTEyY2M4ZjcwYzciLCJpYXQiOjE2MDM3NzExMDB9.J3rTEUYQ29Af2kCH4rGO7pNb8PZ_slF67nqZRbsAyE4"
+      },
+      {
+        "_id": { "$oid": "5f98436401750c3a173c6d0a" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OWFkOTJhMTVhOTEyY2M4ZjcwYzciLCJpYXQiOjE2MDM4MTQyNDR9.0CFeA9oMHfso7PF1VWLu06LuLUhv3Qn-xVI3G4lQ8yQ"
+      }
+    ],
+    "birthday": "14-09-2001",
+    "createdAt": "2020-10-27T03:58:17.482Z",
+    "updatedAt": "2020-10-30T18:01:39.094Z",
+    "__v": 4
+  },
+  {
+    "lanThi": {
+      "luotThi": -1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 607,
+    "scope": 370,
+    "_id": { "$oid": "5f96ce54b9b07406829653cc" },
+    "name": "Lê Thị Phương Thảo",
+    "sex": "Nữ",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Đại học",
+    "nameSchool": "BÀ RỊA - VŨNG TÀU",
+    "grade": "Đại học",
+    "classRoom": "DH20QU",
+    "email": "thao01319@gmail.com",
+    "password": "$2a$08$cRFMt3kOgtN.DOLXsr4tuepdWDXCLU0qKsmGupJcpxLRG/OOo55Xm",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f96ce7cb9b07406829653ce" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2Y2U1NGI5YjA3NDA2ODI5NjUzY2MiLCJpYXQiOjE2MDM3MTg3ODB9.L17qUsnCe1oCEn_6XQHwjG4m_RTVMYxPicgcjyIiYkM"
+      },
+      {
+        "_id": { "$oid": "5fa0c9c5ef20d25b8e352925" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2Y2U1NGI5YjA3NDA2ODI5NjUzY2MiLCJpYXQiOjE2MDQzNzI5MzN9.BISL9ouw1CbXQnuapVMoko-izaBjGcTW6PePayLMaAM"
+      }
+    ],
+    "birthday": "15-10-2002",
+    "createdAt": "2020-10-26T13:25:40.838Z",
+    "updatedAt": "2020-11-03T03:08:53.274Z",
+    "__v": 4
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 288,
+    "scope": 280,
+    "_id": { "$oid": "5f966913f2f6f645d2f6d71b" },
+    "name": "Phạm Phan Thảo Vy",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Đại học",
+    "nameSchool": "Đại học Bà Rịa-Vũng Tàu",
+    "grade": "Đại học",
+    "classRoom": "Dh18nb3",
+    "email": "thaovy1299@gmail.com",
+    "password": "$2a$08$7qM1Pxy7Zl7i4uJ6cKaesOvcekkJufEOM2JPMpTUoMaq9gybx8ClW",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f966921f2f6f645d2f6d71c" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NjkxM2YyZjZmNjQ1ZDJmNmQ3MWIiLCJpYXQiOjE2MDM2OTI4MzN9.G_V12uzCb_dwosRVv__6fuUKp4VsaN_z-m_l1eZWXaE"
+      }
+    ],
+    "birthday": "12-10-2000",
+    "createdAt": "2020-10-26T06:13:39.562Z",
+    "updatedAt": "2020-10-30T18:01:06.489Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": true,
+      "phan2": true,
+      "phan3": true,
+      "phan4": true
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 806,
+    "scope": 170,
+    "_id": { "$oid": "5f9384dbf2f6f645d2f6a79b" },
+    "name": "Huỳnh Thiên Giang",
+    "sex": "Nữ",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Chu Văn An",
+    "grade": "Lớp 7",
+    "classRoom": "7B",
+    "email": "thiengiang28@gmail.com",
+    "password": "$2a$08$rCxt6kMEg73yKBmxzxgILuNRq32Pe0SxO/XXKyAnMcxFYQ2trXhXS",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9398b6f2f6f645d2f6aa20" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkzODRkYmYyZjZmNjQ1ZDJmNmE3OWIiLCJpYXQiOjE2MDM1MDg0MDZ9.N7WiUnhzNcJhgIloQmf8pjtzQ91ERpe6bYlWRuCXTSU"
+      }
+    ],
+    "birthday": "28-12-2008",
+    "createdAt": "2020-10-24T01:35:23.445Z",
+    "updatedAt": "2020-10-30T18:00:21.093Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 422,
+    "scope": 290,
+    "_id": { "$oid": "5f9d37966353423091e84343" },
+    "name": "Phan Hoàng Hải",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Chuyên Lê Quý Đôn",
+    "grade": "Lớp 12",
+    "classRoom": "12 Toán 1",
+    "email": "thinksimpleornot@gmail.com",
+    "password": "$2a$08$0n1DuCHRH4y/1FKHdonPqulb9BSHHp4MjTBKxNsjEz715qiqRQwLG",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d37a96353423091e8435c" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzc5NjYzNTM0MjMwOTFlODQzNDMiLCJpYXQiOjE2MDQxMzg5MjF9.zY24SKMpeUr-D60vT490Nx-JHl325Mw3cVyEpIJSNcw"
+      },
+      {
+        "_id": { "$oid": "5f9d382c6353423091e843b5" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzc5NjYzNTM0MjMwOTFlODQzNDMiLCJpYXQiOjE2MDQxMzkwNTJ9.fFwiu7eZO4MBFabjI1ye_HiuYaPjt5Rf1p2Ha80aO1E"
+      }
+    ],
+    "birthday": "18-9-2003",
+    "createdAt": "2020-10-31T10:08:22.728Z",
+    "updatedAt": "2020-10-31T16:05:17.997Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 674,
+    "scope": 360,
+    "_id": { "$oid": "5f9d36046353423091e84227" },
+    "name": "Trần Công Tiến",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Chuyên Lê Quý Đôn",
+    "grade": "Lớp 11",
+    "classRoom": "11AV3",
+    "email": "tientran20le4@gmail.com",
+    "password": "$2a$08$j9jQVHUbdyu4.fsj6BOxtOCUPkPzbqTqNMJkQ38/1NTIGSboXTFJK",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d360e6353423091e84228" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkMzYwNDYzNTM0MjMwOTFlODQyMjciLCJpYXQiOjE2MDQxMzg1MTB9.Fg2RUcmBc2soGrNvPUE22cHIF2mmVkYYdN5G8-AHmdo"
+      }
+    ],
+    "birthday": "1-1-2004",
+    "createdAt": "2020-10-31T10:01:40.274Z",
+    "updatedAt": "2020-10-31T16:05:17.380Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": true,
+      "phan2": true,
+      "phan3": true,
+      "phan4": true
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 335,
+    "scope": 160,
+    "_id": { "$oid": "5f97c9c12a15a912cc8f7806" },
+    "name": "Nguyễn Thị Hà Trang",
+    "sex": "Nữ",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Phước Tân",
+    "grade": "Lớp 8",
+    "classRoom": "8a2",
+    "email": "trang111@gmail.com",
+    "password": "$2a$08$.ofGHSKbhKqi30PoSSjMpOYNkdRPFpJfA0.GSJh17Z7hmv0ao/.rC",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f97c9d12a15a912cc8f7818" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3YzljMTJhMTVhOTEyY2M4Zjc4MDYiLCJpYXQiOjE2MDM3ODMxMjF9.jIVTh0A76aV_rHLNpu_Q3cmM-NN6dMab9HLEkbEuBXg"
+      },
+      {
+        "_id": { "$oid": "5f97c9d22a15a912cc8f7819" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3YzljMTJhMTVhOTEyY2M4Zjc4MDYiLCJpYXQiOjE2MDM3ODMxMjJ9.14gR3EGOfYSHvAz9uKTa8UMk8RMKzU1Elsr5wM7SNmg"
+      },
+      {
+        "_id": { "$oid": "5f97c9d22a15a912cc8f781a" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3YzljMTJhMTVhOTEyY2M4Zjc4MDYiLCJpYXQiOjE2MDM3ODMxMjJ9.14gR3EGOfYSHvAz9uKTa8UMk8RMKzU1Elsr5wM7SNmg"
+      },
+      {
+        "_id": { "$oid": "5fa11c51ef20d25b8e352a1f" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3YzljMTJhMTVhOTEyY2M4Zjc4MDYiLCJpYXQiOjE2MDQzOTQwNjV9.prJmlhoneMW3lYNj-i4hf_PsxayYKABkiGSdwoLBca0"
+      },
+      {
+        "_id": { "$oid": "5fa11d1fef20d25b8e352a21" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3YzljMTJhMTVhOTEyY2M4Zjc4MDYiLCJpYXQiOjE2MDQzOTQyNzF9.qjKpNRUf_eCcP8krU665yZUf_KKl_Ph3i9NyMX67zcA"
+      }
+    ],
+    "birthday": "27-10-2020",
+    "createdAt": "2020-10-27T07:18:25.125Z",
+    "updatedAt": "2020-11-03T09:04:31.582Z",
+    "__v": 7
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 332,
+    "scope": 260,
+    "_id": { "$oid": "5f9c2a2efcf5fd5aaa9219a6" },
+    "name": "Võ Nguyễn Khánh Đăng",
+    "sex": "Nam",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS CHÂU ĐỨC",
+    "grade": "Lớp 8",
+    "classRoom": "8A6",
+    "email": "trangiahao114@gmail.com",
+    "password": "$2a$08$ckIq0Fv12dWAeg/5gHGG3utJ05LklIcEl.m6LOgXqLWD2pHq5V3ca",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9c2a39fcf5fd5aaa9219aa" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjljMmEyZWZjZjVmZDVhYWE5MjE5YTYiLCJpYXQiOjE2MDQwNjk5NDV9.7Af762qmCRLaZtke2jF0mJ6xA467Bfq7Tgm3EIPCjvU"
+      }
+    ],
+    "birthday": "04-06-2007",
+    "createdAt": "2020-10-30T14:58:54.175Z",
+    "updatedAt": "2020-10-30T18:06:31.458Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 587,
+    "scope": 270,
+    "_id": { "$oid": "5f978ba42a15a912cc8f68b0" },
+    "name": "Trần Thị Thanh Huệ",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Đại học",
+    "nameSchool": "Bà rịa vũng tàu",
+    "grade": "Đại học",
+    "classRoom": "DH20TL",
+    "email": "tranhue04102002@gmail.com",
+    "password": "$2a$08$EZZOJKfn2avKp1xCzRKsxOHRwLHdtg1RDw.vLPj24v2KtBswUZKDq",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f978bc12a15a912cc8f68e5" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OGJhNDJhMTVhOTEyY2M4ZjY4YjAiLCJpYXQiOjE2MDM3NjcyMzN9.L4N-gntK_Esr3h2R8J-vjCFLcPOABdEjnys5VIAaBAY"
+      },
+      {
+        "_id": { "$oid": "5fa02babef20d25b8e352913" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OGJhNDJhMTVhOTEyY2M4ZjY4YjAiLCJpYXQiOjE2MDQzMzI0NTl9.PEN4MNdRP8bTFffOAiE70B3yoEsC6ax7SNksNtrl7Zs"
+      },
+      {
+        "_id": { "$oid": "5fa02be8ef20d25b8e352914" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk3OGJhNDJhMTVhOTEyY2M4ZjY4YjAiLCJpYXQiOjE2MDQzMzI1MjB9.g40CZ8l98U8S0yyoJqxkf1r3bA0vHoc5HtrMPNW_Yxg"
+      }
+    ],
+    "birthday": "4-10-2002",
+    "createdAt": "2020-10-27T02:53:24.642Z",
+    "updatedAt": "2020-11-02T15:55:20.509Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 487,
+    "scope": 340,
+    "_id": { "$oid": "5f9d630d6353423091e86250" },
+    "name": "Trần Hữu Bình Nguyên",
+    "sex": "Nam",
+    "district": "Thành phố Bà Rịa",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Lê Quang Cường",
+    "grade": "Lớp 7",
+    "classRoom": "7A3",
+    "email": "tranhuubinhnguyen1604@gmail.com",
+    "password": "$2a$08$YX3odH9HTTYtFJxyACrbkOeQWRgcjqFN3e1n7X7lF7ruhsmT0ou8O",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d632f6353423091e86289" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNjMwZDYzNTM0MjMwOTFlODYyNTAiLCJpYXQiOjE2MDQxNTAwNjN9.rMzXyCDOFubJnlfsSepqlTXxAAqQYo5kDfnpDSRV8qE"
+      },
+      {
+        "_id": { "$oid": "5f9d7d2a6353423091e890cc" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNjMwZDYzNTM0MjMwOTFlODYyNTAiLCJpYXQiOjE2MDQxNTY3MTR9.lFsvML4lFwoqKOiS17DLpH4ptbIBqJ71aDprkHZnCcM"
+      }
+    ],
+    "birthday": "16-4-2008",
+    "createdAt": "2020-10-31T13:13:49.764Z",
+    "updatedAt": "2020-10-31T16:05:49.946Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 701,
+    "scope": 160,
+    "_id": { "$oid": "5f9679d3f2f6f645d2f6dc43" },
+    "name": "tran huu nhat truong",
+    "sex": "Nam",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "ly thuong kiet",
+    "grade": "Lớp 8",
+    "classRoom": "8a2",
+    "email": "tranhuunhattruong@gmail.com",
+    "password": "$2a$08$aXo4j0AhjUGWEoBxWINHHOjAZETsKuMiOKBDGZsN3z141YuAf8oYq",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9679e1f2f6f645d2f6dc55" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NzlkM2YyZjZmNjQ1ZDJmNmRjNDMiLCJpYXQiOjE2MDM2OTcxMjF9.B5NanbXRxDa_arl5WoSxacksKmuhbCk_VLNAh9CuZmw"
+      }
+    ],
+    "birthday": "2-5-2006",
+    "createdAt": "2020-10-26T07:25:07.731Z",
+    "updatedAt": "2020-10-30T18:01:10.094Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 685,
+    "scope": 290,
+    "_id": { "$oid": "5f9d408a6353423091e8487d" },
+    "name": "Trần Ngọc Như Quỳnh",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Chuyên Lê Quý Đôn",
+    "grade": "Lớp 10",
+    "classRoom": "10 toán 1",
+    "email": "tranngocnhuquynh2k5@gmail.com",
+    "password": "$2a$08$Hpm2evB.9I9DgEgCkyyncuHAsukM7H5HZvH.aMaFuFKwbR.rbO8JC",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d40b06353423091e8489d" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDA4YTYzNTM0MjMwOTFlODQ4N2QiLCJpYXQiOjE2MDQxNDEyMzJ9.Bd4SnRtWcjZvUEBgE2V79Osc8i1S4cf3jXnP5c0urk8"
+      },
+      {
+        "_id": { "$oid": "5f9d572b6353423091e8571f" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDA4YTYzNTM0MjMwOTFlODQ4N2QiLCJpYXQiOjE2MDQxNDY5ODd9.YHZu8VAOoFMyjCWy0URKgGb9cSWUfJzV-o5ODyljRMQ"
+      },
+      {
+        "_id": { "$oid": "5f9d58646353423091e857bc" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDA4YTYzNTM0MjMwOTFlODQ4N2QiLCJpYXQiOjE2MDQxNDczMDB9.DIXpB4jVYiFi1hBhzySNEhLWvVREOskP_SMpfpnnNz8"
+      },
+      {
+        "_id": { "$oid": "5f9d70606353423091e87777" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDA4YTYzNTM0MjMwOTFlODQ4N2QiLCJpYXQiOjE2MDQxNTM0NDB9.G8nO3ohf24tLIHoZ3pQpfFNWw_xZ55OxXAyFcQxs9QA"
+      },
+      {
+        "_id": { "$oid": "5f9d82ca6353423091e89d90" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDA4YTYzNTM0MjMwOTFlODQ4N2QiLCJpYXQiOjE2MDQxNTgxNTR9.0vUKJScQcAuATpXWTm0klKy5IEXQNkhhLsNRwUOTUl8"
+      },
+      {
+        "_id": { "$oid": "5fa163eeef20d25b8e352ac8" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNDA4YTYzNTM0MjMwOTFlODQ4N2QiLCJpYXQiOjE2MDQ0MTIzOTh9.YjF5mDZ76xFq_D0b3DvR0KgJxgZbi17PFe47GARnC_Q"
+      }
+    ],
+    "birthday": "20-05-2005",
+    "createdAt": "2020-10-31T10:46:34.650Z",
+    "updatedAt": "2020-11-03T14:06:38.781Z",
+    "__v": 8
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 581,
+    "scope": 180,
+    "_id": { "$oid": "5f964fbaf2f6f645d2f6d5ca" },
+    "name": "Đào Thiên Phúc",
+    "sex": "Nam",
+    "district": "Huyện Châu Đức",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Lý Thường Kiệt",
+    "grade": "Lớp 9",
+    "classRoom": "9A2",
+    "email": "tttdan2006@gmail.com",
+    "password": "$2a$08$Cx2/BGCQwcMY7ZGWbW/M0OYEUj8JMK3tRkXLX/S50f3hyz.eHcSnK",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f965297f2f6f645d2f6d5cc" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NGZiYWYyZjZmNjQ1ZDJmNmQ1Y2EiLCJpYXQiOjE2MDM2ODcwNjN9.8-20ft7wMtfB7Sejc0Hc81_q0bu5G6hyWkEA-lb1ShY"
+      },
+      {
+        "_id": { "$oid": "5f968c9ef2f6f645d2f6e6da" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NGZiYWYyZjZmNjQ1ZDJmNmQ1Y2EiLCJpYXQiOjE2MDM3MDE5MTh9.5SdsBbl79ATkSbKD34dYzKEUW9AFlROEuugM4nxS5UY"
+      },
+      {
+        "_id": { "$oid": "5fa0d6a5ef20d25b8e352955" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Zjk2NGZiYWYyZjZmNjQ1ZDJmNmQ1Y2EiLCJpYXQiOjE2MDQzNzYyMjl9.9jXxRjK3iJq69xF_trhsbcOya1w4xbe8tU6_8rzdnWY"
+      }
+    ],
+    "birthday": "9-7-2006",
+    "createdAt": "2020-10-26T04:25:30.369Z",
+    "updatedAt": "2020-11-03T04:03:49.520Z",
+    "__v": 5
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 666,
+    "scope": 260,
+    "_id": { "$oid": "5f978a8c2a15a912cc8f6877" },
+    "name": "Lê Hoàng Tuấn",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "Cao đẳng Kỹ thuật Công nghệ Bà Rịa-Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19HAN-QT",
+    "email": "tuan789brvt@gmail.com",
+    "password": "$2a$08$fMcMkuvMJKY78FtSaRYUR.oll9WGChtJQ67bMsi9/TSzPfzPcABrO",
+    "tokens": [],
+    "birthday": "24-8-2001",
+    "createdAt": "2020-10-27T02:48:44.097Z",
+    "updatedAt": "2020-10-30T18:01:35.426Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 702,
+    "scope": 160,
+    "_id": { "$oid": "5f938691f2f6f645d2f6a7a2" },
+    "name": "Lê Công Tuấn Anh",
+    "sex": "Nam",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Trung học cơ sở",
+    "nameSchool": "Chu Văn An",
+    "grade": "Lớp 8",
+    "classRoom": "8A",
+    "email": "tuananh15@gmail.com",
+    "password": "$2a$08$6H.eCiHBI.zGa1uBYYZNReqGWqrvsgnErJ6thF87PoSnPKDrlgjr6",
+    "tokens": [
+      {
+        "_id": { "$oid": "5fa14eddef20d25b8e352ab8" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkzODY5MWYyZjZmNjQ1ZDJmNmE3YTIiLCJpYXQiOjE2MDQ0MDcwMDV9.kSWxzCdQEGB2Qxe8e5waeZIyKQpVJZ6ZD9LEAFpOz4E"
+      }
+    ],
+    "birthday": "15-01-2007",
+    "createdAt": "2020-10-24T01:42:41.072Z",
+    "updatedAt": "2020-11-03T12:36:45.407Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 555,
+    "scope": 340,
+    "_id": { "$oid": "5f9d4c116353423091e84fb7" },
+    "name": "Đinh Xuân Sơn Tùng",
+    "sex": "Nam",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "Trung học Phổ thông Chuyên Lê Quý Đôn",
+    "grade": "Lớp 10",
+    "classRoom": "10 Anh 1",
+    "email": "tungdinh1602@gmail.com",
+    "password": "$2a$08$pxF.vgnTiG5l2a3uimiA4OZmGrDdpeshQcqEyvGEe40aZArgkxMPS",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d4c246353423091e84fbb" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjlkNGMxMTYzNTM0MjMwOTFlODRmYjciLCJpYXQiOjE2MDQxNDQxNjR9.YPQOh3PG6PGEeAxtRF551moZ9MvRfcvhwr2iiJBTJps"
+      }
+    ],
+    "birthday": "16-2-2005",
+    "createdAt": "2020-10-31T11:35:45.424Z",
+    "updatedAt": "2020-10-31T16:05:32.124Z",
+    "__v": 1
+  },
+  {
+    "lanThi": {
+      "luotThi": 1,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 428,
+    "scope": 400,
+    "_id": { "$oid": "5f93d0f3f2f6f645d2f6afac" },
+    "name": "Trần Thị Kim Tuyền",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Đại học",
+    "nameSchool": "Trường đại học Bà Rịa Vũng Tàu",
+    "grade": "Đại học",
+    "classRoom": "DH18TM2",
+    "email": "tuyen.emma2000@gmail.com",
+    "password": "$2a$08$0kpRgTCxsEMbIjYbRrGDouOTh88icvBZo7uMm3Y/qSrIWGARSXRFW",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f9d2c576353423091e83a15" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkzZDBmM2YyZjZmNjQ1ZDJmNmFmYWMiLCJpYXQiOjE2MDQxMzYwMjN9.LBNiLvhfyE4OC9-HjIQpLxlBllaDpt3Q6f_5GvBNAag"
+      }
+    ],
+    "birthday": "14-09-2000",
+    "createdAt": "2020-10-24T07:00:03.896Z",
+    "updatedAt": "2020-10-31T15:58:45.353Z",
+    "__v": 3
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 518,
+    "scope": 320,
+    "_id": { "$oid": "5f97dc7001750c3a173c4851" },
+    "name": "le thi tuong van",
+    "sex": "Nữ",
+    "district": "Thành phố Vũng Tàu",
+    "school": "Trung học phổ thông",
+    "nameSchool": "THPT Tran Nguyen Han",
+    "grade": "Lớp 11",
+    "classRoom": "11A2",
+    "email": "vanlee0201@gmail.com",
+    "password": "$2a$08$AseUjt/eRMgn05v8aahJYuiG69d5f531FOxk3s1mytDl9eF0ZqJYS",
+    "tokens": [],
+    "birthday": "8-5-2004",
+    "createdAt": "2020-10-27T08:38:08.887Z",
+    "updatedAt": "2020-10-30T18:01:55.444Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 535,
+    "scope": 260,
+    "_id": { "$oid": "5f9789e52a15a912cc8f6868" },
+    "name": "Thái Quốc Bảo",
+    "sex": "Nam",
+    "district": "Huyện Đất Đỏ",
+    "school": "Cao đẳng",
+    "nameSchool": "Trường Cao Đẳng Kỹ Thuật Công Nghệ tỉnh Bà Rịa Vũng Tàu",
+    "grade": "Cao Đẳng",
+    "classRoom": "CD19HAN-QT",
+    "email": "woainitd11a9@gmail.com",
+    "password": "$2a$08$dusrNqxW9mQo.ELOoImbMuBJXZizNeYInDI7m/aLSt2tfM61Ym2XW",
+    "tokens": [],
+    "birthday": "13-09-2001",
+    "createdAt": "2020-10-27T02:45:57.165Z",
+    "updatedAt": "2020-10-30T18:01:34.401Z",
+    "__v": 2
+  },
+  {
+    "lanThi": {
+      "luotThi": 0,
+      "phan1": false,
+      "phan2": false,
+      "phan3": false,
+      "phan4": false
+    },
+    "identity": "123456789",
+    "province": "Bà Rịa - Vũng Tàu",
+    "role": "student",
+    "time": 272,
+    "scope": 150,
+    "_id": { "$oid": "5f939d86f2f6f645d2f6aa50" },
+    "name": "Vũ Mai Như Ý",
+    "sex": "Nữ",
+    "district": "Huyện Xuyên Mộc",
+    "school": "Trung học cơ sở",
+    "nameSchool": "THCS Chu Văn An",
+    "grade": "Lớp 9",
+    "classRoom": "9b",
+    "email": "y@gmail.com",
+    "password": "$2a$08$LMVLnwB5XO1Q8ltUs33SKeth/Inbs/ucvS9NAyGCkIPCwQybKJrjq",
+    "tokens": [
+      {
+        "_id": { "$oid": "5f939dc0f2f6f645d2f6aa51" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkzOWQ4NmYyZjZmNjQ1ZDJmNmFhNTAiLCJpYXQiOjE2MDM1MDk2OTZ9.bngEH_uFf-OJAaGEdKn7rJHQgbgab7z76AqkQOj1G8k"
+      },
+      {
+        "_id": { "$oid": "5f939e1ef2f6f645d2f6aa53" },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjkzOWQ4NmYyZjZmNjQ1ZDJmNmFhNTAiLCJpYXQiOjE2MDM1MDk3OTB9.Lp76CWfaMpAy9wNijzn2XN0mylFTp7kEAbCajjnwuSk"
+      }
+    ],
+    "birthday": "3-12-2006",
+    "createdAt": "2020-10-24T03:20:38.272Z",
+    "updatedAt": "2020-10-30T18:00:22.527Z",
+    "__v": 2
+  }
+]

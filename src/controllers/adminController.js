@@ -1,45 +1,44 @@
 const ThoiGianThi = require('../models/ThoiGianThi');
 const QuanTri = require('../models/QuanTri');
 const jwt = require('jsonwebtoken');
-const moment = require('moment');
 const TuanHienTai = require('../models/TuanHienTai');
 const User = require('../models/User');
 const BaiThi = require('../models/BaiThi');
-const { listeners } = require('../models/User');
 
 exports.templateDashboard = (req, res) => {
   res.render('admin/dashboard.pug', { title: 'Dashboard' });
 };
 
 exports.templateXepHang = async (req, res) => {
-  // const listBaiThi = await BaiThi.find({ bestest: true, scope: { $gt: 0 } });
+  const listBaiThi = await BaiThi.find({ bestest: true });
   // const listUser = await User.find({ "lanThi.luotThi": { $lt: 2 } }); // https://stackjava.com/mongodb/truy-van-du-lieu-document-find-select-where-trong-mongodb.html
-  const listUser = await User.find({ 'lanThi.luotThi': { $lt: 2 } });
-  // let newArr = [];
-  // for (const iUser of listUser) {
-  //   const temp = {
-  //     _id: iUser._id,
-  //     name: iUser.name,
-  //     nameSchool: iUser.nameSchool,
-  //     classRoom: iUser.classRoom,
-  //     birthday: iUser.birthday,
-  //     email: iUser.email,
-  //     district: iUser.district,
-  //     school: iUser.school,
-  //     summaryScore: 0,
-  //     summaryTime: 0,
-  //   };
-  //   for (const iBaiThi of listBaiThi) {
-  //     if (iUser._id.toString() === iBaiThi.user) {
-  //       temp.summaryScore += iBaiThi.scope;
-  //       temp.summaryTime += iBaiThi.time;
-  //     }
-  //   }
-  //   newArr.push(temp);
-  // }
+  const listUser = await User.find();
+  let newArr = [];
+  for (const iUser of listUser) {
+    const temp = {
+      _id: iUser._id,
+      name: iUser.name,
+      nameSchool: iUser.nameSchool,
+      classRoom: iUser.classRoom,
+      birthday: iUser.birthday,
+      email: iUser.email,
+      district: iUser.district,
+      school: iUser.school,
+      summaryScore: 0,
+      summaryTime: 0,
+    };
+    for (const iBaiThi of listBaiThi) {
+      if (iUser._id.toString() === iBaiThi.user) {
+        temp.summaryScore += iBaiThi.scope;
+        temp.summaryTime += iBaiThi.time;
+      }
+    }
+    newArr.push(temp);
+  }
   res.render('admin/xep-hang.pug', {
     title: 'Xếp hạng',
-    listUser: listUser,
+    // listUser: listUser,
+    listUser: newArr,
   });
 };
 
@@ -264,34 +263,35 @@ exports.templateXepHangDonVi = async (req, res) => {
 };
 
 async function findAndMapUserWithBaiThi(donVi) {
-  // const listBaiThi = await BaiThi.find({ bestest: true, scope: { $gt: 0 } });
+  const listBaiThi = await BaiThi.find({ bestest: true });
   const listUser = await User.find({
-    'lanThi.luotThi': { $lt: 2 },
+    // 'lanThi.luotThi': { $lt: 2 },
     school: donVi,
   });
-  // let newArr = [];
-  // for (const iUser of listUser) {
-  //   const temp = {
-  //     _id: iUser._id,
-  //     name: iUser.name,
-  //     nameSchool: iUser.nameSchool,
-  //     classRoom: iUser.classRoom,
-  //     birthday: iUser.birthday,
-  //     email: iUser.email,
-  //     district: iUser.district,
-  //     school: iUser.school,
-  //     summaryScore: 0,
-  //     summaryTime: 0,
-  //   };
-  //   for (const iBaiThi of listBaiThi) {
-  //     if (iUser._id.toString() === iBaiThi.user) {
-  //       temp.summaryScore += iBaiThi.scope;
-  //       temp.summaryTime += iBaiThi.time;
-  //     }
-  //   }
-  //   newArr.push(temp);
-  // }
-  return listUser;
+  let newArr = [];
+  for (const iUser of listUser) {
+    const temp = {
+      _id: iUser._id,
+      name: iUser.name,
+      nameSchool: iUser.nameSchool,
+      classRoom: iUser.classRoom,
+      birthday: iUser.birthday,
+      email: iUser.email,
+      district: iUser.district,
+      school: iUser.school,
+      summaryScore: 0,
+      summaryTime: 0,
+    };
+    for (const iBaiThi of listBaiThi) {
+      if (iUser._id.toString() === iBaiThi.user) {
+        temp.summaryScore += iBaiThi.scope;
+        temp.summaryTime += iBaiThi.time;
+      }
+    }
+    newArr.push(temp);
+  }
+  // return listUser;
+  return newArr;
 }
 
 exports.updatePointForUser = async (req, res) => {
